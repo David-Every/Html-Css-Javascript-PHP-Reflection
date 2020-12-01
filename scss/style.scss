@@ -1,0 +1,18 @@
+@import 'colours', 'fonts', 'debug';
+
+// .footer-icons{
+//     height:50px;
+//     width: 50px;
+
+// }
+.buisness-info{
+    background-color: $nm-secondary;
+    color: $nm-primary;
+
+    
+    address{
+        font-style: normal;
+    }
+
+    // when small, remove footer images
+}
