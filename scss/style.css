@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -115,19 +122,35 @@ footer .footer-icons {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card-nav .card {
   border: 1px #333645 solid;
-  margin-bottom: 30px;
-  width: 30%;
+  height: 400px;
+  width: 300px;
+  margin: 50px 30px 30px;
+  padding: 25px 20px 15px;
+  font-size: 1em;
+  text-align: center;
+  color: #333645;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.card-nav .carda {
+  text-decoration: none;
+}
+
+.card-nav .card p {
+  padding-top: 15px;
+}
+
+.card-nav .card:hover {
+  background-color: #333645;
+  color: #fff;
 }
 
 .break {

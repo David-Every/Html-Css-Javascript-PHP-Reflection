@@ -1,11 +1,32 @@
 .card-nav{
     @include display;
+    justify-content: center;
+    flex-wrap: wrap;
     
-
         .card{
             border: 1px $nm-secondary solid;
-            margin-bottom: 30px;
-            width: 30%;
+            //width: 30%;
+            height:400px;
+            width:300px;
+
+            margin: 50px 30px 30px;
+            padding: 25px 20px 15px;
+
+            font-size: 1em;
+            text-align: center;
+            color: $nm-secondary ;
+
+            &a{
+                text-decoration: none;
+            }
+            p{
+                padding-top:15px;
+            }
+
+            &:hover{
+                background-color: $nm-secondary;
+                color: $nm-primary;
+            }
         }
     
 }
