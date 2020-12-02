@@ -1,0 +1,10 @@
+@mixin display {
+    display:flex;
+    justify-content: space-between;
+}
+
+@mixin text-display{
+    line-height: 1.5;
+    font-style: normal;
+    text-decoration: none;
+}

@@ -7,12 +7,131 @@
   border: 2px red solid;
 }
 
-.buisness-info {
+footer .buisness-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 1.5;
+  font-style: normal;
+  text-decoration: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 150px 50px;
   background-color: #333645;
   color: #fff;
 }
 
-.buisness-info address {
+footer .buisness-info li {
+  list-style: none;
+}
+
+footer .buisness-info address {
   font-style: normal;
+}
+
+footer .buisness-info .f-title {
+  text-transform: uppercase;
+  padding-bottom: 1em;
+}
+
+footer .buisness-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .buisness-info a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-icons,
+footer .footer-web-design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 15px 200px 15px 200px;
+}
+
+footer .footer-web-design {
+  margin-bottom: 50px;
+}
+
+footer .footer-icons {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5em;
+  width: 25%;
+}
+
+.news a {
+  color: #926fb1;
+}
+
+.news .news-card {
+  margin-left: 7%;
+  border: #666666 1px solid;
+}
+
+.about-us {
+  background-color: #333645;
+  padding: 25px 75px 25px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.about-us h1 {
+  text-transform: uppercase;
+  font-size: 48px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.about-us p {
+  width: 40%;
+  padding-bottom: 40px;
+  line-height: 1.5;
+}
+
+.card-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-nav .card {
+  border: 1px #333645 solid;
+  margin-bottom: 30px;
+  width: 30%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.break {
+  text-transform: uppercase;
+  margin: 50px 100px 100px;
 }
 /*# sourceMappingURL=style.css.map */

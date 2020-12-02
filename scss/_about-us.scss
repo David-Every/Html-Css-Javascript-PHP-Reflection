@@ -1,0 +1,19 @@
+.about-us{
+    background-color: $nm-secondary;
+    padding: 25px 75px 25px ;
+    color: $nm-primary;
+    font-size:20px;
+    h1{
+        text-transform:uppercase;
+        font-size: 48px;
+        padding-top:20px;
+        padding-bottom: 40px;
+    }
+    //first p gets extra weight too be added
+
+    p{
+        width:40%;
+        padding-bottom: 40px;
+        line-height:1.5;
+    }
+}

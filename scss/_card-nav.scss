@@ -1,0 +1,11 @@
+.card-nav{
+    @include display;
+    
+
+        .card{
+            border: 1px $nm-secondary solid;
+            margin-bottom: 30px;
+            width: 30%;
+        }
+    
+}

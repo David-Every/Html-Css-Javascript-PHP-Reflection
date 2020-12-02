@@ -1,18 +1,22 @@
-@import 'colours', 'fonts', 'debug';
+@import 'colours', 
+'fonts', 
+'debug', 
+'mixins', 
+'footer', 
+'news', 
+'about-us', 
+'card-nav';
 
-// .footer-icons{
-//     height:50px;
-//     width: 50px;
+* { margin:0; padding:0; box-sizing:border-box; } //resets html
 
-// }
-.buisness-info{
-    background-color: $nm-secondary;
-    color: $nm-primary;
 
-    
-    address{
-        font-style: normal;
-    }
 
-    // when small, remove footer images
+
+.break{
+    text-transform: uppercase;
+
+    margin: 50px 100px 100px;
+        // .h3{
+        //     /margin-left: 50px;
+        // }
 }
