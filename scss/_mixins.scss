@@ -9,8 +9,9 @@
     text-decoration: none;
 }
 
-@mixin colourise($color){
-    background-color: $color;
+$search-words: web, it, telecoms, bespoke, marketing, cyber;
+
+@mixin colourise(){
 }
 
 //Rough idea

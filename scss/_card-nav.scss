@@ -14,7 +14,6 @@
 
             font-size: 1em;
             text-align: center;
-            color: $nm-secondary ;
             cursor: pointer;
 
             &a{
@@ -23,15 +22,17 @@
             p{
                 padding-top:15px;
             }
-
-            &:hover{
-                background-color: $nm-secondary;
-                color: $nm-primary;
-            }
-
-            // .service {
-            //     //UPDADE COLOUR ON HOVER
-            // }
         }
+
+        .service{  //sorts out colour
+            background-color: $nm-primary;
+            color: $nm-secondary;
+            &:hover{
+               background-color:$nm-secondary;
+               color:$nm-primary;
+            }
+        }
+
+        
     
 }

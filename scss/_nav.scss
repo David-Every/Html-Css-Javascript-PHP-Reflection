@@ -1,26 +1,28 @@
-.nav {
+.nav-bar {
     //@include display;
     display: flex;
     //justify-content: space-between;
-
     flex-wrap: wrap;
     background-color: $nm-secondary;
 
-    // &:first-child{
-    //     //margin-left: 100px;
-    // }
-
-    .service{
-        //background-color: $nm-secondary;
+    .nav{
         border: 1px solid $nm-tertiary;
-        color:$nm-primary;
-    
         text-transform: uppercase;
         text-align: center;
-        height: 75px;
+        height: 110px;
         width:125px;
         padding: 20px 20px;
         cursor: pointer;
+
+        &.service{
+            // background-color: $nm-secondary;
+            color:$nm-primary;
+
+            &:hover{
+                background-color: $nm-it;
+                color:$nm-secondary;
+            }
+        }
     }
 }
 

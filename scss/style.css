@@ -170,7 +170,6 @@ footer .footer-icons {
   padding: 25px 20px 15px;
   font-size: 1em;
   text-align: center;
-  color: #333645;
   cursor: pointer;
 }
 
@@ -182,12 +181,17 @@ footer .footer-icons {
   padding-top: 15px;
 }
 
-.card-nav .card:hover {
+.card-nav .service {
+  background-color: #fff;
+  color: #333645;
+}
+
+.card-nav .service:hover {
   background-color: #333645;
   color: #fff;
 }
 
-.nav {
+.nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,15 +200,23 @@ footer .footer-icons {
   background-color: #333645;
 }
 
-.nav .service {
+.nav-bar .nav {
   border: 1px solid #666666;
-  color: #fff;
   text-transform: uppercase;
   text-align: center;
-  height: 75px;
+  height: 110px;
   width: 125px;
   padding: 20px 20px;
   cursor: pointer;
+}
+
+.nav-bar .nav.service {
+  color: #fff;
+}
+
+.nav-bar .nav.service:hover {
+  background-color: #286ABD;
+  color: #333645;
 }
 
 body {
