@@ -7,7 +7,12 @@
 'footer', 
 'news', 
 'about-us', 
-'card-nav';
+'card-nav',
+'nav';
+
+body{
+    user-select: none;
+}
 
 .break{
     text-transform: uppercase;

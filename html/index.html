@@ -14,19 +14,39 @@
         </ul>
 
         <!-- Navigation -->
-        <div class ="nav">
-            <ol>
-                <li>Web Design</li>
-                <li>IT Support</li>
-                <li>Telecoms services</li>
-                <li>bespoke software</li>
-                <li>Digital marketing</li>
-                <li>Cyber Security</li>
-            </ol>
+        <div class ="nav">  <!--Parent-->
+            <div class = "service "> 
+                <!-- <img src = "../img/Icons/nav-Icons/code.svg"> -->
+                <small>Web</small> Design 
+            </div>
+
+            <div class = "service">
+                 <small>IT</small> Support 
+            </div>
+
+            <div class = "service"> 
+                <!-- <img src ="../img/Icons/nav-Icons/phone.svg"> -->
+                <small> Telecoms </small> services 
+            </div>
+
+            <div class = "service">
+                <!-- <img src = "../img/Icons/nav-Icons/monitor.svg">  -->
+                <small> bespoke </small> software 
+            </div>
+
+            <div class = "service"> 
+                <!-- <img src = "../img/Icons/nav-Icons/bar-chart.svg"> -->
+                <small> Digital </small> marketing 
+            </div>
+
+            <div class = "service">
+                <!-- <img src = "../img/Icons/nav-Icons/security-shield.svg"> -->
+                 <small> Cyber </small> Security 
+            </div>
         </div>
         <!-- /Navigation -->
 
-        <h1>Carousel images here</h1> <!-- Remove this when carousel is in-->
+        
         <!-- <img src = "../img/Carousel images/web_design_slide_1.jpg" alt ="Designing a website"> -->
 
     </header>
@@ -34,10 +54,10 @@
     <body>
         <!-- Cards -->
 
+        <h1>Carousel images here</h1> <!-- Remove this when carousel is in-->
         
         <div class = "card-nav">
             
-            <a href = "#">
                 <div class = "card">
                     <h3>Bespoke Software</h3>
                     <p>
@@ -48,9 +68,7 @@
                     </p>
                     <p>read more</p>
                 </div>
-            </a>
 
-            <a href = "#">
                 <div class = "card">
                     <h3>IT support</h3>
                     <p>Remotely managed IT Services that is catered
@@ -59,9 +77,7 @@
                     </p>
                     <p>read more</p>
                 </div>
-            </a>
 
-            <a href = "#">
                 <div class = "card">
                     <h3>Digital Marketing</h3>
                     <p>
@@ -71,9 +87,7 @@
                     </p>
                     <p>read more</p>
                 </div>
-            </a>
 
-            <a href ="#">
                 <div class = "card">
                     <h3>Telecoms Services</h3>
                     <p>
@@ -82,9 +96,7 @@
                     </p>
                     <p>read more</p>
                 </div>
-            </a>
 
-            <a href ="#">
                 <div class = "card">
                     <h3>web design</h3>
                     <p>
@@ -93,9 +105,7 @@
                     </p>
                     <p> read more</p>
                 </div>
-            </a>
                 
-            <a href = "#">
                 <div class = "card">
                     <h3> cyber security</h3>
                     <p>Ensuring your online buisness stays secure 24/7, 
@@ -103,9 +113,7 @@
                     </p>
                     <p>read more</p>
                 </div>
-            </a>
                 
-            <a href="#">
                 <div class = "card">
                     <h3>Developer Training</h3>
                     <p> Have you considered a career in web development
@@ -113,7 +121,6 @@
                     </p>
                     <p>read more</p>
                 </div>
-            </a>
             
         </div> <!-- /cards -->
 
@@ -191,7 +198,8 @@
                     Norfolk <br>
                     NR18 0WZ<br>
                     <br>
-                    Tel: 01603 70 40 20 <br>
+                    Tel:  <a href ="#">  01603 70 40 20 </a>
+                    <br>
                     Email: <a href ="mailto:support@netmatters.com">support@netmatters.com</a>
                 </address>
             </div> <!--/Contact info-->
@@ -219,14 +227,26 @@
                 </ul>
             </div><!--/Website-->
 
-            <div> <!--Social Media-->
+            <div class = "social"> <!--Social Media-->
                 <h4 class = "f-title">Social Media</h4>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Linked in</a></li>
-                    <!-- Add Social Media Icons-->
-                </ul>
+                <div class = "social-buttons">
+                    <button class = "s-icon-1"> 
+                        <a href="#">
+                            <img src ="../img/Icons/Social Media svg/facebook-svgrepo-com.svg">
+                        </a>
+                    </button>
+                    <button class = "s-icon-2"> 
+                        <a href="#">
+                            <img src ="../img/Icons/Social Media svg/twitter-svgrepo-com.svg">
+                        </a> 
+                    </button>
+                    <button class = "s-icon-3"> 
+                        <a href="#">
+                            <img src ="../img/Icons/Social Media svg/linkedin-svgrepo-com.svg">
+                        </a> 
+                    </button>
+                </div>
+                <!-- Add Social Media Icons-->
             </div><!--/Social Media-->
         </div>
 

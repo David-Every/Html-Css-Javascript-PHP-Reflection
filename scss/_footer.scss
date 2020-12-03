@@ -8,8 +8,6 @@ footer {
         background-color: $nm-secondary;
         color: $nm-primary;
         
-        
-    
             li{
                 list-style:none;
             }
@@ -28,14 +26,14 @@ footer {
             a:hover{
                 text-decoration: underline;
             }
-            // when small, remove footer images
-    }
+        }
 
         .footer-icons,
         .footer-web-design{
             @include display;
             flex-wrap: wrap;
             margin: 15px 200px 15px 200px;
+            
         }
         .footer-web-design{
             margin-bottom:50px;
@@ -46,3 +44,30 @@ footer {
             margin-bottom:50px;
         }
 }
+
+.social{
+   // @include display;
+    //color:$nm-secondary;
+    width:20%;
+    button {
+        width: 100px;
+        height: 50px;
+        background-color:$nm-secondary;
+
+        img{
+            height: 50%;
+            width: 50%;
+        }
+
+        .s-icon-1:hover{
+            background-color: $facebook-hover;
+        }
+        .s-icon-2:hover{
+            background-color: $twitter-hover;
+        }
+        .s-icon-3:hover{
+            background-color: $linkedin-hover;
+        }
+    }
+}
+// when small, remove footer images

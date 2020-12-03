@@ -14,6 +14,12 @@
   border: 2px red solid;
 }
 
+/*
+if   class:hover and a word in the title = (uppercase) bespoke {
+    background-color = $bs-color;
+}
+
+*/
 footer .buisness-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,6 +79,33 @@ footer .footer-web-design {
 footer .footer-icons {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.social {
+  width: 20%;
+}
+
+.social button {
+  width: 100px;
+  height: 50px;
+  background-color: #333645;
+}
+
+.social button img {
+  height: 50%;
+  width: 50%;
+}
+
+.social button .s-icon-1:hover {
+  background-color: #3b5998;
+}
+
+.social button .s-icon-2:hover {
+  background-color: #00ACEE;
+}
+
+.social button .s-icon-3:hover {
+  background-color: #0077B5;
 }
 
 .news {
@@ -138,6 +171,7 @@ footer .footer-icons {
   font-size: 1em;
   text-align: center;
   color: #333645;
+  cursor: pointer;
 }
 
 .card-nav .carda {
@@ -151,6 +185,33 @@ footer .footer-icons {
 .card-nav .card:hover {
   background-color: #333645;
   color: #fff;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #333645;
+}
+
+.nav .service {
+  border: 1px solid #666666;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  height: 75px;
+  width: 125px;
+  padding: 20px 20px;
+  cursor: pointer;
+}
+
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .break {
