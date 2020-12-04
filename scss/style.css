@@ -205,9 +205,13 @@ footer .footer-icons {
   text-transform: uppercase;
   text-align: center;
   height: 110px;
-  width: 125px;
+  width: 170px;
   padding: 20px 20px;
   cursor: pointer;
+}
+
+.nav-bar .nav:first-child {
+  margin-left: 150px;
 }
 
 .nav-bar .nav.service {
@@ -217,6 +221,69 @@ footer .footer-icons {
 .nav-bar .nav.service:hover {
   background-color: #286ABD;
   color: #333645;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: blue;
+  height: 100px;
+}
+
+.buttons .logo {
+  height: 75px;
+  margin-left: 150px;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.buttons .btn {
+  cursor: pointer;
+  border: 1px #666666 solid;
+  height: 50px;
+  width: 150px;
+  margin-top: 15px;
+  margin-right: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.buttons .btn:last-child {
+  width: 50px;
+  margin-left: none;
+  margin-right: 175px;
+}
+
+.buttons .btn.btn-1 {
+  background-color: #286ABD;
+}
+
+.buttons .btn.btn-1:hover {
+  background: #1f5293;
+}
+
+.buttons .btn.btn-2 {
+  background-color: #526781;
+}
+
+.buttons .btn.btn-2:hover {
+  background: #3e4e62;
+}
+
+#search-bar {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  margin-top: 5px;
+  width: 30%;
+}
+
+#search-bar .search {
+  padding: 15px 125px 15px 15px;
 }
 
 body {
