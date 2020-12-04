@@ -15,12 +15,21 @@
             font-size: 1em;
             text-align: center;
             cursor: pointer;
+            //position: static;
 
             &a{
                 text-decoration: none;
             }
             p{
                 padding-top:15px;
+                margin-bottom:25px;
+            }
+
+            label{
+                //position: static;
+                border: 2px red solid;
+                padding: 10px;
+                // margin-top: 10px;
             }
         }
 
@@ -30,6 +39,7 @@
             &:hover{
                background-color:$nm-secondary;
                color:$nm-primary;
+              
             }
         }
 

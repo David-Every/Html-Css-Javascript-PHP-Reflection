@@ -82,29 +82,33 @@ footer .footer-icons {
 }
 
 .social {
-  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.social button {
-  width: 100px;
-  height: 50px;
-  background-color: #333645;
+.social label {
+  width: 20;
+  height: 5px;
+  background-color: darken #333645, 20%;
+  border: 1px red solid;
+  padding: 20px 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
-.social button img {
-  height: 50%;
-  width: 50%;
-}
-
-.social button .s-icon-1:hover {
+.social label .s-icon-1:hover {
   background-color: #3b5998;
 }
 
-.social button .s-icon-2:hover {
+.social label .s-icon-2:hover {
   background-color: #00ACEE;
 }
 
-.social button .s-icon-3:hover {
+.social label .s-icon-3:hover {
   background-color: #0077B5;
 }
 
@@ -130,6 +134,9 @@ footer .footer-icons {
 
 .about-us {
   background-color: #333645;
+  background-image: url(../img/Icons/branded.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
   padding: 25px 75px 25px;
   color: #fff;
   font-size: 20px;
@@ -146,6 +153,22 @@ footer .footer-icons {
   width: 40%;
   padding-bottom: 40px;
   line-height: 1.5;
+}
+
+.about-us p:first-of-type {
+  font-weight: bold;
+}
+
+.about-us .culture {
+  border: 1px solid red;
+  padding: 10px 15px;
+  background: #fff;
+  color: #333645;
+  cursor: pointer;
+}
+
+.about-us .culture:hover {
+  background-color: #e6e6e6;
 }
 
 .card-nav {
@@ -179,6 +202,12 @@ footer .footer-icons {
 
 .card-nav .card p {
   padding-top: 15px;
+  margin-bottom: 25px;
+}
+
+.card-nav .card label {
+  border: 2px red solid;
+  padding: 10px;
 }
 
 .card-nav .service {

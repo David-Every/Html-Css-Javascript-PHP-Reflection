@@ -1,5 +1,9 @@
 .about-us{
     background-color: $nm-secondary;
+    background-image: url(../img/Icons/branded.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
     padding: 25px 75px 25px ;
     color: $nm-primary;
     font-size:20px;
@@ -15,5 +19,27 @@
         width:40%;
         padding-bottom: 40px;
         line-height:1.5;
+
+        &:first-of-type{
+            font-weight: bold;
+        }
     }
+
+    .culture{
+
+        border:1px solid red;
+        padding: 10px 15px;
+        //margin-bottom: 50px;
+        background: $nm-primary;
+        color: $nm-secondary;
+        cursor: pointer;
+        &:hover{
+            background-color: darken($nm-primary, 10%)
+        }
+
+        // &::before{
+        //     background-image: url(../img/Icons/nav-Icons/right-arrow.svg);
+        // }
+    }
+    
 }
