@@ -16,8 +16,11 @@ body{
 
 .break{
     text-transform: uppercase;
-
+    border-bottom: $nm-secondary;
+    
     margin: 50px 100px 100px;
+    padding-top: 50px;
+    //margin-top: 100px;
         // .h3{
         //     /margin-left: 50px;
         // }

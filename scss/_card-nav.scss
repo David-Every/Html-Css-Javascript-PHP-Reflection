@@ -22,27 +22,33 @@
             }
             p{
                 padding-top:15px;
-                margin-bottom:25px;
+                margin-bottom:100px;
             }
 
             label{
                 //position: static;
+                background-color: $nm-primary;
                 border: 2px red solid;
                 padding: 10px;
+                text-transform: uppercase;
                 // margin-top: 10px;
             }
         }
 
-        .service{  //sorts out colour
-            background-color: $nm-primary;
-            color: $nm-secondary;
-            &:hover{
-               background-color:$nm-secondary;
-               color:$nm-primary;
-              
+        .c-title{
+            text-transform: capitalize;
+            padding-bottom:50px;
+            position:relative;
+
+            &::after{
+                content: '';
+                display:block;
+                position: absolute;
+                width: 50px;
+                border:$nm-secondary solid 1px;
+                top: 25px;
+                left:100px;
+
             }
         }
-
-        
-    
 }

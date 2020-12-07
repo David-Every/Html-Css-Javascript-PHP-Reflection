@@ -11,21 +11,19 @@
         width:170px;
         padding: 20px 20px;
         cursor: pointer;
-        &:first-child{
-            margin-left:150px;
-        }
 
-        &.service{
-            // background-color: $nm-secondary;
-            color:$nm-primary;
-
-            &:hover{
-                background-color: $nm-it;
-                color:$nm-secondary;
+            &:first-child{
+                margin-left:150px;
             }
-        }
+
+            &.service{
+                // background-color: $nm-secondary;
+                color:$nm-primary;
+            }
     }
 }
+
+
 
 .buttons {
     display: flex;
@@ -74,6 +72,8 @@
     }
      
 }
+
+
 #search-bar{
     box-sizing: border-box;
     padding: 10px;

@@ -14,12 +14,141 @@
   border: 2px red solid;
 }
 
-/*
-if   class:hover and a word in the title = (uppercase) bespoke {
-    background-color = $bs-color;
+/*Creates a block of code that colours the backgtound*/
+.nav-web:hover {
+  background-color: #926fb1;
 }
 
-*/
+.card-nav-web:hover {
+  background-color: #926fb1;
+  color: #fff;
+}
+
+.rm-web {
+  background-color: #926fb1;
+  color: #fff;
+}
+
+.rm-web:hover {
+  background-color: #fff;
+  color: #926fb1;
+}
+
+.nav-it:hover {
+  background-color: #286ABD;
+}
+
+.card-nav-it:hover {
+  background-color: #286ABD;
+  color: #fff;
+}
+
+.rm-it {
+  background-color: #286ABD;
+  color: #fff;
+}
+
+.rm-it:hover {
+  background-color: #fff;
+  color: #286ABD;
+}
+
+.nav-tc:hover {
+  background-color: #BC2C28;
+}
+
+.card-nav-tc:hover {
+  background-color: #BC2C28;
+  color: #fff;
+}
+
+.rm-tc {
+  background-color: #BC2C28;
+  color: #fff;
+}
+
+.rm-tc:hover {
+  background-color: #fff;
+  color: #BC2C28;
+}
+
+.nav-bs:hover {
+  background-color: #526781;
+}
+
+.card-nav-bs:hover {
+  background-color: #526781;
+  color: #fff;
+}
+
+.rm-bs {
+  background-color: #526781;
+  color: #fff;
+}
+
+.rm-bs:hover {
+  background-color: #fff;
+  color: #526781;
+}
+
+.nav-mk:hover {
+  background-color: #25A25A;
+}
+
+.card-nav-mk:hover {
+  background-color: #25A25A;
+  color: #fff;
+}
+
+.rm-mk {
+  background-color: #25A25A;
+  color: #fff;
+}
+
+.rm-mk:hover {
+  background-color: #fff;
+  color: #25A25A;
+}
+
+.nav-cs:hover {
+  background-color: #DE093F;
+}
+
+.card-nav-cs:hover {
+  background-color: #DE093F;
+  color: #fff;
+}
+
+.rm-cs {
+  background-color: #DE093F;
+  color: #fff;
+}
+
+.rm-cs:hover {
+  background-color: #fff;
+  color: #DE093F;
+}
+
+.nav-dt:hover {
+  background-color: #79539a;
+}
+
+.card-nav-dt:hover {
+  background-color: #79539a;
+  color: #fff;
+}
+
+.rm-dt {
+  background-color: #79539a;
+  color: #fff;
+}
+
+.rm-dt:hover {
+  background-color: #fff;
+  color: #79539a;
+}
+
+/* ends colouring boxes */
 footer .buisness-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,22 +331,30 @@ footer .footer-icons {
 
 .card-nav .card p {
   padding-top: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 100px;
 }
 
 .card-nav .card label {
+  background-color: #fff;
   border: 2px red solid;
   padding: 10px;
+  text-transform: uppercase;
 }
 
-.card-nav .service {
-  background-color: #fff;
-  color: #333645;
+.card-nav .c-title {
+  text-transform: capitalize;
+  padding-bottom: 50px;
+  position: relative;
 }
 
-.card-nav .service:hover {
-  background-color: #333645;
-  color: #fff;
+.card-nav .c-title::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50px;
+  border: #333645 solid 1px;
+  top: 25px;
+  left: 100px;
 }
 
 .nav-bar {
@@ -245,11 +382,6 @@ footer .footer-icons {
 
 .nav-bar .nav.service {
   color: #fff;
-}
-
-.nav-bar .nav.service:hover {
-  background-color: #286ABD;
-  color: #333645;
 }
 
 .buttons {
@@ -324,6 +456,8 @@ body {
 
 .break {
   text-transform: uppercase;
+  border-bottom: #333645;
   margin: 50px 100px 100px;
+  padding-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */
