@@ -32,16 +32,16 @@ footer {
         .footer-web-design{
             @include display;
             flex-wrap: wrap;
-            margin: 15px 200px 15px 200px;
+            //margin: 15px 200px 15px 200px;
             
         }
         .footer-web-design{
-            margin-bottom:50px;
+            //margin-bottom:50px;
         }
 
         .footer-icons{
-            margin-top:50px;
-            margin-bottom:50px;
+            //margin-top:50px;
+            //margin-bottom:50px;
         }
 }
 
@@ -55,15 +55,8 @@ footer {
         background-color:darken ($nm-secondary,20%);
         border: 1px red solid;
         padding:20px 50px;
-        margin-bottom: 20px;
+        //margin-bottom: 20px;
         cursor: pointer;
-        
-
-        // img{
-        //     //height: 5%;
-        //     //width: 5%;
-
-        // }
 
         .s-icon-1:hover{
             background-color: $facebook-hover;

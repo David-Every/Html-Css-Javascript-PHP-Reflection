@@ -1,18 +1,21 @@
 .news{
     @include display;
     margin-bottom: 5em;
-    width:25%; //3 cards = 75%, 25% remaining width:25%; //3 cards = 75%, 25% remaining 
 
     a{
         color:$nm-web;
 
     }
+    img{
+        width:100%;
+    }
 
     .news-card{
-        margin-left: 7%;
+        margin-left: 3%;
+        width: 35%;
         border: $nm-tertiary 1px solid;
-
     }
-        
-        //issue, Images not resizing, creates bottom scroll bar
+    .news-card:last-child{
+        margin-right: 3%;
+    }
 }

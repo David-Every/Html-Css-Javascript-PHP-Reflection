@@ -8,34 +8,3 @@
     font-style: normal;
     text-decoration: none;
 }
-
-$service-colors: ('web' $nm-web, 'it' $nm-it, 'tc' $nm-tc, 'bs' $nm-bs, 'mk' $nm-marketing, 'cs' $nm-Security, 'dt' $nm-training);
-
-/*Creates a block of code that colours the backgtound*/
-@each $name, $color in $service-colors{
-
-    .nav-#{$name}:hover{
-        background-color:$color;
-    }
-
-    .card-nav-#{$name}:hover{
-        background-color:$color;
-        color:$nm-primary;
-    }
-
-
-    
-    //This isnt working properly because its aseperate thing.
-    //try changing to an h4 or something like that as then it will be
-    //accessable from the same place
-    .rm-#{$name}{
-        background-color: $color;
-        color:$nm-primary;
-
-        &:hover{
-            background-color:$nm-primary;
-            color:$color;
-        }
-    }
-}
-/* ends colouring boxes */

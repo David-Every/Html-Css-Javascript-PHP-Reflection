@@ -1,6 +1,7 @@
 * { margin:0; padding:0; box-sizing:border-box; } //resets html
 
-@import 'colours', 
+@import 'colours',
+'card-colouring', 
 'fonts', 
 'debug', 
 'mixins', 
@@ -8,7 +9,8 @@
 'news', 
 'about-us', 
 'card-nav',
-'nav';
+'nav',
+'imgs';
 
 body{
     user-select: none;
@@ -17,11 +19,5 @@ body{
 .break{
     text-transform: uppercase;
     border-bottom: $nm-secondary;
-    
-    margin: 50px 100px 100px;
-    padding-top: 50px;
-    //margin-top: 100px;
-        // .h3{
-        //     /margin-left: 50px;
-        // }
+    padding-right:95%;
 }

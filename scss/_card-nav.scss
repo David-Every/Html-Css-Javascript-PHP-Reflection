@@ -2,10 +2,10 @@
     @include display;
     justify-content: center;
     flex-wrap: wrap;
-    
         .card{
             //UPDATE SHAPE /  SIZE AND INFO
-            border: 1px $nm-secondary solid;
+            border: 1px lighten($nm-tertiary,40%) solid;
+            border-radius: 1%;
             height:400px;
             width:300px;
 
@@ -15,7 +15,6 @@
             font-size: 1em;
             text-align: center;
             cursor: pointer;
-            //position: static;
 
             &a{
                 text-decoration: none;
@@ -25,30 +24,56 @@
                 margin-bottom:100px;
             }
 
-            label{
-                //position: static;
-                background-color: $nm-primary;
-                border: 2px red solid;
+            span{
+                border-radius: 5%;
                 padding: 10px;
                 text-transform: uppercase;
-                // margin-top: 10px;
             }
+
+            .c-title{
+                text-transform: capitalize;
+                padding-bottom:50px;
+                position:relative;
+
+                &::before{
+                    content: '';
+                    display:block;
+                    position: absolute;
+                    width: 50px;
+                    border:$nm-secondary solid 1px;
+                    top: 25px;
+                    left:100px;
+                }
+            }
+
+            // &:hover{
+            //     //When hovering over 'card' 
+            //     .ctitle::after{
+            //         content: '';
+            //         display:block;
+            //         position: absolute;
+            //         width: 50px;
+            //         border:$nm-primary solid 1px;
+            //         top: 25px;
+            //         left:100px;
+            //     }
+            //}
+
+            
+
+            //selects c-title... need to select .card
+            // &:hover::after{
+            //     content: '';
+            //     display:block;
+            //     position: absolute;
+            //     width: 50px;
+            //     border:$nm-primary solid 1px;
+            //     top: 25px;
+            //     left:100px;
+            //}
+            
+
         }
 
-        .c-title{
-            text-transform: capitalize;
-            padding-bottom:50px;
-            position:relative;
-
-            &::after{
-                content: '';
-                display:block;
-                position: absolute;
-                width: 50px;
-                border:$nm-secondary solid 1px;
-                top: 25px;
-                left:100px;
-
-            }
-        }
+      
 }
