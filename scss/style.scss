@@ -1,7 +1,7 @@
 * { margin:0; padding:0; box-sizing:border-box; } //resets html
 
 @import 'colours',
-'card-colouring', 
+'variables',
 'fonts', 
 'debug', 
 'mixins', 
@@ -10,7 +10,9 @@
 'about-us', 
 'card-nav',
 'nav',
-'imgs';
+'card-colouring',
+'imgs',
+'dropdowns';
 
 body{
     user-select: none;

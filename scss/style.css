@@ -15,166 +15,41 @@
   background-color: #f2f2f2;
 }
 
-/*Creates a block of code that colours the backgtound*/
-.nav-web:hover {
-  background-color: #926fb1;
+/* url variables*/
+.social-fb {
+  background: #242630 url("../img/Icons/social-media-icons/facebook-svgrepo-com.svg") no-repeat center;
+  background-size: 25%;
+  padding: 20px 50px;
+  /*fill svg to $color*/
 }
 
-.card-nav-web {
-  background-color: #fff;
+.social-fb:hover {
+  background-color: #3b5998;
+  /*fill svg to white*/
 }
 
-.card-nav-web .rm-web {
-  background-color: #926fb1;
-  color: #fff;
+.social-tw {
+  background: #242630 url("../img/Icons/social-media-icons/twitter-svgrepo-com.svg") no-repeat center;
+  background-size: 25%;
+  padding: 20px 50px;
+  /*fill svg to $color*/
 }
 
-.card-nav-web:hover {
-  background-color: #926fb1;
-  color: #fff;
+.social-tw:hover {
+  background-color: #00ACEE;
+  /*fill svg to white*/
 }
 
-.card-nav-web:hover .rm-web {
-  background-color: #fff;
-  color: #926fb1;
+.social-li {
+  background: #242630 url("../img/Icons/social-media-icons/linkedin-svgrepo-com.svg") no-repeat center;
+  background-size: 25%;
+  padding: 20px 50px;
+  /*fill svg to $color*/
 }
 
-.nav-it:hover {
-  background-color: #286ABD;
-}
-
-.card-nav-it {
-  background-color: #fff;
-}
-
-.card-nav-it .rm-it {
-  background-color: #286ABD;
-  color: #fff;
-}
-
-.card-nav-it:hover {
-  background-color: #286ABD;
-  color: #fff;
-}
-
-.card-nav-it:hover .rm-it {
-  background-color: #fff;
-  color: #286ABD;
-}
-
-.nav-tc:hover {
-  background-color: #BC2C28;
-}
-
-.card-nav-tc {
-  background-color: #fff;
-}
-
-.card-nav-tc .rm-tc {
-  background-color: #BC2C28;
-  color: #fff;
-}
-
-.card-nav-tc:hover {
-  background-color: #BC2C28;
-  color: #fff;
-}
-
-.card-nav-tc:hover .rm-tc {
-  background-color: #fff;
-  color: #BC2C28;
-}
-
-.nav-bs:hover {
-  background-color: #526781;
-}
-
-.card-nav-bs {
-  background-color: #fff;
-}
-
-.card-nav-bs .rm-bs {
-  background-color: #526781;
-  color: #fff;
-}
-
-.card-nav-bs:hover {
-  background-color: #526781;
-  color: #fff;
-}
-
-.card-nav-bs:hover .rm-bs {
-  background-color: #fff;
-  color: #526781;
-}
-
-.nav-mk:hover {
-  background-color: #25A25A;
-}
-
-.card-nav-mk {
-  background-color: #fff;
-}
-
-.card-nav-mk .rm-mk {
-  background-color: #25A25A;
-  color: #fff;
-}
-
-.card-nav-mk:hover {
-  background-color: #25A25A;
-  color: #fff;
-}
-
-.card-nav-mk:hover .rm-mk {
-  background-color: #fff;
-  color: #25A25A;
-}
-
-.nav-cs:hover {
-  background-color: #DE093F;
-}
-
-.card-nav-cs {
-  background-color: #fff;
-}
-
-.card-nav-cs .rm-cs {
-  background-color: #DE093F;
-  color: #fff;
-}
-
-.card-nav-cs:hover {
-  background-color: #DE093F;
-  color: #fff;
-}
-
-.card-nav-cs:hover .rm-cs {
-  background-color: #fff;
-  color: #DE093F;
-}
-
-.nav-dt:hover {
-  background-color: #79539a;
-}
-
-.card-nav-dt {
-  background-color: #fff;
-}
-
-.card-nav-dt .rm-dt {
-  background-color: #79539a;
-  color: #fff;
-}
-
-.card-nav-dt:hover {
-  background-color: #79539a;
-  color: #fff;
-}
-
-.card-nav-dt:hover .rm-dt {
-  background-color: #fff;
-  color: #79539a;
+.social-li:hover {
+  background-color: #0077B5;
+  /*fill svg to white*/
 }
 
 * {
@@ -237,46 +112,44 @@ footer .buisness-info a:hover {
   text-decoration: underline;
 }
 
-footer .footer-icons,
-footer .footer-web-design {
+.footer-icons,
+.footer-web-design {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.f-img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.f-img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.social-media {
+  width: 25%;
+}
+
+.social-media .social-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.social label {
-  width: 20;
-  height: 5px;
-  background-color: darken #333645, 20%;
-  border: 1px red solid;
-  padding: 20px 50px;
-  cursor: pointer;
-}
-
-.social label .s-icon-1:hover {
-  background-color: #3b5998;
-}
-
-.social label .s-icon-2:hover {
-  background-color: #00ACEE;
-}
-
-.social label .s-icon-3:hover {
-  background-color: #0077B5;
+.social-media .social-buttons a {
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 .news {
@@ -493,8 +366,179 @@ footer .footer-web-design {
   padding: 15px 125px 15px 15px;
 }
 
+/*Creates a block of code that colours the backgtound*/
+.nav-web:hover {
+  background-color: #926fb1;
+}
+
+.card-nav-web {
+  background-color: #fff;
+}
+
+.card-nav-web .rm-web {
+  background-color: #926fb1;
+  color: #fff;
+}
+
+.card-nav-web:hover {
+  background-color: #926fb1;
+  color: #fff;
+}
+
+.card-nav-web:hover .rm-web {
+  background-color: #fff;
+  color: #926fb1;
+}
+
+.nav-it:hover {
+  background-color: #286ABD;
+}
+
+.card-nav-it {
+  background-color: #fff;
+}
+
+.card-nav-it .rm-it {
+  background-color: #286ABD;
+  color: #fff;
+}
+
+.card-nav-it:hover {
+  background-color: #286ABD;
+  color: #fff;
+}
+
+.card-nav-it:hover .rm-it {
+  background-color: #fff;
+  color: #286ABD;
+}
+
+.nav-tc:hover {
+  background-color: #BC2C28;
+}
+
+.card-nav-tc {
+  background-color: #fff;
+}
+
+.card-nav-tc .rm-tc {
+  background-color: #BC2C28;
+  color: #fff;
+}
+
+.card-nav-tc:hover {
+  background-color: #BC2C28;
+  color: #fff;
+}
+
+.card-nav-tc:hover .rm-tc {
+  background-color: #fff;
+  color: #BC2C28;
+}
+
+.nav-bs:hover {
+  background-color: #526781;
+}
+
+.card-nav-bs {
+  background-color: #fff;
+}
+
+.card-nav-bs .rm-bs {
+  background-color: #526781;
+  color: #fff;
+}
+
+.card-nav-bs:hover {
+  background-color: #526781;
+  color: #fff;
+}
+
+.card-nav-bs:hover .rm-bs {
+  background-color: #fff;
+  color: #526781;
+}
+
+.nav-mk:hover {
+  background-color: #25A25A;
+}
+
+.card-nav-mk {
+  background-color: #fff;
+}
+
+.card-nav-mk .rm-mk {
+  background-color: #25A25A;
+  color: #fff;
+}
+
+.card-nav-mk:hover {
+  background-color: #25A25A;
+  color: #fff;
+}
+
+.card-nav-mk:hover .rm-mk {
+  background-color: #fff;
+  color: #25A25A;
+}
+
+.nav-cs:hover {
+  background-color: #DE093F;
+}
+
+.card-nav-cs {
+  background-color: #fff;
+}
+
+.card-nav-cs .rm-cs {
+  background-color: #DE093F;
+  color: #fff;
+}
+
+.card-nav-cs:hover {
+  background-color: #DE093F;
+  color: #fff;
+}
+
+.card-nav-cs:hover .rm-cs {
+  background-color: #fff;
+  color: #DE093F;
+}
+
+.nav-dt:hover {
+  background-color: #79539a;
+}
+
+.card-nav-dt {
+  background-color: #fff;
+}
+
+.card-nav-dt .rm-dt {
+  background-color: #79539a;
+  color: #fff;
+}
+
+.card-nav-dt:hover {
+  background-color: #79539a;
+  color: #fff;
+}
+
+.card-nav-dt:hover .rm-dt {
+  background-color: #fff;
+  color: #79539a;
+}
+
 .carousel {
   width: 100%;
+}
+
+.dd {
+  visibility: hidden;
+}
+
+.dd:hover {
+  visibility: visible;
+  color: black;
 }
 
 body {

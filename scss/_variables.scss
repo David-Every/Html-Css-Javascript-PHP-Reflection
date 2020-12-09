@@ -1,0 +1,22 @@
+/* url variables*/
+
+$facebook: 'fb' url("../img/Icons/social-media-icons/facebook-svgrepo-com.svg") $facebook-hover;
+$twitter: 'tw' url("../img/Icons/social-media-icons/twitter-svgrepo-com.svg") $twitter-hover;
+$linkedin: 'li' url("../img/Icons/social-media-icons/linkedin-svgrepo-com.svg") $linkedin-hover;
+
+$social-media: $facebook, $twitter, $linkedin;
+
+@each $name, $social, $color in $social-media{
+    .social-#{$name}{
+        background:darken($nm-secondary, 7%) $social no-repeat center;
+        background-size: 25%;
+        padding:20px 50px;
+        /*fill svg to $color*/
+
+        &:hover{
+            background-color: $color;
+            /*fill svg to white*/
+        }
+    }
+
+}

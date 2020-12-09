@@ -3,6 +3,7 @@ footer {
     .buisness-info{
         @include display;
         @include text-display;
+
         flex-wrap:wrap;
         padding: 50px 150px 50px;
         background-color: $nm-secondary;
@@ -27,46 +28,35 @@ footer {
                 text-decoration: underline;
             }
         }
+    }
 
-        .footer-icons,
-        .footer-web-design{
-            @include display;
-            flex-wrap: wrap;
-            //margin: 15px 200px 15px 200px;
+.footer-icons,
+.footer-web-design{
+    @include display;
+}
+.f-img{
+    // background-image: url("../img/web_design/Busseys_hover.png");
+    filter: grayscale(100%);
+    &:hover{
+        filter:grayscale(0%);
+    }
+    
+}
+
+
+//Not flexing correctly
+.social-media{
+    width:25%;
+    .social-buttons{ //parent container
+        display:flex;
+        justify-content: flex-start;
+        flex-wrap:wrap;
+        
+        a{
+            margin-right:10px;
+            margin-top:10px;
             
         }
-        .footer-web-design{
-            //margin-bottom:50px;
-        }
-
-        .footer-icons{
-            //margin-top:50px;
-            //margin-bottom:50px;
-        }
-}
-
-.social{
-    @include display;
-    //color:$nm-secondary;
-    // width:10%;
-    label {
-        width: 20;
-        height: 5px;
-        background-color:darken ($nm-secondary,20%);
-        border: 1px red solid;
-        padding:20px 50px;
-        //margin-bottom: 20px;
-        cursor: pointer;
-
-        .s-icon-1:hover{
-            background-color: $facebook-hover;
-        }
-        .s-icon-2:hover{
-            background-color: $twitter-hover;
-        }
-        .s-icon-3:hover{
-            background-color: $linkedin-hover;
-        }
     }
+
 }
-// when small, remove footer images

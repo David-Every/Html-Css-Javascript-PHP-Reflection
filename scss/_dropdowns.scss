@@ -1,0 +1,24 @@
+// .web-design-dropdown,
+// .it-support-dropdown,
+// .telecoms-dropdown,
+// .bespoke-dropdown,
+// .digital-dropdown,
+// .cyber-dropdown{
+//     visibility: hidden;
+//     height:15px;  
+// }
+
+.dd{
+    //visibility:visible;
+    visibility: hidden;
+    //height:15px; 
+    
+    &:hover{
+        visibility: visible;
+        color:black;
+    }
+}
+
+
+
+//visibility:visible;

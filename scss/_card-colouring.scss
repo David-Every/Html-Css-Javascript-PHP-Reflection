@@ -1,5 +1,4 @@
-$service-colors: ('web' $nm-web, 'it' $nm-it, 'tc' $nm-tc, 'bs' $nm-bs, 'mk' $nm-marketing, 'cs' $nm-Security, 'dt' $nm-training);
-
+$service-colors:('web' $nm-web, 'it' $nm-it, 'tc' $nm-tc, 'bs' $nm-bs, 'mk' $nm-marketing, 'cs' $nm-security, 'dt' $nm-training);
 /*Creates a block of code that colours the backgtound*/
 @each $name, $color in $service-colors{
     
