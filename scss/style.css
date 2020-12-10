@@ -73,6 +73,44 @@ h4 {
   border: 2px red solid;
 }
 
+@media (max-width: 768px) {
+  .content {
+    padding: 25px;
+    width: 100%;
+  }
+  .news-card {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .buisness-info {
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 150px;
+    padding-left: 25px;
+  }
+}
+
+@media (min-width: 768px (max-width: 992px)) {
+  .content {
+    padding: 25px;
+    width: 100%;
+  }
+  .news-card {
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .content {
+    width: 45%;
+  }
+  .news-card {
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+}
+
 footer .buisness-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,7 +123,6 @@ footer .buisness-info {
   text-decoration: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 50px 150px 50px;
   background-color: #333645;
   color: #fff;
 }
@@ -156,28 +193,24 @@ footer .buisness-info a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 5em;
-}
-
-.news a {
-  color: #926fb1;
-}
-
-.news img {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
 .news .news-card {
-  margin-left: 3%;
-  width: 35%;
-  border: #666666 1px solid;
+  border: 1px red solid;
+  width: 370px;
+  height: 370px;
 }
 
-.news .news-card:last-child {
-  margin-right: 3%;
+.news .news-card img {
+  border: 1px black solid;
+  width: 100%;
+}
+
+.news .news-card .info {
+  padding: 25px;
 }
 
 .about-us {
@@ -185,20 +218,18 @@ footer .buisness-info a:hover {
   background-image: url(../img/Icons/branded.png);
   background-repeat: no-repeat;
   background-position: bottom right;
-  padding: 25px 75px 25px;
+  padding: 25px;
   color: #fff;
   font-size: 20px;
 }
 
 .about-us h1 {
   text-transform: uppercase;
-  font-size: 48px;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  font-size: 2em;
+  padding-bottom: 35px;
 }
 
 .about-us p {
-  width: 40%;
   padding-bottom: 40px;
   line-height: 1.5;
 }
@@ -209,7 +240,6 @@ footer .buisness-info a:hover {
 
 .about-us .culture {
   border: 1px solid red;
-  padding: 10px 15px;
   background: #fff;
   color: #333645;
   cursor: pointer;
@@ -530,15 +560,6 @@ footer .buisness-info a:hover {
 
 .carousel {
   width: 100%;
-}
-
-.dd {
-  visibility: hidden;
-}
-
-.dd:hover {
-  visibility: visible;
-  color: black;
 }
 
 body {

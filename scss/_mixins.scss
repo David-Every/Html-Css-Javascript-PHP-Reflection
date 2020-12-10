@@ -8,3 +8,62 @@
     font-style: normal;
     text-decoration: none;
 }
+
+// $break-xs:575px;
+// $break-sm: 576px;
+
+$break-sm: 768px;
+$break-m: 992px;
+$break-lg: 1260px; //1000
+
+
+// || MEDIA QUERIES || //
+
+ //Small
+
+@media(max-width:$break-sm){
+    .content{
+        padding: 25px;
+        width:100%;
+    }
+
+    .news-card{
+        margin-left:50px;
+        margin-top:50px;
+    }
+    .buisness-info{
+        //padding: 50px 150px;
+        width: 100%;
+        padding-top: 50px;
+        padding-right:150px;
+        padding-left:25px;
+    }
+}
+
+//Medium
+
+@media(min-width:$break-sm (max-width:$break-m)){ 
+    .content{
+        padding: 25px;
+        width:100%;
+    }
+
+        .news-card{
+            margin-right:50px;
+            margin-top:50px;
+        } 
+}
+
+//Large
+
+@media (min-width:$break-lg){
+    .content{
+        width:45%;
+    }
+
+    .news-card{
+        margin-right:50px;
+        margin-top:50px;
+    }  
+}
+

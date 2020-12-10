@@ -5,7 +5,8 @@ footer {
         @include text-display;
 
         flex-wrap:wrap;
-        padding: 50px 150px 50px;
+        
+        //padding: 50px 150px 50px;
         background-color: $nm-secondary;
         color: $nm-primary;
         
@@ -53,6 +54,7 @@ footer {
         flex-wrap:wrap;
         
         a{
+            
             margin-right:10px;
             margin-top:10px;
             

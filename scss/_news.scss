@@ -1,21 +1,20 @@
 .news{
-    @include display;
-    margin-bottom: 5em;
-
-    a{
-        color:$nm-web;
-
-    }
-    img{
-        width:100%;
-    }
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
 
     .news-card{
-        margin-left: 3%;
-        width: 35%;
-        border: $nm-tertiary 1px solid;
-    }
-    .news-card:last-child{
-        margin-right: 3%;
+        border: 1px red solid;
+        width:370px; // width of a news card
+        height: 370px;
+
+        img{
+            border: 1px black solid;
+            width:100%; // take up entire width of your news card
+        }
+        .info{
+            padding:25px;
+
+        }
     }
 }

@@ -4,19 +4,21 @@
     background-repeat: no-repeat;
     background-position: bottom right;
 
-    padding: 25px 75px 25px ;
+    //padding: 25px 75px 25px ;
+    padding:25px;
     color: $nm-primary;
     font-size:20px;
     h1{
         text-transform:uppercase;
-        font-size: 48px;
-        padding-top:20px;
-        padding-bottom: 40px;
+        font-size: 2em;
+        padding-bottom:35px;
+        //padding-top:20px;
+       // padding-bottom: 40px;
     }
     //first p gets extra weight too be added
 
     p{
-        width:40%;
+        //width:40%;
         padding-bottom: 40px;
         line-height:1.5;
 
@@ -28,7 +30,7 @@
     .culture{
 
         border:1px solid red;
-        padding: 10px 15px;
+        //padding: 10px 15px;
         //margin-bottom: 50px;
         background: $nm-primary;
         color: $nm-secondary;
