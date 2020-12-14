@@ -11,8 +11,9 @@
 'card-nav',
 'nav',
 'card-colouring',
-'imgs',
-'dropdowns';
+'imgs', // Currently unused
+'dropdowns',
+'media-queries';
 
 body{
     user-select: none;
@@ -21,5 +22,5 @@ body{
 .break{
     text-transform: uppercase;
     border-bottom: $nm-secondary;
-    padding-right:95%;
+    padding-right:85%;
 }

@@ -22,6 +22,7 @@ $service-colors:('web' $nm-web, 'it' $nm-it, 'tc' $nm-tc, 'bs' $nm-bs, 'mk' $nm-
             color:$nm-primary;
 
             .rm-#{$name}{
+                //padding-top: 100px;
                 background-color: $nm-primary;
                 color:$color; 
             }
