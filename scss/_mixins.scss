@@ -8,3 +8,38 @@
     font-style: normal;
     text-decoration: none;
 }
+
+// This Mixin makes sure that all service cards
+//have the same padding and font 
+@mixin card-display{
+    
+    //margin:20px 20px;
+    border: 1px lighten($nm-tertiary,40%) solid;
+    border-radius: 2%;
+    padding: 25px 20px 15px;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+
+    .c-title{
+        text-transform: capitalize;
+        padding-bottom:50px;
+        position:relative;
+
+        &::before{
+            content: '';
+            display:block;
+            position: absolute;
+            width: 25px;
+            border:$nm-secondary solid 2px;
+            top: 55%;
+            left: 45%;
+        }
+    }
+    // span{
+    //     text-transform: uppercase;
+    //     border-radius:5%;
+    //     padding: 10px;
+    //     top:80%;
+    // }
+}

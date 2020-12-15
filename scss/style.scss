@@ -8,16 +8,18 @@
 'footer', 
 'news', 
 'about-us', 
-'card-nav',
+'services-card',
 'nav',
 'card-colouring',
 'imgs', // Currently unused
 'dropdowns',
 'media-queries';
 
+/* Stops items from being selected / copied*/
 body{
     user-select: none;
 }
+
 
 .break{
     text-transform: uppercase;
