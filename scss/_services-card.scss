@@ -1,16 +1,7 @@
 .card-nav{
-    //top, right bottom left
-    // margin-right: 5%;
-    // margin-left:5%;
-    // display:flex;
-    //justify-content: center;
-       
+    padding-bottom:50px;       
     .row-1{  //Parent of row 1
         display:flex;
-        //justify-content: space-between;
-        //@include display;
-        //justify-content: center;
-        //margin-bottom: 40px;
         .card{
             flex-wrap: wrap;
             //UPDATE SHAPE /  SIZE AND INFO
@@ -20,36 +11,21 @@
 
     .row-2{ //parent of row 2
         display:flex;
-        //justify-content: space-between;
-        //@include display;
-        //justify-content: center;
-
-        
         .card{
             @include card-display;
-            
-            //flex-wrap: wrap;
         }
     }
 } 
 
     @media(max-width:$break-sm){
         .row-1, .row-2{
-            // justify-content:center;
-            // flex-wrap:wrap;
-            // padding:none;
-            // margin: none;
+            justify-content:center;
+            flex-wrap:wrap;
             .card{
                 height:300px;
                 width:100%;
+                margin: 0 10px 35px 10px;
             }
-            // height and width =  same
-        }
-        .row-1{
-            //margin-bottom:10px;
-        }
-        .row-2{
-            //padding-top:10px;
         }
     }
 
@@ -58,37 +34,34 @@
         //top row has its 3
         .row-1{
             .card{
-                width:30%;
+                width:28%;
                 height:300px;
+                margin-right: 4%;
+                margin-top:3%;
+
+                &:first-child{
+                    margin-left:3%;
+                }
             }
         }
-        
 
         //row 2 breaks into 2 rows of 2
         .row-2{
             flex-wrap: wrap;
             .card{
-                //margin: 10px;
                 width: 45%;
                 height:300px;
+                margin-left:3%;
+                margin-top:3%;
             }
         }
     }
 
-
-//This code all currently works and is fulyl
-
     @media(min-width:$break-lg){
-        // .card-nav{
-        //     //top right bottom left
-        //     padding:5% 5%;
-        // }
         .row-1 .card{
-            width: 28%;// 27* 3 = 81  = 19% remaining
+            width: 28%;
             height: 300px;
-            
-            //margin:auto;
-            margin-right:5%; //*2= 4%
+            margin-right:5%; 
 
             &:first-child{
                 margin-left:3%;
@@ -99,10 +72,10 @@
         }
         .row-2 .card{
             flex-wrap:nowrap;
-            width:20%; //20* 4 = 80%  = 20% remaining
+            width:20%;
             height:300px;
 
-            margin-right:4.7%; //6%
+            margin-right:1.7%;
             &:last-child{
                 margin-right: 0%;
             }
