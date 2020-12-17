@@ -4,21 +4,16 @@
 // .bespoke-dropdown,
 // .digital-dropdown,
 // .cyber-dropdown{
-//     visibility: hidden;
-//     height:15px;  
+//     display: none;  
 // }
+// //set everything to display nothing
 
-// .dd{
-//     //visibility:visible;
-//     visibility: hidden;
-//     height:15px; 
-    
-//     &:hover{
-//         visibility: visible;
-//         color:black;
+
+// .nav-web:hover{
+
+//     .web-design-dropdown{
+//         display: block;
 //     }
+   
+//     //height:auto;
 // }
-
-
-
-//visibility:visible;

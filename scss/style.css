@@ -152,7 +152,12 @@ footer .buisness-info a:hover {
   margin-top: 10px;
 }
 
-.news {
+.nm-announce {
+  position: relative;
+  overflow: hidden;
+}
+
+.news-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,23 +167,41 @@ footer .buisness-info a:hover {
   padding-bottom: 35px;
 }
 
-.news .news-card {
+.news-container img {
+  max-width: 100%;
+}
+
+.news-container .news-card {
   border: 1px red solid;
 }
 
-.news .news-card img {
-  border: 1px black solid;
-  width: 100%;
+.news-container .news-card .latest-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #fff;
 }
 
-.news .news-card .info {
+.news-container .info {
   padding: 25px;
+}
+
+.news-container .u-img {
+  border: none;
+  border-radius: 50%;
+  height: 15%;
+  width: 15%;
+}
+
+.news-container .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 768px) {
   .news-card {
     width: 100%;
-    height: 400px;
+    height: auto;
     margin: 30px 25px 0 25px;
   }
 }
@@ -186,6 +209,7 @@ footer .buisness-info a:hover {
 @media (min-width: 769px) {
   .news-card {
     width: 45%;
+    height: auto;
   }
   .news-card:first-child {
     margin-left: 3%;
@@ -652,6 +676,19 @@ footer .buisness-info a:hover {
 .card-nav-dt:hover .rm-dt {
   background-color: #fff;
   color: #79539a;
+}
+
+.web-design-dropdown,
+.it-support-dropdown,
+.telecoms-dropdown,
+.bespoke-dropdown,
+.digital-dropdown,
+.cyber-dropdown {
+  display: none;
+}
+
+.nav-web:hover .web-design-dropdown {
+  display: block;
 }
 
 @media (max-width: 768px) {
