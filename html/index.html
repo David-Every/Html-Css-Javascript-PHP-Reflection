@@ -4,6 +4,8 @@
         <title>Netmatters | Full Service Digital Agency | Norwich, Norfolk</title>
         <link href = "../scss/style.css" rel ="stylesheet" > 
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
 
     <header>
@@ -33,47 +35,46 @@
         <!-- Navigation -->
         <div class ="nav-bar">  <!--Parent-->
             <div class = " nav service nav-web "> 
-                <!-- <img src = "../img/Icons/nav-Icons/code.svg"> -->
-                 <small>Web</small> <br>
+                <i class = "fa fa-code icon"> </i><br> 
+                <small>Web</small> <br>
                  Design
-                 <div class ="dd web-design-dropdown" > 
-                    <ul>
-                        <li> stylish websites</li>
-                        <li> ecommerce stores</li>
-                        <li> branding</li>
-                        <li> apps</li>
-                        <li> web hosting</li>
-                        <li> pay monthly websites</li>
-                    </ul>
-                </div>
             </div>
-            
+            <!-- <div class ="dd web-design-dropdown" > 
+                <span> stylish websites</span>
+                <span> ecommerce stores</span>
+                <span> branding</span>
+                <span> apps</span>
+                <span> web hosting</span>
+                <span> Pay monthly websites</span>                
+            </div>>
+             -->
 
             <div class = "nav service nav-it">
+                <i class = "fa fa-desktop icon"></i><br>
                  <small>IT</small> <br>
                  Support 
             </div>
 
             <div class = "nav service nav-tc"> 
-                <!-- <img src ="../img/Icons/nav-Icons/phone.svg"> -->
+                <i class ="fa fa-volume-control-phone icon"></i><br>
                 <small> Telecoms </small><br> 
                 services 
             </div>
 
             <div class = "nav service nav-bs">
-                <!-- <img src = "../img/Icons/nav-Icons/monitor.svg">  -->
+                <i class ="glyphicon glyphicon-th icon"></i><br>
                 <small> bespoke </small> <br>
                  software 
             </div>
 
             <div class = "nav service nav-mk"> 
-                <!-- <img src = "../img/Icons/nav-Icons/bar-chart.svg"> -->
+                <i class = "glyphicon glyphicon-signal icon" ></i><br>
                 <small> Digital </small> <br>
                  marketing 
             </div>
 
             <div class = "nav service nav-cs">
-                <!-- <img src = "../img/Icons/nav-Icons/security-shield.svg"> -->
+                <i class = "fa fa-shield icon"> </i><br>
                  <small> Cyber </small> <br>
                   Security 
             </div>
@@ -142,9 +143,12 @@
         <img class = "carousel" src="../img/Carousel images/web_design_slide_1.jpg" alt="Designing a website">
           <!-- Cards -->
         <div class = "card-nav">
-            <div class = "row-1" >            
+            <div class = "row-1" >
+                          
                 <div class = "card service card-nav-bs ">
+                     
                     <div class = "service-icon"></div>
+                    <i class ="glyphicon glyphicon-th"></i>
                     <!-- <img class ="service-icon" src ="../img/Icons/nav-Icons/apps.svg"> -->
                     <h3 class = "c-title" >Bespoke Software</h3>
                     <p>
@@ -158,6 +162,7 @@
 
                 <div class = "card service card-nav-it ">
                     <!-- <img class ="service-icon" src = "../img/Icons/nav-Icons/monitor.svg"> -->
+                    <i class = "fa fa-desktop"></i>
                     <h3 class = "c-title" >IT support</h3>
                     <p>Remotely managed IT Services that is catered
                         to your buisnesses needs, adds value and
@@ -168,6 +173,7 @@
 
                 <div class = "card service card-nav-mk ">
                     <!-- <img class ="service-icon" src = "../img/Icons/nav-Icons/bar-chart.svg"> -->
+                    <i class = "glyphicon glyphicon-signal" ></i>
                     <h3 class = "c-title" >Digital Marketing</h3>
                     <p>
                         Driving brand awareness and ROI through
@@ -179,7 +185,7 @@
             </div>
             <div class = "row-2">
                <div class = "card service card-nav-tc">
-                <!-- <img class ="service-icon" src = "../img/Icons/nav-Icons/phone.svg"> -->
+                    <i class ="fa fa-volume-control-phone"></i>
                     <h3 class = "c-title" >Telecoms Services</h3>
                     <p>
                     Stay connected with bespoke telecoms solutions
@@ -190,6 +196,7 @@
 
                  <div class = "card service card-nav-web ">
                     <!-- <img class ="service-icon" src = "../img/Icons/nav-Icons/code.svg"> -->
+                    <i class = "fa fa-code"> </i> 
                     <h3 class = "c-title" >web design</h3>
                     <p>
                         User-centric design for buisnesses looking to
@@ -200,6 +207,7 @@
                 
                 <div class = "card service card-nav-cs ">
                     <!-- <img class ="service-icon" src = "../img/Icons/nav-Icons/security-shield.svg">  -->
+                    <i class = "fa fa-shield"> </i>
                     <h3 class = "c-title" > cyber security</h3>
                     <p>Ensuring your online buisness stays secure 24/7, 
                         365 days of the year 
@@ -209,6 +217,7 @@
                 
                 <div class = "card service card-nav-dt ">
                     <!-- <img class ="service-icon" src = "../img/Icons/nav-Icons/college.svg">  -->
+                    <i class = "glyphicon glyphicon-education"></i>
                     <h3 class = "c-title" >Developer Training</h3>
                     <p> Have you considered a career in web development
                         but aren't sure where to start.
@@ -235,7 +244,7 @@
                     through to creative website development and intagrated
                     digital campaigning.
                 </p>
-                <label class = "culture">  Our culture </label> <!-- Add arrow icon here-->
+                <label class = "culture">  Our culture &#10145; </label> <!-- Add arrow icon here-->
             </div>
         </div>
         <!-- /about us -->
@@ -251,7 +260,8 @@
                     <img class = "latest-img" src = "../img/News_img/telemarketing-sales-executive-HapA.jpg"alt ="Netmatters Hiring">
                 </div>
 
-                <div class = "info"> 
+                <div class = "info">
+                    <h3>fa</h3>
                     <h4><a href ="#">Telemarketing Sales Executive</a></h4>
                     <p>Salary: Negotiable (Based on experience) + 
                         commision + benefits Hours 40 hours per week.

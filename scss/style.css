@@ -678,19 +678,6 @@ footer .buisness-info a:hover {
   color: #79539a;
 }
 
-.web-design-dropdown,
-.it-support-dropdown,
-.telecoms-dropdown,
-.bespoke-dropdown,
-.digital-dropdown,
-.cyber-dropdown {
-  display: none;
-}
-
-.nav-web:hover .web-design-dropdown {
-  display: block;
-}
-
 @media (max-width: 768px) {
   .content {
     padding: 25px;
