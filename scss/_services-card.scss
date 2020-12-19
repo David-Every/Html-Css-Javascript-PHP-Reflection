@@ -1,3 +1,4 @@
+
 .card-nav{
     padding-bottom:50px;       
     .row-1{  //Parent of row 1
@@ -84,6 +85,11 @@
             }
             margin-top:3%;
         }
+    }
+
+    .card-icon{ // selects nav icon
+        padding: 25px;
+        border-radius: 100%;
     }
         
 

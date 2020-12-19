@@ -5,24 +5,18 @@ $linkedin: 'li' url("../img/Icons/social-media-icons/linkedin-svgrepo-com.svg") 
 
 $social-media: $facebook, $twitter, $linkedin;
 
+//cycles through each social media variable and sets the default colour and what colour
+//they will be when hovered over.
 @each $name, $social, $color in $social-media{
     .social-#{$name}{
         background:darken($nm-secondary, 7%) $social no-repeat center;
         background-size: 25%;
         padding:20px 50px;
-        /*fill svg to $color*/
 
         &:hover{
             background-color: $color;
-            /*fill svg to white*/
         }
     }
 
 }
 
-/* breakpoint variables*/
-// $break-xs:575px;
-// $break-sm: 576px;
-$break-sm: 768px;
-$break-m: 769px; //992px
-$break-lg: 1260px; //1000

@@ -15,44 +15,83 @@
   background-color: #f2f2f2;
 }
 
+/* breakpoint variables*/
+@media (max-width: 768px) {
+  .content {
+    padding: 25px;
+    width: 100%;
+  }
+  .buisness-info {
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 150px;
+    padding-left: 25px;
+  }
+  .footer-icons,
+  .footer-web-design,
+  header,
+  .nav-bar {
+    display: none;
+  }
+  header .logo {
+    margin-left: none;
+  }
+  .carousel {
+    width: 100%;
+    height: 550px;
+  }
+}
+
+@media (min-width: 768px (max-width: 769px)) {
+  .content {
+    padding: 25px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1260px) {
+  .content {
+    width: 45%;
+  }
+  header .logo {
+    margin-left: 150px;
+  }
+  .carousel {
+    width: 100%;
+  }
+}
+
 /* url variables*/
 .social-fb {
   background: #242630 url("../img/Icons/social-media-icons/facebook-svgrepo-com.svg") no-repeat center;
   background-size: 25%;
   padding: 20px 50px;
-  /*fill svg to $color*/
 }
 
 .social-fb:hover {
   background-color: #3b5998;
-  /*fill svg to white*/
 }
 
 .social-tw {
   background: #242630 url("../img/Icons/social-media-icons/twitter-svgrepo-com.svg") no-repeat center;
   background-size: 25%;
   padding: 20px 50px;
-  /*fill svg to $color*/
 }
 
 .social-tw:hover {
   background-color: #00ACEE;
-  /*fill svg to white*/
 }
 
 .social-li {
   background: #242630 url("../img/Icons/social-media-icons/linkedin-svgrepo-com.svg") no-repeat center;
   background-size: 25%;
   padding: 20px 50px;
-  /*fill svg to $color*/
 }
 
 .social-li:hover {
   background-color: #0077B5;
-  /*fill svg to white*/
 }
 
-/* breakpoint variables*/
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -427,6 +466,11 @@ footer .buisness-info a:hover {
   }
 }
 
+.card-icon {
+  padding: 25px;
+  border-radius: 100%;
+}
+
 .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,9 +574,19 @@ footer .buisness-info a:hover {
   color: #fff;
 }
 
+.card-nav-web .card-icon {
+  background-color: #926fb1;
+  color: #fff;
+}
+
 .card-nav-web:hover {
   background-color: #926fb1;
   color: #fff;
+}
+
+.card-nav-web:hover .card-icon {
+  background-color: #fff;
+  color: #926fb1;
 }
 
 .card-nav-web:hover .rm-web {
@@ -553,9 +607,19 @@ footer .buisness-info a:hover {
   color: #fff;
 }
 
+.card-nav-it .card-icon {
+  background-color: #286ABD;
+  color: #fff;
+}
+
 .card-nav-it:hover {
   background-color: #286ABD;
   color: #fff;
+}
+
+.card-nav-it:hover .card-icon {
+  background-color: #fff;
+  color: #286ABD;
 }
 
 .card-nav-it:hover .rm-it {
@@ -576,9 +640,19 @@ footer .buisness-info a:hover {
   color: #fff;
 }
 
+.card-nav-tc .card-icon {
+  background-color: #BC2C28;
+  color: #fff;
+}
+
 .card-nav-tc:hover {
   background-color: #BC2C28;
   color: #fff;
+}
+
+.card-nav-tc:hover .card-icon {
+  background-color: #fff;
+  color: #BC2C28;
 }
 
 .card-nav-tc:hover .rm-tc {
@@ -599,9 +673,19 @@ footer .buisness-info a:hover {
   color: #fff;
 }
 
+.card-nav-bs .card-icon {
+  background-color: #526781;
+  color: #fff;
+}
+
 .card-nav-bs:hover {
   background-color: #526781;
   color: #fff;
+}
+
+.card-nav-bs:hover .card-icon {
+  background-color: #fff;
+  color: #526781;
 }
 
 .card-nav-bs:hover .rm-bs {
@@ -622,9 +706,19 @@ footer .buisness-info a:hover {
   color: #fff;
 }
 
+.card-nav-mk .card-icon {
+  background-color: #25A25A;
+  color: #fff;
+}
+
 .card-nav-mk:hover {
   background-color: #25A25A;
   color: #fff;
+}
+
+.card-nav-mk:hover .card-icon {
+  background-color: #fff;
+  color: #25A25A;
 }
 
 .card-nav-mk:hover .rm-mk {
@@ -645,9 +739,19 @@ footer .buisness-info a:hover {
   color: #fff;
 }
 
+.card-nav-cs .card-icon {
+  background-color: #DE093F;
+  color: #fff;
+}
+
 .card-nav-cs:hover {
   background-color: #DE093F;
   color: #fff;
+}
+
+.card-nav-cs:hover .card-icon {
+  background-color: #fff;
+  color: #DE093F;
 }
 
 .card-nav-cs:hover .rm-cs {
@@ -668,59 +772,24 @@ footer .buisness-info a:hover {
   color: #fff;
 }
 
+.card-nav-dt .card-icon {
+  background-color: #79539a;
+  color: #fff;
+}
+
 .card-nav-dt:hover {
   background-color: #79539a;
   color: #fff;
 }
 
-.card-nav-dt:hover .rm-dt {
+.card-nav-dt:hover .card-icon {
   background-color: #fff;
   color: #79539a;
 }
 
-@media (max-width: 768px) {
-  .content {
-    padding: 25px;
-    width: 100%;
-  }
-  .buisness-info {
-    width: 100%;
-    padding-top: 50px;
-    padding-right: 150px;
-    padding-left: 25px;
-  }
-  .footer-icons,
-  .footer-web-design,
-  header,
-  .nav-bar {
-    display: none;
-  }
-  header .logo {
-    margin-left: none;
-  }
-  .carousel {
-    width: 100%;
-    height: 550px;
-  }
-}
-
-@media (min-width: 768px (max-width: 769px)) {
-  .content {
-    padding: 25px;
-    width: 100%;
-  }
-}
-
-@media (min-width: 1260px) {
-  .content {
-    width: 45%;
-  }
-  header .logo {
-    margin-left: 150px;
-  }
-  .carousel {
-    width: 100%;
-  }
+.card-nav-dt:hover .rm-dt {
+  background-color: #fff;
+  color: #79539a;
 }
 
 /* Stops items from being selected / copied*/

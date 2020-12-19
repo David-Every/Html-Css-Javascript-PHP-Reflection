@@ -1,18 +1,25 @@
+// This code  creates code blocks for the service cards and adjusts the colours when hovered over
+//for each service card
+
 $service-colors:('web' $nm-web, 'it' $nm-it, 'tc' $nm-tc, 'bs' $nm-bs, 'mk' $nm-marketing, 'cs' $nm-security, 'dt' $nm-training);
 /*Creates a block of code that colours the backgtound*/
 @each $name, $color in $service-colors{
-    
+
     .nav-#{$name}:hover{
         background-color:$color;
         //When nav-# is created it makes a new class 
         //and applies a background colour to it
     }
     
-    //Read me icons
+    //Read me /icon colouring
     .card-nav-#{$name}{
         //Default
         background-color: $nm-primary;
         .rm-#{$name}{
+            background-color: $color; //Sets color of read me to the current colour the loop is setting
+            color:$nm-primary;
+        }
+        .card-icon{
             background-color: $color;
             color:$nm-primary;
         }
@@ -20,6 +27,10 @@ $service-colors:('web' $nm-web, 'it' $nm-it, 'tc' $nm-tc, 'bs' $nm-bs, 'mk' $nm-
         &:hover{
             background-color:$color;
             color:$nm-primary;
+            .card-icon{
+                background-color: $nm-primary;
+                color:$color;
+            }
 
             .rm-#{$name}{
                 //padding-top: 100px;

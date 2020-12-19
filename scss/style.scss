@@ -1,6 +1,7 @@
 * { margin:0; padding:0; box-sizing:border-box; } //resets html
 
 @import 'colours',
+'media-queries',
 'variables',
 'fonts', 
 'debug', 
@@ -12,8 +13,7 @@
 'nav',
 'card-colouring',
 'imgs', // Currently unused
-'dropdowns',
-'media-queries';
+'dropdowns';
 
 /* Stops items from being selected / copied*/
 body{
