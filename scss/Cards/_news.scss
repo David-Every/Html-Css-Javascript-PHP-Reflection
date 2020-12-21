@@ -2,6 +2,26 @@
     position:relative;
     overflow: hidden;
 }
+.box-overlay {
+    position:absolute;
+    top:8px;
+    right: 16px;
+    border: 1px red solid;
+    padding: 1px 2px;
+    background-color:$nm-it;
+    text-transform: uppercase;
+    &:hover{
+        //Tooltip
+    }
+    a{
+        text-decoration: underline;
+        color:$nm-primary;
+        // &:hover[
+            
+        // ]
+
+    }
+}
 
 .news-container{
     & img{
@@ -71,7 +91,7 @@
 @media(min-width:$break-lg){
     .news-card{
         width: 28%;
-            height: 400px;
+            height: 500px;
             margin-right:5%;
 
             &:first-child{

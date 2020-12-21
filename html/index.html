@@ -50,6 +50,7 @@
              -->
 
             <div class = "nav service nav-it">
+                <!-- Will have to find a way to colour Icons -->
                 <i class = "fa fa-desktop icon"></i><br>
                  <small>IT</small> <br>
                  Support 
@@ -143,25 +144,20 @@
         <img class = "carousel" src="../img/Carousel images/web_design_slide_1.jpg" alt="Designing a website">
           <!-- Cards -->
         <div class = "card-nav">
-            <div class = "row-1" >
-                          
-                <div class = "card service card-nav-bs ">
-                     
-                    <div class = "service-icon"></div>
-                    <i class ="glyphicon glyphicon-th card-icon"></i>
-                    <!-- <img class ="service-icon" src ="../img/Icons/nav-Icons/apps.svg"> -->
-                    <h3 class = "c-title" >Bespoke Software</h3>
-                    <p>
-                        Tailored software solutions to improve
-                        buisness productivity and online profits.
-                        Our expert team will ensure a software 
-                        solution.
-                    </p>
+            <div class = "row-1" >      
+                <a href ="#" class =  "card service card-nav-bs " >
+                        <i class ="glyphicon glyphicon-th card-icon"></i>
+                        <h3 class = "c-title" >Bespoke Software</h3>
+                        <p>
+                            Tailored software solutions to improve
+                            buisness productivity and online profits.
+                            Our expert team will ensure a software 
+                            solution.
+                        </p>
                     <div class = "rm rm-bs" >read more</div>
-                </div>
+                </a>
 
-                <div class = "card service card-nav-it ">
-                    <!-- <img class ="service-icon" src = "../img/Icons/nav-Icons/monitor.svg"> -->
+                <a href ="#" class = "card service card-nav-it ">
                     <i class = "fa fa-desktop card-icon"></i>
                     <h3 class = "c-title" >IT support</h3>
                     <p>Remotely managed IT Services that is catered
@@ -169,10 +165,9 @@
                         reduces costs.
                     </p>
                     <div class = "rm rm-it" >read more</div>
-                </div>
+                </a>
 
-                <div class = "card service card-nav-mk ">
-                    <!-- <img class ="service-icon" src = "../img/Icons/nav-Icons/bar-chart.svg"> -->
+                <a href ="#" class = "card service card-nav-mk ">
                     <i class = "glyphicon glyphicon-signal card-icon" ></i>
                     <h3 class = "c-title" >Digital Marketing</h3>
                     <p>
@@ -181,10 +176,14 @@
                         We Review and monitor online performances.
                     </p>
                     <div class = "rm rm-mk" >read more</div>
-                </div>
-            </div>
+                </a>
+
+            </div> 
+            <!--/row-1-->
+
+            <!-- row-2 -->
             <div class = "row-2">
-               <div class = "card service card-nav-tc ">
+               <a href ="#" class = "card service card-nav-tc ">
                     <i class ="fa fa-volume-control-phone card-icon"></i>
                     <h3 class = "c-title" >Telecoms Services</h3>
                     <p>
@@ -192,10 +191,9 @@
                     when you need it most. 
                     </p>
                     <div class = "rm rm-tc" >read more</div>
-                </div>
+                </a>
 
-                 <div class = "card service card-nav-web ">
-                    <!-- <img class ="service-icon" src = "../img/Icons/nav-Icons/code.svg"> -->
+                 <a href = "#" class = "card service card-nav-web ">
                     <i class = "fa fa-code card-icon"> </i> 
                     <h3 class = "c-title" >web design</h3>
                     <p>
@@ -203,28 +201,28 @@
                         make a lasting first impression.
                     </p>
                     <div class = "rm rm-web" > read more</div>
-                </div>
+                </a>
                 
-                <div class = "card service card-nav-cs ">
-                    <!-- <img class ="service-icon" src = "../img/Icons/nav-Icons/security-shield.svg">  -->
+                <a href = "#" class = "card service card-nav-cs ">
                     <i class = "fa fa-shield card-icon"> </i>
                     <h3 class = "c-title" > cyber security</h3>
                     <p>Ensuring your online buisness stays secure 24/7, 
                         365 days of the year 
                     </p>
                     <div class = "rm rm-cs" >read more</div>
-                </div>
+                </a>
                 
-                <div class = "card service card-nav-dt ">
-                    <!-- <img class ="service-icon" src = "../img/Icons/nav-Icons/college.svg">  -->
+                <a href = "#" class = "card service card-nav-dt ">
                     <i class = "glyphicon glyphicon-education card-icon"></i>
                     <h3 class = "c-title" >Developer Training</h3>
                     <p> Have you considered a career in web development
                         but aren't sure where to start.
                     </p>
                     <div class = "rm rm-dt" >read more</div>
-                </div>
-            </div>
+                </a>
+
+            </div> 
+            <!-- /row-2 -->
             
         </div> <!-- /cards -->
 
@@ -258,10 +256,10 @@
 
                 <div class ="nm-announce"> <!-- Image Parent-->
                     <img class = "latest-img" src = "../img/News_img/telemarketing-sales-executive-HapA.jpg"alt ="Netmatters Hiring">
+                    <div class ="box-overlay"><a href = "#">News</a></div>
                 </div>
 
                 <div class = "info">
-                    <h3>fa</h3>
                     <h4><a href ="#">Telemarketing Sales Executive</a></h4>
                     <p>Salary: Negotiable (Based on experience) + 
                         commision + benefits Hours 40 hours per week.
@@ -375,9 +373,7 @@
         </div>
 
         <div class = " footer-icons">
-            <!-- <div class = "google-partner">
-                <img src = "../img/Footer-imgs/google_partner.png" alt ="Google partner">
-            </div> -->
+            <img class ="gp" src = "../img/Footer-imgs/google_partner.png" alt = "Google partner">
             <img class ="f-img" src = "../img/Footer-imgs/microsoft_partner.jpg" alt = "microsoft partner">
             <img class ="f-img" src = "../img/Footer-imgs/future-50.jpg" alt = "Future 50">
             <img class ="f-img" src = "../img/Footer-imgs/qms_hover.jpg" alt = "QMS">

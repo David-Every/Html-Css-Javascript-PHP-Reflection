@@ -1,5 +1,7 @@
 
+
 .card-nav{
+    
     padding-bottom:50px;       
     .row-1{  //Parent of row 1
         display:flex;
@@ -7,8 +9,8 @@
             flex-wrap: wrap;
             //UPDATE SHAPE /  SIZE AND INFO
             @include card-display;
-            }
         }
+    }
 
     .row-2{ //parent of row 2
         display:flex;
@@ -61,7 +63,7 @@
     @media(min-width:$break-lg){
         .row-1 .card{
             width: 28%;
-            height: 300px;
+            height: 350px;
             margin-right:5%; 
 
             &:first-child{
@@ -74,7 +76,7 @@
         .row-2 .card{
             flex-wrap:nowrap;
             width:20%;
-            height:300px;
+            height:325px;
 
             margin-right:1.7%;
             &:last-child{
@@ -91,5 +93,18 @@
         padding: 25px;
         border-radius: 100%;
     }
+
+    .row-1 a, .row-2 a{
+        color:$nm-secondary;
+    }
+    .row-1 a, .row-1 a:hover,
+    .row-2 a, .row-2 a:hover{
+        //color:pink;
+        text-decoration: none;
+    }
+    // .row-1 a:link{
+    //     color: pink;
+    //     //text-decoration: none;
+    // }
         
 

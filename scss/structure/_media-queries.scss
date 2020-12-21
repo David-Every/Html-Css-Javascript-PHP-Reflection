@@ -7,11 +7,6 @@ $break-lg: 1260px; //1000
  //Small
 
 @media(max-width:$break-sm){
-    .content{
-        padding: 25px;
-        width:100%;
-    }
-
     .buisness-info{
         //padding: 50px 150px;
         width: 100%;
@@ -36,22 +31,17 @@ $break-lg: 1260px; //1000
     }  
 
 }
-
-//Medium
-
-@media(min-width:$break-sm (max-width:$break-m)){ 
-    .content{
-        padding: 25px;
-        width:100%;
-    }
-}
+// @media (min-width:$break-m){
+//     .nav-bar{
+//         display:none;
+//     }
+// }
+    
 
 //Large
 
 @media (min-width:$break-lg){
-    .content{
-        width:45%;
-    }
+    
     header .logo{
         margin-left:150px;
     }

@@ -28,20 +28,35 @@
     }
 
     .culture{
-
-        border:1px solid red;
-        //padding: 10px 15px;
-        //margin-bottom: 50px;
+        padding: 5px 5px;
         background: $nm-primary;
         color: $nm-secondary;
         cursor: pointer;
         &:hover{
             background-color: darken($nm-primary, 10%)
         }
-
-        // &::before{
-        //     background-image: url(../img/Icons/nav-Icons/right-arrow.svg);
-        // }
     }
     
+}
+
+@media(max-width:$break-sm){
+    .content{
+        padding: 25px;
+        width:100%;
+    }
+}
+
+@media(min-width:$break-m){
+    .content{
+        padding-left:50px;
+        width:75%;
+    }
+    
+}
+
+@media (min-width:$break-lg){
+    .content{
+        padding-left:100px;
+        width:45%;
+    }
 }

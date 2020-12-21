@@ -1,40 +1,33 @@
 * { margin:0; padding:0; box-sizing:border-box; } //resets html
 
-@import 'colours',
-'media-queries',
-'variables',
-'fonts', 
-'debug', 
-'mixins', 
-'footer', 
-'news', 
-'about-us', 
-'services-card',
-'nav',
-'card-colouring',
-'imgs', // Currently unused
-'dropdowns';
+@import 
+
+// Structure, Keep at the top //
+'../scss/structure/colours',
+'../scss/structure/fonts',
+'../scss/structure/imgs', // Currently unused
+'../scss/structure/media-queries',
+'../scss/structure/mixins',
+'../scss/structure/variables',
+// Other //
+'../scss/Other/about-us',
+'../scss/Other/debug',
+'../scss/Other/footer', 
+
+
+// Cards //
+'../scss/Cards/card-colouring',
+'../scss/Cards/services-card',
+'../scss/Cards/news', 
+
+//Header
+'../scss/Header/dropdowns',
+'../scss/Header/nav';
+
+
 
 /* Stops items from being selected / copied*/
 body{
     user-select: none;
 }
 
-
-// .break{
-//     text-transform: uppercase;
-//     width:5%;
-//     //padding-right:85%;
-//     margin-top:50px;
-//     margin-left:5%;
-//     border: 3px $nm-tertiary solid;
-//         // &::before{
-//         //     content:'';
-//         //     display:block;
-//         //     position: absolute;
-//         //     //width: 25px;
-//         //     border:$nm-secondary solid 2px;
-//         //     // top: 55%;
-//         //     // left: 45%;
-//         // }
-// }
