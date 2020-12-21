@@ -141,7 +141,21 @@
 
     <body>
         <!-- <h1>Carousel images here</h1> Remove this when carousel is in -->
-        <img class = "carousel" src="../img/Carousel images/web_design_slide_1.jpg" alt="Designing a website">
+        <!-- <div class = "top-img"> -->
+        <div class ="carousel-container">
+            <div> 
+                <img class = "carousel" src="../img/Carousel images/web_design_slide_1.jpg" alt="Designing a website">
+                <div class = "shadow"> </div>
+                <div class ="carousel-overlay"> 
+                    <h1>Web Design</h1>
+                    <p> For businesses looking to make a strong and effective first impression</p>
+                    <a>Find out More &#10145; </a>
+                </div>
+            </div>
+            
+        </div>
+            
+        <!-- </div> -->
           <!-- Cards -->
         <div class = "card-nav">
             <div class = "row-1" >      
@@ -314,6 +328,7 @@
     </body>
     <footer>
         <!-- Find a way to turn this on and off, with @media in scss -->
+    <div class = footer-container>
         <div class = "footer-web-design">
             <div class ="f-img-t" > </div>
             <div class = "color-overlay"></div>
@@ -325,59 +340,60 @@
 
         <div class =  buisness-info>
             <div > <!--Contact info-->
-                <h4 class = "f-title">Contact us</h4>
-                <address> 
-                    11 Penfold Drive<br>
-                    Wymondham <br>
-                    Norfolk <br>
-                    NR18 0WZ<br>
-                    <br>
-                    Tel:  <a href ="#">  01603 70 40 20 </a>
-                    <br>
-                    Email: <a href ="mailto:support@netmatters.com">support@netmatters.com</a>
-                </address>
-            </div> <!--/Contact info-->
+                    <h4 class = "f-title">Contact us</h4>
+                    <address> 
+                        11 Penfold Drive<br>
+                        Wymondham <br>
+                        Norfolk <br>
+                        NR18 0WZ<br>
+                        <br>
+                        Tel:  <a href ="#">  01603 70 40 20 </a>
+                        <br>
+                        Email: <a href ="mailto:support@netmatters.com">support@netmatters.com</a>
+                    </address>
+                </div> <!--/Contact info-->
 
-            <div> <!--About Netmatters-->
-                <h4 class = "f-title">About Netmatters</h4>
-                <ul>
-                    <li><a href ="#"> News</a></li>
-                    <li><a href ="#"> Our Careers</a></li>
-                    <li><a href ="#"> Our Team</a></li>
-                    <li><a href ="#"> Out Office Tour</a></li>
-                    <li><a href ="#"> Pricacy Policy</a></li>
-                    <li><a href ="#"> Cookie Policy</a></li>
-                    <li><a href ="#"> Terms &amp; conditions</a></li>
-                    <li><a href ="#"> UK Domains</a></li>
-                </ul>
-            </div><!--/About Netmatters-->
+                <div> <!--About Netmatters-->
+                    <h4 class = "f-title">About Netmatters</h4>
+                    <ul>
+                        <li><a href ="#"> News</a></li>
+                        <li><a href ="#"> Our Careers</a></li>
+                        <li><a href ="#"> Our Team</a></li>
+                        <li><a href ="#"> Out Office Tour</a></li>
+                        <li><a href ="#"> Pricacy Policy</a></li>
+                        <li><a href ="#"> Cookie Policy</a></li>
+                        <li><a href ="#"> Terms &amp; conditions</a></li>
+                        <li><a href ="#"> UK Domains</a></li>
+                    </ul>
+                </div><!--/About Netmatters-->
 
-            <div> <!--Website-->
-                <h4 class = "f-title">Website</h4>
-                <ul>
-                    <li><a href = "#">Sitemap</a></li>
-                    <li>Copyright Netmatters Ltd. 2020</li>
-                    <li>All rights reserved</li>
-                </ul>
-            </div><!--/Website-->
+                <div> <!--Website-->
+                    <h4 class = "f-title">Website</h4>
+                    <ul>
+                        <li><a href = "#">Sitemap</a></li>
+                        <li>Copyright Netmatters Ltd. 2020</li>
+                        <li>All rights reserved.</li>
+                    </ul>
+                </div><!--/Website-->
 
-            <div class = "social-media buisness-info"> <!--Social Media-->
-                <h4 class = "f-title">Social Media</h4>
+                <div class = "social-media buisness-info"> <!--Social Media-->
+                    <h4 class = "f-title">Social Media</h4>
 
-                <div class = "social-buttons">
-                    <a class ="social-fb" href = "https://www.facebook.com" target ="_blank"></a>
-                    <a class ="social-tw" href = "https://www.twitter.com" target ="_blank"></a>
-                    <a class ="social-li" href = "https://www.linkedin.com" target ="_blank"></a>
-                </div>
-            </div><!--/Social Media-->
-        </div>
+                    <div class = "social-buttons">
+                        <a class ="social-fb" href = "https://www.facebook.com" target ="_blank"></a>
+                        <a class ="social-tw" href = "https://www.twitter.com" target ="_blank"></a>
+                        <a class ="social-li" href = "https://www.linkedin.com" target ="_blank"></a>
+                    </div>
+                </div><!--/Social Media-->
+            </div>
 
-        <div class = " footer-icons">
-            <img class ="gp" src = "../img/Footer-imgs/google_partner.png" alt = "Google partner">
-            <img class ="f-img" src = "../img/Footer-imgs/microsoft_partner.jpg" alt = "microsoft partner">
-            <img class ="f-img" src = "../img/Footer-imgs/future-50.jpg" alt = "Future 50">
-            <img class ="f-img" src = "../img/Footer-imgs/qms_hover.jpg" alt = "QMS">
-            <img class ="f-img" src = "../img/Footer-imgs/norfolk_charter_hover.jpg" alt ="Norfolk Carbon Charter Silver 2017">
-        </div>
+            <div class = " footer-icons">
+                <img class ="gp" src = "../img/Footer-imgs/google_partner.png" alt = "Google partner">
+                <img class ="f-img" src = "../img/Footer-imgs/microsoft_partner.jpg" alt = "microsoft partner">
+                <img class ="f-img" src = "../img/Footer-imgs/future-50.jpg" alt = "Future 50">
+                <img class ="f-img" src = "../img/Footer-imgs/qms_hover.jpg" alt = "QMS">
+                <img class ="f-img" src = "../img/Footer-imgs/norfolk_charter_hover.jpg" alt ="Norfolk Carbon Charter Silver 2017">
+            </div>
+    </div>
     </footer>
 </html>

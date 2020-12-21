@@ -25,18 +25,8 @@ $break-lg: 1260px; //1000
         margin-left:none;
     }
 
-    .carousel {
-        width: 100%;
-        height: 550px;
-    }  
 
 }
-// @media (min-width:$break-m){
-//     .nav-bar{
-//         display:none;
-//     }
-// }
-    
 
 //Large
 
@@ -44,9 +34,5 @@ $break-lg: 1260px; //1000
     
     header .logo{
         margin-left:150px;
-    }
-
-    .carousel {
-        width:100%;
     }
 }

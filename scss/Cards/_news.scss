@@ -24,6 +24,8 @@
 }
 
 .news-container{
+    margin-left:6.5%;
+    margin-right:6.5%;
     & img{
         max-width:100%;
     }
@@ -65,7 +67,7 @@
         width:100%;
         height:auto;
 
-        margin:30px 25px 0 25px;
+        margin:30px 5px 0 5px;
         // margin-top: 200px;
    } 
 }
@@ -76,8 +78,8 @@
         height:auto;
         //height:500px;
         &:first-child{
-            margin-left:3%;
-            margin-right:5%;
+            margin-left:2%;
+            margin-right:2%;
         }
         &:last-child{
             display: none;
@@ -92,10 +94,10 @@
     .news-card{
         width: 28%;
             height: 500px;
-            margin-right:5%;
+            margin-right:2%;
 
             &:first-child{
-                margin-left:3%;
+                margin-left:2%;
             }
             &:last-child{
                 margin-right: 0.1%;

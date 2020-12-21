@@ -5,16 +5,19 @@ Things i need to do -
     [ x ] Give all cards a default a tag that links no-where
     [ x ] Sort out Text links
 
-carousel image [ ]
-    [ ] Have the image scale correctly at same resolution in smaller views
+[ ] carousel image 
+    [ x ] Have the image scale correctly at same resolution in smaller views
+    [ x ] Overlay with Text
+    [ x ] Overlay Shadow
+    [ ] Get shadow working in all views
 
 [ ] Footer -
-    [ ] Give correct Padding in all size views
+    [ x ] Give correct Padding in all size views
     [ ] Work out why social media buttons keep breaking
     [ ] Get social media buttons to look nice in all sizes
     [ ] sort out SVG's for social media icons (Use gimp?)
 
-    [ ] Correct padding for partner icons
+    [x] Correct padding for partner icons
     [ ] create dropdown things when hovering over partners
 
 

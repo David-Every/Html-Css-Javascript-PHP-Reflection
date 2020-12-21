@@ -1,3 +1,6 @@
+.footer-container{
+    //margin-left:7%;
+}
 footer {
 
     .buisness-info{
@@ -9,6 +12,9 @@ footer {
         //padding: 50px 150px 50px;
         background-color: $nm-secondary;
         color: $nm-primary;
+        // padding-left:8%;
+        // padding-right: 8%;
+        padding:2% 8%;
         
             li{
                 list-style:none;
@@ -34,6 +40,12 @@ footer {
 .footer-icons,
 .footer-web-design{
     @include display;
+    // padding-left:7%;
+    // padding-right:7%;
+    // padding: top 20px;
+    height: 100px;
+
+    padding: 20px 7%;
 }
 .f-img{
     // background-image: url("../img/web_design/Busseys_hover.png");

@@ -1,5 +1,23 @@
+//TEMP MEDIA QUERY TO CHECK WORTH
+@media (min-width:$break-lg){
+    .nav-bar{
+        display:flex;
+    }
+}
+
+@media (min-width:$break-m){
+    .nav-bar{
+        display:none;
+    }
+}
+
+@media (max-width:$break-sm){
+    .nav-bar{
+        display:none;
+    }
+}
 .nav-bar {
-    display: flex;
+    // display: flex;
     flex-wrap: wrap;
     background-color: $nm-secondary;
 

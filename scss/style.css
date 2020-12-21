@@ -49,18 +49,11 @@ h4 {
   header .logo {
     margin-left: none;
   }
-  .carousel {
-    width: 100%;
-    height: 550px;
-  }
 }
 
 @media (min-width: 1260px) {
   header .logo {
     margin-left: 150px;
-  }
-  .carousel {
-    width: 100%;
   }
 }
 
@@ -147,7 +140,7 @@ h4 {
 
 @media (min-width: 1260px) {
   .content {
-    padding-left: 100px;
+    padding-left: 125px;
     width: 45%;
   }
 }
@@ -170,6 +163,7 @@ footer .buisness-info {
       flex-wrap: wrap;
   background-color: #333645;
   color: #fff;
+  padding: 2% 8%;
 }
 
 footer .buisness-info li {
@@ -202,6 +196,8 @@ footer .buisness-info a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 100px;
+  padding: 20px 7%;
 }
 
 .f-img {
@@ -529,6 +525,9 @@ footer .buisness-info a:hover {
 }
 
 .card-nav {
+  margin-left: 7%;
+  margin-right: 7%;
+  background-color: #f2f2f2;
   padding-bottom: 50px;
 }
 
@@ -712,6 +711,8 @@ footer .buisness-info a:hover {
 }
 
 .news-container {
+  margin-left: 6.5%;
+  margin-right: 6.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,7 +757,7 @@ footer .buisness-info a:hover {
   .news-card {
     width: 100%;
     height: auto;
-    margin: 30px 25px 0 25px;
+    margin: 30px 5px 0 5px;
   }
 }
 
@@ -766,8 +767,8 @@ footer .buisness-info a:hover {
     height: auto;
   }
   .news-card:first-child {
-    margin-left: 3%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
   .news-card:last-child {
     display: none;
@@ -781,10 +782,10 @@ footer .buisness-info a:hover {
   .news-card {
     width: 28%;
     height: 500px;
-    margin-right: 5%;
+    margin-right: 2%;
   }
   .news-card:first-child {
-    margin-left: 3%;
+    margin-left: 2%;
   }
   .news-card:last-child {
     margin-right: 0.1%;
@@ -792,10 +793,27 @@ footer .buisness-info a:hover {
   }
 }
 
+@media (min-width: 1260px) {
+  .nav-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    display: none;
+  }
+}
+
 .nav-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #333645;
@@ -879,6 +897,104 @@ footer .buisness-info a:hover {
 
 #search-bar .search {
   padding: 15px 125px 15px 15px;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 100%;
+    height: 550px;
+  }
+  .carousel-overlay {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    left: 25%;
+  }
+  .shadow {
+    position: absolute;
+    width: 100%;
+    height: 87%;
+    -webkit-box-shadow: inset 200px 10px 450px 0 #000000;
+            box-shadow: inset 200px 10px 450px 0 #000000;
+    top: 16%;
+    left: 0%;
+  }
+}
+
+@media (min-width: 769px) {
+  .carousel {
+    width: 100%;
+    height: 550px;
+  }
+  .carousel-overlay {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+  }
+  .shadow {
+    position: absolute;
+    width: 100%;
+    height: 87%;
+    -webkit-box-shadow: inset 250px 10px 450px 0 #000000;
+            box-shadow: inset 250px 10px 450px 0 #000000;
+    top: 16%;
+    left: 0%;
+  }
+}
+
+@media (min-width: 1260px) {
+  .carousel {
+    width: 100%;
+    height: 550px;
+  }
+  .carousel-container {
+    position: relative;
+    color: #fff;
+  }
+  .carousel-container .carousel-overlay {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+  }
+  .shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset 250px 10px 450px 0 #000000;
+            box-shadow: inset 250px 10px 450px 0 #000000;
+    top: 0%;
+    left: 0%;
+  }
+}
+
+.carousel-overlay {
+  color: #fff;
+}
+
+.carousel-overlay h1 {
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.carousel-overlay p {
+  width: 60%;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.carousel-overlay a {
+  background-color: #926fb1;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.carousel-overlay a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Stops items from being selected / copied*/
