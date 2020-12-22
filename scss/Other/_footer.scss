@@ -1,10 +1,10 @@
-.footer-container{
-    //margin-left:7%;
-}
+// .footer-container{
+//     //margin-left:7%;
+// }
 footer {
 
-    .buisness-info{
-        @include display;
+    .buisness-info{        
+        //@include display;
         @include text-display;
 
         flex-wrap:wrap;
@@ -40,9 +40,6 @@ footer {
 .footer-icons,
 .footer-web-design{
     @include display;
-    // padding-left:7%;
-    // padding-right:7%;
-    // padding: top 20px;
     height: 100px;
 
     padding: 20px 7%;
@@ -55,22 +52,24 @@ footer {
     }
     
 }
+.social-media,
+.contact-info,
+.about,
+.website{
+    border: 1px red solid;
+}
 
 
 //Not flexing correctly
 .social-media{
-    width: 15%;
+    // width: 20%;
+    
     .social-buttons{ //parent container
         display:flex;
         justify-content: flex-start;
         flex-wrap:wrap;
         
-        a{
-            
-            margin-right:5px;
-            margin-top:10px;
-            
-        }
+        
     }
 
 }

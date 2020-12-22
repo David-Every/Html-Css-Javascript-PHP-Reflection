@@ -35,10 +35,17 @@ h4 {
 /* breakpoint variables*/
 @media (max-width: 768px) {
   .buisness-info {
-    width: 100%;
     padding-top: 50px;
     padding-right: 150px;
-    padding-left: 25px;
+  }
+  .social-media {
+    width: 100%;
+  }
+  .social-media a {
+    background-size: 25%;
+    padding: 30px 75px;
+    margin-right: 5px;
+    margin-top: 10px;
   }
   .footer-icons,
   .footer-web-design,
@@ -51,15 +58,52 @@ h4 {
   }
 }
 
+@media (min-width: 769px) {
+  .buisness-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .buisness-info .ft {
+    margin-right: 5%;
+  }
+  .social-media {
+    width: 25%;
+  }
+  .social-media a {
+    background-size: 25%;
+    padding: 20px 50px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+}
+
 @media (min-width: 1260px) {
   header .logo {
     margin-left: 150px;
+  }
+  .buisness-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .social-media {
+    width: 20%;
+  }
+  .social-media a {
+    background-size: 25%;
+    padding: 20px 50px;
+    margin-right: 5px;
+    margin-top: 10px;
   }
 }
 
 /* url variables*/
 .social-fb {
-  background: #242630 url("../img/Icons/social-media-icons/facebook-svgrepo-com.svg") no-repeat center;
+  background: #282b36 url("../../img/Icons/social-media-icons/facebook-svgrepo-com_white.svg") no-repeat center;
   background-size: 25%;
   padding: 20px 50px;
 }
@@ -69,7 +113,7 @@ h4 {
 }
 
 .social-tw {
-  background: #242630 url("../img/Icons/social-media-icons/twitter-svgrepo-com.svg") no-repeat center;
+  background: #282b36 url("../../img/Icons/social-media-icons/twitter-svgrepo-com_white.svg") no-repeat center;
   background-size: 25%;
   padding: 20px 50px;
 }
@@ -79,7 +123,7 @@ h4 {
 }
 
 .social-li {
-  background: #242630 url("../img/Icons/social-media-icons/linkedin-svgrepo-com.svg") no-repeat center;
+  background: #282b36 url("../../img/Icons/social-media-icons/linkedin-svgrepo-com_white.svg") no-repeat center;
   background-size: 25%;
   padding: 20px 50px;
 }
@@ -115,6 +159,7 @@ h4 {
 
 .about-us .culture {
   padding: 5px 5px;
+  border-radius: 5%;
   background: #fff;
   color: #333645;
   cursor: pointer;
@@ -150,12 +195,6 @@ h4 {
 }
 
 footer .buisness-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   line-height: 1.5;
   font-style: normal;
   text-decoration: none;
@@ -210,8 +249,11 @@ footer .buisness-info a:hover {
           filter: grayscale(0%);
 }
 
-.social-media {
-  width: 15%;
+.social-media,
+.contact-info,
+.about,
+.website {
+  border: 1px red solid;
 }
 
 .social-media .social-buttons {
@@ -223,11 +265,6 @@ footer .buisness-info a:hover {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.social-media .social-buttons a {
-  margin-right: 5px;
-  margin-top: 10px;
 }
 
 .gp {
@@ -692,27 +729,41 @@ footer .buisness-info a:hover {
 
 .nm-announce {
   position: relative;
-  overflow: hidden;
 }
 
-.box-overlay {
+.tt {
   position: absolute;
-  top: 8px;
-  right: 16px;
-  border: 1px red solid;
-  padding: 1px 2px;
+  top: 2%;
+  right: 5%;
+  padding: 4px 3px;
   background-color: #286ABD;
+}
+
+.tt a, .tt a:visited {
+  color: #fff;
   text-transform: uppercase;
 }
 
-.box-overlay a {
-  text-decoration: underline;
+.tt a:hover, .tt a:visited:hover {
   color: #fff;
 }
 
+.tt:hover .tt-text {
+  visibility: visible;
+}
+
+.tt-text {
+  color: #fff;
+  background-color: #333645;
+  position: absolute;
+  top: -20%;
+  right: -15%;
+  z-index: 1;
+  padding: 2% 5%;
+}
+
 .news-container {
-  margin-left: 6.5%;
-  margin-right: 6.5%;
+  margin-top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,6 +802,8 @@ footer .buisness-info a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {

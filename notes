@@ -15,10 +15,11 @@ Things i need to do -
     [ x ] Give correct Padding in all size views
     [ ] Work out why social media buttons keep breaking
     [ ] Get social media buttons to look nice in all sizes
-    [ ] sort out SVG's for social media icons (Use gimp?)
+    [ ] sort out SVG's for social media icons
 
     [x] Correct padding for partner icons
     [ ] create dropdown things when hovering over partners
+    [ ] make it so the partners scale depending on screen size
 
 
 

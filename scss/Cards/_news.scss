@@ -1,31 +1,42 @@
 .nm-announce{
     position:relative;
-    overflow: hidden;
+    // overflow: hidden;
 }
-.box-overlay {
-    position:absolute;
-    top:8px;
-    right: 16px;
-    border: 1px red solid;
-    padding: 1px 2px;
-    background-color:$nm-it;
-    text-transform: uppercase;
-    &:hover{
-        //Tooltip
-    }
-    a{
-        text-decoration: underline;
-        color:$nm-primary;
-        // &:hover[
-            
-        // ]
 
-    }
+.tt{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    padding: 4px 3px;
+    background-color:$nm-it;
+    a, a:visited{
+        color:$nm-primary;
+        text-transform: uppercase;
+        &:hover{
+            color:$nm-primary;
+        }
+    } 
 }
+
+.tt:hover .tt-text{
+    visibility:visible;
+}
+
+.tt-text{
+        // visibility: hidden;
+        color: $nm-primary;
+        background-color: $nm-secondary;
+        position: absolute;
+        top: -20%;
+        right:-15%;
+        z-index: 1;
+        padding: 2% 5%;
+    }   
 
 .news-container{
-    margin-left:6.5%;
-    margin-right:6.5%;
+    // margin-left:6.5%;
+    // margin-right:6.5%;
+    margin-top:10%;
     & img{
         max-width:100%;
     }
@@ -56,12 +67,12 @@
         }
         .user{
             display:flex;
-            //flex-wrap: wrap;
+            flex-wrap: wrap;
             
         }
        
     }
-//}
+
 @media(max-width:$break-sm){
     .news-card{
         width:100%;
@@ -96,12 +107,12 @@
             height: 500px;
             margin-right:2%;
 
-            &:first-child{
-                margin-left:2%;
-            }
-            &:last-child{
-                margin-right: 0.1%;
-                display: initial;
-            }
+        &:first-child{
+            margin-left:2%;
+        }
+        &:last-child{
+            margin-right: 0.1%;
+            display: initial;
+        }
     }
 }
