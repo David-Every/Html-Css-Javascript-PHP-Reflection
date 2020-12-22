@@ -1,0 +1,80 @@
+// .footer-container{
+//     //margin-left:7%;
+// }
+footer {
+
+    .buisness-info{        
+        //@include display;
+        @include text-display;
+
+        flex-wrap:wrap;
+        
+        //padding: 50px 150px 50px;
+        background-color: $nm-secondary;
+        color: $nm-primary;
+        // padding-left:8%;
+        // padding-right: 8%;
+        padding:2% 8%;
+        
+            li{
+                list-style:none;
+            }
+            
+            address{
+                font-style: normal;
+            }
+            .f-title{
+                text-transform:uppercase;
+                padding-bottom: 1em;
+            }
+            a{
+                color:$nm-primary;
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+.footer-icons,
+.footer-web-design{
+    @include display;
+    height: 100px;
+
+    padding: 20px 7%;
+}
+.f-img{
+    // background-image: url("../img/web_design/Busseys_hover.png");
+    filter: grayscale(100%);
+    &:hover{
+        filter:grayscale(0%);
+    }
+    
+}
+.social-media,
+.contact-info,
+.about,
+.website{
+    border: 1px red solid;
+}
+
+
+//Not flexing correctly
+.social-media{
+    // width: 20%;
+    
+    .social-buttons{ //parent container
+        display:flex;
+        justify-content: flex-start;
+        flex-wrap:wrap;
+        
+        
+    }
+
+}
+.gp{
+    margin-left: 50px;
+    width:200px;
+    height: 75px;
+}

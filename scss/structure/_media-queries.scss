@@ -1,0 +1,88 @@
+// || MEDIA QUERIES || //
+/* breakpoint variables*/
+$break-sm: 768px;
+$break-m: 769px; //992px
+$break-lg: 1260px; //1000
+
+ //Small
+
+@media(max-width:$break-sm){
+    .buisness-info{
+        // display: flex;
+        //padding: 50px 150px;
+        //width: 100%;
+        padding-top: 50px;
+        padding-right:150px;
+        // padding-left:25px;
+    }
+    .social-media{
+        width: 100%;
+        a{
+            background-size: 25%;
+            padding:30px 75px;
+            margin-right:5px;
+            margin-top:10px;
+        }
+    }
+
+    .footer-icons, 
+    .footer-web-design, 
+    header, 
+    .nav-bar {
+        display:none;
+    }
+    header .logo{
+        margin-left:none;
+    }
+}
+// Medium
+@media (min-width:$break-m){
+    .buisness-info{
+        // width:100%;
+        display:flex;
+        // flex-wrap: nowrap;
+        // justify-content: space-between;
+        .ft{
+            margin-right: 5%;
+        }
+    }
+
+    .social-media{
+        width: 25%;
+        a{
+            background-size: 25%;
+            padding:20px 50px;
+            margin-right:5px;
+            margin-top:10px;
+            
+        }
+    }
+    
+}
+
+//Large
+
+@media (min-width:$break-lg){ 
+    header .logo{
+        margin-left:150px;
+    }
+
+    .buisness-info{
+        display:flex;
+        justify-content: space-between;
+       
+    }
+    .social-media{
+        width: 20%;
+        a{
+            background-size: 25%;
+            padding:20px 50px;
+            margin-right:5px;
+            margin-top:10px;
+            
+        }
+    }
+
+  
+
+}

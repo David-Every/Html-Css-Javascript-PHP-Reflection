@@ -1,0 +1,49 @@
+Things i need to do - 
+
+[x] Service Cards -
+    [ x ] Read more Positioned correctly in cards
+    [ x ] Give all cards a default a tag that links no-where
+    [ x ] Sort out Text links
+
+[ ] carousel image 
+    [ x ] Have the image scale correctly at same resolution in smaller views
+    [ x ] Overlay with Text
+    [ x ] Overlay Shadow
+    [ ] Get shadow working in all views
+
+[ ] Footer -
+    [ x ] Give correct Padding in all size views
+    [ ] Work out why social media buttons keep breaking
+    [ ] Get social media buttons to look nice in all sizes
+    [ ] sort out SVG's for social media icons
+
+    [x] Correct padding for partner icons
+    [ ] create dropdown things when hovering over partners
+    [ ] make it so the partners scale depending on screen size
+
+
+
+[ x ] Our Culture - 
+    [ x ] Give button more padding
+    [ x ] Give whole about us section more left padding in large view
+
+[ ] Header -
+    [ ] Make sure nav bar dropdown is working correctly
+    [ ] sort out support/ Contact and search bar and Burger menus
+    [ ] Make sure navigation flexes correctly.
+
+[ ] News cards -
+    [ ] News Footer placed correctly
+    [ ] news Read more button background colour
+    [ ] border correctly done on news cards
+    [ ] Fix image size scaling when in medium view
+    [ ] add news box in top right
+
+[ ] Overall -
+    [ ] Make sure all things are padded correctly 
+    [ ] The darkened white background is the default background 
+        for all white background parts.
+    [ ] Everything that would have links has placeholder links
+    [ ] Everything Scales correctly and works in Chrome, IE and Firefox
+    [ ] Merge everything together
+    [ ] check everything and send off.

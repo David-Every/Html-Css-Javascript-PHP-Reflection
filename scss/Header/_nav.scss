@@ -1,5 +1,23 @@
+//TEMP MEDIA QUERY TO CHECK WORTH
+@media (min-width:$break-lg){
+    .nav-bar{
+        display:flex;
+    }
+}
+
+@media (min-width:$break-m){
+    .nav-bar{
+        display:none;
+    }
+}
+
+@media (max-width:$break-sm){
+    .nav-bar{
+        display:none;
+    }
+}
 .nav-bar {
-    display: flex;
+    // display: flex;
     flex-wrap: wrap;
     background-color: $nm-secondary;
 
@@ -11,21 +29,19 @@
         width:170px;
         padding: 20px 20px;
         cursor: pointer;
-        &:first-child{
-            margin-left:150px;
-        }
 
-        &.service{
-            // background-color: $nm-secondary;
-            color:$nm-primary;
-
-            &:hover{
-                background-color: $nm-it;
-                color:$nm-secondary;
+            &:first-child{
+                margin-left:150px;
             }
-        }
+
+            &.service{
+                // background-color: $nm-secondary;
+                color:$nm-primary;
+            }
     }
 }
+
+
 
 .buttons {
     display: flex;
@@ -35,7 +51,7 @@
 
     .logo{
         height: 75px;
-        margin-left: 150px;
+        // margin-left: 150px;
         margin-top: 10px;
         margin-right: 50px;
     }
@@ -74,6 +90,8 @@
     }
      
 }
+
+
 #search-bar{
     box-sizing: border-box;
     padding: 10px;

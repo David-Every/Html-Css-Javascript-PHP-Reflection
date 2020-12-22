@@ -1,24 +1,33 @@
 * { margin:0; padding:0; box-sizing:border-box; } //resets html
 
-@import 'colours', 
-'fonts', 
-'debug', 
-'mixins', 
-'footer', 
-'news', 
-'about-us', 
-'card-nav',
-'nav';
+@import 
 
+// Structure, Keep at the top //
+'../scss/structure/colours',
+'../scss/structure/fonts',
+'../scss/structure/imgs', // Currently unused
+'../scss/structure/media-queries',
+'../scss/structure/mixins',
+'../scss/structure/variables',
+// Other //
+'../scss/Other/about-us',
+'../scss/Other/debug',
+'../scss/Other/footer', 
+
+
+// Cards //
+'../scss/Cards/card-colouring',
+'../scss/Cards/services-card',
+'../scss/Cards/news', 
+
+//Header
+'../scss/Header/dropdowns',
+'../scss/Header/nav',
+'../scss/Header/carousel';
+
+
+
+/* Stops items from being selected / copied*/
 body{
     user-select: none;
-}
-
-.break{
-    text-transform: uppercase;
-
-    margin: 50px 100px 100px;
-        // .h3{
-        //     /margin-left: 50px;
-        // }
 }

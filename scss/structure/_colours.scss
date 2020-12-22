@@ -8,9 +8,22 @@ $nm-it: #286ABD; //IT support
 $nm-tc: #BC2C28; // Telecoms
 $nm-bs: #526781; //Bespoke software
 $nm-marketing: #25A25A; //marketing
-$nm-Security: #DE093F; //security
+$nm-security: #DE093F; //security
+$nm-training: darken($nm-web,10%);
+
+
 
 //Social Media
 $facebook-hover: #3b5998;
 $twitter-hover: #00ACEE;
 $linkedin-hover: #0077B5;
+
+//sets the background colour for these parent classes
+.footer-web-design,
+.footer-icons,
+.card-nav,
+.carousel,
+.break,
+.news{
+    background-color:darken($nm-primary, 5%);
+}
