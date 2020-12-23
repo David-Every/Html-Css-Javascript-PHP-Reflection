@@ -11,6 +11,8 @@ $nm-marketing: #25A25A; //marketing
 $nm-security: #DE093F; //security
 $nm-training: darken($nm-web,10%);
 
+$nm-button-blue:#4183d7;
+
 
 
 //Social Media
@@ -23,7 +25,7 @@ $linkedin-hover: #0077B5;
 .footer-icons,
 .card-nav,
 .carousel,
-.break,
+//.break,
 .news{
     background-color:darken($nm-primary, 5%);
 }

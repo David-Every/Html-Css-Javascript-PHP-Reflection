@@ -7,12 +7,17 @@ Things i need to do -
 [ x ] Our Culture - 
     [ x ] Give button more padding
     [ x ] Give whole about us section more left padding in large view
+[ x ] News cards -
+    [ x ] News Footer placed correctly
+    [ x ] news Read more button background colour
+    [ x ] border correctly done on news cards
+    [ x] Fix image size scaling when in small view
+    [ x ] add news box in top right
 [ ] carousel image 
     [ x ] Have the image scale correctly at same resolution in smaller views
     [ x ] Overlay with Text
     [ x ] Overlay Shadow
     [ ] Get shadow working in all views
-
 [  ] Footer -
     [ x ] Give correct Padding in all size views
     [ x] Work out why social media buttons keep breaking
@@ -20,10 +25,13 @@ Things i need to do -
     [ x ] sort out SVG's for social media icons
 
     [x] Correct padding for partner icons
-    [ ] create tooltip when hovering over partners
+    
     [ ] make it so the partners scale depending on screen size
 
 
+[ ] tooltip
+    [ ] Add tooltip and links to small box
+    [ ] create tooltip when hovering over partners
 
 
 
@@ -32,13 +40,6 @@ Things i need to do -
     [ ] sort out support/ Contact and search bar and Burger menus
     [ ] Make sure navigation flexes correctly.
 
-[ ] News cards -
-    [ ] News Footer placed correctly
-    [ ] news Read more button background colour
-    [ ] border correctly done on news cards
-    [ ] Fix image size scaling when in medium view
-    [ ] add news box in top right
-    [ ] Add tooltip and links to small box
 
 [ ] Overall -
     [ ] Make sure all things are padded correctly 

@@ -21,6 +21,14 @@
             @include card-display;
         }
     }
+    & i{
+        //text-align: bottom;
+        //top: 20%;
+        padding-top:17px;
+        text-align: center;
+        // text
+        font-size: 23px;
+    }
 } 
 
     @media(max-width:$break-sm){
@@ -93,7 +101,9 @@
     }
 
     .card-icon{ // selects nav icon
-        padding: 25px;
+        //padding: 25px;
+        height: 60px;
+        width: 60px;
         border-radius: 100%;
     }
 
