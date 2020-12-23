@@ -273,6 +273,19 @@ footer .buisness-info a:hover {
   height: 75px;
 }
 
+.partner-tool-container {
+  position: absolute;
+}
+
+.partner-tool {
+  position: relative;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  background-color: #333645;
+  margin-bottom: 100px;
+}
+
 /*Creates a block of code that colours the backgtound*/
 .nav-web i {
   color: #926fb1;
@@ -760,6 +773,7 @@ footer .buisness-info a:hover {
   right: -15%;
   z-index: 1;
   padding: 2% 5%;
+  overflow-y: visible;
 }
 
 .news-container {

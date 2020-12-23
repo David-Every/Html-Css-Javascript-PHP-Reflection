@@ -1,6 +1,6 @@
 .nm-announce{
     position:relative;
-    // overflow: hidden;
+    //overflow: hidden;
 }
 
 .tt{
@@ -31,6 +31,7 @@
         right:-15%;
         z-index: 1;
         padding: 2% 5%;
+        overflow-y: visible;
     }   
 
 .news-container{
