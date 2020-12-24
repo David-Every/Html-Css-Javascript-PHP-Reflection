@@ -43,11 +43,12 @@
 
 
 
-.buttons {
+.top-nav{
     display: flex;
     justify-content: space-between;
-    color: blue;
-    height:100px;
+    //flex-wrap:wrap;
+    // color: blue;
+    height:300px;
 
     .logo{
         height: 75px;

@@ -574,6 +574,24 @@ footer .buisness-info a:hover {
   color: #79539a;
 }
 
+.card p {
+  height: 100px;
+}
+
+.card {
+  position: relative;
+}
+
+.card .rm {
+  position: relative;
+  width: 100px;
+  left: 33%;
+  bottom: 0%;
+  text-transform: uppercase;
+  border-radius: 5%;
+  padding: 5px;
+}
+
 .card-nav {
   margin-left: 7%;
   margin-right: 7%;
@@ -600,26 +618,19 @@ footer .buisness-info a:hover {
 
 .card-nav .row-1 .card .c-title {
   text-transform: capitalize;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   position: relative;
+  margin-bottom: 20px;
 }
 
-.card-nav .row-1 .card .c-title::before {
+.card-nav .row-1 .card .c-title::after {
   content: '';
   display: block;
   position: absolute;
-  width: 25px;
-  border: #333645 solid 2px;
-  top: 55%;
+  width: 35px;
+  border: #333645 solid 1px;
+  top: 100%;
   left: 45%;
-}
-
-.card-nav .row-1 .card .rm {
-  width: 100px;
-  margin-left: 25%;
-  text-transform: uppercase;
-  border-radius: 5%;
-  padding: 5px;
 }
 
 .card-nav .row-2 {
@@ -639,26 +650,19 @@ footer .buisness-info a:hover {
 
 .card-nav .row-2 .card .c-title {
   text-transform: capitalize;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   position: relative;
+  margin-bottom: 20px;
 }
 
-.card-nav .row-2 .card .c-title::before {
+.card-nav .row-2 .card .c-title::after {
   content: '';
   display: block;
   position: absolute;
-  width: 25px;
-  border: #333645 solid 2px;
-  top: 55%;
+  width: 35px;
+  border: #333645 solid 1px;
+  top: 100%;
   left: 45%;
-}
-
-.card-nav .row-2 .card .rm {
-  width: 100px;
-  margin-left: 25%;
-  text-transform: uppercase;
-  border-radius: 5%;
-  padding: 5px;
 }
 
 .card-nav i {
@@ -676,7 +680,6 @@ footer .buisness-info a:hover {
         flex-wrap: wrap;
   }
   .row-1 .card, .row-2 .card {
-    height: 300px;
     width: 100%;
     margin: 0 10px 35px 10px;
   }
@@ -685,7 +688,6 @@ footer .buisness-info a:hover {
 @media (min-width: 769px) {
   .row-1 .card {
     width: 28%;
-    height: 300px;
     margin-right: 4%;
     margin-top: 3%;
   }
@@ -698,7 +700,6 @@ footer .buisness-info a:hover {
   }
   .row-2 .card {
     width: 45%;
-    height: 300px;
     margin-left: 3%;
     margin-top: 3%;
   }
@@ -707,7 +708,6 @@ footer .buisness-info a:hover {
 @media (min-width: 1260px) {
   .row-1 .card {
     width: 28%;
-    height: 350px;
     margin-right: 5%;
   }
   .row-1 .card:first-child {
@@ -720,7 +720,6 @@ footer .buisness-info a:hover {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     width: 20%;
-    height: 325px;
     margin-right: 1.7%;
     margin-top: 3%;
   }
@@ -749,6 +748,7 @@ footer .buisness-info a:hover {
 
 .nm-announce {
   position: relative;
+  overflow: hidden;
 }
 
 .tt {
@@ -976,24 +976,23 @@ footer .buisness-info a:hover {
   color: #fff;
 }
 
-.buttons {
+.top-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: blue;
-  height: 100px;
+  height: 300px;
 }
 
-.buttons .logo {
+.top-nav .logo {
   height: 75px;
   margin-top: 10px;
   margin-right: 50px;
 }
 
-.buttons .btn {
+.top-nav .btn {
   cursor: pointer;
   border: 1px #666666 solid;
   height: 50px;
@@ -1004,25 +1003,25 @@ footer .buisness-info a:hover {
   color: #fff;
 }
 
-.buttons .btn:last-child {
+.top-nav .btn:last-child {
   width: 50px;
   margin-left: none;
   margin-right: 175px;
 }
 
-.buttons .btn.btn-1 {
+.top-nav .btn.btn-1 {
   background-color: #286ABD;
 }
 
-.buttons .btn.btn-1:hover {
+.top-nav .btn.btn-1:hover {
   background: #1f5293;
 }
 
-.buttons .btn.btn-2 {
+.top-nav .btn.btn-2 {
   background-color: #526781;
 }
 
-.buttons .btn.btn-2:hover {
+.top-nav .btn.btn-2:hover {
   background: #3e4e62;
 }
 

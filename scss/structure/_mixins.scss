@@ -15,6 +15,7 @@
     
     border: 1px lighten($nm-tertiary,40%) solid;
     border-radius: 2%;
+    // height:auto;
     padding: 25px 20px 15px;
     font-size: 1em;
     text-align: center;
@@ -22,29 +23,19 @@
 
     .c-title{
         text-transform: capitalize;
-        padding-bottom:50px;
+        padding-bottom:10px;
         position:relative;
+        margin-bottom: 20px;
 
-        &::before{
+        &::after{
             content: '';
             display:block;
             position: absolute;
-            width: 25px;
-            border:$nm-secondary solid 2px;
-            top: 55%;
+            width: 35px;
+            border:$nm-secondary solid 1px;
+            top: 100%;
             left: 45%;
         }
     }
-    .rm{
-        width: 100px;
-        //margin-top: 50px;
-        //margin-left:35%;
-        margin-left: 25%;
-        
-        // right:5%;
-        // left:40%;
-        text-transform: uppercase;
-        border-radius:5%;
-        padding:5px;
-    }
+   
 }

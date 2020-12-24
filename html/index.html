@@ -5,30 +5,34 @@
         <link href = "../scss/style.css" rel ="stylesheet" > 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/8ac16a56cb.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
 
     <header>
         <!-- Netmatters logo -->
         
-    <div class = buttons >
-        <img class ="logo" src = "../img/Icons/f-logo.png">
+    <div class = "top-nav" >
+        <a href ="#">  <img class ="logo" src = "../img/Icons/f-logo.png"> </a>
         <div class = "btn btn-1">
             <!-- <img src ="../img/Icons/nav-Icons/mouse.svg"> -->
-            Support
+            <i class="fas fa-mouse"></i> Support
         </div>
 
         <div class = "btn btn-2"> 
             <!-- <img src = "../img/Icons/nav-Icons/paper-plane.svg"> -->
-            Contact
+            <i class ="fa fa-paper-plane-o"> </i>Contact
         </div>
 
-        <form id="search-bar" > 
+        <form id="search-bar"> 
            <input class = "search" type ="text" placeholder ="Search..." name="search">
+           <i class="fas fa-search"></i>
+
            
         </form>
         <!-- <img src = "../img/Icons/nav-Icons/search.svg"> -->
-        <img class="burger btn" src ="../img/Icons/nav-Icons/hamburger-menu.svg">
+        <!-- <img class="" src ="../img/Icons/nav-Icons/hamburger-menu.svg"> -->
+        <i class="fas fa-bars"></i>
     </div>
     
 
@@ -157,7 +161,8 @@
         <!-- </div> -->
           <!-- Cards -->
         <div class = "card-nav">
-            <div class = "row-1" >      
+            <div class = "row-1" >
+
                 <a href ="#" class =  "card service card-nav-bs " >
                         <i class ="glyphicon glyphicon-th card-icon "></i>
                         <h3 class = "c-title" >Bespoke Software</h3>
@@ -169,7 +174,7 @@
                         </p>
                     <div class = "rm rm-bs" >read more</div>
                 </a>
-
+                    
                 <a href ="#" class = "card service card-nav-it ">
                     <i class = "fa fa-desktop card-icon"></i>
                     <h3 class = "c-title" >IT support</h3>
