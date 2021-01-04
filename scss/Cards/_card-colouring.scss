@@ -4,13 +4,14 @@
 //I will need to add a way for the dropdown to also take on this colour
 
 $service-colors:('web' $nm-web, 'it' $nm-it, 'tc' $nm-tc, 'bs' $nm-bs, 'mk' $nm-marketing, 'cs' $nm-security, 'dt' $nm-training);
-/*Creates a block of code that colours the backgtound*/
+/*Creates a block of code that colours the background*/
 @each $name, $color in $service-colors{
 
     .nav-#{$name}{
         i{
             color:$color;
         }
+        
         &:hover{
             background-color:$color;
             i{

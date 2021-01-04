@@ -81,7 +81,7 @@ footer {
 
 
 .partner-tool-container{
-    border: 1px red solid;
+    // border: 1px red solid;
     position: absolute;
     // &:hover .partner-tool{
     //     visibility:visible;
@@ -91,7 +91,7 @@ footer {
 }
 .partner-tool{
     position: relative;
-    // visibility: hidden;
+    visibility: hidden;
     width: 200px;
     text-align: center;
     color: $nm-primary;

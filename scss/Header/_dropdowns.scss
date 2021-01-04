@@ -1,20 +1,18 @@
-// .web-design-dropdown,
-// .it-support-dropdown,
-// .telecoms-dropdown,
-// .bespoke-dropdown,
-// .digital-dropdown,
-// .cyber-dropdown{
-//     display: none;  
-// }
-// //set everything to display nothing
 
-
-// .nav-web:hover{
-
-//     .web-design-dropdown{
-//         display: block;
-//     }
-   
-//     //height:auto;
-// }
-
+.dropdown{
+    background-color: darken($nm-web, 20%);
+}
+.bar-container{
+    width:100%;
+    // height: 55px;
+    position:absolute;
+    top:20%;
+    // margin-left: 100px;
+}
+.sub-nav-bar{
+    display:none;
+    width:5%;
+    // position: absolute;
+    display:inline-flex;
+    //top:25%;
+}

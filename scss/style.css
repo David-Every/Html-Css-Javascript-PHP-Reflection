@@ -273,12 +273,12 @@ footer .buisness-info a:hover {
 }
 
 .partner-tool-container {
-  border: 1px red solid;
   position: absolute;
 }
 
 .partner-tool {
   position: relative;
+  visibility: hidden;
   width: 200px;
   text-align: center;
   color: #fff;
@@ -286,7 +286,7 @@ footer .buisness-info a:hover {
   margin-bottom: 100px;
 }
 
-/*Creates a block of code that colours the backgtound*/
+/*Creates a block of code that colours the background*/
 .nav-web i {
   color: #926fb1;
 }
@@ -932,6 +932,24 @@ footer .buisness-info a:hover {
   }
 }
 
+.dropdown {
+  background-color: #5f4179;
+}
+
+.bar-container {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+}
+
+.sub-nav-bar {
+  display: none;
+  width: 5%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 @media (min-width: 1260px) {
   .nav-bar {
     display: -webkit-box;
@@ -953,6 +971,9 @@ footer .buisness-info a:hover {
 }
 
 .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #333645;
@@ -983,7 +1004,6 @@ footer .buisness-info a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 300px;
 }
 
 .top-nav .logo {
@@ -1037,6 +1057,18 @@ footer .buisness-info a:hover {
   padding: 15px 125px 15px 15px;
 }
 
+.carousel {
+  background-image: url("../img/Carousel-images/web_design_slide_1.png");
+  width: 100%;
+  height: 550px;
+}
+
+.opacity {
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(4%, black), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, black 4%, rgba(0, 0, 0, 0) 100%);
+}
+
 @media (max-width: 768px) {
   .carousel {
     width: 100%;
@@ -1048,14 +1080,10 @@ footer .buisness-info a:hover {
     top: 25%;
     left: 25%;
   }
-  .shadow {
-    position: absolute;
+  .opacity {
     width: 100%;
-    height: 87%;
-    -webkit-box-shadow: inset 200px 10px 450px 0 #000000;
-            box-shadow: inset 200px 10px 450px 0 #000000;
-    top: 16%;
-    left: 0%;
+    height: 550px;
+    top: 19%;
   }
 }
 
@@ -1069,14 +1097,10 @@ footer .buisness-info a:hover {
     top: 35%;
     left: 35%;
   }
-  .shadow {
-    position: absolute;
+  .opacity {
     width: 100%;
-    height: 87%;
-    -webkit-box-shadow: inset 250px 10px 450px 0 #000000;
-            box-shadow: inset 250px 10px 450px 0 #000000;
-    top: 16%;
-    left: 0%;
+    height: 550px;
+    top: 19%;
   }
 }
 
@@ -1094,14 +1118,10 @@ footer .buisness-info a:hover {
     top: 35%;
     left: 10%;
   }
-  .shadow {
-    position: absolute;
+  .opacity {
     width: 100%;
-    height: 100%;
-    -webkit-box-shadow: inset 250px 10px 450px 0 #000000;
-            box-shadow: inset 250px 10px 450px 0 #000000;
+    height: 550px;
     top: 0%;
-    left: 0%;
   }
 }
 

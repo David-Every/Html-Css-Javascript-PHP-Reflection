@@ -13,11 +13,11 @@ Things i need to do -
     [ x ] border correctly done on news cards
     [ x] Fix image size scaling when in small view
     [ x ] add news box in top right
-[ ] carousel image 
+[ x ] carousel image 
     [ x ] Have the image scale correctly at same resolution in smaller views
     [ x ] Overlay with Text
     [ x ] Overlay Shadow
-    [ ] Get shadow working in all views
+    [ x ] Get Opacity L 2 R working in all views
 [  ] Footer -
     [ x ] Give correct Padding in all size views
     [ x] Work out why social media buttons keep breaking
@@ -28,17 +28,14 @@ Things i need to do -
     
     [ ] make it so the partners scale depending on screen size
 
-
-[ ] tooltip
-    [ ] Add tooltip and links to small box
-    [ ] create tooltip when hovering over partners
-
-
-
 [ ] Header -
     [ ] Make sure nav bar dropdown is working correctly
     [ ] sort out support/ Contact and search bar and Burger menus
     [ ] Make sure navigation flexes correctly.
+
+[ ] tooltip
+    [ ] Add tooltip and links to small box
+    [ ] create tooltip when hovering over partners
 
 
 [ ] Overall -
