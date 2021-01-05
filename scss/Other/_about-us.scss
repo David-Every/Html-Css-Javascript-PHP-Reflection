@@ -1,10 +1,9 @@
+
 .about-us{
     background-color: $nm-secondary;
     background-image: url(../img/Icons/branded.png);
     background-repeat: no-repeat;
     background-position: bottom right;
-
-    //padding: 25px 75px 25px ;
     padding:25px;
     color: $nm-primary;
     font-size:20px;
@@ -12,13 +11,10 @@
         text-transform:uppercase;
         font-size: 2em;
         padding-bottom:35px;
-        //padding-top:20px;
-       // padding-bottom: 40px;
+        
     }
-    //first p gets extra weight too be added
 
     p{
-        //width:40%;
         padding-bottom: 40px;
         line-height:1.5;
 
@@ -32,14 +28,16 @@
         border-radius: 5%;
         background: $nm-primary;
         color: $nm-secondary;
+
         cursor: pointer;
         &:hover{
             background-color: darken($nm-primary, 10%)
         }
     }
-    
 }
 
+//|| Media Queries ||
+//Adapts Padding and width
 @media(max-width:$break-sm){
     .content{
         padding: 25px;

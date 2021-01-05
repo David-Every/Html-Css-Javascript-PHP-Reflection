@@ -1,0 +1,23 @@
+
+//url variables
+$facebook: 'fb' url("../img/Icons/social-media-icons/facebook-svgrepo-com_white.svg") $facebook-hover;
+$twitter: 'tw' url("../img/Icons/social-media-icons/twitter-svgrepo-com_white.svg") $twitter-hover;
+$linkedin: 'li' url("../img/Icons/social-media-icons/linkedin-svgrepo-com_white.svg") $linkedin-hover;
+
+$social-media: $facebook, $twitter, $linkedin;
+
+//cycles through each social media variable and sets the default colour and what colour
+//they will be when hovered over.
+@each $name, $social, $color in $social-media{ 
+    .social-#{$name}{
+        background:darken($nm-secondary, 5%) $social no-repeat center;
+        background-size: 25%;
+        padding:20px 50px;
+
+        &:hover{
+            background-color: $color;
+        }
+    }
+
+}
+

@@ -1,17 +1,13 @@
-// This code  creates code blocks for the service cards and adjusts the colours when hovered over
-//for each service card, This also colours the navigation bar when hovered over
-
-//I will need to add a way for the dropdown to also take on this colour
 
 $service-colors:('web' $nm-web, 'it' $nm-it, 'tc' $nm-tc, 'bs' $nm-bs, 'mk' $nm-marketing, 'cs' $nm-security, 'dt' $nm-training);
-/*Creates a block of code that colours the background*/
-@each $name, $color in $service-colors{
 
+
+@each $name, $color in $service-colors{
+    //Colours the navigation buttons at the top of site.
     .nav-#{$name}{
         i{
             color:$color;
         }
-        
         &:hover{
             background-color:$color;
             i{
@@ -20,18 +16,23 @@ $service-colors:('web' $nm-web, 'it' $nm-it, 'tc' $nm-tc, 'bs' $nm-bs, 'mk' $nm-
         }
     }
 
-    //Read me /icon colouring
+    //Colours service cards, sets them as a default colour of $nm-primary
+    //and sets a hoverstate colour for all elements of the card
+    //background, text,read more and icons.
+
+    // there is probably a way to make it so that when compiled the code in css is more dry?
     .card-nav-#{$name}{
         //Default
         background-color: $nm-primary;
         .rm-#{$name}{
-            background-color: $color; //Sets color of read me to the current colour the loop is setting
+            background-color: $color; 
             color:$nm-primary;
         }
         .card-icon{
             background-color: $color;
             color:$nm-primary;
         }
+
         //hover-state
         &:hover{
             background-color:$color;
@@ -40,7 +41,6 @@ $service-colors:('web' $nm-web, 'it' $nm-it, 'tc' $nm-tc, 'bs' $nm-bs, 'mk' $nm-
                 background-color: $nm-primary;
                 color:$color;
             }
-
             .rm-#{$name}{
                 //padding-top: 100px;
                 background-color: $nm-primary;

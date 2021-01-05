@@ -31,7 +31,6 @@ h4 {
   letter-spacing: 1px;
 }
 
-/* breakpoint variables*/
 @media (max-width: 768px) {
   .buisness-info {
     padding-top: 50px;
@@ -100,9 +99,8 @@ h4 {
   }
 }
 
-/* url variables*/
 .social-fb {
-  background: #282b36 url("../../img/Icons/social-media-icons/facebook-svgrepo-com_white.svg") no-repeat center;
+  background: #282b36 url("../img/Icons/social-media-icons/facebook-svgrepo-com_white.svg") no-repeat center;
   background-size: 25%;
   padding: 20px 50px;
 }
@@ -112,7 +110,7 @@ h4 {
 }
 
 .social-tw {
-  background: #282b36 url("../../img/Icons/social-media-icons/twitter-svgrepo-com_white.svg") no-repeat center;
+  background: #282b36 url("../img/Icons/social-media-icons/twitter-svgrepo-com_white.svg") no-repeat center;
   background-size: 25%;
   padding: 20px 50px;
 }
@@ -122,7 +120,7 @@ h4 {
 }
 
 .social-li {
-  background: #282b36 url("../../img/Icons/social-media-icons/linkedin-svgrepo-com_white.svg") no-repeat center;
+  background: #282b36 url("../img/Icons/social-media-icons/linkedin-svgrepo-com_white.svg") no-repeat center;
   background-size: 25%;
   padding: 20px 50px;
 }
@@ -187,10 +185,6 @@ h4 {
     padding-left: 125px;
     width: 45%;
   }
-}
-
-.debug {
-  border: 2px red solid;
 }
 
 footer .buisness-info {
@@ -286,7 +280,6 @@ footer .buisness-info a:hover {
   margin-bottom: 100px;
 }
 
-/*Creates a block of code that colours the background*/
 .nav-web i {
   color: #926fb1;
 }
@@ -574,8 +567,23 @@ footer .buisness-info a:hover {
   color: #79539a;
 }
 
+.card-icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}
+
 .card p {
   height: 100px;
+}
+
+.row-1 a, .row-2 a {
+  color: #333645;
+}
+
+.row-1 a, .row-1 a:hover,
+.row-2 a, .row-2 a:hover {
+  text-decoration: none;
 }
 
 .card {
@@ -729,21 +737,6 @@ footer .buisness-info a:hover {
   .row-2 .card:first-child {
     margin-left: 3%;
   }
-}
-
-.card-icon {
-  height: 60px;
-  width: 60px;
-  border-radius: 100%;
-}
-
-.row-1 a, .row-2 a {
-  color: #333645;
-}
-
-.row-1 a, .row-1 a:hover,
-.row-2 a, .row-2 a:hover {
-  text-decoration: none;
 }
 
 .nm-announce {

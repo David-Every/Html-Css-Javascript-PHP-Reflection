@@ -1,3 +1,4 @@
+
 .nm-announce{
     position:relative;
     overflow: hidden;
@@ -8,7 +9,6 @@
     top: 2%;
     right: 5%;
     padding: 4px 3px;
-    // background-color:$nm-it;
     a, a:visited{
         color:$nm-primary;
         text-transform: uppercase;
@@ -23,7 +23,6 @@
 }
 
 .tt-text{
-    // visibility: hidden;
     color: $nm-primary;
     background-color: $nm-secondary;
     position: absolute;
@@ -44,10 +43,7 @@
     border-color: black transparent transparent transparent;
 }
 
-
 .news-container{
-    // margin-left:6.5%;
-    // margin-right:6.5%;
     margin-top:10%;
     & img{
         max-width:100%;
@@ -63,54 +59,45 @@
         border-radius: 5px 5px;
         .latest-img{
             &:hover{
-                //position:relative;
                 transform: scale(1.1);
                 color:$nm-primary;
             }
-        }
-            
-        }
-        .info{
-            padding:25px;
-            
-           
-        }
-
-       
-        .u-img{
-            border: none;
-            border-radius: 50%;
-            height:45px;
-            width:45px;
-        }
-        .user{
-            
-            //flex-wrap: wrap;
-            //border:1px $nm-tertiary solid;
-            padding-top: 20px;
-            position: relative;
-            &::before{
-                content: '';
-                display:block;
-                position: absolute;
-                width: 95%;
-                border: lighten($nm-tertiary, 45%) solid 1px;
-                top: 1%;
-                left: 5%;
-            }
-
-            .posted-by{
-                display:inline-block;
-                margin-left:15px;
-            }
-        }
-       
+        }      
     }
+    .info{
+        padding:25px;
+    }
+
+    .u-img{
+        border: none;
+        border-radius: 50%;
+        height:45px;
+        width:45px;
+    }
+    .user{
+        padding-top: 20px;
+        position: relative;
+        &::before{
+            content: '';
+            display:block;
+            position: absolute;
+            width: 95%;
+            border: lighten($nm-tertiary, 45%) solid 1px;
+            top: 1%;
+            left: 5%;
+        }
+
+        .posted-by{
+            display:inline-block;
+            margin-left:15px;
+        }
+    }      
+}
+//Read more
     .rm-n{
         text-align: center;
         text-transform: uppercase;
         font-size: 1.25em;
-        
         background-color:$nm-web;
         border-radius: 2px 2px;
         padding:10px 3px;
@@ -122,17 +109,11 @@
             text-decoration: none;
         }
         cursor: pointer;
-
-        // &:hover{
-        //     background-color: darken(10%);
-        // }
     }
 
     //Colours top right tab, title links and read more
-    // @if
 
     .para{
-        //color:purple;
         font-size: 13px;
         height:50px;
     }
@@ -150,13 +131,14 @@
         color:$nm-bs;
     }
 
+// || Media Queries ||
+
 @media(max-width:$break-sm){
     .news-card{
         width:100%;
         height:auto;
-
         margin:30px 5px 0 5px;
-        // margin-top: 200px;
+
         .latest-img{
             width:100%;
         }
@@ -167,7 +149,7 @@
     .news-card{
         width:45%;
         height:auto;
-        //height:500px;
+
         &:first-child{
             margin-left:2%;
             margin-right:2%;

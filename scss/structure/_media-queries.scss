@@ -1,19 +1,18 @@
-// || MEDIA QUERIES || //
-/* breakpoint variables*/
+
+// breakpoint variables
 $break-sm: 768px;
 $break-m: 769px; //992px
 $break-lg: 1260px; //1000
 
  //Small
 
+ // || MEDIA QUERIES ||
+ //These are media Queries for various files that do the same thing for the element
+
 @media(max-width:$break-sm){
     .buisness-info{
-        // display: flex;
-        //padding: 50px 150px;
-        //width: 100%;
         padding-top: 50px;
         padding-right:150px;
-        // padding-left:25px;
     }
     .social-media{
         width: 100%;
@@ -38,10 +37,7 @@ $break-lg: 1260px; //1000
 // Medium
 @media (min-width:$break-m){
     .buisness-info{
-        // width:100%;
         display:flex;
-        // flex-wrap: nowrap;
-        // justify-content: space-between;
         .ft{
             margin-right: 5%;
         }
@@ -57,7 +53,6 @@ $break-lg: 1260px; //1000
             
         }
     }
-    
 }
 
 //Large
@@ -82,7 +77,4 @@ $break-lg: 1260px; //1000
             
         }
     }
-
-  
-
 }
