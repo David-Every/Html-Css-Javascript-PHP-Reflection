@@ -1,6 +1,6 @@
 * { margin:0; padding:0; box-sizing:border-box; } //resets html
 
-@import 
+@import
 
 // Structure, Keep at the top //
 '../scss/structure/colours',
@@ -20,7 +20,7 @@
 
 //Header
 '../scss/Header/dropdowns',
-'../scss/Header/nav',
+'../scss/Header/site-navigation',
 '../scss/Header/carousel';
 
 /* Stops items from being selected / copied*/
