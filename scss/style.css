@@ -52,7 +52,7 @@ h4 {
   }
 }
 
-@media (min-width: 769px) {
+@media (max-width: 769px) {
   .buisness-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -257,10 +257,6 @@ footer .buisness-info a:hover {
   margin-left: 50px;
   width: 200px;
   height: 75px;
-}
-
-.partner-tool-container {
-  position: absolute;
 }
 
 .partner-tool {
@@ -936,23 +932,21 @@ footer .buisness-info a:hover {
   display: inline-flex;
 }
 
-.top-nav {
-  margin-bottom: 50%;
-}
-
-.logo {
-  padding-left: auto;
-  padding-right: auto;
-}
-
 .phone {
   font-size: 2em;
-  padding-top: 5%;
+}
+
+.top-nav {
+  width: 86%;
+}
+
+.nav-buttons {
+  display: initial;
 }
 
 .btn {
-  height: 55px;
-  width: 125px;
+  height: 56px;
+  width: 144px;
   margin-right: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -960,16 +954,35 @@ footer .buisness-info a:hover {
   text-align: center;
 }
 
+.btn-1 {
+  background-color: #286ABD;
+  color: #fff;
+}
+
+.btn-1:hover {
+  background-color: #1f5293;
+  color: #fff;
+}
+
+.btn-2 {
+  background-color: #526781;
+  color: #fff;
+}
+
+.btn-2:hover {
+  background-color: #3e4e62;
+  color: #fff;
+}
+
 .search-bar {
-  margin-left: 35px;
   width: auto;
-  height: 55px;
+  height: 56px;
   padding-left: 10px;
 }
 
 .search-button, .b-menu, .b-menu-sm {
-  height: 55px;
-  width: 55px;
+  height: 56px;
+  width: 70px;
   text-align: center;
   cursor: pointer;
   color: #fff;
@@ -982,17 +995,25 @@ footer .buisness-info a:hover {
 
 .search-button {
   background-color: #999999;
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 2px 2px 0px;
 }
 
 .search-button:hover {
   background-color: #666666;
 }
 
+.search-button:active {
+  background-color: blue;
+}
+
+.search-button:active .btn-1 {
+  background-color: pink;
+}
+
 .b-menu {
   background-color: #333645;
-  margin-left: 30px;
-  border-radius: 5px;
+  margin-left: 20px;
+  border-radius: 2px;
 }
 
 .b-menu:hover {
@@ -1017,6 +1038,11 @@ footer .buisness-info a:hover {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-right: 1%;
+  }
+  .logo img {
+    height: 70px;
+    width: 402px;
   }
   .b-menu-sm, .phone {
     display: initial;
@@ -1025,17 +1051,32 @@ footer .buisness-info a:hover {
   .nav-buttons, .b-menu, .search-button {
     display: none;
   }
-  .logo {
-    padding-left: 4%;
-    padding-top: 5%;
-    height: 80px;
-  }
   .search-bar {
-    margin-top: 5%;
-    margin-left: 35px;
-    width: 450px;
-    height: 55px;
+    margin: 5% 0% 5% 11%;
+    width: 500px;
+    height: 56px;
     background-color: #e6e6e6;
+  }
+}
+
+@media (min-width: 769px) {
+  .top-nav {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 3% 7%;
+  }
+  .logoimg {
+    height: 60px;
+    width: 345px;
+  }
+  .phone, .search-bar {
+    display: none;
+  }
+  .nav-buttons {
+    display: initial;
   }
 }
 
@@ -1044,38 +1085,27 @@ footer .buisness-info a:hover {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    width: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     max-height: 120px;
-    padding-top: 25px;
-    padding: 25px 0px;
+    margin: 2% 0% 2% 7%;
   }
   .logo {
-    padding: 0% 10% 5% 20%;
+    padding-right: 7%;
+  }
+  .logoimg {
+    width: 370px;
+    height: 64.42px;
   }
   .phone {
     display: none;
   }
-  .btn {
-    display: inherit;
-  }
-  .btn-1 {
-    background-color: #286ABD;
-    color: #fff;
-  }
-  .btn-1:hover {
-    background-color: #1f5293;
-    color: #fff;
-  }
-  .btn-2 {
-    background-color: #526781;
-    color: #fff;
-  }
-  .btn-2:hover {
-    background-color: #3e4e62;
-    color: #fff;
-  }
   .b-menu-sm {
     display: none;
+  }
+  .search-bar {
+    display: initial;
+    width: 200px;
   }
 }
 

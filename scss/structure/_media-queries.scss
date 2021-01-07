@@ -30,12 +30,9 @@ $break-lg: 1260px; //1000
     .nav-bar {
         display:none;
     }
-    // header .logo{
-    //     margin-left:none;
-    // }
 }
 // Medium
-@media (min-width:$break-m){
+@media (max-width:$break-m){
     .buisness-info{
         display:flex;
         .ft{
