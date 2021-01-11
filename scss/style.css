@@ -934,19 +934,36 @@ footer .buisness-info a:hover {
 
 .phone {
   font-size: 2em;
+  position: absolute;
+  right: 25%;
+  top: 1%;
+}
+
+.phone a:link, .phone a:visited,
+.search-button-sm a:link, .search-button-sm a:visited {
+  color: #333645;
+}
+
+.phone a:hover {
+  text-decoration: underline;
+}
+
+.lg, .m, .sm {
+  display: none;
 }
 
 .top-nav {
   width: 86%;
+  margin-bottom: 20%;
 }
 
-.nav-buttons {
+.nav-buttons, .search-bar, .b-menu {
   display: initial;
 }
 
 .btn {
   height: 56px;
-  width: 144px;
+  width: 130px;
   margin-right: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -974,10 +991,28 @@ footer .buisness-info a:hover {
   color: #fff;
 }
 
+.nav-buttons {
+  position: absolute;
+  right: 40%;
+}
+
 .search-bar {
+  border: #666666 1px solid;
   width: auto;
   height: 56px;
   padding-left: 10px;
+  border: 1px solid #666666;
+  position: absolute;
+  right: 18%;
+}
+
+.search-bar:active {
+  border: 1px solid #666666;
+}
+
+.search-button {
+  position: absolute;
+  right: 14%;
 }
 
 .search-button, .b-menu, .b-menu-sm {
@@ -1010,10 +1045,20 @@ footer .buisness-info a:hover {
   background-color: pink;
 }
 
+.search-button-sm {
+  font-size: 2em;
+  color: #666666;
+  position: absolute;
+  right: 8%;
+  top: 16%;
+}
+
 .b-menu {
   background-color: #333645;
   margin-left: 20px;
   border-radius: 2px;
+  position: absolute;
+  right: 7%;
 }
 
 .b-menu:hover {
@@ -1025,24 +1070,40 @@ footer .buisness-info a:hover {
   margin-left: 30px;
   border-radius: 5px;
   display: none;
+  position: absolute;
+  right: 7%;
 }
 
 .b-menu-sm:hover {
   background-color: #08080a;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .sm {
+    display: initial;
+  }
+  .lg, .m {
+    display: none;
+  }
   .top-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: 1%;
+    margin-right: none;
+    width: 100%;
+  }
+  .navigation {
+    width: 100%;
+  }
+  .logo {
+    margin: 3%;
+    width: 50%;
+    min-width: 325px;
   }
   .logo img {
-    height: 70px;
-    width: 402px;
+    width: 100%;
   }
   .b-menu-sm, .phone {
     display: initial;
@@ -1052,35 +1113,67 @@ footer .buisness-info a:hover {
     display: none;
   }
   .search-bar {
-    margin: 5% 0% 5% 11%;
-    width: 500px;
-    height: 56px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding-right: 10%;
+    width: 92%;
+    height: 50px;
     background-color: #e6e6e6;
+    right: 0%;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+  .m {
+    display: none;
+  }
+  .phone, .search-button-sm, .nav-buttons {
+    display: none;
+  }
   .top-nav {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .m {
+    display: initial;
+  }
+  .lg, .sm {
+    display: none;
+  }
+  .top-nav {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin: 3% 7%;
   }
-  .logoimg {
-    height: 60px;
+  .logo {
+    width: 40%;
+  }
+  .logo img {
     width: 345px;
   }
-  .phone, .search-bar {
+  .phone, .search-button-sm {
     display: none;
   }
-  .nav-buttons {
+  .search-bar {
     display: initial;
+    right: 22%;
+  }
+  .search-button {
+    right: 19%;
   }
 }
 
 @media (min-width: 1260px) {
+  .lg {
+    display: initial;
+  }
+  .m, .sm {
+    display: none;
+  }
   .top-nav {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -1097,15 +1190,15 @@ footer .buisness-info a:hover {
     width: 370px;
     height: 64.42px;
   }
-  .phone {
-    display: none;
-  }
-  .b-menu-sm {
+  .b-menu-sm, .phone {
     display: none;
   }
   .search-bar {
     display: initial;
     width: 200px;
+  }
+  .nav-buttons {
+    display: initial;
   }
 }
 

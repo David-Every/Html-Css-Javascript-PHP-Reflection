@@ -2,17 +2,34 @@
 $nav-height:56px;
 .phone{
     font-size: 2em;
+    position: absolute;
+    right:25%;
+    top: 1%;
+    
+}
+.phone a:link, .phone a:visited,
+.search-button-sm a:link, .search-button-sm a:visited{
+    color:$nm-secondary;
+ }
+ .phone a:hover{
+     text-decoration: underline;
+ }
+
+
+.lg,.m,.sm{
+    display:none;
 }
 
 .top-nav{
     width:86%; // 7% left margin (93%)
+    margin-bottom:20%;
 }
-.nav-buttons{
+.nav-buttons, .search-bar, .b-menu{
     display:initial;
 }
 .btn{
     height: $nav-height;
-    width: 144px;
+    width: 130px;
     margin-right:20px;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -37,11 +54,34 @@ $nav-height:56px;
     }
 }
 
+//|| Navigation Positioning ||
+
+.nav-buttons{
+    position: absolute;
+    right:40%;
+}
+
 .search-bar{
+    border:$nm-tertiary 1px solid;
     width: auto;
     height:$nav-height;
     padding-left:10px;
+    border:1px solid $nm-tertiary;
+    position:absolute;
+    right:18%;
+
+    &:active{
+        border: 1px solid $nm-tertiary;
+    }
 }
+.search-button{
+    position: absolute;
+    right:14%;
+}
+
+//|| /Navigation Positioning ||
+
+
 .search-button, .b-menu, .b-menu-sm{
     height:$nav-height;
     width: 70px;
@@ -62,14 +102,18 @@ $nav-height:56px;
     }
     &:active{
         background-color:blue ;
-
-        // .nav-buttons{
-        //     display:none;
-        // }
         .btn-1{
             background-color: pink;
         }
     }
+}
+
+.search-button-sm{
+    font-size: 2em;
+    color:$nm-tertiary;
+    position: absolute;
+    right: 8%;
+    top:16%; 
 }
 .b-menu{
     background-color: $nm-secondary;
@@ -78,6 +122,8 @@ $nav-height:56px;
     &:hover{
         background-color: darken($nm-secondary, 20%);
     }
+    position:absolute;
+    right:7%;
 }
 
 .b-menu-sm{
@@ -88,29 +134,41 @@ $nav-height:56px;
         background-color: darken($nm-secondary, 20%);
     }
     display:none;
+    position:absolute;
+    right: 7%;
 }
-
-//  .search-button:hover{ // and search clicked on
-//     // When search button is clicked
-//     .nav-buttons{
-//         display:none;
-//     }
-    // nav-buttons display:none
-    // search bar display: initial
-    //$bar-minimised: false;
-// }
 
 // || Media Queries ||
 
-@media (max-width:$break-sm){
+@media(max-width:$break-xs){
+    .sm{
+        display:initial;
+    }
+        
+    .lg,.m{
+        display:none;
+    }
+    
+
+    
+
     .top-nav{
         display: flex;
         flex-wrap: wrap;
-        margin-right: 1%;
+        margin-right: none;
+        width:100%;
+    }
+    .navigation{
+        width:100%;
+    }
+    .logo{
+        margin: 3%;
+        width:50%;
+        min-width:325px;
     }
     .logo img{
-        height:70px;
-        width: 402px;
+        // height:100%;
+        width: 100%;
     }
     .b-menu-sm, .phone{
         display:initial;
@@ -121,38 +179,72 @@ $nav-height:56px;
         display:none;
     }
     .search-bar{
-        margin: 5% 0% 5% 11%;
-        width: 500px;
-        height:$nav-height;
+        //T,R,L,B
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        padding-right:10%;
+        //margin:35px;
+        width: 92%;
+        height:50px;
         background-color: lighten($nm-tertiary,50%);
+
+        right:0%;
+    }
+}
+
+@media (min-width:$break-sm){
+    .m{
+        display:none;
+    }
+    .phone,.search-button-sm, .nav-buttons{
+        display:none;
+    }
+    .top-nav{
+        display:inline-flex;
     }
 }
 
 @media (min-width:$break-m){
+    .m{
+        display:initial;
+    }
+
+    .lg,.sm{
+        display:none;
+    }
+
+
     .top-nav{
-        display:inline-flex;
         flex-wrap: nowrap;
-        // width: 90%;
         margin: 3% 7%;
     }
     .logo{
-        &img{
-            height:60px;
-            width:345px;
-        }
-        
+        width:40%;
     }
-    
-    .phone, .search-bar{
+    .logo img{
+        width: 345px;
+    }
+    .phone,.search-button-sm{
         display:none;
     }
-    .nav-buttons{
-        display: initial;
-        // width: 30%;
+
+    .search-bar{
+        display:initial;
+        right:22%;
+    }
+    .search-button{
+        right:19%;
     }
 }
 
 @media (min-width:$break-lg){
+    .lg{
+        display:initial;
+    }
+
+    .m,.sm{
+        display:none;
+    }
     .top-nav{
         display: inline-flex;
         flex-wrap: nowrap;
@@ -166,15 +258,14 @@ $nav-height:56px;
             height: 64.42px; 
         }
     }
-    .phone{
-        display:none;
-    }
-
-    .b-menu-sm{
+    .b-menu-sm,.phone{
         display: none;
     }
     .search-bar{
         display: initial;
         width: 200px;
+    }
+    .nav-buttons{
+        display:initial;
     }
 }
