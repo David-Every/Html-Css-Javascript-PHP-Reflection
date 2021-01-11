@@ -8,6 +8,7 @@
 
 .footer-web-design,
 .footer-icons,
+.newsletter,
 .card-nav,
 .carousel,
 .news {
@@ -178,6 +179,47 @@ h4 {
     padding-left: 125px;
     width: 45%;
   }
+}
+
+.newsletter {
+  padding-left: 10%;
+  padding-bottom: 5%;
+}
+
+.newsletter h2 {
+  text-transform: capitalize;
+  margin-top: 0px;
+  margin-bottom: 3%;
+}
+
+.user-data-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.user-data-input label {
+  display: block;
+}
+
+.name, .email {
+  width: 500px;
+  padding: 10px;
+}
+
+.checkbox-p {
+  font-size: 16px;
+  color: #333645;
+  font-weight: 600;
+}
+
+.checkbox-pa:hover {
+  color: #08080a;
+}
+
+.checkbox-p a:link {
+  color: #333645;
+  text-decoration: underline;
 }
 
 footer .buisness-info {

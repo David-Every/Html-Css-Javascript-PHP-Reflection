@@ -1,4 +1,42 @@
 
+.newsletter{
+    padding-left: 10%;
+    padding-bottom: 5%;
+    h2{
+        text-transform: capitalize;
+        margin-top: 0px;
+        margin-bottom: 3%;
+    }
+}
+
+.user-data-input{
+    display:flex;
+}
+.user-data-input label{
+    display:block;
+
+}
+.name,.email{
+    // margin-left:10%;
+    width:500px;
+    // height:55px;
+    // padding-left:10px;
+    padding: 10px;
+}
+
+.checkbox-p{
+    font-size: 16px;
+    color:$nm-secondary;
+    font-weight:600; 
+    &a:hover{
+        color:darken($nm-secondary,20%);
+    }
+}
+.checkbox-p a:link{
+    color:$nm-secondary;
+    text-decoration: underline;
+}
+
 footer {
     .buisness-info{        
         @include text-display;
