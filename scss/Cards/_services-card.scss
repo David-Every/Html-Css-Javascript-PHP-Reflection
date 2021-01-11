@@ -129,6 +129,9 @@
 
 //large screen view
 @media(min-width:$break-lg){
+    .card-nav{
+        padding-left: 10%;
+    }
     .row-1{
         margin-bottom:3%;
     }

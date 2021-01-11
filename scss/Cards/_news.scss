@@ -45,6 +45,8 @@
 
 .news-container{
     margin-top:10%;
+    // margin-left:5%;
+    // width:50%;
     & img{
         max-width:100%;
         max-height:75%;
@@ -164,16 +166,15 @@
 }
 
 @media(min-width:$break-lg){
+    .news-container{
+        padding-left:8%;
+    }
     .news-card{
-        width: 28%;
+        width: 27%;
             height: auto;
             margin-right:2%;
-
-        &:first-child{
-            margin-left:2%;
-        }
         &:last-child{
-            margin-right: 0.1%;
+            margin-right: 0%;
             display: initial;
         }
     }

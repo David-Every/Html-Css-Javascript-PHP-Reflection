@@ -736,6 +736,9 @@ footer .buisness-info a:hover {
 }
 
 @media (min-width: 1260px) {
+  .card-nav {
+    padding-left: 10%;
+  }
   .row-1 {
     margin-bottom: 3%;
   }
@@ -937,16 +940,16 @@ footer .buisness-info a:hover {
 }
 
 @media (min-width: 1260px) {
+  .news-container {
+    padding-left: 8%;
+  }
   .news-card {
-    width: 28%;
+    width: 27%;
     height: auto;
     margin-right: 2%;
   }
-  .news-card:first-child {
-    margin-left: 2%;
-  }
   .news-card:last-child {
-    margin-right: 0.1%;
+    margin-right: 0%;
     display: initial;
   }
 }
@@ -1351,7 +1354,7 @@ body {
   height: 100px;
   padding-top: 25px;
   font-size: 20px;
-  margin: 0% 7%;
+  margin-left: 10%;
   position: absolute;
 }
 
