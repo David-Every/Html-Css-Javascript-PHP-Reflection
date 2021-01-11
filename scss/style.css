@@ -580,18 +580,23 @@ footer .buisness-info a:hover {
 }
 
 .card .rm {
-  position: relative;
-  width: 100px;
-  left: 33%;
-  bottom: 0%;
-  text-transform: uppercase;
+  position: absolute;
+  width: 125px;
+  height: 45px;
   border-radius: 5%;
   padding: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.card .rm p {
+  padding-top: 7px;
 }
 
 .card-nav {
-  margin-left: 7%;
-  margin-right: 7%;
+  padding-left: 7%;
+  padding-right: 7%;
   background-color: #f2f2f2;
   padding-bottom: 50px;
 }
@@ -668,7 +673,7 @@ footer .buisness-info a:hover {
   font-size: 23px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .row-1, .row-2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -680,16 +685,37 @@ footer .buisness-info a:hover {
     width: 100%;
     margin: 0 10px 35px 10px;
   }
+  .row-1 .card .rm, .row-2 .card .rm {
+    right: 35%;
+    bottom: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .row-1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .row-1 .card {
+    width: 100%;
+  }
 }
 
 @media (min-width: 769px) {
-  .row-1 .card {
-    width: 28%;
-    margin-right: 4%;
-    margin-top: 3%;
+  .row-1 {
+    margin-bottom: 3%;
   }
-  .row-1 .card:first-child {
-    margin-left: 3%;
+  .row-1 .card {
+    width: 29%;
+    height: 350px;
+    margin-right: 4%;
+  }
+  .row-1 .card .rm {
+    right: 30%;
+    bottom: 5%;
   }
   .row-2 {
     -ms-flex-wrap: wrap;
@@ -697,34 +723,45 @@ footer .buisness-info a:hover {
   }
   .row-2 .card {
     width: 45%;
-    margin-left: 3%;
-    margin-top: 3%;
-  }
-}
-
-@media (min-width: 1260px) {
-  .row-1 .card {
-    width: 28%;
     margin-right: 5%;
-  }
-  .row-1 .card:first-child {
-    margin-left: 3%;
-  }
-  .row-1 .card:last-child {
-    margin-right: 3%;
-  }
-  .row-2 .card {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    width: 20%;
-    margin-right: 1.7%;
-    margin-top: 3%;
+    margin-bottom: 3%;
   }
   .row-2 .card:last-child {
     margin-right: 0%;
   }
-  .row-2 .card:first-child {
-    margin-left: 3%;
+  .row-2 .card .rm {
+    right: 35%;
+    bottom: 5%;
+  }
+}
+
+@media (min-width: 1260px) {
+  .row-1 {
+    margin-bottom: 3%;
+  }
+  .row-1 .card {
+    width: 30%;
+    margin-right: 3%;
+  }
+  .row-1 .card:last-child {
+    margin-right: 3%;
+  }
+  .row-1 .card .rm {
+    right: 35%;
+    bottom: 5%;
+  }
+  .row-2 .card {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 21.5%;
+    margin-right: 3.35%;
+  }
+  .row-2 .card:last-child {
+    margin-right: 0%;
+  }
+  .row-2 .card .rm {
+    right: 30%;
+    bottom: 5%;
   }
 }
 

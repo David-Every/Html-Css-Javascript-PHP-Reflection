@@ -2,14 +2,12 @@
 //|| Default card structure ||
 
  .card-icon{ // selects nav icon
-    //padding: 25px;
     height: 60px;
     width: 60px;
     border-radius: 100%;
 }
 .card p{
     height: 100px;
-    // color: purple;
 }
 
 .row-1 a, .row-2 a{
@@ -17,26 +15,31 @@
 }
 .row-1 a, .row-1 a:hover,
 .row-2 a, .row-2 a:hover{
-    //color:pink;
     text-decoration: none;
 }
 
 .card{
     position: relative;
     .rm{
-        position: relative;
-        width: 100px;
-        left:33%;
-        bottom:0%;
-        text-transform: uppercase;
+        position: absolute;
+        width: 125px;
+        height: 45px;
+        // left:35%;
+        // bottom:0%;
         border-radius:5%;
         padding:5px;
+        text-transform: uppercase;
+        text-align:center;
+        font-size: 1.25em;
+        & p{
+            padding-top:7px;
+        }
     }    
 }
 
 .card-nav{
-    margin-left:7%;
-    margin-right: 7%;
+    padding-left:7%;
+    padding-right: 7%;
     background-color:darken($nm-primary, 5%);
     padding-bottom:50px;
 
@@ -64,28 +67,44 @@
 //|| Media Queries ||
 
 // Small screen view
-@media(max-width:$break-sm){
+
+@media(max-width:$break-xs){
     .row-1, .row-2{
         justify-content:center;
         flex-wrap:wrap;
         .card{
             width:100%;
             margin: 0 10px 35px 10px;
+            .rm{
+                right:35%;
+                bottom:5%;
+            }
         }
     }
+}
+@media(max-width:$break-sm){
+   .row-1{
+       justify-content: center;
+       flex-wrap: wrap;
+       .card{
+        width:100%;
+        // margin: 0 10px 35px 10px;
+    }
+   }
 }
 
 //Medium Screen View
 @media(min-width:$break-m){
     //top row has its 3
     .row-1{
+         margin-bottom:3%;
         .card{
-            width:28%;
+            width:29%;
+            height:350px;
             margin-right: 4%;
-            margin-top:3%;
-
-            &:first-child{
-                margin-left:3%;
+            .rm{
+                right: 30%;
+                bottom:5%;
             }
         }
     }
@@ -94,36 +113,47 @@
         flex-wrap: wrap;
         .card{
             width: 45%;
-            margin-left:3%;
-            margin-top:3%;
+            margin-right:5%;
+            margin-bottom:3%;
+
+            &:last-child{
+                margin-right:0%;
+            }
+            .rm{
+                right: 35%;
+                bottom: 5%;
+            }
         }
     }
 }
 
 //large screen view
 @media(min-width:$break-lg){
+    .row-1{
+        margin-bottom:3%;
+    }
     .row-1 .card{
-        width: 28%;
-        margin-right:5%; 
-
-        &:first-child{
-            margin-left:3%;
-        }
+        width: 30%;
+        margin-right:3%; 
         &:last-child{
             margin-right:3%;
+        }
+        .rm{
+            right:35%;
+            bottom:5%;
         }
     }
     .row-2 .card{
         flex-wrap:nowrap;
-        width:20%;
-        margin-right:1.7%;
+        width:21.5%;
+        margin-right:3.35%;
         
         &:last-child{
             margin-right: 0%;
         }
-        &:first-child{
-            margin-left: 3%;
+        .rm{
+            right:30%;
+            bottom: 5%;
         }
-        margin-top:3%;
     }
 }

@@ -30,8 +30,8 @@ Things i need to do -
 
 [ ] Header -
     [ ] Make sure nav bar dropdown is working correctly
-    [ ] sort out support/ Contact and search bar and Burger menus
-    [ ] Make sure navigation flexes correctly.
+    [ x ] sort out support/ Contact and search bar and Burger menus
+    [ x ] Make sure navigation flexes correctly.
 
 [ ] tooltip
     [ ] Add tooltip and links to small box
@@ -46,3 +46,4 @@ Things i need to do -
     [ ] Everything Scales correctly and works in Chrome, IE and Firefox
     [ ] Merge everything together
     [ ] check everything and send off.
+    [ ] Re do Media Queries to have 4 breakpoints that work on mobile.
