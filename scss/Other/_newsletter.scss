@@ -1,0 +1,135 @@
+
+//|| Style ||\\
+
+.newsletter{
+    padding-left: 10%;
+    padding-bottom: 5%;
+    h2{
+        text-transform: capitalize;
+        margin-top: 0px;
+        margin-bottom: 3%;
+    }
+    p{
+        margin-top:20px;
+        margin-left: 10px;
+        font-size: 1.15em;
+        a{
+            color:$nm-secondary;
+            text-decoration: underline;
+        }
+        a:hover{
+            color:darken($nm-secondary,10%);
+        }
+    }
+}
+#name,#email{
+    border:none;
+    box-shadow:3px 1px 30px lighten($nm-tertiary,30%);
+    height:35px;
+}
+    
+.name,.email{
+    font-size: 1.35em;
+    i{
+        color:#d24d57;
+    }
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    height: 35px;
+    width: 35px;
+    border: 3px solid $nm-secondary;
+    border-radius: 5px;
+    // background-color: $nm-tertiary;
+    cursor: pointer;
+    &:after{
+        content:"\f00c";
+        color:$nm-primary;
+        width:15px;
+        height:15px;
+    }
+    &:checked{
+        background-color: $nm-secondary;
+    }
+}
+.sub{
+    // height: 40px;
+    width: 125px;
+    padding-top:7px;
+    padding-bottom:7px;
+
+    color: $nm-primary;
+    text-transform: uppercase;
+    font-size: 1.35em;
+    background-color: $nm-secondary;
+    border-radius: 3px;
+    margin-top: 25px;
+    text-align: center;
+    // position: absolute;
+    // right:0;
+
+    &:hover{
+        background-color: darken($nm-secondary,10%);
+    }
+}
+
+//|| /Style ||\\
+
+
+
+
+
+@media(max-width:$break-xs){
+    .user-data-input{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #name,#email{
+        width:500px;
+        padding:5px;
+        margin-bottom:10px;
+    }
+}
+
+@media(max-width:$break-sm){
+    // .user-data-input{
+    //     display: flex;
+    //     flex-wrap: wrap;
+    // }
+    // #name,#email{
+    //     width:500px;
+    //     // padding:5px;
+    //     // margin-bottom:10px;
+    // }
+}
+
+@media(max-width:$break-m){
+    // .email{
+    //     position: absolute;
+    //     right:39%;
+    // }
+    
+    #name,#email{
+        width:550px;
+        padding: 10px;
+    }
+    #name{
+        margin-right: 25px;;
+    }
+}
+
+@media(min-width:$break-lg){
+    .email{
+        position: absolute;
+        right:39%;
+    }
+    
+    #name,#email{
+        width:550px;
+        padding: 10px;
+    }
+    #name{
+        margin-right: 25px;;
+    }
+}

@@ -366,20 +366,22 @@
             <div class ="newsletter">
                 <h2>Email newsletter sign-Up</h2>
                 <form>
+                    <label id= for ="name" class ="name"> Your Name <i><small> * </small></i> </label>
+                    <label for ="email" class ="email">Your Email <i><small> * </small></i> </label>
                     <div class ="user-data-input"> 
-                        <label> Your Name * </label>
-                        <input type ="text" class ="name">
- 
-                        <label>Your Email *</label>
-                        <input type ="Email" class ="email">
+                        <input type ="text" id ="name">
+                        <input type ="Email" id ="email">
                     </div>
-                    
-                        <p class = "checkbox-p"><input type ="checkbox">
-                            Please tick this box if you wish to recieve marketing infomation from us. 
-                            Please see out <a href ="#">Pricacy Policy</a> for more infomation on how we use your data.
-                        </p>
-                        <input type ="submit">
+                    <input type ="checkbox" id="check">
+                        <label for ="check">
+                            <p>
+                                Please tick this box if you wish to recieve marketing infomation from us. 
+                                Please see out <a href ="#">Privacy Policy</a> for more infomation on how we use your data.
+                            </p>
+                        </label>
                 </form>
+                <!-- <input type ="submit" id ="subscribe"> -->
+                <div class ="sub">Subscribe</div>
             </div>
 
             <div class =  "buisness-info">

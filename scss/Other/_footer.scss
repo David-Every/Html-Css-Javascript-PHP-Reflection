@@ -1,42 +1,4 @@
 
-.newsletter{
-    padding-left: 10%;
-    padding-bottom: 5%;
-    h2{
-        text-transform: capitalize;
-        margin-top: 0px;
-        margin-bottom: 3%;
-    }
-}
-
-.user-data-input{
-    display:flex;
-}
-.user-data-input label{
-    display:block;
-
-}
-.name,.email{
-    // margin-left:10%;
-    width:500px;
-    // height:55px;
-    // padding-left:10px;
-    padding: 10px;
-}
-
-.checkbox-p{
-    font-size: 16px;
-    color:$nm-secondary;
-    font-weight:600; 
-    &a:hover{
-        color:darken($nm-secondary,20%);
-    }
-}
-.checkbox-p a:link{
-    color:$nm-secondary;
-    text-decoration: underline;
-}
-
 footer {
     .buisness-info{        
         @include text-display;
@@ -98,19 +60,70 @@ footer {
     height: 75px;
 }
 
+//extra small
+@media (max-width:$break-xs){
+    .buisness-info{
+        padding-top: 50px;
+        padding-right:150px;
+    }
+    .social-media{
+        width: 100%;
+        a{
+            background-size: 25%;
+            padding:30px 75px;
+            margin-right:5px;
+            margin-top:10px;
+        }
+    }
+    .footer-icons, 
+    .footer-web-design, 
+    .nav-bar {
+        display:none;
+    }
+}
 
-// .partner-tool-container{
-//     position: absolute;
-//     // &:hover .partner-tool{
-//     //     visibility:visible;
-//     // }   
-// }
-.partner-tool{
-    position: relative;
-    visibility: hidden;
-    width: 200px;
-    text-align: center;
-    color: $nm-primary;
-    background-color: $nm-secondary;
-    margin-bottom: 100px;
+//Small
+
+@media(max-width:$break-sm){
+    
+}
+// Medium
+@media (max-width:$break-m){
+    .buisness-info{
+        display:flex;
+        .ft{
+            margin-right: 5%;
+        }
+    }
+
+    .social-media{
+        width: 25%;
+        a{
+            background-size: 25%;
+            padding:20px 50px;
+            margin-right:5px;
+            margin-top:10px;
+            
+        }
+    }
+}
+
+//Large
+
+@media (min-width:$break-lg){ 
+    .buisness-info{
+        display:flex;
+        justify-content: space-between;
+       
+    }
+    .social-media{
+        width: 20%;
+        a{
+            background-size: 25%;
+            padding:20px 50px;
+            margin-right:5px;
+            margin-top:10px;
+            
+        }
+    }
 }

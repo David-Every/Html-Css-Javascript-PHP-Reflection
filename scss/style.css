@@ -32,67 +32,6 @@ h4 {
   letter-spacing: 1px;
 }
 
-@media (max-width: 768px) {
-  .buisness-info {
-    padding-top: 50px;
-    padding-right: 150px;
-  }
-  .social-media {
-    width: 100%;
-  }
-  .social-media a {
-    background-size: 25%;
-    padding: 30px 75px;
-    margin-right: 5px;
-    margin-top: 10px;
-  }
-  .footer-icons,
-  .footer-web-design,
-  .nav-bar {
-    display: none;
-  }
-}
-
-@media (max-width: 769px) {
-  .buisness-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .buisness-info .ft {
-    margin-right: 5%;
-  }
-  .social-media {
-    width: 25%;
-  }
-  .social-media a {
-    background-size: 25%;
-    padding: 20px 50px;
-    margin-right: 5px;
-    margin-top: 10px;
-  }
-}
-
-@media (min-width: 1260px) {
-  .buisness-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .social-media {
-    width: 20%;
-  }
-  .social-media a {
-    background-size: 25%;
-    padding: 20px 50px;
-    margin-right: 5px;
-    margin-top: 10px;
-  }
-}
-
 .social-fb {
   background: #282b36 url("../img/Icons/social-media-icons/facebook-svgrepo-com_white.svg") no-repeat center;
   background-size: 25%;
@@ -192,34 +131,112 @@ h4 {
   margin-bottom: 3%;
 }
 
-.user-data-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.newsletter p {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 1.15em;
 }
 
-.user-data-input label {
-  display: block;
+.newsletter p a {
+  color: #333645;
+  text-decoration: underline;
+}
+
+.newsletter p a:hover {
+  color: #1d1f28;
+}
+
+#name, #email {
+  border: none;
+  -webkit-box-shadow: 3px 1px 30px #b3b3b3;
+          box-shadow: 3px 1px 30px #b3b3b3;
+  height: 35px;
 }
 
 .name, .email {
-  width: 500px;
-  padding: 10px;
+  font-size: 1.35em;
 }
 
-.checkbox-p {
-  font-size: 16px;
-  color: #333645;
-  font-weight: 600;
+.name i, .email i {
+  color: #d24d57;
 }
 
-.checkbox-pa:hover {
-  color: #08080a;
+input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 35px;
+  width: 35px;
+  border: 3px solid #333645;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.checkbox-p a:link {
-  color: #333645;
-  text-decoration: underline;
+input[type="checkbox"]:after {
+  content: "\f00c";
+  color: #fff;
+  width: 15px;
+  height: 15px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #333645;
+}
+
+.sub {
+  width: 125px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.35em;
+  background-color: #333645;
+  border-radius: 3px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.sub:hover {
+  background-color: #1d1f28;
+}
+
+@media (max-width: 767px) {
+  .user-data-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #name, #email {
+    width: 500px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 769px) {
+  #name, #email {
+    width: 550px;
+    padding: 10px;
+  }
+  #name {
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .email {
+    position: absolute;
+    right: 39%;
+  }
+  #name, #email {
+    width: 550px;
+    padding: 10px;
+  }
+  #name {
+    margin-right: 25px;
+  }
 }
 
 footer .buisness-info {
@@ -301,14 +318,65 @@ footer .buisness-info a:hover {
   height: 75px;
 }
 
-.partner-tool {
-  position: relative;
-  visibility: hidden;
-  width: 200px;
-  text-align: center;
-  color: #fff;
-  background-color: #333645;
-  margin-bottom: 100px;
+@media (max-width: 767px) {
+  .buisness-info {
+    padding-top: 50px;
+    padding-right: 150px;
+  }
+  .social-media {
+    width: 100%;
+  }
+  .social-media a {
+    background-size: 25%;
+    padding: 30px 75px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  .footer-icons,
+  .footer-web-design,
+  .nav-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .buisness-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .buisness-info .ft {
+    margin-right: 5%;
+  }
+  .social-media {
+    width: 25%;
+  }
+  .social-media a {
+    background-size: 25%;
+    padding: 20px 50px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .buisness-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .social-media {
+    width: 20%;
+  }
+  .social-media a {
+    background-size: 25%;
+    padding: 20px 50px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
 }
 
 .nav-web i {

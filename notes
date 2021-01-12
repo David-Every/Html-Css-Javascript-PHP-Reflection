@@ -23,10 +23,10 @@ Things i need to do -
     [ x] Work out why social media buttons keep breaking
     [ x ] Get social media buttons to look nice in all sizes
     [ x ] sort out SVG's for social media icons
-
-    [x] Correct padding for partner icons
+    [ x ] Correct padding for partner icons
     
     [ ] make it so the partners scale depending on screen size
+    [ x ]Add in Newsletter Sign-up
 
 [ ] Header -
     [ ] Make sure nav bar dropdown is working correctly
