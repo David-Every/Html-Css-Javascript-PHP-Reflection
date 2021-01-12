@@ -6,8 +6,6 @@
           box-sizing: border-box;
 }
 
-.footer-web-design,
-.footer-icons,
 .newsletter,
 .card-nav,
 .carousel,
@@ -123,6 +121,7 @@ h4 {
 .newsletter {
   padding-left: 10%;
   padding-bottom: 5%;
+  height: auto;
 }
 
 .newsletter h2 {
@@ -150,7 +149,8 @@ h4 {
   border: none;
   -webkit-box-shadow: 3px 1px 30px #b3b3b3;
           box-shadow: 3px 1px 30px #b3b3b3;
-  height: 35px;
+  width: 600px;
+  height: 45px;
 }
 
 .name, .email {
@@ -209,37 +209,40 @@ input[type="checkbox"]:checked {
         flex-wrap: wrap;
   }
   #name, #email {
-    width: 500px;
     padding: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    margin-right: 25px;
+  }
+  .email {
+    position: relative;
   }
 }
 
-@media (max-width: 769px) {
-  #name, #email {
-    width: 550px;
-    padding: 10px;
+@media (max-width: 768px) {
+  .email {
+    position: absolute;
+    right: 39%;
   }
-  #name {
-    margin-right: 25px;
+  #name, #email {
+    padding: 10px;
   }
 }
 
 @media (min-width: 1260px) {
   .email {
     position: absolute;
-    right: 39%;
+    right: 42%;
   }
   #name, #email {
-    width: 550px;
     padding: 10px;
   }
   #name {
-    margin-right: 25px;
+    margin-right: 3%;
+    margin-bottom: 25px;
   }
 }
 
-footer .buisness-info {
+.buisness-info {
   line-height: 1.5;
   font-style: normal;
   text-decoration: none;
@@ -247,46 +250,53 @@ footer .buisness-info {
       flex-wrap: wrap;
   background-color: #333645;
   color: #fff;
-  padding: 2% 8%;
 }
 
-footer .buisness-info li {
+.buisness-info li {
   list-style: none;
 }
 
-footer .buisness-info address {
+.buisness-info address {
   font-style: normal;
 }
 
-footer .buisness-info .f-title {
+.buisness-info .f-title {
   text-transform: uppercase;
   padding-bottom: 1em;
 }
 
-footer .buisness-info a {
+.buisness-info a {
   color: #fff;
   text-decoration: none;
 }
 
-footer .buisness-info a:hover {
+.buisness-info a:hover {
   text-decoration: underline;
 }
 
-.footer-icons,
-.footer-web-design {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 100px;
-  padding: 20px 7%;
+.footer-web-design, .footer-icons {
+  margin-left: 11%;
+  margin-right: 7%;
+}
+
+.top-imgs {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.bottom-imgs {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-icons .f-img {
+  padding-right: 10%;
 }
 
 .f-img {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  padding-right: 5%;
 }
 
 .f-img:hover {
@@ -294,14 +304,7 @@ footer .buisness-info a:hover {
           filter: grayscale(0%);
 }
 
-.social-media,
-.contact-info,
-.about,
-.website {
-  border: 1px red solid;
-}
-
-.social-media .social-buttons {
+.social-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,69 +316,94 @@ footer .buisness-info a:hover {
 }
 
 .gp {
-  margin-left: 50px;
+  padding-right: 3%;
   width: 200px;
   height: 75px;
 }
 
 @media (max-width: 767px) {
   .buisness-info {
-    padding-top: 50px;
-    padding-right: 150px;
+    padding: 15px;
   }
-  .social-media {
-    width: 100%;
-  }
-  .social-media a {
-    background-size: 25%;
-    padding: 30px 75px;
-    margin-right: 5px;
-    margin-top: 10px;
-  }
-  .footer-icons,
-  .footer-web-design,
-  .nav-bar {
+  .footer-icons, .footer-web-design,
+  .top-imgs, .bottom-imgs {
     display: none;
+  }
+  .social {
+    margin: 10px;
+    width: 200px;
+    height: 65px;
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
+  .buisness-info {
+    padding: 15px;
+  }
+  .footer-icons, .footer-web-design,
+  .top-imgs, .bottom-imgs {
+    display: none;
+  }
+  .social {
+    margin: 10px;
+    width: 35%;
+    height: 50px;
+  }
+}
+
+@media (min-width: 769px) {
+  .footer-icons, .footer-web-design,
+  .top-imgs, .bottom-imgs {
+    display: none;
+  }
   .buisness-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
   }
-  .buisness-info .ft {
-    margin-right: 5%;
+  .contact-info,
+  .website {
+    width: 45%;
   }
-  .social-media {
-    width: 25%;
+  .about, .social-media {
+    width: 50%;
   }
-  .social-media a {
-    background-size: 25%;
-    padding: 20px 50px;
-    margin-right: 5px;
-    margin-top: 10px;
+  .social {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    height: 55px;
+    width: 150px;
   }
 }
 
 @media (min-width: 1260px) {
+  .footer-icons, .footer-web-design,
+  .top-imgs, .bottom-imgs {
+    display: initial;
+  }
   .buisness-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+  .contact-info, .website, .about {
+    width: 20%;
+    margin-right: 3%;
   }
   .social-media {
-    width: 20%;
+    width: 27%;
   }
   .social-media a {
     background-size: 25%;
     padding: 20px 50px;
     margin-right: 5px;
     margin-top: 10px;
+  }
+  .social {
+    width: 125px;
+    height: 55px;
   }
 }
 

@@ -1,129 +1,162 @@
 
-footer {
-    .buisness-info{        
-        @include text-display;
-        flex-wrap:wrap;
-        background-color: $nm-secondary;
-        color: $nm-primary;
-        padding:2% 8%;
-        
-        li{
-            list-style:none;
-        }
-        address{
-            font-style: normal;
-        }
-        .f-title{
-            text-transform:uppercase;
-            padding-bottom: 1em;
-        }
-        a{
-            color:$nm-primary;
-            text-decoration: none;
-        }
-        a:hover{
-            text-decoration: underline;
-        }
+.buisness-info{        
+    // height:100%;
+    @include text-display;
+    flex-wrap:wrap;
+    background-color: $nm-secondary;
+    color: $nm-primary;
+    // padding:2% 8%;
+    
+    li{
+        list-style:none;
+    }
+    address{
+        font-style: normal;
+    }
+    .f-title{
+        text-transform:uppercase;
+        padding-bottom: 1em;
+    }
+    a{
+        color:$nm-primary;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
     }
 }
+.footer-web-design,.footer-icons{
+    // margin-top:100px;
+    margin-left:11%;
+    margin-right:7%;
+    // margin-bottom:100px;
+    // padding-top:100px;
+}
+.top-imgs{
+    // padding-right:10%;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.bottom-imgs{
+    padding-top:50px;
+    padding-bottom: 50px;
 
-.footer-icons,
-.footer-web-design{
-    @include display;
-    height: 100px;
-    padding: 20px 7%;
+}
+
+.footer-icons .f-img{
+    padding-right:10%;
 }
 .f-img{
     filter: grayscale(100%);
     &:hover{
         filter:grayscale(0%);
     }
-    
-}
-.social-media,
-.contact-info,
-.about,
-.website{
-    border: 1px red solid;
+    padding-right:5%;
+    // &:last-of-type{
+    //     padding-right:0%;
+    // }
 }
 
-.social-media{
-    .social-buttons{ //parent container
-        display:flex;
-        justify-content: flex-start;
-        flex-wrap:wrap; 
-    }
+// This Keeps the social Media Buttons in the correct placement under social media
+
+.social-buttons{ 
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap:wrap; 
 }
+
 .gp{
-    margin-left: 50px;
+    padding-right: 3%;
     width:200px;
     height: 75px;
 }
 
 //extra small
-@media (max-width:$break-xs){
+@media(max-width:$break-xs){
     .buisness-info{
-        padding-top: 50px;
-        padding-right:150px;
+        padding:15px;
     }
-    .social-media{
-        width: 100%;
-        a{
-            background-size: 25%;
-            padding:30px 75px;
-            margin-right:5px;
-            margin-top:10px;
-        }
-    }
-    .footer-icons, 
-    .footer-web-design, 
-    .nav-bar {
+    .footer-icons, .footer-web-design,
+    .top-imgs, .bottom-imgs{
         display:none;
     }
+    .social{
+        margin:10px;
+        width: 200px;
+        height:65px;
+    }
 }
 
-//Small
-
-@media(max-width:$break-sm){
-    
+// //Small
+@media (max-width:$break-sm){
+    .buisness-info{
+        padding:15px;
+    }
+    .footer-icons,.footer-web-design,
+    .top-imgs, .bottom-imgs{
+        display:none;
+    }
+    .social{
+        margin:10px;
+        width: 35%;
+        height:50px;
+        // padding:5px;
+    }
 }
+
 // Medium
-@media (max-width:$break-m){
+@media (min-width:$break-m){
+    .footer-icons, .footer-web-design,
+    .top-imgs, .bottom-imgs{
+        display:none;
+    }
+    
+
     .buisness-info{
         display:flex;
-        .ft{
-            margin-right: 5%;
-        }
+        flex-wrap: wrap;
+        padding:20px;
     }
-
-    .social-media{
-        width: 25%;
-        a{
-            background-size: 25%;
-            padding:20px 50px;
-            margin-right:5px;
-            margin-top:10px;
-            
-        }
+    .contact-info,
+    .website{
+        width: 45%;
+    }
+    .about,.social-media{
+        width:50%;
+    }
+    .social{
+        margin-left:5%;
+        margin-bottom:5%;
+        height:55px;
+        width:150px;
     }
 }
 
-//Large
-
+// //Large
 @media (min-width:$break-lg){ 
+    .footer-icons, .footer-web-design,
+    .top-imgs, .bottom-imgs{
+        display:initial;
+    }
     .buisness-info{
-        display:flex;
-        justify-content: space-between;
-       
+        padding-left:10%;
+        padding-right: 5%;
+    }
+    .contact-info,.website,.about{
+        width:20%;
+        margin-right:3%;
     }
     .social-media{
-        width: 20%;
+        width:27%;
         a{
             background-size: 25%;
             padding:20px 50px;
             margin-right:5px;
-            margin-top:10px;
-            
+            margin-top:10px; 
         }
+    }
+    .social{
+        width:125px;
+        height: 55px;
     }
 }

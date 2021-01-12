@@ -4,6 +4,7 @@
 .newsletter{
     padding-left: 10%;
     padding-bottom: 5%;
+    height:auto;
     h2{
         text-transform: capitalize;
         margin-top: 0px;
@@ -25,7 +26,8 @@
 #name,#email{
     border:none;
     box-shadow:3px 1px 30px lighten($nm-tertiary,30%);
-    height:35px;
+    width:600px;
+    height:45px;
 }
     
 .name,.email{
@@ -77,59 +79,69 @@ input[type="checkbox"]{
 //|| /Style ||\\
 
 
+//|| Media Queries ||\\
 
-
-
+//Extra Small
 @media(max-width:$break-xs){
     .user-data-input{
         display: flex;
         flex-wrap: wrap;
     }
     #name,#email{
-        width:500px;
+        // width:500px;
         padding:5px;
-        margin-bottom:10px;
+        margin-bottom:50px;
+        margin-right:25px;
     }
-}
-
-@media(max-width:$break-sm){
-    // .user-data-input{
-    //     display: flex;
-    //     flex-wrap: wrap;
-    // }
-    // #name,#email{
-    //     width:500px;
-    //     // padding:5px;
-    //     // margin-bottom:10px;
-    // }
-}
-
-@media(max-width:$break-m){
-    // .email{
-    //     position: absolute;
-    //     right:39%;
-    // }
-    
-    #name,#email{
-        width:550px;
-        padding: 10px;
-    }
-    #name{
-        margin-right: 25px;;
-    }
-}
-
-@media(min-width:$break-lg){
     .email{
+        position: relative;
+        // left:10%;
+        // bottom:40%;
+    }
+}
+ //Small
+@media(max-width:$break-sm){
+   .email{
         position: absolute;
         right:39%;
     }
     
     #name,#email{
-        width:550px;
+        // width:550px;
+        padding: 10px;
+        // margin-bottom: 100px;
+    }
+}
+
+//Medium
+// @media(max-width:$break-m){
+//     // .email{
+//     //     position: absolute;
+//     //     right:39%;
+//     // }
+    
+//     // #name,#email{
+//     //     // width:550px;
+//     //     padding: 10px;
+//     //     // margin-bottom: 100px;
+//     // }
+// }
+
+//Large
+@media(min-width:$break-lg){
+    .email{
+        position: absolute;
+        right:42%; //39%;
+    }
+    
+    #name,#email{
+        // width:550px;
         padding: 10px;
     }
     #name{
-        margin-right: 25px;;
+        margin-right: 3%;
+        margin-bottom: 25px;
     }
 }
+
+//|| /Media Queries ||\\

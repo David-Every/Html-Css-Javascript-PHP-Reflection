@@ -18,14 +18,13 @@ Things i need to do -
     [ x ] Overlay with Text
     [ x ] Overlay Shadow
     [ x ] Get Opacity L 2 R working in all views
-[  ] Footer -
+[ x ] Footer -
     [ x ] Give correct Padding in all size views
     [ x] Work out why social media buttons keep breaking
     [ x ] Get social media buttons to look nice in all sizes
     [ x ] sort out SVG's for social media icons
     [ x ] Correct padding for partner icons
-    
-    [ ] make it so the partners scale depending on screen size
+    [ x ] make it so the partners scale depending on screen size
     [ x ]Add in Newsletter Sign-up
 
 [ ] Header -
