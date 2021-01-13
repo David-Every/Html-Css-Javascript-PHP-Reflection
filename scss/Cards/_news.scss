@@ -1,48 +1,4 @@
 
-.nm-announce{
-    position:relative;
-    overflow: hidden;
-}
-
-.tt{
-    position: absolute;
-    top: 2%;
-    right: 5%;
-    padding: 4px 3px;
-    a, a:visited{
-        color:$nm-primary;
-        text-transform: uppercase;
-        &:hover{
-            color:$nm-primary;
-        }
-    } 
-}
-
-.tt:hover .tt-text{
-    visibility:visible;
-}
-
-.tt-text{
-    color: $nm-primary;
-    background-color: $nm-secondary;
-    position: absolute;
-    top: -20%;
-    right:-15%;
-    z-index: 1;
-    padding: 2% 5%;
-    overflow-y: visible;
-}
-.tt-text::after{
-    content: " ";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-}
-
 .news-container{
     margin-top:10%;
     // margin-left:5%;

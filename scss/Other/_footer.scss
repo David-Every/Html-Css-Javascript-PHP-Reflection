@@ -25,28 +25,32 @@
         text-decoration: underline;
     }
 }
-.footer-web-design,.footer-icons{
-    // margin-top:100px;
-    margin-left:11%;
-    margin-right:7%;
-    // margin-bottom:100px;
-    // padding-top:100px;
-}
-.top-imgs{
-    // padding-right:10%;
-    padding-top:50px;
-    padding-bottom:50px;
-}
-.bottom-imgs{
-    padding-top:50px;
-    padding-bottom: 50px;
 
-}
+// .footer-web-design{
+//     display:inline-block;
+// }
+// /*.footer-web-design,*/.footer-icons{
+//     margin-left:10%;
+// }
+// .top-imgs{
+//     //.footer-web-design{
+//     padding-right:10%;
+//     padding-top:50px;
+//     padding-bottom:50px;
+// }
+// .bottom-imgs{
+//     padding-top:50px;
+//     padding-bottom: 50px;
 
-.footer-icons .f-img{
-    padding-right:10%;
-}
+// }
+
+// .footer-icons .f-img{
+//     // width:5%;
+//     padding-right:8%;
+// }
 .f-img{
+    height:65px;
+    // width:300px;
     filter: grayscale(100%);
     &:hover{
         filter:grayscale(0%);
@@ -66,7 +70,7 @@
 }
 
 .gp{
-    padding-right: 3%;
+    margin-right: 5%;
     width:200px;
     height: 75px;
 }
@@ -76,8 +80,8 @@
     .buisness-info{
         padding:15px;
     }
-    .footer-icons, .footer-web-design,
-    .top-imgs, .bottom-imgs{
+    .footer-icons, //.footer-web-design,
+    /*.top-imgs,*/ .bottom-imgs{
         display:none;
     }
     .social{
@@ -92,8 +96,8 @@
     .buisness-info{
         padding:15px;
     }
-    .footer-icons,.footer-web-design,
-    .top-imgs, .bottom-imgs{
+    .footer-icons,//.footer-web-design,
+    /*.top-imgs,*/ .bottom-imgs{
         display:none;
     }
     .social{
@@ -106,8 +110,8 @@
 
 // Medium
 @media (min-width:$break-m){
-    .footer-icons, .footer-web-design,
-    .top-imgs, .bottom-imgs{
+    .footer-icons, //.footer-web-design,
+    /*.top-imgs,*/ .bottom-imgs{
         display:none;
     }
     
@@ -135,9 +139,10 @@
 // //Large
 @media (min-width:$break-lg){ 
     .footer-icons, .footer-web-design,
-    .top-imgs, .bottom-imgs{
-        display:initial;
+     .top-imgs, .bottom-imgs{
+        display:inline-flex;
     }
+
     .buisness-info{
         padding-left:10%;
         padding-right: 5%;

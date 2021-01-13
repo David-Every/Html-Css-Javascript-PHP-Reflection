@@ -26,16 +26,14 @@ Things i need to do -
     [ x ] Correct padding for partner icons
     [ x ] make it so the partners scale depending on screen size
     [ x ]Add in Newsletter Sign-up
+[ x ] tooltip
+    [ x ] Add tooltip and links to small box
+    [ x ] create tooltip when hovering over partners
 
 [ ] Header -
     [ ] Make sure nav bar dropdown is working correctly
     [ x ] sort out support/ Contact and search bar and Burger menus
     [ x ] Make sure navigation flexes correctly.
-
-[ ] tooltip
-    [ ] Add tooltip and links to small box
-    [ ] create tooltip when hovering over partners
-
 
 [ ] Overall -
     [ ] Make sure all things are padded correctly 

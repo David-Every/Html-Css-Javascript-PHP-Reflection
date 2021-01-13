@@ -39,17 +39,13 @@
     <!-- Main site Navigation -->
     
 
-    <div class ="nav-bar">  <!-- Parent-->
-        <h5 class = "lg">Large</h5>
-        <h5 class = "m" >Medium</h5>
+      <!-- Parent-->
+        <!-- <h5 class = "lg">Large</h5>
+        <h5 class = "m" >Medium</h5> -->
         
         <!-- <div class = "bar-container"> 
 
-            <div class = " nav service nav-web "> 
-                <i class = "fa fa-code icon"> </i><br> 
-                <small>Web</small> <br>
-                Design
-            </div> -->
+            
 
             <!-- <div class ="dropdown" > Create a dropdown menu -->
                 <!-- <a href = "#"> stylish websites</a>
@@ -69,64 +65,57 @@
         
         <!-- I think i need to change the parent -->
         
-        <!-- <div class ="bar-container">
+        <!-- <div class ="bar-container"> -->
+            
+    <div class ="nav-wrapper">
+        <div class ="nav-bar"> 
+
+            <div class = " nav service nav-web "> 
+                <i class = "fa fa-code icon"> </i><br> 
+                <small>Web</small> <br>
+                Design
+            </div>
 
             <div class = "nav service nav-it">
                 <i class = "fa fa-desktop icon"></i><br>
                 <small>IT</small> <br>
                 Support 
             </div>
+    
+            <div class ="bar-container">
+                <div class = "nav service nav-tc"> 
+                    <i class ="fa fa-volume-control-phone icon"></i><br>
+                    <small> Telecoms </small><br> 
+                    services 
+                </div> 
 
-            <div class ="dropdown" >
-                <a href = "#"> lish websites</a>
-                <span>-</span>
-                <a href = "#"> ecommerce stores</a>
-                <span>-</span>
-                <a href = "#"> branding</a>
-                <span>-</span>
-                <a href = "#"> apps</a>
-                <span>-</span>
-                <a href = "#"> web hosting</a>
-                <span>-</span>
-                <a href = "#"> Pay monthly websites</a>            
             </div>
-        </div>  -->
 
-        <!-- <div class ="bar-container"> -->
-
-            <!-- <div class = "nav service nav-tc"> 
-                <i class ="fa fa-volume-control-phone icon"></i><br>
-                <small> Telecoms </small><br> 
-                services 
-            </div> -->
-
-        <!-- </div> -->
-
-        <!-- <div class ="bar-container">
-
-            <div class = "nav service nav-bs">
-                <i class ="glyphicon glyphicon-th icon"></i><br>
-                <small> bespoke </small> <br>
-                software 
+            <div class ="bar-container">
+                <div class = "nav service nav-bs">
+                    <i class ="glyphicon glyphicon-th icon"></i><br>
+                    <small> bespoke </small> <br>
+                    software 
+                </div>
             </div>
-        </div> -->
 
-        <!-- <div class ="bar-container">
-
-            <div class = "nav service nav-mk"> 
-                <i class = "glyphicon glyphicon-signal icon" ></i><br>
-                <small> Digital </small> <br>
-                marketing 
+            <div class ="bar-container">
+                <div class = "nav service nav-mk"> 
+                    <i class = "glyphicon glyphicon-signal icon" ></i><br>
+                    <small> Digital </small> <br>
+                    marketing 
+                </div>
             </div>
-        </div> -->
 
-        <!-- <div class = "bar-container"> 
-            <div class = "nav service nav-cs">
-                <i class = "fa fa-shield icon"> </i><br>
-                <small> Cyber </small> <br>
-                Security 
+            <div class = "bar-container"> 
+                <div class = "nav service nav-cs">
+                    <i class = "fa fa-shield icon"> </i><br>
+                    <small> Cyber </small> <br>
+                    Security 
+                </div>
             </div>
-        </div>-->
+        
+        </div> 
     </div>
     <!-- /Navigation -->   
 
@@ -265,8 +254,7 @@
 
                 <div class ="nm-announce"> <!--Image Parent-->
                     <img class = "latest-img" src = "../img/News_img/happy-25th-birthday-bXTr.jpg" alt ="Netmatters Hiring">
-                    <span class ="tt news-tag"><a href ="#"> news </a> </span> 
-                    <div class = "tt-text"> View all: IT Support / News </div> 
+                    <span data-text=" View all: IT Support / News" class="tt news-tag"><a href ="#"> News</a></span><!-- Tooltip-->
                 </div>
 
                 <div class = "info">
@@ -289,8 +277,7 @@
             <div class = "news-card">
                 <div class ="nm-announce"> 
                     <img class = "latest-img" src ="../img/News_img/zsea-it-support-bc5m.jpg" alt="Netmatters Announcement">
-                    <span class ="tt news-tag"><a href ="#"> Case Studies </a> </span>
-                    <div class = "tt-text"> View all: IT Support / Case Studies </div>
+                    <span data-text="View all: IT Support / Case Studies" class ="tt news-tag"><a href ="#"> Case Studies </a> </span> <!-- Tooltip-->
                 </div>
                 <div class ="info">
                     <h4><a class = "news-tag-title" href ="#">ZSEA IT Support case study</a></h4>
@@ -312,8 +299,7 @@
             <div class  = "news-card">
                 <div class ="nm-announce"> 
                     <img class = "latest-img" src = "../img/News_img/senior-web-developer-7ezg.jpg" alt ="Image of a Web developer">
-                    <span class ="tt career-tag"><a href ="#"> Careers </a> </span>
-                    <div class = "tt-text"> View all: Bespoke software / Careers </div>
+                    <span data-text="View all: Bespoke software / Careers " class ="tt career-tag"><a href ="#"> Careers </a> </span> <!-- Tooltip-->
                 </div>
                 <div class = "info" >
                     <h4 ><a id ="career-tag-title" href = "#"> Senior Web developer </a></h4>
@@ -339,25 +325,31 @@
     <footer>
         <!-- Find a way to turn this on and off, with @media in scss -->
         <div class = footer-container>
-            <div class = "top-imgs"> 
-                <div class = "footer-web-design">
-                        <!-- <div class ="f-img-t" > </div>
-                            <div class = "color-overlay"></div>
-                            <div class = "Bussys">
-                                <div class = "partner-tool-container" > 
-                                    <div class =" partner-tool" >
-                                        <h4>Bussys</h4>
-                                        <p>One of the UK's Leading Ford dealerships.</p>
-                                    </div>
-                                </div> -->
-                <img class = "f-img" src = "../img/web_design/Busseys_hover.png" alt = "Bussys Logo">
-        
-                            
-                    <!-- </div> -->
 
-                <a href ="#"> <img class = "f-img" src = "../img/web_design/Crane_hover.png" alt = " Crane Garden Buildings Logo"> </a>
-                <a href ="#"><img class = "f-img" src = "../img/web_design/Beat_hover.png" alt = "Beat Eating Disorders Logo"></a>
-                <a href ="#"> <img class = "f-img" src = "../img/web_design/Northern_diver_hover.png" alt = "Northern Diver, Openwater Suits and Equipment" ></a>
+            <div class = "top-imgs">
+                <div class = "footer-web-design">
+                    <div class ="site"> 
+                        <span data-text="One of the UK's Leading Ford Dealerships" class ="tool">
+                            <img class = "f-img" src = "../img/web_design/Busseys_hover.png" alt = "Bussys Logo"> 
+                        </span>
+                    </div>
+                    <div class ="site"> 
+                        <span data-text="Leading Manufacturer and supplier of high-end garden, rooms, summerhouses, workshops and sheds in the UK." class="tool"> 
+                            <a href ="#"><img class = "f-img" src = "../img/web_design/Crane_hover.png" alt = " Crane Garden Buildings Logo"> </a>
+                        </span>
+                    </div>
+
+                    <div class ="site"> 
+                        <span data-text="The Uk's eating disorder charity founded in 1989." class ="tool"> 
+                            <img class = "f-img " src = "../img/web_design/Beat_hover.png" alt = "Beat Eating Disorders Logo">
+                        </span>
+                    </div>
+
+                    <div class ="site"> 
+                        <span data-text="Global water based equipment manufacturers for sport, military, commercial and rescue businesses." class ="tool"> 
+                            <a href ="#"><img class = "f-img " src = "../img/web_design/Northern_diver_hover.png" alt = "Northern Diver, Openwater Suits and Equipment" ></a>
+                        </span>
+                    </div>
                 </div>
             </div>
 
@@ -446,7 +438,7 @@
             </div>
             <div class ="bottom-imgs">
                 <div class = " footer-icons">
-                    <img class ="gp" src = "../img/Footer-imgs/google_partner.png" alt = "Google partner">
+                    <img class ="gp" src = "../img/Footer-imgs/google_partner.png" alt = "Google partner"> 
                     <img class ="f-img" src = "../img/Footer-imgs/microsoft_partner.jpg" alt = "microsoft partner">
                     <img class ="f-img" src = "../img/Footer-imgs/future-50.jpg" alt = "Future 50">
                     <img class ="f-img" src = "../img/Footer-imgs/qms_hover.jpg" alt = "QMS">
