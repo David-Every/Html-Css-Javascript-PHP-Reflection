@@ -29,19 +29,22 @@ Things i need to do -
 [ x ] tooltip
     [ x ] Add tooltip and links to small box
     [ x ] create tooltip when hovering over partners
-
-[ ] Header -
-    [ ] Make sure nav bar dropdown is working correctly
+[ x ] Header -
+    [ x ] Make sure nav bar dropdown is working correctly
     [ x ] sort out support/ Contact and search bar and Burger menus
     [ x ] Make sure navigation flexes correctly.
 
 [ ] Overall -
     [ ] Make sure all things are padded correctly 
-    [ ] The darkened white background is the default background 
+    [ x ] The darkened white background is the default background 
         for all white background parts.
     [ ] Everything that would have links has placeholder links
     [ ] Everything Scales correctly and works in Chrome, IE and Firefox
     [ ] Merge everything together
     [ ] check everything and send off.
-    [ ] Re do Media Queries to have 4 breakpoints that work on mobile.
+    [ ] Re do Media Queries
+    Find out how to cremove outer part of images again.
     I can probably sort out tooltip arrows by using padding / Margins
+
+
+    Footer, Newsletter, site navigation, Services-card

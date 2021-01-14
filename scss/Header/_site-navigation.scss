@@ -22,7 +22,7 @@ $nav-height:56px;
 
 .top-nav{
     width:86%; // 7% left margin (93%)
-    margin-bottom:20%;
+    // margin-bottom:20%;
 }
 .nav-buttons, .search-bar, .b-menu{
     display:initial;
@@ -113,7 +113,8 @@ $nav-height:56px;
     color:$nm-tertiary;
     position: absolute;
     right: 8%;
-    top:16%; 
+    top:12%; 
+    // margin-top:19%;
 }
 .b-menu{
     background-color: $nm-secondary;
@@ -140,23 +141,17 @@ $nav-height:56px;
 
 // || Media Queries ||
 
-@media(max-width:$break-xs){
-    .sm{
-        display:initial;
-    }
-        
-    .lg,.m{
+//Small if the max is 768px
+@media (max-width:$break-sm){
+    .nav-bar{
         display:none;
     }
-    
-
-    
-
     .top-nav{
         display: flex;
         flex-wrap: wrap;
         margin-right: none;
         width:100%;
+        margin-bottom:75px; 
     }
     .navigation{
         width:100%;
@@ -187,83 +182,107 @@ $nav-height:56px;
         width: 92%;
         height:50px;
         background-color: lighten($nm-tertiary,50%);
-
         right:0%;
     }
 }
 
-@media (min-width:$break-sm){
-    .m{
-        display:none;
-    }
-    .phone,.search-button-sm, .nav-buttons{
+//Medium Between 768px and 992px
+@media (min-width:$break-sm) and (max-width:$break-m){
+    .nav-buttons,.nav-bar,.phone,.search-button-sm{
         display:none;
     }
     .top-nav{
-        display:inline-flex;
-    }
-}
-
-@media (min-width:$break-m){
-    .m{
-        display:initial;
-    }
-
-    .lg,.sm{
-        display:none;
-    }
-
-
-    .top-nav{
-        flex-wrap: nowrap;
-        margin: 3% 7%;
+        flex-wrap: wrap;
+        margin-top:3%;
+        margin-bottom:3%;
     }
     .logo{
         width:40%;
+        top:5%;
+        margin-left:3%;
     }
     .logo img{
         width: 345px;
-    }
-    .phone,.search-button-sm{
-        display:none;
+        padding-top:10px;
     }
 
     .search-bar{
         display:initial;
         right:22%;
+        top:5%;
     }
     .search-button{
+        top:5%;
         right:19%;
+    }
+    .b-menu{
+        top:5%;
     }
 }
 
-@media (min-width:$break-lg){
-    .lg{
-        display:initial;
+//Navigation medium-2 the empire strikes back.
+//If the max is above the medium breakpoint and less then large
+//if the minimum is higher then 992px and less then 1260px
+@media(min-width:$break-m) and (max-width:$break-lg){
+    // .nav-bar{
+    //     display:none;
+    // }
+    //T R B L
+    .top-nav{
+        margin: 2% 7% 2% 10%;
     }
-
-    .m,.sm{
+    
+    .phone,.search-bar,.search-button-sm{
         display:none;
+    }
+    .search-button,.b-menu{
+        top:3%;
+        // right:10%;
+    }
+    .search-button {
+        margin-right:20px;
+        right:10%;
+    }
+    .b-menu{
+        right: 3%;
+    }
+    .nav-buttons{
+        width: 400px;
+        left:50%;
+    }
+    .logo{
+        // left:-10%;
+    }
+}
+ //Large if the minumum is 992px and the 
+@media /*(min-width:$break-m) and*/ (min-width:$break-lg){
+    .nav-bar{
+        display:inline-flex;
     }
     .top-nav{
         display: inline-flex;
         flex-wrap: nowrap;
-        max-height:120px;
+        height:55px;
         margin: 2% 0% 2% 7%;
     }
     .logo{
         padding-right: 7%;
+        margin-left:4%;
         &img{
             width:370px; //370px
             height: 64.42px; 
         }
     }
-    .b-menu-sm,.phone{
+    .nav-buttons{
+        width: 400px;
+        left:40%;
+    }
+    .b-menu-sm,.phone, .search-button-sm{
         display: none;
     }
     .search-bar{
         display: initial;
-        width: 200px;
+        width: 225px;
     }
     .nav-buttons{
         display:initial;

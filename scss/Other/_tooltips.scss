@@ -37,7 +37,7 @@
 //Sets the tooltip display to block to user can see the tool tip when hovered over.
 .tt:hover::before,.tool:hover::before{
     display:block;
-    // overflow: visible;
+    overflow-y: visible;
 }
 //Adds the Arrow to the tooltip that points to where it came from.
 // I am wanting to have this as a mixin?

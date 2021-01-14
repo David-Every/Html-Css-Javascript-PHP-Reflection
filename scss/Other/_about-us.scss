@@ -38,7 +38,7 @@
 
 //|| Media Queries ||
 //Adapts Padding and width
-@media(max-width:$break-sm){
+@media(min-width:$break-sm){//max
     .content{
         padding: 25px;
         width:100%;

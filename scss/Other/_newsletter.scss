@@ -79,39 +79,26 @@ input[type="checkbox"]{
 //|| /Style ||\\
 
 
-//|| Media Queries ||\\
-
-//Extra Small
-@media(max-width:$break-xs){
+//|| Media Queries ||\\   
+ //Small
+@media(max-width:$break-sm){//max
     .user-data-input{
         display: flex;
         flex-wrap: wrap;
-    }
-    #name,#email{
-        // width:500px;
-        padding:5px;
-        margin-bottom:50px;
-        margin-right:25px;
-    }
-    .email{
-        position: relative;
-        // left:10%;
-        // bottom:40%;
-    }
-}
- //Small
-@media(max-width:$break-sm){
-   .email{
-        position: absolute;
-        right:39%;
-    }
-    
-    #name,#email{
-        // width:550px;
-        padding: 10px;
-        // margin-bottom: 100px;
-    }
-}
+        }
+        #name,#email{
+            // width:500px;
+            padding:5px;
+            margin-bottom:50px;
+            margin-right:25px;
+        }
+        .email{
+            position: relative;
+            // left:10%;
+            // bottom:40%;
+        }
+   }
+
 
 //Medium
 // @media(max-width:$break-m){

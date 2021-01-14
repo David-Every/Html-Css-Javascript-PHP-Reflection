@@ -25,6 +25,15 @@
         text-decoration: underline;
     }
 }
+.footer-icons, .footer-web-design,
+     .top-imgs, .bottom-imgs{
+        display:inline-flex;
+        margin-left:5%;
+    }
+
+    .top-imgs, .bottom-imgs{
+        margin-right:35px;
+    }
 
 // .footer-web-design{
 //     display:inline-block;
@@ -75,15 +84,17 @@
     height: 75px;
 }
 
-//extra small
-@media(max-width:$break-xs){
+// //Small
+@media (max-width:$break-sm){//max
+    .footer-icons, .footer-web-design,
+    .top-imgs, .bottom-imgs{
+        display:none;
+    }
+
     .buisness-info{
         padding:15px;
     }
-    .footer-icons, //.footer-web-design,
-    /*.top-imgs,*/ .bottom-imgs{
-        display:none;
-    }
+
     .social{
         margin:10px;
         width: 200px;
@@ -91,31 +102,36 @@
     }
 }
 
-// //Small
-@media (max-width:$break-sm){
-    .buisness-info{
-        padding:15px;
-    }
-    .footer-icons,//.footer-web-design,
-    /*.top-imgs,*/ .bottom-imgs{
+// Medium
+
+
+//TEST HERE
+@media (min-width:$break-sm) and (max-width:$break-m){
+//TEST HERE
+    .footer-icons, .footer-web-design,
+    .top-imgs, .bottom-imgs{
         display:none;
+    }
+    .buisness-info{
+        display:flex;
+        flex-wrap: wrap;
+        padding:20px;
+    }
+    .contact-info,
+    .website{
+        width: 45%;
+    }
+    .about,.social-media{
+        width:50%;
     }
     .social{
-        margin:10px;
-        width: 35%;
-        height:50px;
-        // padding:5px;
+        margin-left:5%;
+        margin-bottom:5%;
+        height:55px;
+        width:150px;
     }
 }
-
-// Medium
-@media (min-width:$break-m){
-    .footer-icons, //.footer-web-design,
-    /*.top-imgs,*/ .bottom-imgs{
-        display:none;
-    }
-    
-
+@media (min-width:$break-m) and (max-width:$break-lg){
     .buisness-info{
         display:flex;
         flex-wrap: wrap;
@@ -138,14 +154,10 @@
 
 // //Large
 @media (min-width:$break-lg){ 
-    .footer-icons, .footer-web-design,
-     .top-imgs, .bottom-imgs{
-        display:inline-flex;
-    }
-
     .buisness-info{
-        padding-left:10%;
-        padding-right: 5%;
+        width:100%;
+        padding: 2% 5% 2% 10%;
+        display:inline-flex;
     }
     .contact-info,.website,.about{
         width:20%;

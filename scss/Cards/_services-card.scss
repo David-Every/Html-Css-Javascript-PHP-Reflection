@@ -67,14 +67,14 @@
 //|| Media Queries ||
 
 // Small screen view
-
-@media(max-width:$break-xs){
+@media(max-width:$break-sm){//max
     .row-1, .row-2{
-        justify-content:center;
+                // justify-content:center;
         flex-wrap:wrap;
         .card{
             width:100%;
-            margin: 0 10px 35px 10px;
+            // margin: 0 5px 35px 5px;
+            margin-bottom:35px;
             .rm{
                 right:35%;
                 bottom:5%;
@@ -82,29 +82,29 @@
         }
     }
 }
-@media(max-width:$break-sm){
-   .row-1{
-       justify-content: center;
-       flex-wrap: wrap;
-       .card{
-        width:100%;
-        // margin: 0 10px 35px 10px;
-    }
-   }
-}
 
 //Medium Screen View
-@media(min-width:$break-m){
+@media(min-width:$break-sm) and (max-width:$break-m){
     //top row has its 3
+
+    .card-nav{
+        padding-left:5%;
+        padding-right:5%;
+    }
     .row-1{
+        flex-wrap: wrap;
          margin-bottom:3%;
         .card{
-            width:29%;
-            height:350px;
+            width:100%;
+            // height:350px;
             margin-right: 4%;
+            margin-bottom:5%;
             .rm{
-                right: 30%;
+                right: 43%;
                 bottom:5%;
+            }
+            &:last-of-type{
+                margin-bottom:3%;
             }
         }
     }
@@ -113,8 +113,9 @@
         flex-wrap: wrap;
         .card{
             width: 45%;
+            height:350px;
             margin-right:5%;
-            margin-bottom:3%;
+            margin-bottom: 5%;
 
             &:last-child{
                 margin-right:0%;
@@ -127,6 +128,38 @@
     }
 }
 
+@media(min-width:$break-m) and (max-width:$break-lg){
+    .row-1{
+        margin-bottom:3%;
+        .card{
+            margin-right: 5%;
+            width:30%;
+            height:350px;
+            &:last-child{
+                margin-right:none;
+            }
+            .rm{
+                right:30%;
+                bottom:5%;
+            }
+        }
+    }
+
+    .row-2{
+        display: flex;
+        flex-wrap: wrap; 
+        .card{
+            height:350px;
+            margin-right:5%;
+            margin-bottom:5%;
+            width:45%;
+            .rm{
+                right:35%;
+                bottom:5%;
+            }
+        }
+    }
+}
 //large screen view
 @media(min-width:$break-lg){
     .card-nav{
@@ -138,6 +171,8 @@
     .row-1 .card{
         width: 30%;
         margin-right:3%; 
+        margin-bottom: 0%;
+        height:300px;
         &:last-child{
             margin-right:3%;
         }
@@ -149,6 +184,7 @@
     .row-2 .card{
         flex-wrap:nowrap;
         width:21.5%;
+        height:300px;
         margin-right:3.35%;
         
         &:last-child{
