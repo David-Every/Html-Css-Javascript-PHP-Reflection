@@ -18,6 +18,7 @@
     } 
 }
 
+//Creates the tool-tip adds in the text and sets default display to show nothing.
 .tt::before,.tool::before{
     content: attr(data-text);
     position:absolute;
@@ -33,24 +34,27 @@
 
 }
 
+//Sets the tooltip display to block to user can see the tool tip when hovered over.
 .tt:hover::before,.tool:hover::before{
     display:block;
     // overflow: visible;
 }
+//Adds the Arrow to the tooltip that points to where it came from.
+// I am wanting to have this as a mixin?
 .tt:hover::after{
     // @include arrow($top:-50%,$left:50%);
     content: " ";
     position: absolute;
-    // top:-85%;
     top:-50%;
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: $nm-secondary transparent transparent transparent;
+    border-color: $nm-tertiary transparent transparent transparent;
 
 }
 
+//Adds the Arrow to the tooltip that points to where it came from.
 .tool:hover::after{
     // @include arrow($top:-92%,$left:50%);
     content: " ";

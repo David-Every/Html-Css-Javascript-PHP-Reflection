@@ -14,6 +14,11 @@ $service-colors:('web' $nm-web, 'it' $nm-it, 'tc' $nm-tc, 'bs' $nm-bs, 'mk' $nm-
                 color:$nm-primary;
             }
         }
+        
+    }
+
+    .nav-#{$name} .dropdown-content{
+        background-color: darken($color,5%); /*Test color*/
     }
 
     //Colours service cards, sets them as a default colour of $nm-primary
