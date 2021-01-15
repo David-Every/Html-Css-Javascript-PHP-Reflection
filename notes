@@ -35,16 +35,24 @@ Things i need to do -
     [ x ] Make sure navigation flexes correctly.
 
 [ ] Overall -
-    [ ] Make sure all things are padded correctly 
+    [ x ] Make sure all things are padded correctly 
     [ x ] The darkened white background is the default background 
-        for all white background parts.
-    [ ] Everything that would have links has placeholder links
+        for all white background parts
     [ ] Everything Scales correctly and works in Chrome, IE and Firefox
     [ ] Merge everything together
     [ ] check everything and send off.
-    [ ] Re do Media Queries
+    [ x ] Re do Media Queries
     Find out how to cremove outer part of images again.
     I can probably sort out tooltip arrows by using padding / Margins
 
 
-    Footer, Newsletter, site navigation, Services-card
+[ ] issues -
+    [ ] FireFox footer partner images not having correct whitespace.
+
+    [ ] Internet Explorer Carousel Image not showing up
+    [ ] Internet Explorer Footer partner image whitespace incorrect
+    [ ] Internet Explorer Footer Partener images not greyscale
+    [ ] Internet Explorer Social Media icons Not large enough
+    [ ] Internet Explorer News images not displaying
+    [ ] Internet Explorer Small view Burger menu not displaying
+

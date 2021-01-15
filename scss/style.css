@@ -130,18 +130,23 @@ h4 {
   margin-bottom: 3%;
 }
 
-.newsletter p {
-  margin-top: 20px;
-  margin-left: 10px;
+.newsletter #check {
+  position: relative;
+  margin-right: 10px;
+}
+
+.newsletter .check {
+  width: 85%;
+  padding-top: 20px;
   font-size: 1.15em;
 }
 
-.newsletter p a {
+.newsletter .check a {
   color: #333645;
   text-decoration: underline;
 }
 
-.newsletter p a:hover {
+.newsletter .check a:hover {
   color: #1d1f28;
 }
 
@@ -153,11 +158,11 @@ h4 {
   height: 45px;
 }
 
-.name, .email {
+.name, .name-sm, .email, .email-sm {
   font-size: 1.35em;
 }
 
-.name i, .email i {
+.name i, .name-sm i, .email i, .email-sm i {
   color: #d24d57;
 }
 
@@ -194,6 +199,7 @@ input[type="checkbox"]:checked {
   border-radius: 3px;
   margin-top: 25px;
   text-align: center;
+  cursor: pointer;
 }
 
 .sub:hover {
@@ -209,19 +215,61 @@ input[type="checkbox"]:checked {
         flex-wrap: wrap;
   }
   #name, #email {
+    width: 500px;
     padding: 5px;
     margin-bottom: 50px;
     margin-right: 25px;
   }
+  .name, .email {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .user-data-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 75%;
+  }
+  #name, #email {
+    width: 550px;
+    padding: 5px;
+    margin-bottom: 50px;
+  }
+  .name, .email {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1260px) {
+  .user-data-input {
+    width: 100%;
+  }
+  #name, #email {
+    width: 450px;
+    padding: 5px;
+    margin-bottom: 50px;
+    margin-right: 5%;
+  }
+  .name-sm, .email-sm {
+    display: none;
+  }
   .email {
-    position: relative;
+    position: absolute;
+    right: 37%;
   }
 }
 
 @media (min-width: 1260px) {
+  .email-sm, .name-sm {
+    display: none;
+  }
   .email {
     position: absolute;
-    right: 42%;
+    right: 46%;
   }
   #name, #email {
     padding: 10px;
@@ -323,6 +371,7 @@ input[type="checkbox"]:checked {
 }
 
 .buisness-info a:hover {
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -331,18 +380,13 @@ input[type="checkbox"]:checked {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: 5%;
-}
-
-.top-imgs, .bottom-imgs {
-  margin-right: 35px;
 }
 
 .f-img {
   height: 65px;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  padding-right: 5%;
+  padding-right: 75px;
 }
 
 .f-img:hover {
@@ -432,6 +476,22 @@ input[type="checkbox"]:checked {
     height: 55px;
     width: 150px;
   }
+  .top-imgs, .bottom-imgs {
+    margin: 35px 20px;
+  }
+  .top-imgs .f-img {
+    width: 100%;
+  }
+  .top-imgs .f-img :last-of-type {
+    margin-right: 0%;
+  }
+  .bottom-imgs .f-img {
+    width: 100%;
+    padding-right: 11%;
+  }
+  .bottom-imgs .f-img:last-of-type {
+    padding-right: 0%;
+  }
 }
 
 @media (min-width: 1260px) {
@@ -458,6 +518,28 @@ input[type="checkbox"]:checked {
   .social {
     width: 125px;
     height: 55px;
+  }
+  .top-imgs, .bottom-imgs {
+    margin-left: 10%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .top-imgs .f-img :last-of-type {
+    margin-right: 0%;
+  }
+  .top-imgs .f-img {
+    width: 100%;
+    padding-right: 100px;
+  }
+  .top-imgs .f-img :last-of-type {
+    padding-right: 0%;
+  }
+  .bottom-imgs .f-img {
+    width: 100%;
+    padding-right: 15%;
+  }
+  .bottom-imgs .f-img:last-of-type {
+    padding-right: 0%;
   }
 }
 
@@ -1002,7 +1084,7 @@ input[type="checkbox"]:checked {
     width: 30%;
     margin-right: 3%;
     margin-bottom: 0%;
-    height: 300px;
+    height: 350px;
   }
   .row-1 .card:last-child {
     margin-right: 3%;
@@ -1015,7 +1097,7 @@ input[type="checkbox"]:checked {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     width: 21.5%;
-    height: 300px;
+    height: 350px;
     margin-right: 3.35%;
   }
   .row-2 .card:last-child {
@@ -1050,6 +1132,7 @@ input[type="checkbox"]:checked {
 .news-container .news-card {
   border: 1px #d9d9d9 solid;
   border-radius: 5px 5px;
+  cursor: pointer;
 }
 
 .news-container .news-card .latest-img:hover {
@@ -1093,7 +1176,6 @@ input[type="checkbox"]:checked {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.25em;
-  background-color: #926fb1;
   border-radius: 2px 2px;
   padding: 10px 3px;
   width: 125px;
@@ -1115,12 +1197,20 @@ input[type="checkbox"]:checked {
   background-color: #286ABD;
 }
 
+.news-tag:hover {
+  background-color: #1f5293;
+}
+
 .news-tag-title {
   color: #286ABD;
 }
 
 .career-tag {
   background-color: #526781;
+}
+
+.career-tag:hover {
+  background-color: #3e4e62;
 }
 
 .career-tag-title {
@@ -1202,6 +1292,7 @@ input[type="checkbox"]:checked {
   padding-top: 15px;
   color: #fff;
   text-align: center;
+  cursor: pointer;
 }
 
 .nav i {
@@ -1349,14 +1440,6 @@ input[type="checkbox"]:checked {
 
 .search-button:hover {
   background-color: #666666;
-}
-
-.search-button:active {
-  background-color: blue;
-}
-
-.search-button:active .btn-1 {
-  background-color: pink;
 }
 
 .search-button-sm {
@@ -1566,11 +1649,13 @@ input[type="checkbox"]:checked {
   color: #fff;
   text-transform: uppercase;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .carousel-overlay a:hover {
   text-decoration: none;
   color: #fff;
+  background-color: #79539a;
 }
 
 @media (max-width: 768px) {
@@ -1603,7 +1688,7 @@ input[type="checkbox"]:checked {
   .opacity {
     width: 100%;
     height: 550px;
-    top: 16.5%;
+    top: 15.5%;
   }
 }
 

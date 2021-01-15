@@ -23,7 +23,8 @@
                 transform: scale(1.1);
                 color:$nm-primary;
             }
-        }      
+        }
+        cursor: pointer;      
     }
     .info{
         padding:25px;
@@ -59,7 +60,7 @@
         text-align: center;
         text-transform: uppercase;
         font-size: 1.25em;
-        background-color:$nm-web;
+        // background-color:$nm-web;
         border-radius: 2px 2px;
         padding:10px 3px;
         width:125px;
@@ -81,12 +82,18 @@
 
     .news-tag{ 
         background-color: $nm-it;
+        &:hover{
+            background-color: darken($nm-it,10%);
+        }
     }
     .news-tag-title{
         color:$nm-it;
     }
     .career-tag{
         background-color: $nm-bs;
+        &:hover{
+            background-color: darken($nm-bs,10%);
+        }
     }
     .career-tag-title{
         color:$nm-bs;

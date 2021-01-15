@@ -36,7 +36,6 @@
             
     <div class ="nav-wrapper">
         <div class ="nav-bar"> 
-            <!-- <div class ="test"> -->
                 <div class = "dropdown-container nav service nav-web">
                     <i class = "fa fa-code icon"> </i><br><small>Web</small> <br> Design
                     <div class ="dropdown-content">
@@ -47,8 +46,7 @@
                         <span><a href ="#"> Web Hosting  </a></span>
                         <span><a href ="#"> Pay Monthly Websites  </a></span>
                     </div>
-                <!-- </div> -->
-            </div>
+                </div>
 
             <div class = "dropdown-container nav service nav-it">
                 <i class = "fa fa-desktop icon"></i><br><small>IT</small> <br>Support 
@@ -118,6 +116,7 @@
     <body>
         <div class = "top-img">
          <div class ="carousel-container"> 
+             <!-- <img  src ="../img/Carousel-images/web_design_slide_1.png" alt ="carousel" > -->
             <div class = "shadow">
                 <div class = "carousel"></div>
                 <div class = "opacity"></div>
@@ -347,24 +346,26 @@
             </div>
 
             <div class ="newsletter">
-                
                 <form>
                     <h2>Email newsletter sign-Up</h2>
                     <div> 
-                        <label id= for ="name" class ="name"> Your Name <i><small> * </small></i> </label>
-                        <label for ="email" class ="email">Your Email <i><small> * </small></i> </label>
-                        
-                        <div class ="user-data-input">
-                            <input type ="text" id ="name">
-                            <input type ="Email" id ="email">
-                        </div>
-                        <input type ="checkbox" id="check">
-                            <label for ="check">
+                        <div>
+                            <label for= "name" class ="name"> Your Name <i><small> * </small></i> </label>
+                            <label for ="email" class ="email">Your Email <i><small> * </small></i> </label>
+                            <div class ="user-data-input">
+                                <label for= "name" class ="name-sm"> Your Name <i><small> * </small></i> </label>
+                                <input type ="text" id ="name">
+                                <label for ="email" class ="email-sm">Your Email <i><small> * </small></i> </label>
+                                <input type ="Email" id ="email">
+                            </div>
+                            <input type ="checkbox" id="check">
+                            <label for ="check" class ="check">
                                 <p>
                                     Please tick this box if you wish to recieve marketing infomation from us. 
                                     Please see out <a href ="#">Privacy Policy</a> for more infomation on how we use your data.
                                 </p>
                             </label>
+                        </div>
                     </div>
                 </form>
                 <!-- <input type ="submit" id ="subscribe"> -->

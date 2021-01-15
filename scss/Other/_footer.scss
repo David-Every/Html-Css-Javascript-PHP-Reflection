@@ -22,41 +22,15 @@
         text-decoration: none;
     }
     a:hover{
+        color:$nm-primary;
         text-decoration: underline;
     }
 }
 .footer-icons, .footer-web-design,
      .top-imgs, .bottom-imgs{
         display:inline-flex;
-        margin-left:5%;
     }
 
-    .top-imgs, .bottom-imgs{
-        margin-right:35px;
-    }
-
-// .footer-web-design{
-//     display:inline-block;
-// }
-// /*.footer-web-design,*/.footer-icons{
-//     margin-left:10%;
-// }
-// .top-imgs{
-//     //.footer-web-design{
-//     padding-right:10%;
-//     padding-top:50px;
-//     padding-bottom:50px;
-// }
-// .bottom-imgs{
-//     padding-top:50px;
-//     padding-bottom: 50px;
-
-// }
-
-// .footer-icons .f-img{
-//     // width:5%;
-//     padding-right:8%;
-// }
 .f-img{
     height:65px;
     // width:300px;
@@ -64,10 +38,7 @@
     &:hover{
         filter:grayscale(0%);
     }
-    padding-right:5%;
-    // &:last-of-type{
-    //     padding-right:0%;
-    // }
+    padding-right:75px;
 }
 
 // This Keeps the social Media Buttons in the correct placement under social media
@@ -103,11 +74,7 @@
 }
 
 // Medium
-
-
-//TEST HERE
 @media (min-width:$break-sm) and (max-width:$break-m){
-//TEST HERE
     .footer-icons, .footer-web-design,
     .top-imgs, .bottom-imgs{
         display:none;
@@ -150,6 +117,27 @@
         height:55px;
         width:150px;
     }
+    .top-imgs ,.bottom-imgs {
+        // margin-left:20px;
+        // margin-top:35px;
+        // margin-bottom:35px;
+        margin:35px 20px;
+    }
+
+    .top-imgs .f-img{
+        width:100%;
+
+        :last-of-type{
+            margin-right:0%;
+        }
+    }
+    .bottom-imgs .f-img{
+        width:100%;
+        padding-right: 11%;
+        &:last-of-type{
+            padding-right: 0%;
+        }
+    }
 }
 
 // //Large
@@ -175,5 +163,31 @@
     .social{
         width:125px;
         height: 55px;
+    }
+
+    .top-imgs ,.bottom-imgs {
+        margin-left:10%;
+        margin-top:35px;
+        margin-bottom:35px;
+    }
+    .top-imgs .f-img :last-of-type{
+        margin-right:0%;
+        
+    }
+
+    .top-imgs .f-img{
+        width:100%;
+        padding-right:100px;
+        :last-of-type{
+            padding-right:0%;
+        }
+    }
+
+    .bottom-imgs .f-img{
+        width:100%;
+        padding-right: 15%;
+        &:last-of-type{
+            padding-right: 0%;
+        }
     }
 }
