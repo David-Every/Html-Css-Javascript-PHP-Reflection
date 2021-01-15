@@ -1,9 +1,4 @@
 
-.nm-announce,.site{
-    position:relative;
-    overflow:visible;
-}
-
 .tt{
     position: absolute;
     top: 2%;
@@ -19,62 +14,61 @@
 }
 
 //Creates the tool-tip adds in the text and sets default display to show nothing.
-.tt::before,.tool::before{
+.tt::before{
     content: attr(data-text);
     position:absolute;
-    transform:translateY(-150%);
-    margin-left:15px;
-
+    transform:translateY(-128%);
     width:200px;
+    height:65px;
     padding:10px;
     background-color:$nm-secondary;
     color: $nm-primary;
     text-align:center;
     display:none;
+    // z-index: 1;
+}
+//Adds the Arrow to the tooltip that points to where it came from.
+.tt:hover::after{
+    overflow-y:visible;
+    content: " ";
+    position: absolute;
+    top:-52%;
+    left: 50%;
+    // margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: $nm-secondary transparent transparent transparent;
+    // z-index: 1;
+}
 
+.tool::before{
+    content: attr(data-text);
+    position:absolute;
+    transform:translateY(-154%);
+    // margin-left:15px;
+    // width:85%;
+    width:250px;
+    height:120px;
+    padding:20px;
+    background-color:$nm-secondary;
+    color: $nm-primary;
+    text-align:center;
+    display:none;
+}
+//Adds arrow 
+.tool:hover::after{
+    content: " ";
+    position: absolute;
+    top:-100%;
+    left: 35%;
+    margin-left: -10px;
+    border-width: 35px;
+    border-style: solid;
+    border-color: $nm-secondary transparent transparent transparent;
 }
 
 //Sets the tooltip display to block to user can see the tool tip when hovered over.
 .tt:hover::before,.tool:hover::before{
     display:block;
-    overflow-y: visible;
-}
-//Adds the Arrow to the tooltip that points to where it came from.
-// I am wanting to have this as a mixin?
-.tt:hover::after{
-    // @include arrow($top:-50%,$left:50%);
-    content: " ";
-    position: absolute;
-    top:-50%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: $nm-tertiary transparent transparent transparent;
-
 }
 
-//Adds the Arrow to the tooltip that points to where it came from.
-.tool:hover::after{
-    // @include arrow($top:-92%,$left:50%);
-    content: " ";
-    position: absolute;
-    top:-40%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: $nm-secondary transparent transparent transparent;
-}
-
-
-// @mixin arrow($top:0,$left:0) {
-//     content: " ";
-//     position: absolute;
-//     top:$top;//-92%;
-//     left: $left;//50%;
-//     margin-left: -5px;
-//     border-width: 5px;
-//     border-style: solid;
-//     border-color: $nm-secondary transparent transparent transparent;
-// }

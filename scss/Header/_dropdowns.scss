@@ -1,7 +1,6 @@
 
 .nav-wrapper{
     background-color: $nm-secondary;
-    
 }
 .nav-bar{
     width:90%;
@@ -26,6 +25,13 @@
         margin-bottom: 10px;
     }
 }
+.nav-title{
+  text-transform:uppercase;
+  font-size:1em;
+  small{
+    font-size: 10px;
+  }
+}
 
 //Start the Dropdown here.
 
@@ -40,7 +46,7 @@
     margin-top:30px;
     padding:10px 7% 10px 10%;
     left:0%;
-    // background-color: darken($nm-darken,5%);
+    top:23.5%;
     width: 100%;
     z-index: 1;
   }
