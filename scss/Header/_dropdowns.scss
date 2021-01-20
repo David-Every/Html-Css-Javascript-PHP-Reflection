@@ -1,30 +1,29 @@
 
 .nav-wrapper{
     background-color: $nm-secondary;
+    height:100px;
 }
 .nav-bar{
-    width:90%;
-    height:100px;
-    padding-left:10%;
-    padding-right:4%;
-    // margin-right:7%;
-    display:flex;
-    // margin-bottom: 50px;
+    width:100%;
+    display:inline-flex;
 }
 
-.nav{
-    width:200px;
-    font-size: 1.15em;
+.nav {
     border: 1px solid $nm-tertiary;
-    padding-top:15px;
-    color:$nm-primary;
-    text-align:center;
     cursor: pointer;
     i{
-        font-size:1.25em;
-        margin-bottom: 10px;
+      font-size: 1.25em;
+      left:42%
+    }
+    p{
+      color: $nm-primary;
+      text-decoration: none;      
+    }
+    a:hover{
+      text-decoration: none;
     }
 }
+
 .nav-title{
   text-transform:uppercase;
   font-size:1em;
@@ -33,27 +32,27 @@
   }
 }
 
-//Start the Dropdown here.
 
+
+//Start the Dropdown tooltips here.
 .dropdown {
     position: relative;
     display: none;
-  }
+}
   
   .dropdown-content {
     display: none;
     position: absolute;
-    margin-top:30px;
-    padding:10px 7% 10px 10%;
-    left:0%;
-    top:23.5%;
+    padding:10px 7% 10px 14%;
     width: 100%;
     z-index: 1;
   }
+  
 .dropdown-content a {
     color: $nm-primary;
     text-decoration: none;
     text-transform: uppercase;
+    font-size: 1.2em;
    
     &:hover{
         text-decoration: none;

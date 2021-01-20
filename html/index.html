@@ -12,33 +12,42 @@
     <header>
         <!-- Top of page Navigation  with buttons and search bar -->
     <div class = "top-nav" >
-        <a class ="logo" href ="#">  <img  src = "../img/Icons/f-logo.png" alt ="Netmatters Logo" >  </a>
-        <div class ="phone "><a href= "tel:00000000000" >  <i class = "fas fa-phone-volume"></i> </a> </div>
-        <div class = " b-menu-sm"><i class = "fas fa-bars"></i> <p>  MENU </p> </div>
+        <a class ="logo" href ="#">  <img class ="f-logo"  src = "../img/Icons/f-logo.png" alt ="Netmatters Logo" ></a>
+        <div class ="phone "> <a href= "tel:00000000000"> <i class = "fas fa-phone-volume"></i> </a> </div>
+
+        <div class = "b-menu-sm"> <a href ="#"> <i class = "fas fa-bars"></i></a> </div>
+
         <div class ="nav-buttons"> 
-            <div class = " btn btn-1">   <i class="fas fa-mouse"> </i>Support </div>
-            <div class = " btn btn-2"> <i class ="fa fa-paper-plane-o"> </i> Contact</div>
+            <div ><a href = "#"class = " btn btn-1">  <i class="fas fa-mouse"> </i>Support </a> </div> 
+            <div ><a href = "#" class = " btn btn-2">  <i class ="fa fa-paper-plane-o"> </i> Contact </a> </div>
         </div>
 
         <form class ="navigation " > 
             <input class = "search-bar" type="text" placeholder="Search..." name ="search">        
         </form>
 
-        <div class = "  search-button" type ="submit">  <i class = "fas fa-search"></i></div>
-        <div class = " search-button-sm" type ="submit"><a href ="#">  <i class = "fas fa-search"></i> </a> </div>
-        
-
-        <!-- <div class ="navigation b-menu"><button type ="menu"> <i class ="fas fa-bars"></i><p>  menu </p> </button> </div> -->
-        <div class = " b-menu" type ="menu"><i class = "fas fa-bars"></i> <p>  MENU </p> </div>
+        <div class ="ser-bur"> 
+            <div class ="search-button">  <a href ="#" ><i class = "fas fa-search"></i> </a> </div>
+            <a href ="#" class = " search-button-sm">  <i class = "fas fa-search"></i> </a>
+        </div>
+        <div class = "b-menu"> <a href ="#">
+            <i class = "fas fa-bars"></i>
+            <!-- <small>MENU</small></a>  -->
+        </div>
     </div>
     
     <!-- Main site Navigation -->
             
     <div class ="nav-wrapper">
-        <div class ="nav-bar"> 
-                <div class = "dropdown-container nav service nav-web">
-                    <i class = "fa fa-code icon"> </i><br> 
-                    <p class = "nav-title" > <small>Web</small><br>Design </p>
+        <div class ="nav-bar">
+
+                <div class = "dropdown-container service nav-web"> <!--nav-web-->
+                    <div class ="nav"> 
+                        <a href ="#"> 
+                            <i class = "fa fa-code icon"> </i><br> 
+                            <p class = "nav-title" > <small>Web</small><br>Design </p>
+                        </a>
+                    </div>
                     <div class ="dropdown-content">
                         <span><a href ="#"> Stylish Websites  </a> </span>
                         <span><a href ="#"> Ecommerce Stores  </a></span>
@@ -49,9 +58,13 @@
                     </div>
                 </div>
 
-            <div class = "dropdown-container nav service nav-it">
-                <i class = "fa fa-desktop icon"></i><br> 
-                <p class = "nav-title"> <small>IT</small> <br>Support </p>
+             <div class = "dropdown-container service nav-it">
+                 <div class ="nav">
+                     <a href ="#">
+                        <i class = "fa fa-desktop icon"></i><br> 
+                        <p class = "nav-title"> <small>IT</small> <br>Support </p>
+                    </a>
+                </div>
                 <div class ="dropdown-content">
                     <span><a href ="#"> Managed it  </a> </span>
                        <span><a href ="#"> buisness it  </a></span>
@@ -62,9 +75,13 @@
                 </div>
             </div>
 
-            <div class = "dropdown-container nav service nav-tc">
-                <i class ="fa fa-volume-control-phone icon"></i><br> 
-                <p class = "nav-title"> <small> Telecoms </small><br> services </p>
+            <div class = "dropdown-container service nav-tc">
+                <div class ="nav">
+                    <a href ="#">  
+                        <i class ="fa fa-volume-control-phone icon"></i><br> 
+                        <p class = "nav-title"> <small> Telecoms </small><br> services </p>
+                    </a>
+                </div>
                 <div class ="dropdown-content">
                     <span><a href ="#"> Gigabit voucher </a> </span>
                        <span><a href ="#"> hosted viop  </a></span>
@@ -75,9 +92,13 @@
                 </div>
             </div>
 
-            <div class = "dropdown-container nav service nav-bs">
-                <i class ="glyphicon glyphicon-th icon"></i><br> 
-                <p class = "nav-title"> <small> bespoke </small> <br>software </p>
+            <div class = "dropdown-container service nav-bs">
+                <div class = "nav">
+                    <a href ="#"> 
+                        <i class ="glyphicon glyphicon-th icon"></i><br> 
+                        <p class = "nav-title"> <small> bespoke </small> <br>software </p>
+                    </a>
+                </div>
                 <div class ="dropdown-content">
                     <span><a href ="#"> Workflow solutions </a> </span>
                        <span><a href ="#"> automation  </a></span>
@@ -88,9 +109,13 @@
                 </div>
             </div>
             
-            <div class = "dropdown-container nav service nav-mk">
-                <i class = "glyphicon glyphicon-signal icon" ></i><br> 
-                <p class = "nav-title"> <small> Digital </small><br>marketing  </p>
+            <div class = "dropdown-container service nav-mk">
+                <div class ="nav">
+                    <a href ="#">  
+                        <i class = "glyphicon glyphicon-signal icon" ></i><br> 
+                        <p class = "nav-title"> <small> Digital </small><br>marketing  </p>
+                    </a>
+                </div>
                 <div class ="dropdown-content">
                     <span><a href ="#"> Search (seo) </a> </span>
                        <span><a href ="#"> paid (ppc)  </a></span>
@@ -101,9 +126,13 @@
                 </div>
             </div>
 
-            <div class = "dropdown-container nav service nav-cs">
-                <i class = "fa fa-shield icon"> </i><br> 
-                <p class = "nav-title"> <small> Cyber </small> <br> Security </p>
+            <div class = "dropdown-container service nav-cs">
+                <div class = "nav">
+                    <a href ="#"> 
+                        <i class = "fa fa-shield icon"> </i><br> 
+                        <p class = "nav-title"> <small> Cyber </small> <br> Security </p>
+                    </a>
+                </div>
                 <div class ="dropdown-content">
                     <span><a href ="#"> Assesment </a> </span>
                        <span><a href ="#"> management  </a></span>
