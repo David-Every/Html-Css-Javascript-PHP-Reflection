@@ -6,6 +6,13 @@
     background-color: $nm-secondary;
     color: $nm-primary;
     // padding:2% 8%;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    h4{
+        font-size:16px;
+        font-weight:300;
+    }
     
     li{
         list-style:none;
@@ -146,8 +153,9 @@
 @media (min-width:$break-lg){ 
     .buisness-info{
         width:100%;
-        padding: 2% 5% 2% 10%;
+        padding: 2% 3% 2% 14%;
         display:inline-flex;
+
     }
     .contact-info,.website,.about{
         width:20%;
@@ -168,7 +176,7 @@
     }
 
     .top-imgs ,.bottom-imgs {
-        margin-left:10%;
+        margin-left:13.5%;
         margin-top:35px;
         margin-bottom:35px;
     }

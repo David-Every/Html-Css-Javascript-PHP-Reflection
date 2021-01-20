@@ -21,7 +21,7 @@
 .card{
     position: relative;
     .rm{
-        position: absolute;
+        position: relative;
         width: 125px;
         height: 45px;
         // left:35%;
@@ -32,8 +32,16 @@
         text-align:center;
         font-size: 1.25em;
         & p{
+            font-size: 17px;
             padding-top:7px;
         }
+    }
+    p{
+        font-size:13px;
+        line-height: 1.5;
+    }
+    h3{
+        font-size: 18px;
     }    
 }
 
@@ -163,7 +171,8 @@
 //large screen view
 @media(min-width:$break-lg){
     .card-nav{
-        padding-left: 10%;
+        padding-left: 13.5%;
+        padding-right:9%;
     }
     .row-1{
         margin-bottom:3%;
@@ -172,27 +181,30 @@
         width: 30%;
         margin-right:3%; 
         margin-bottom: 0%;
-        height:350px;
-        &:last-child{
-            margin-right:3%;
-        }
+        height:300px;
         .rm{
-            right:35%;
-            bottom:5%;
+            right:-30%;
+            bottom:10%;
+            margin-bottom:5px;
+        }
+        p{
+            width:95%;
+            padding-left:2.5%;
+            padding-right:2.5%;
         }
     }
     .row-2 .card{
         flex-wrap:nowrap;
         width:21.5%;
-        height:350px;
+        height:290px;
         margin-right:3.35%;
         
         &:last-child{
             margin-right: 0%;
         }
         .rm{
-            right:30%;
-            bottom: 5%;
+            right:-20%;
+            bottom: 15%;
         }
     }
 }
