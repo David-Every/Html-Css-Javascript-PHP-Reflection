@@ -1012,6 +1012,9 @@ input[type="checkbox"]:checked {
 }
 
 @media (max-width: 768px) {
+  .card-nav {
+    padding-right: 3%;
+  }
   .row-1, .row-2 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1021,7 +1024,7 @@ input[type="checkbox"]:checked {
     margin-bottom: 35px;
   }
   .row-1 .card .rm, .row-2 .card .rm {
-    right: 35%;
+    right: -30%;
     bottom: 5%;
   }
 }
@@ -1078,10 +1081,6 @@ input[type="checkbox"]:checked {
   }
   .row-1 .card:last-child {
     margin-right: none;
-  }
-  .row-1 .card .rm {
-    right: 30%;
-    bottom: 5%;
   }
   .row-2 {
     display: -webkit-box;

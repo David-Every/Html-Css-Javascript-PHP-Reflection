@@ -76,6 +76,9 @@
 
 // Small screen view
 @media(max-width:$break-sm){//max
+    .card-nav{
+        padding-right: 3%;
+    }
     .row-1, .row-2{
                 // justify-content:center;
         flex-wrap:wrap;
@@ -84,7 +87,7 @@
             // margin: 0 5px 35px 5px;
             margin-bottom:35px;
             .rm{
-                right:35%;
+                right:-30%;
                 bottom:5%;
             }
         }
@@ -147,8 +150,9 @@
                 margin-right:none;
             }
             .rm{
-                right:30%;
-                bottom:5%;
+                // position: relative;
+                // right:40%;
+                // bottom:5%;
             }
         }
     }
@@ -168,6 +172,7 @@
         }
     }
 }
+
 //large screen view
 @media(min-width:$break-lg){
     .card-nav{

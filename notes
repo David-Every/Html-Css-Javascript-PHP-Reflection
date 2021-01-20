@@ -46,8 +46,12 @@ Things i need to do -
     I can probably sort out tooltip arrows by using padding / Margins
 
 [ ] Rework -
-    [ ] Re-do the top navigation to be more like netmatters page
-    [ ] Make sure everything on site is inline margin / Padding wise
-    [ ] Make sure that IE and FF still work
-    [ ] Change the Font to Poppins
+    [ x ] Re-do the top navigation to be more like netmatters page
+    [ x ] Make sure everything on site is inline margin / Padding wise in large view
+    [ x ] Make sure that IE and FF still work
+    [ x ] Change the Font to Poppins
+
+    [ ] Make sure adjustments are consistant throughout all size views.
     [ ] Adjust carousel overlay text to look closer to the site
+    [ ] Check Spelling
+    [ ] check HTML
