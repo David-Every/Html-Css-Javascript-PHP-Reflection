@@ -33,7 +33,6 @@ Things i need to do -
     [ x ] Make sure nav bar dropdown is working correctly
     [ x ] sort out support/ Contact and search bar and Burger menus
     [ x ] Make sure navigation flexes correctly.
-
 [ x ] Overall -
     [ x ] Make sure all things are padded correctly 
     [ x ] The darkened white background is the default background 
@@ -44,14 +43,13 @@ Things i need to do -
     [ x ] Re do Media Queries
     Find out how to cremove outer part of images again.
     I can probably sort out tooltip arrows by using padding / Margins
-
-[ ] Rework -
+[ x ] Rework -
     [ x ] Re-do the top navigation to be more like netmatters page
     [ x ] Make sure everything on site is inline margin / Padding wise in large view
     [ x ] Make sure that IE and FF still work
     [ x ] Change the Font to Poppins
 
-    [ ] Make sure adjustments are consistant throughout all size views.
-    [ ] Adjust carousel overlay text to look closer to the site
-    [ ] Check Spelling
-    [ ] check HTML
+    [ x ] Make sure adjustments are consistant throughout all size views.
+    [ x ] Adjust carousel overlay text to look closer to the site
+    [ x ] Check Spelling
+    [ x ] MOVE LATEST DYNAMICALLY

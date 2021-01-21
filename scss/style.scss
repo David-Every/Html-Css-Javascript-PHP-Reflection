@@ -29,24 +29,3 @@
 body{
     user-select: none;
 }
-.break{
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    height:100px;
-    padding-top:25px;
-    // padding-left:10%;
-    font-size: 20px;
-    margin-left:13.5%;
-    // margin-bottom:3%;
-
-
-    position: absolute;
-    &::before{
-        content: '';
-        display:block;
-        position: absolute;
-        width: 100%;
-        border:$nm-secondary solid 2px;
-        top: 100%;
-    }
-}

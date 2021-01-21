@@ -46,7 +46,6 @@ $nav-height:55px;
     }
     .btn-1{
         background-color: $nm-it;
-        // margin-right:30px;
         &:hover{
             background-color:darken($nm-it,10%);
         }
@@ -54,7 +53,6 @@ $nav-height:55px;
     }
     .btn-2{
         background-color:lighten($nm-tertiary,30%);
-        // margin-right:10px;
         &:hover{
             background-color:lighten($nm-tertiary,20%);
         }
@@ -227,10 +225,10 @@ $nav-height:55px;
         margin-bottom: 1.5%;
         margin-top:2%;
         .logo{
-            height:30%;
-            width:30%;
+            height:33%;
+            width:33;
             margin-left:12%;
-            margin-right: 7%;
+            margin-right: 6.5%;
         }
 
         .nav-buttons{
@@ -242,31 +240,27 @@ $nav-height:55px;
             right:3.5%;
         }
         .b-menu{
-            display: none;
             position: relative;
             right:3.5%;
         }
     }
     .nav-bar{
-        height:100px;
-        padding-left:12%;
-        // padding-right:15%;
+        padding-left: 12%;
     }
    
     .nav{
-        width:150px;
+        width:155px;
         small{
             padding-left:10%;
         }
-        
         i{
             padding-top:20px;
             position: relative;
-            left:42%
+            left:45%;
+            padding-bottom:10px;
         }
         p{
-            padding-left:30%;
-            font-size: 1.3em;
+            text-align: center;
         }
     }
 
@@ -297,32 +291,17 @@ $nav-height:55px;
     .search-bar{
         width:100%;
     }
-
-    .nav-bar{
-        height:100px;
-        padding-left:13.5%;
-        // padding-right:15%;
-    }
    
     .nav{
-        width:195px;
+        //  width:100%;//195px;
         i{
-            padding-top:20px;
+            padding-top:15px;
             position: relative;
-            top:50%;
-            left:45%
         }
-        small{
-            // padding-left:10%;
-            position:relative;
-            left:center;
-            margin-left:15%
-        }
+
         p{
-            padding-left:30%;
             font-size: 1.3em;
-            position: relative;
-            right:5%;
+            text-align: center;
         }
         
     }
@@ -336,9 +315,22 @@ $nav-height:55px;
     }
 
     //Position the dropdown navigation
-        .dropdown-content{
-            left:0%;
-            top:26.5%;
+    .dropdown-content{
+        left:0%;
+        top:26.5%;
+    }
+    //Works out the padding spave to try and keep the navigation bar centered.
+    // .nav-wrapper{
+    // width:90%;
+    // }
+    .nav-bar{
+        width:80%;
+        padding-left: 13.5%;
+        .nav{
+            width:195px;
+            
+            
         }
+    }
     
 }

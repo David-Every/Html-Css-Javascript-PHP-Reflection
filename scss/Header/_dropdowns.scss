@@ -4,7 +4,7 @@
     height:100px;
 }
 .nav-bar{
-    width:100%;
+    // width:100%;
     display:inline-flex;
 }
 
@@ -13,7 +13,7 @@
     cursor: pointer;
     i{
       font-size: 1.25em;
-      left:42%
+      left:45%;
     }
     p{
       color: $nm-primary;
@@ -30,6 +30,22 @@
     font-size: 10px;
   }
 }
+
+//Invisible box
+.invis-1{
+    cursor: default;
+    border:2px solid red;
+    width:100px;
+    height:100px;
+}
+
+.invis-2{
+  cursor: default;
+  border:2px solid yellow;
+  width:100px;
+  height:100px;
+}
+//
 
 
 
@@ -58,8 +74,8 @@
         color:$nm-primary;
     }
     &::after{
-        padding-left:20px;
-        padding-right:20px;
+        padding-left:25px;
+        padding-right:25px;
         content:"-"
     }
   }

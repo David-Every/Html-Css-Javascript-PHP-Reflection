@@ -9,7 +9,7 @@
 .newsletter,
 .card-nav,
 .carousel,
-.news {
+.news-container {
   background-color: #f2f2f2;
 }
 
@@ -52,16 +52,17 @@
   background-image: url(../img/Icons/branded.png);
   background-repeat: no-repeat;
   background-position: bottom right;
-  padding-left: 5.5%;
   color: #fff;
   font-size: 20px;
+  padding: 20px;
+  padding-bottom: 40px;
 }
 
 .about-us h1 {
   text-transform: uppercase;
   font-size: 36px;
-  padding-bottom: 35px;
   font-weight: 400;
+  padding-bottom: 20px;
 }
 
 .about-us p {
@@ -90,23 +91,41 @@
   background-color: #e6e6e6;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .content {
-    padding: 25px;
-    width: 100%;
+    width: 90%;
+  }
+  .about-us {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 25px;
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .content {
-    padding-left: 50px;
-    width: 75%;
+    width: 95%;
+  }
+  .about-us {
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1260px) {
+  .content {
+    padding-left: 11%;
+    width: 87%;
+  }
+  .about-us {
+    padding: 20px;
+    padding-bottom: 40px;
   }
 }
 
 @media (min-width: 1260px) {
   .content {
-    padding-left: 125px;
+    padding-left: 13%;
     width: 50%;
   }
 }
@@ -179,11 +198,13 @@
   letter-spacing: 1.5px;
 }
 
-.form-wrapper {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-bottom: 35px;
+.checkbox label a {
+  color: #333645;
+  text-decoration: underline;
+}
+
+.checkbox label a:hover {
+  color: #333645;
 }
 
 .name-group label, .email-group label {
@@ -198,13 +219,70 @@
 }
 
 #name, #email {
-  width: 500px;
   height: 45px;
   padding: 10px;
 }
 
 #name {
   margin-right: 35px;
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    padding-left: 5%;
+  }
+  .form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #name, #email {
+    width: 400px;
+  }
+  .name-group {
+    margin-bottom: 25px;
+  }
+  .checkbox label {
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 992px) {
+  #name, #email {
+    width: 400px;
+  }
+  .name-group {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1260px) {
+  .form-wrapper {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-bottom: 35px;
+  }
+  #name, #email {
+    width: 400px;
+  }
+  .name-group {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .form-wrapper {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-bottom: 35px;
+  }
+  #name, #email {
+    width: 520px;
+  }
 }
 
 .tt {
@@ -399,12 +477,13 @@
 
 @media (min-width: 992px) and (max-width: 1260px) {
   .buisness-info {
+    padding-left: 12%;
+    padding-right: 3%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 20px;
   }
   .contact-info,
   .website {
@@ -414,24 +493,28 @@
     width: 50%;
   }
   .social {
-    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 5%;
     height: 55px;
-    width: 150px;
+    width: 200px;
   }
   .top-imgs, .bottom-imgs {
     margin: 35px 20px;
   }
-  .top-imgs .f-img {
-    width: 100%;
-    padding-right: 75px;
+  .top-imgs {
+    padding-left: 12%;
   }
-  .top-imgs .f-img :last-of-type {
-    margin-right: 0%;
+  .top-imgs .f-img {
+    width: 80%;
+    padding-right: 30px;
+    height: 100%;
+  }
+  .bottom-imgs {
+    padding-left: 10%;
   }
   .bottom-imgs .f-img {
-    width: 100%;
-    padding-right: 100px;
+    width: 80%;
+    padding-right: 75px;
   }
   .bottom-imgs .f-img:last-of-type {
     padding-right: 0%;
@@ -836,10 +919,6 @@
   text-decoration: none;
 }
 
-.card {
-  position: relative;
-}
-
 .card .rm {
   position: relative;
   width: 125px;
@@ -974,12 +1053,13 @@
   }
   .row-1 .card {
     width: 100%;
+    height: 275px;
     margin-right: 4%;
     margin-bottom: 5%;
   }
   .row-1 .card .rm {
-    right: 43%;
-    bottom: 5%;
+    right: -40%;
+    bottom: 25%;
   }
   .row-1 .card:last-of-type {
     margin-bottom: 3%;
@@ -990,7 +1070,7 @@
   }
   .row-2 .card {
     width: 45%;
-    height: 350px;
+    height: 310px;
     margin-right: 5%;
     margin-bottom: 5%;
   }
@@ -998,12 +1078,16 @@
     margin-right: 0%;
   }
   .row-2 .card .rm {
-    right: 35%;
-    bottom: 5%;
+    right: -25%;
+    bottom: 15%;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1260px) {
+  .card-nav {
+    padding-left: 12%;
+    padding-right: 8.5%;
+  }
   .row-1 {
     margin-bottom: 3%;
   }
@@ -1015,6 +1099,10 @@
   .row-1 .card:last-child {
     margin-right: none;
   }
+  .row-1 .card .rm {
+    right: -20%;
+    bottom: 0%;
+  }
   .row-2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1023,21 +1111,21 @@
         flex-wrap: wrap;
   }
   .row-2 .card {
-    height: 350px;
+    height: 300px;
     margin-right: 5%;
     margin-bottom: 5%;
     width: 45%;
   }
   .row-2 .card .rm {
-    right: 35%;
-    bottom: 5%;
+    right: -30%;
+    bottom: 15%;
   }
 }
 
 @media (min-width: 1260px) {
   .card-nav {
     padding-left: 13.5%;
-    padding-right: 9%;
+    padding-right: 9.5%;
   }
   .row-1 {
     margin-bottom: 3%;
@@ -1079,7 +1167,6 @@
 }
 
 .news-container {
-  margin-top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1191,7 +1278,31 @@
   color: #526781;
 }
 
+.break {
+  text-transform: uppercase;
+  font-size: 20px;
+  position: absolute;
+}
+
+.break::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  border: #333645 solid 2px;
+  top: 100%;
+}
+
 @media (max-width: 768px) {
+  .news-container {
+    margin-top: 17%;
+    padding-top: 2%;
+  }
+  .break {
+    left: 3%;
+    padding-bottom: 20px;
+    margin-top: 35px;
+  }
   .news-card {
     width: 100%;
     height: auto;
@@ -1203,6 +1314,15 @@
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+  .news-container {
+    margin-top: 15.5%;
+    padding-top: 4%;
+  }
+  .break {
+    left: 2.5%;
+    padding-bottom: 40px;
+    padding-top: 45px;
+  }
   .news-card {
     width: 45%;
     height: auto;
@@ -1221,18 +1341,37 @@
 
 @media (min-width: 992px) and (max-width: 1260px) {
   .news-card {
-    width: 45%;
-    margin-left: 3%;
+    width: 37%;
+    margin-right: 2%;
     margin-top: 2%;
+  }
+  .news-card:first-of-type {
+    margin-left: 12%;
   }
   .news-card:last-of-type {
     display: none;
+  }
+  .news-container {
+    margin-top: 8%;
+    padding-top: 4%;
+  }
+  .break {
+    left: 12%;
+    padding-bottom: 20px;
+    padding-top: 35px;
   }
 }
 
 @media (min-width: 1260px) {
   .news-container {
     padding-left: 13.5%;
+    margin-top: 6.5%;
+    padding-top: 3%;
+  }
+  .break {
+    left: 13.5%;
+    padding-bottom: 30px;
+    padding-top: 40px;
   }
   .news-card {
     width: 27%;
@@ -1251,7 +1390,6 @@
 }
 
 .nav-bar {
-  width: 100%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1264,7 +1402,7 @@
 
 .nav i {
   font-size: 1.25em;
-  left: 42%;
+  left: 45%;
 }
 
 .nav p {
@@ -1282,6 +1420,20 @@
 
 .nav-title small {
   font-size: 10px;
+}
+
+.invis-1 {
+  cursor: default;
+  border: 2px solid red;
+  width: 100px;
+  height: 100px;
+}
+
+.invis-2 {
+  cursor: default;
+  border: 2px solid yellow;
+  width: 100px;
+  height: 100px;
 }
 
 .dropdown {
@@ -1310,8 +1462,8 @@
 }
 
 .dropdown-content a::after {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
   content: "-";
 }
 
@@ -1548,10 +1700,10 @@
     margin-top: 2%;
   }
   .top-nav .logo {
-    height: 30%;
-    width: 30%;
+    height: 33%;
+    width: 33;
     margin-left: 12%;
-    margin-right: 7%;
+    margin-right: 6.5%;
   }
   .top-nav .nav-buttons {
     position: relative;
@@ -1562,16 +1714,14 @@
     right: 3.5%;
   }
   .top-nav .b-menu {
-    display: none;
     position: relative;
     right: 3.5%;
   }
   .nav-bar {
-    height: 100px;
     padding-left: 12%;
   }
   .nav {
-    width: 150px;
+    width: 155px;
   }
   .nav small {
     padding-left: 10%;
@@ -1579,11 +1729,11 @@
   .nav i {
     padding-top: 20px;
     position: relative;
-    left: 42%;
+    left: 45%;
+    padding-bottom: 10px;
   }
   .nav p {
-    padding-left: 30%;
-    font-size: 1.3em;
+    text-align: center;
   }
   .dropdown-content {
     left: 0%;
@@ -1612,29 +1762,13 @@
   .search-bar {
     width: 100%;
   }
-  .nav-bar {
-    height: 100px;
-    padding-left: 13.5%;
-  }
-  .nav {
-    width: 195px;
-  }
   .nav i {
-    padding-top: 20px;
+    padding-top: 15px;
     position: relative;
-    top: 50%;
-    left: 45%;
-  }
-  .nav small {
-    position: relative;
-    left: center;
-    margin-left: 15%;
   }
   .nav p {
-    padding-left: 30%;
     font-size: 1.3em;
-    position: relative;
-    right: 5%;
+    text-align: center;
   }
   .b-menu {
     position: relative;
@@ -1647,6 +1781,13 @@
   .dropdown-content {
     left: 0%;
     top: 26.5%;
+  }
+  .nav-bar {
+    width: 80%;
+    padding-left: 13.5%;
+  }
+  .nav-bar .nav {
+    width: 195px;
   }
 }
 
@@ -1735,7 +1876,7 @@
   .opacity {
     width: 100%;
     height: 550px;
-    top: 26.5%;
+    top: 27%;
   }
   .carousel-overlay {
     position: absolute;
@@ -1770,24 +1911,5 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-}
-
-.break {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  height: 100px;
-  padding-top: 25px;
-  font-size: 20px;
-  margin-left: 13.5%;
-  position: absolute;
-}
-
-.break::before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  border: #333645 solid 2px;
-  top: 100%;
 }
 /*# sourceMappingURL=style.css.map */

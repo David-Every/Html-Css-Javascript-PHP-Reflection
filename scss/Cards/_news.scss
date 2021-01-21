@@ -4,7 +4,8 @@
     // overflow:hidden;
 }
 .news-container{
-    margin-top:10%;
+    // margin-top:10%;
+    // padding:2%;
     & img{
         max-width:100%;
         max-height:75%;
@@ -106,9 +107,35 @@
         color:$nm-bs;
     }
 
+
+//|| 'Latest' Page Break ||\\
+.break{
+    text-transform: uppercase;
+    font-size: 20px;
+    position: absolute;
+    &::before{
+        content: '';
+        display:block;
+        position: absolute;
+        width: 100%;
+        border:$nm-secondary solid 2px;
+        top: 100%;
+    }
+}
+
 // || Media Queries ||
 
 @media(max-width:$break-sm){
+
+    .news-container{
+        margin-top:17%;
+        padding-top:2%;
+    }
+    .break{ 
+        left:3%;
+        padding-bottom:20px;
+        margin-top: 35px;
+    }
     .news-card{
         width:100%;
         height:auto;
@@ -120,6 +147,19 @@
    } 
 }
 @media(min-width:$break-sm) and (max-width:$break-m){
+
+    .news-container{
+        // padding-left:13.5%;
+        margin-top:15.5%;
+        padding-top:4%;
+    }
+    .break{ 
+        left:2.5%;
+        padding-bottom:40px;
+        padding-top: 45px;
+    }
+
+
     .news-card{
         width:45%;
         height:auto;
@@ -136,22 +176,47 @@
         height:500px;
     }
 }
-@media(min-width:$break-m) and (max-width:$break-lg){
-    .news-card{
-        width:45%;
-        margin-left:3%;
-        margin-top:2%;
 
-        &:last-of-type{
-            display:none;
+@media(min-width:$break-m) and (max-width:$break-lg){
+
+        .news-card{
+            width:37%;
+            margin-right:2%;
+            margin-top:2%;
+
+            &:first-of-type{
+                margin-left:12%;
+            }
+
+            &:last-of-type{
+                display:none;
+            }
         }
+
+        .news-container{
+            margin-top:8%;
+            padding-top:4%;
+        }
+        
+    .break{ 
+        left:12%;
+        padding-bottom:20px;
+        padding-top: 35px;
     }
 }
 
 @media(min-width:$break-lg){
     .news-container{
         padding-left:13.5%;
+        margin-top:6.5%;
+        padding-top:3%;
     }
+    .break{ 
+        left:13.5%;
+        padding-bottom:30px;
+        padding-top: 40px;
+    }
+
     .news-card{
         width: 27%;
             height: auto;

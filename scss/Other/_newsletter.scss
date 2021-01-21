@@ -61,12 +61,13 @@
     font-weight:bold;
     line-height: 2;
     letter-spacing:1.5px;
-}
-
-.form-wrapper{ 
-    // change this to be in a media query
-    display:inline-flex;
-    margin-bottom:35px;
+    a{
+        color:$nm-secondary;
+        text-decoration: underline;
+        &:hover{
+            color:$nm-secondary;
+        }
+    }
 }
 .name-group,.email-group{
     label {
@@ -80,11 +81,68 @@
     } 
 }
 #name,#email{
-    width:500px;
-    // width:100%;
     height:45px;
     padding:10px;
 }
 #name{
     margin-right:35px;
+}
+
+@media(max-width:$break-sm){
+    .newsletter{
+        padding-left: 5%;
+    }
+    .form-wrapper{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    #name,#email{
+        width:400px;
+        
+    }
+    .name-group{
+        margin-bottom: 25px;
+    }
+
+    //line hight change
+    .checkbox label{
+        line-height: 1.25;
+    }
+    
+}
+
+@media(max-width:$break-m){   
+    #name,#email{
+        width:400px;
+    }
+    .name-group{
+        margin-bottom: 25px;
+    }
+}
+
+@media(min-width:$break-m) and (max-width:$break-lg){
+    .form-wrapper{
+        display:inline-flex;
+        margin-bottom:35px;
+
+    }
+    #name,#email{
+        width:400px;
+    }
+    .name-group{
+        margin-bottom: 25px;
+    }
+}
+
+@media(min-width:$break-lg){
+    .form-wrapper{
+        display:inline-flex;
+        margin-bottom:35px;
+    }
+
+    //input length
+    #name,#email{
+        width:520px;
+    }
+    
 }

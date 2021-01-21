@@ -107,9 +107,11 @@
 }
 @media (min-width:$break-m) and (max-width:$break-lg){
     .buisness-info{
+        padding-left:12%;
+        padding-right:3%;
         display:flex;
         flex-wrap: wrap;
-        padding:20px;
+        // padding:20px;
     }
     .contact-info,
     .website{
@@ -119,32 +121,38 @@
         width:50%;
     }
     .social{
-        margin-left:5%;
+        margin-right:5%;
         margin-bottom:5%;
         height:55px;
-        width:150px;
+        width:200px;
     }
 
     .top-imgs ,.bottom-imgs {
         margin:35px 20px;
     }
-    .top-imgs .f-img{
-        width:100%;
-        padding-right: 75px;
-
-        :last-of-type{
-            margin-right:0%;
+    .top-imgs {
+        padding-left: 12%;
+        .f-img{
+            width:80%;
+            padding-right:30px;
+            height:100%;
         }
+        
     }
-    .bottom-imgs .f-img{
-        width:100%;
-        padding-right: 100px;
-        &:last-of-type{
-            padding-right: 0%;
-        }
-        &:first-of-type{
-            padding-left: 35px;
-            margin-right:100px;
+    .bottom-imgs{
+
+        padding-left:10%;
+    
+        .f-img{
+            width:80%;
+            padding-right: 75px;
+            &:last-of-type{
+                padding-right: 0%;
+            }
+            &:first-of-type{
+                padding-left: 35px;
+                margin-right:100px;
+            }
         }
     }
 }
