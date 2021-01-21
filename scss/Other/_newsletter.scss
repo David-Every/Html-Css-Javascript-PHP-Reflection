@@ -1,169 +1,90 @@
 
 //|| Style ||\\
-
 .newsletter{
-    // padding-left: 10%;
-    padding-bottom: 5%;
-    height:auto;
+    padding-left: 17%;
+    padding-right: 10%;
+    padding-top:3%;
+    padding-bottom: 3%;
+}
+
+#news-letter{
+    width:80%;
     h2{
+        font-size: 32px;
+        // width:500px;
         text-transform: capitalize;
-        margin-top: 0px;
-        margin-bottom: 3%;
+        font-weight: 400;
+        margin-bottom:20px;
     }
-    #check{
-        position: relative;
-        // top:20%;
-        margin-right:10px;
+    #subscribe{
+        appearance: none;
+        border-radius: 3%;
+        padding:10px 20px;
+        text-transform:uppercase;
+        font-size: 16px;
+        font-weight:500;
+        background-color: $nm-secondary;
+        color:$nm-primary;
     }
-    .check{
-        width:85%;
-        padding-top:20px;
-        // margin-left: 5px;
-        font-size: 1.15em;
-        a{
-            color:$nm-secondary;
-            text-decoration: underline;
+    #subscribe:hover{
+        background-color:darken($nm-secondary,10%);
+    }
+
+    #checkbox{
+        // margin-right:0px;
+        appearance: none;
+        border: 3px solid $nm-secondary;
+        border-radius: 3px;
+        width: 35px;
+        height: 35px;
+        // padding:15px;
+        &:checked{
+            background-color: $nm-secondary;
+            &::after{
+                //This makes sure that the Unicode for the checkmark works
+                font-family:'Font Awesome 5 Free';
+                content:'\f00c';
+                font-weight: 900;
+                font-size: 20px;
+                color:$nm-primary;
+                position: relative;
+                top:15%;
+                left:15%;
+            }
         }
-        a:hover{
-            color:darken($nm-secondary,10%);
-        }
     }
+}
+.checkbox label{
+    // margin-left:10px;
+    font-size:16px;
+    color:$nm-secondary;
+    font-weight:bold;
+    line-height: 2;
+    letter-spacing:1.5px;
+}
+
+.form-wrapper{ 
+    // change this to be in a media query
+    display:inline-flex;
+    margin-bottom:35px;
+}
+.name-group,.email-group{
+    label {
+        font-size: 16px;
+        font-weight: bold;
+        color:$nm-secondary;
+        letter-spacing: 1px;
+        small{
+            color:red;
+        }
+    } 
 }
 #name,#email{
-    border:none;
-    box-shadow:3px 1px 30px lighten($nm-tertiary,30%);
-    width:550px;
+    width:500px;
+    // width:100%;
     height:45px;
+    padding:10px;
 }
-    
-.name,.name-sm,.email,.email-sm{
-    font-size: 1.35em;
-    i{
-        color:#d24d57;
-    }
+#name{
+    margin-right:35px;
 }
-
-input[type="checkbox"]{
-    appearance: none;
-    height: 35px;
-    width: 35px;
-    border: 3px solid $nm-secondary;
-    border-radius: 5px;
-    // background-color: $nm-tertiary;
-    cursor: pointer;
-    &:after{
-        content:"\f00c";
-        color:$nm-primary;
-        width:15px;
-        height:15px;
-    }
-    &:checked{
-        background-color: $nm-secondary;
-    }
-}
-.sub{
-    width: 125px;
-    padding-top:7px;
-    padding-bottom:7px;
-
-    color: $nm-primary;
-    text-transform: uppercase;
-    font-size: 1.35em;
-    background-color: $nm-secondary;
-    border-radius: 3px;
-    margin-top: 25px;
-    text-align: center;
-    cursor: pointer;
-
-    &:hover{
-        background-color: darken($nm-secondary,10%);
-    }
-}
-
-//|| /Style ||\\
-
-
-//|| Media Queries ||\\   
- //Small
-@media(max-width:$break-sm){//max
-    .user-data-input{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    #name,#email{
-        width:500px;
-        padding:5px;
-        margin-bottom:50px;
-        margin-right:25px;
-    }
-    .name, .email{
-        display: none;
-    }
-}
-
-
-//Medium
-@media(min-width:$break-sm) and (max-width:$break-m){
-    .user-data-input{
-        display: flex;
-        flex-wrap: wrap;
-        width:75%;
-    }
-    #name,#email{
-        width:550px;
-        padding:5px;
-        margin-bottom:50px;
-        // margin-right:10%;
-    }
-    .name, .email{
-        display: none;
-    }
-}
-
-@media(min-width:$break-m) and (max-width:$break-lg){
-    .user-data-input{
-        // display: flex;
-        // flex-wrap: wrap;
-        width:100%;
-    }
-    #name,#email{
-        width:450px;
-        padding:5px;
-        margin-bottom:50px;
-        margin-right:5%;
-    }
-    .name-sm, .email-sm{
-        display: none;
-    }
-
-    .email{
-        position:absolute;
-        right:37%;
-    }
-}
-
-//Large
-@media(min-width:$break-lg){
-    .email-sm, .name-sm{
-        display:none;
-    }
-    .email{
-        position: absolute;
-        right:46%; //39%;
-    }
-    
-    #name,#email{
-        // width:550px;
-        padding: 10px;
-    }
-    #name{
-        margin-right: 3%;
-        margin-bottom: 25px;
-    }
-
-    .newsletter{
-        padding-left: 14%;
-    }
-}
-
-//|| /Media Queries ||\\

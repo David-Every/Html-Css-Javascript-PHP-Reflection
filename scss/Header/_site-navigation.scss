@@ -242,6 +242,7 @@ $nav-height:55px;
             right:3.5%;
         }
         .b-menu{
+            display: none;
             position: relative;
             right:3.5%;
         }
@@ -308,6 +309,7 @@ $nav-height:55px;
         i{
             padding-top:20px;
             position: relative;
+            top:50%;
             left:45%
         }
         small{

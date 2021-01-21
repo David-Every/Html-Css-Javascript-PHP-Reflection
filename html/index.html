@@ -30,7 +30,7 @@
             <div class ="search-button">  <a href ="#" ><i class = "fas fa-search"></i> </a> </div>
             <a href ="#" class = " search-button-sm">  <i class = "fas fa-search"></i> </a>
         </div>
-        <div class = "b-menu"> <a href ="#"> <i class = "fas fa-bars"></i> </a>
+        <div class = "b-menu"> <a href ="#"> <i class = "fas fa-bars"></i>
             <!-- <small>MENU</small></a>  -->
         </div>
     </div>
@@ -380,28 +380,31 @@
             </div>
 
             <div class ="newsletter">
-                <form>
-                    <h2>Email newsletter sign-Up</h2>
-                    <div> 
-                        <div>
-                            <label for= "name" class ="name"> Your Name <i><small> * </small></i> </label>
-                            <label for ="email" class ="email">Your Email <i><small> * </small></i> </label>
-                            <div class ="user-data-input">
-                                <label for= "name" class ="name-sm"> Your Name <i><small> * </small></i> </label>
-                                <input type ="text" id ="name">
-                                <label for ="email" class ="email-sm">Your Email <i><small> * </small></i> </label>
-                                <input type ="Email" id ="email">
-                            </div>
-                            <input type ="checkbox" id="check">
-                            <label for ="check" class ="check">
-                                    Please tick this box if you wish to recieve marketing infomation from us. 
-                                    Please see out <a href ="#">Privacy Policy</a> for more infomation on how we use your data.
-                            </label>
-                        </div>
+                <form id ="news-letter">
+                <h2> Email newsletter sign-up</h2>
+
+                <div class = "form-wrapper">
+
+                    <div class="name-group"> 
+                        <label for="name"> Your Name <small>*</small></label>
+                        <input type="text" id="name" name="name">
                     </div>
+
+                    <div class ="email-group"> 
+                        <label for="email">Your Email <small>*</small></label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                </div>
+                <div class ="checkbox"> 
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <label for="checkbox">
+                        Please tick this box if you wish to receive marketing information from us. 
+                        Please see our Privacy Policy for more information on how we use your data. 
+                    </label>
+                </div>
+                <input type ="submit" id="subscribe" name="subscribe" value="Subscribe">
                 </form>
-                <!-- <input type ="submit" id ="subscribe"> -->
-                <div class ="sub">Subscribe</div>
             </div>
 
             <div class =  "buisness-info">

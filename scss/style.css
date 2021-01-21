@@ -112,167 +112,99 @@
 }
 
 .newsletter {
-  padding-bottom: 5%;
-  height: auto;
+  padding-left: 17%;
+  padding-right: 10%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
-.newsletter h2 {
+#news-letter {
+  width: 80%;
+}
+
+#news-letter h2 {
+  font-size: 32px;
   text-transform: capitalize;
-  margin-top: 0px;
-  margin-bottom: 3%;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
-.newsletter #check {
-  position: relative;
-  margin-right: 10px;
-}
-
-.newsletter .check {
-  width: 85%;
-  padding-top: 20px;
-  font-size: 1.15em;
-}
-
-.newsletter .check a {
-  color: #333645;
-  text-decoration: underline;
-}
-
-.newsletter .check a:hover {
-  color: #1d1f28;
-}
-
-#name, #email {
-  border: none;
-  -webkit-box-shadow: 3px 1px 30px #b3b3b3;
-          box-shadow: 3px 1px 30px #b3b3b3;
-  width: 550px;
-  height: 45px;
-}
-
-.name, .name-sm, .email, .email-sm {
-  font-size: 1.35em;
-}
-
-.name i, .name-sm i, .email i, .email-sm i {
-  color: #d24d57;
-}
-
-input[type="checkbox"] {
+#news-letter #subscribe {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  height: 35px;
-  width: 35px;
-  border: 3px solid #333645;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-input[type="checkbox"]:after {
-  content: "\f00c";
-  color: #fff;
-  width: 15px;
-  height: 15px;
-}
-
-input[type="checkbox"]:checked {
-  background-color: #333645;
-}
-
-.sub {
-  width: 125px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  color: #fff;
+  border-radius: 3%;
+  padding: 10px 20px;
   text-transform: uppercase;
-  font-size: 1.35em;
+  font-size: 16px;
+  font-weight: 500;
   background-color: #333645;
-  border-radius: 3px;
-  margin-top: 25px;
-  text-align: center;
-  cursor: pointer;
+  color: #fff;
 }
 
-.sub:hover {
+#news-letter #subscribe:hover {
   background-color: #1d1f28;
 }
 
-@media (max-width: 768px) {
-  .user-data-input {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #name, #email {
-    width: 500px;
-    padding: 5px;
-    margin-bottom: 50px;
-    margin-right: 25px;
-  }
-  .name, .email {
-    display: none;
-  }
+#news-letter #checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 3px solid #333645;
+  border-radius: 3px;
+  width: 35px;
+  height: 35px;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-  .user-data-input {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 75%;
-  }
-  #name, #email {
-    width: 550px;
-    padding: 5px;
-    margin-bottom: 50px;
-  }
-  .name, .email {
-    display: none;
-  }
+#news-letter #checkbox:checked {
+  background-color: #333645;
 }
 
-@media (min-width: 992px) and (max-width: 1260px) {
-  .user-data-input {
-    width: 100%;
-  }
-  #name, #email {
-    width: 450px;
-    padding: 5px;
-    margin-bottom: 50px;
-    margin-right: 5%;
-  }
-  .name-sm, .email-sm {
-    display: none;
-  }
-  .email {
-    position: absolute;
-    right: 37%;
-  }
+#news-letter #checkbox:checked::after {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f00c';
+  font-weight: 900;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  top: 15%;
+  left: 15%;
 }
 
-@media (min-width: 1260px) {
-  .email-sm, .name-sm {
-    display: none;
-  }
-  .email {
-    position: absolute;
-    right: 46%;
-  }
-  #name, #email {
-    padding: 10px;
-  }
-  #name {
-    margin-right: 3%;
-    margin-bottom: 25px;
-  }
-  .newsletter {
-    padding-left: 14%;
-  }
+.checkbox label {
+  font-size: 16px;
+  color: #333645;
+  font-weight: bold;
+  line-height: 2;
+  letter-spacing: 1.5px;
+}
+
+.form-wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 35px;
+}
+
+.name-group label, .email-group label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333645;
+  letter-spacing: 1px;
+}
+
+.name-group label small, .email-group label small {
+  color: red;
+}
+
+#name, #email {
+  width: 500px;
+  height: 45px;
+  padding: 10px;
+}
+
+#name {
+  margin-right: 35px;
 }
 
 .tt {
@@ -558,7 +490,8 @@ input[type="checkbox"]:checked {
     padding-right: 0%;
   }
   .bottom-imgs .f-img:first-of-type {
-    padding-right: 50px;
+    width: 250px;
+    padding-right: 100px;
   }
 }
 
@@ -1629,6 +1562,7 @@ input[type="checkbox"]:checked {
     right: 3.5%;
   }
   .top-nav .b-menu {
+    display: none;
     position: relative;
     right: 3.5%;
   }
@@ -1688,6 +1622,7 @@ input[type="checkbox"]:checked {
   .nav i {
     padding-top: 20px;
     position: relative;
+    top: 50%;
     left: 45%;
   }
   .nav small {
