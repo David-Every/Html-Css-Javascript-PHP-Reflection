@@ -42,6 +42,26 @@
     }
     h3{
         font-size: 18px;
+        &::after{
+            content: '';
+            display:block;
+            position: absolute;
+            width: 35px;
+            border:$nm-secondary solid 1px;
+            top: 100%;
+            left: 45%;
+        }
+    }
+}
+    :hover h3{
+        ::after{
+            content: '';
+            display:block;
+            position: absolute;
+            width: 35px;
+            border:$nm-primary solid 1px;
+            top: 100%;
+            left: 45%;
     }    
 }
 

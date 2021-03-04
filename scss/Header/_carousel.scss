@@ -1,14 +1,16 @@
 
-.carousel{
-    background-image:url('../img/Carousel-images/web_design_slide_1.png');
-    // width:100%;
+.carousel, .opacity{
+    // background-image:url('../img/Carousel-images/web_design_slide_1.png');
+    width:100%;
+    // opacity: 0.9;
     height:550px;
     margin-bottom:5%;
 }
 
 .opacity{
-    position: absolute;
-    background-image:linear-gradient(to right,rgba(0,0,0,1) 4%, rgba(0,0,0,0)100%);  
+    // position: absolute;
+    background-color:linear-gradient(to right,rgba(0,0,0,1) 4%, rgba(0,0,0,0)100%);
+      
 }
 
 .carousel-overlay{
