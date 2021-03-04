@@ -210,7 +210,6 @@ $nav-height:55px;
         margin-right: 2%;
     }
 }
-
 @media(min-width:$break-m) and (max-width:$break-lg){
     // remove elements
     .search-button-sm, .b-menu-sm, .phone, .search-bar{
@@ -266,7 +265,7 @@ $nav-height:55px;
 
     .dropdown-content{
         left:0%;
-        top:26.5%; //28.5%;
+        top:29.5%; //28.5%;
         font-size:10px;
     }
 }
@@ -311,13 +310,13 @@ $nav-height:55px;
     }
     .navigation{
         position:relative;
-        right:-10;
+        right:10;
     }
 
     //Position the dropdown navigation
     .dropdown-content{
         left:0%;
-        top:26.5%;
+        top:33.5%;
     }
     //Works out the padding spave to try and keep the navigation bar centered.
     // .nav-wrapper{

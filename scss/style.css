@@ -51,11 +51,9 @@
   background-color: #333645;
   background-image: url(../img/Icons/branded.png);
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-size: cover;
   color: #fff;
   font-size: 20px;
-  padding: 20px;
-  padding-bottom: 40px;
 }
 
 .about-us h1 {
@@ -63,6 +61,7 @@
   font-size: 36px;
   font-weight: 400;
   padding-bottom: 20px;
+  padding-top: 40px;
 }
 
 .about-us p {
@@ -84,6 +83,7 @@
   font-size: 17px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 40px;
   cursor: pointer;
 }
 
@@ -108,7 +108,6 @@
   }
   .about-us {
     padding: 20px;
-    padding-bottom: 40px;
   }
 }
 
@@ -119,7 +118,6 @@
   }
   .about-us {
     padding: 20px;
-    padding-bottom: 40px;
   }
 }
 
@@ -131,7 +129,7 @@
 }
 
 .newsletter {
-  padding-left: 17%;
+  padding-left: 13%;
   padding-right: 10%;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -165,6 +163,14 @@
   background-color: #1d1f28;
 }
 
+#news-letter .NL-Field {
+  margin: 0 0;
+}
+
+#news-letter .checkbox {
+  padding-left: 2%;
+}
+
 #news-letter #checkbox {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -190,20 +196,21 @@
   left: 15%;
 }
 
-.checkbox label {
+#lc {
   font-size: 16px;
   color: #333645;
   font-weight: bold;
   line-height: 2;
   letter-spacing: 1.5px;
+  float: right;
 }
 
-.checkbox label a {
+#lc a {
   color: #333645;
   text-decoration: underline;
 }
 
-.checkbox label a:hover {
+#lc a:hover {
   color: #333645;
 }
 
@@ -218,13 +225,16 @@
   color: red;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 #name, #email {
   height: 45px;
   padding: 10px;
-}
-
-#name {
-  margin-right: 35px;
 }
 
 @media (max-width: 768px) {
@@ -239,7 +249,7 @@
         flex-wrap: wrap;
   }
   #name, #email {
-    width: 400px;
+    width: 100px;
   }
   .name-group {
     margin-bottom: 25px;
@@ -270,6 +280,7 @@
   }
   .name-group {
     margin-bottom: 25px;
+    margin-right: 4%;
   }
 }
 
@@ -281,7 +292,10 @@
     margin-bottom: 35px;
   }
   #name, #email {
-    width: 520px;
+    width: 575px;
+  }
+  .name-group {
+    margin-right: 4%;
   }
 }
 
@@ -468,7 +482,7 @@
     width: 50%;
   }
   .social {
-    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 5%;
     height: 55px;
     width: 150px;
@@ -567,7 +581,7 @@
   }
   .bottom-imgs .f-img {
     width: 100%;
-    padding-right: 150px;
+    padding-right: 175px;
   }
   .bottom-imgs .f-img:last-of-type {
     padding-right: 0%;
@@ -951,17 +965,17 @@
   width: 35px;
   border: #333645 solid 1px;
   top: 100%;
-  left: 45%;
+  left: 44%;
 }
 
-:hover h3 ::after {
+.card h3:hover::after {
   content: '';
   display: block;
   position: absolute;
   width: 35px;
   border: #fff solid 1px;
   top: 100%;
-  left: 45%;
+  left: 44%;
 }
 
 .card-nav {
@@ -1164,6 +1178,7 @@
 
 .nm-announce, .site {
   position: relative;
+  overflow: hidden;
 }
 
 .news-container {
@@ -1187,10 +1202,17 @@
   cursor: pointer;
 }
 
+.news-container .news-card .latest-img {
+  background-color: #333645;
+  width: 100%;
+  height: 75%;
+}
+
 .news-container .news-card .latest-img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   color: #fff;
+  opacity: 0.8;
 }
 
 .news-container .info {
@@ -1226,6 +1248,10 @@
 .news-container .user .posted-by {
   display: inline-block;
   margin-left: 15px;
+}
+
+.news-container .user .posted-by small {
+  font-size: 14px;
 }
 
 .rm-n {
@@ -1420,11 +1446,6 @@
 
 .nav-title small {
   font-size: 10px;
-}
-
-.dropdown {
-  position: relative;
-  display: none;
 }
 
 .dropdown-content {
@@ -1723,7 +1744,7 @@
   }
   .dropdown-content {
     left: 0%;
-    top: 26.5%;
+    top: 29.5%;
     font-size: 10px;
   }
 }
@@ -1762,11 +1783,11 @@
   }
   .navigation {
     position: relative;
-    right: -10;
+    right: 10;
   }
   .dropdown-content {
     left: 0%;
-    top: 26.5%;
+    top: 33.5%;
   }
   .nav-bar {
     width: 80%;
@@ -1780,7 +1801,7 @@
 .carousel, .opacity {
   width: 100%;
   height: 550px;
-  margin-bottom: 5%;
+  padding-bottom: 3.5%;
 }
 
 .opacity {

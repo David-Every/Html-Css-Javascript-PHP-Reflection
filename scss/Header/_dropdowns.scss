@@ -31,32 +31,15 @@
   }
 }
 
-// //Invisible box
-// .invis-1{
-//     cursor: default;
-//     border:2px solid red;
-//     width:100px;
-//     height:100px;
-// }
-
-// .invis-2{
-//   cursor: default;
-//   border:2px solid yellow;
-//   width:100px;
-//   height:100px;
-// }
-// //
-
-
 
 //Start the Dropdown tooltips here.
-.dropdown {
-    position: relative;
-    display: none;
-}
+// .dropdown {
+//     position: relative;
+//     display: none;
+// }
   
   .dropdown-content {
-    display: none;
+    display:none;
     position: absolute;
     padding:10px 7% 10px 14%;
     width: 100%;

@@ -1,7 +1,7 @@
 
 //|| Style ||\\
 .newsletter{
-    padding-left: 17%;
+    padding-left: 13%;
     padding-right: 10%;
     padding-top:3%;
     padding-bottom: 3%;
@@ -29,9 +29,15 @@
     #subscribe:hover{
         background-color:darken($nm-secondary,10%);
     }
+    .NL-Field{
+        margin:0 0;
+    }
+    .checkbox{
+        padding-left: 2%;
+    }
 
     #checkbox{
-        // margin-right:0px;
+        // margin-right:20px;
         appearance: none;
         border: 3px solid $nm-secondary;
         border-radius: 3px;
@@ -54,7 +60,7 @@
         }
     }
 }
-.checkbox label{
+#lc{
     // margin-left:10px;
     font-size:16px;
     color:$nm-secondary;
@@ -68,6 +74,8 @@
             color:$nm-secondary;
         }
     }
+    //positioning
+    float:right;
 }
 .name-group,.email-group{
     label {
@@ -80,12 +88,17 @@
         }
     } 
 }
+//Removes default focus styles from browsers.
+input:focus,
+select:focus,
+textarea:focus,
+button:focus{
+    outline: none;
+}
+
 #name,#email{
     height:45px;
     padding:10px;
-}
-#name{
-    margin-right:35px;
 }
 
 @media(max-width:$break-sm){
@@ -97,7 +110,7 @@
         flex-wrap: wrap;
     }
     #name,#email{
-        width:400px;
+        width:100px;
         
     }
     .name-group{
@@ -131,6 +144,7 @@
     }
     .name-group{
         margin-bottom: 25px;
+        margin-right: 4%;
     }
 }
 
@@ -139,10 +153,11 @@
         display:inline-flex;
         margin-bottom:35px;
     }
-
-    //input length
     #name,#email{
-        width:520px;
+        width:575px;
+    }
+    .name-group{
+        margin-right:4%;
     }
     
 }

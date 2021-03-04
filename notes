@@ -53,3 +53,39 @@ Things i need to do -
     [ x ] Adjust carousel overlay text to look closer to the site
     [ x ] Check Spelling
     [ x ] MOVE LATEST DYNAMICALLY
+
+[  ] Feedback Changes -
+    [ x ] add Closing A tag
+    [ x ] Re work quotes to not be a child of DIV
+    [ x ] Correct the position of Hoverbar for the Dropdown navigation
+    [x] Drop Shadow effect bting cut off
+    [ x ] Adjust card Gutters, currently too wide.
+    [x ] Services line needs to turn white on hovering
+    [ x ] About Us Image not Positioned correctly
+    [ x ] Latest Incorrectly Positioned
+    [ x ] Small Labels Incorrectly Positioned.
+    [ x ] Hover Style incorrect on cards - 
+            "Hover style incorrect, use a div to wrap the image and set it to overflow hidden, 
+            this way when it gets larger you won't see the edges go over the card."
+    [ x ] Logo's not centered.
+    [ ] Logo Popup not styled correctly
+    [ x ] Focus Style Incorrect, Same with search bar at top (When clicking bars they look incorrect)
+    [x ]Bottom Page Logo's Not centered correctly.
+    [x ] Social Buttons not correct.
+
+[x ] Tablet View -
+    [ x ] Gradient Overlay- Nough said
+    [ x ] Alignment issues on Tablet view.
+    [x ] Background color and alignment issue for tablet news cards
+    [x ] NewsLetter Alignment issues (label not above input bar.)
+    [ x ] Social buttons not aligned with title.
+
+[ x ] Mobile View -
+    [ x ] Page is not responsive in mobile view.
+    I should probably re work the media Queries from what James mentioned. using better Breakpoints
+    
+[ x ] IE
+    [ x ] News Cards in IE broken
+    [ - ] Logos in IE are in colour
+    [ - ] Social Button icons Small in IE
+    [ x] Google Partners logo Squashed in IE

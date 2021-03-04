@@ -1,7 +1,7 @@
 
 .nm-announce, .site{
     position:relative;
-    // overflow:hidden;
+    overflow:hidden;
 }
 .news-container{
     // margin-top:10%;
@@ -19,9 +19,13 @@
         border: 1px lighten($nm-tertiary, 45%) solid;
         border-radius: 5px 5px;
         .latest-img{
+            background-color: $nm-secondary;
+            width:100%;
+            height:75%;
             &:hover{
                 transform: scale(1.1);
                 color:$nm-primary;
+                opacity: 0.8;
             }
         }
         cursor: pointer;      
@@ -55,6 +59,9 @@
         .posted-by{
             display:inline-block;
             margin-left:15px;
+            small{
+                font-size: 14px ;
+            }
         }
     }      
 }
