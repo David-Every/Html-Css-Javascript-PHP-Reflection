@@ -98,13 +98,17 @@ $nav-height:55px;
         }
     }
 }
-.b-menu,.b-menu-sm{ //
+.b-menu,.b-menu-sm{
     a{ 
         background-color: $nm-secondary;          
         &:hover{
             background-color: darken($nm-secondary, 10%);
         }
     }
+    
+}
+
+.b-menu{
     &::after{
         content: "menu";
         text-transform: uppercase;
@@ -113,6 +117,17 @@ $nav-height:55px;
         position: relative;
         right: 52%;
         top:30%;
+    }
+}
+.b-menu-sm{
+    &::after{
+        content: "";
+        text-transform: uppercase;
+        font-size:12px;
+        color:$nm-primary;
+        position: relative;
+        right: 52%;
+        bottom:30%;
     }
 }
 .b-menu-sm,.search-button-sm{
@@ -165,8 +180,8 @@ $nav-height:55px;
     }
 
     .b-menu-sm{
-        position:relative;
-        right:-5%;
+        position:absolute;
+        right:2%;
     }
 
     //Make everything inline and certain things appear
@@ -244,6 +259,7 @@ $nav-height:55px;
         }
     }
     .nav-bar{
+        // position: absolute;
         padding-left: 12%;
     }
    
@@ -263,11 +279,11 @@ $nav-height:55px;
         }
     }
 
-    .dropdown-content{
-        left:0%;
-        top:29.5%; //28.5%;
-        font-size:10px;
-    }
+    // .dropdown-content{
+    //     left:0%;
+    //     top:29.5%; //28.5%;
+    //     font-size:10px;
+    // }
 }
 
  //Large if the minumum is 992px and the 
@@ -314,16 +330,18 @@ $nav-height:55px;
     }
 
     //Position the dropdown navigation
-    .dropdown-content{
-        left:0%;
-        top:33.5%;
-    }
+    // .dropdown-content{
+    //     left:0%;
+    //     top:33.5%;
+    // }
     //Works out the padding spave to try and keep the navigation bar centered.
     // .nav-wrapper{
     // width:90%;
     // }
+
     .nav-bar{
-        width:80%;
+        position: absolute;
+        width:100%;
         padding-left: 13.5%;
         .nav{
             width:195px;

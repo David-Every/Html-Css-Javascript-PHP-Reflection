@@ -42,6 +42,7 @@
 }
 
 .tool::before{
+    // content: "Title";
     content: attr(data-text);
     position:absolute;
     transform:translateY(-154%);

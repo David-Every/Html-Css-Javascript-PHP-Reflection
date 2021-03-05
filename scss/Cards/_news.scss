@@ -1,7 +1,10 @@
 
-.nm-announce, .site{
+.nm-announce{//, .site{
     position:relative;
     overflow:hidden;
+}
+.site{
+    position: relative;
 }
 .news-container{
     // margin-top:10%;
