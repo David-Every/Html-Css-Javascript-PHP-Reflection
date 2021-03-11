@@ -5,6 +5,9 @@
     padding-right: 10%;
     padding-top:3%;
     padding-bottom: 3%;
+
+    background-color: $nm-newsletter;
+    
 }
 
 #news-letter{
@@ -25,6 +28,7 @@
         font-weight:500;
         background-color: $nm-secondary;
         color:$nm-primary;
+        margin-top: 35px;
     }
     #subscribe:hover{
         background-color:darken($nm-secondary,10%);
@@ -34,6 +38,7 @@
     }
     .checkbox{
         padding-left: 2%;
+        // top:0%;
     }
 
     #checkbox{
@@ -62,11 +67,12 @@
 }
 #lc{
     // margin-left:10px;
+    margin-left:2%;
     font-size:16px;
     color:$nm-secondary;
-    font-weight:bold;
-    line-height: 2;
-    letter-spacing:1.5px;
+    font-weight:600;
+    line-height: 2em;
+    letter-spacing:.4px;
     a{
         color:$nm-secondary;
         text-decoration: underline;
@@ -118,9 +124,11 @@ button:focus{
     }
 
     //line hight change
-    .checkbox label{
-        line-height: 1.25;
-    }
+    // .checkbox label{
+    //     line-height: 2em;
+    //     letter-spacing: 0.4px;
+    //     color: pink;
+    // }
     
 }
 

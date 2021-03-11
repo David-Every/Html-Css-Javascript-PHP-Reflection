@@ -54,7 +54,7 @@ Things i need to do -
     [ x ] Check Spelling
     [ x ] MOVE LATEST DYNAMICALLY
 
-[  ] Feedback Changes -
+[ x ] Feedback Changes -
     [ x ] add Closing A tag
     [ x ] Re work quotes to not be a child of DIV
     [ x ] Correct the position of Hoverbar for the Dropdown navigation
@@ -72,20 +72,65 @@ Things i need to do -
     [ x ] Focus Style Incorrect, Same with search bar at top (When clicking bars they look incorrect)
     [x ]Bottom Page Logo's Not centered correctly.
     [x ] Social Buttons not correct.
-
 [x ] Tablet View -
     [ x ] Gradient Overlay- Nough said
     [ x ] Alignment issues on Tablet view.
     [x ] Background color and alignment issue for tablet news cards
     [x ] NewsLetter Alignment issues (label not above input bar.)
-    [ x ] Social buttons not aligned with title.
-
+    [ x ] Social buttons not aligned with title
 [ x ] Mobile View -
     [ x ] Page is not responsive in mobile view.
-    I should probably re work the media Queries from what James mentioned. using better Breakpoints
-    
+    I should probably re work the media Queries from what James mentioned. using better Breakpoints  
 [ x ] IE
     [ x ] News Cards in IE broken
     [ - ] Logos in IE are in colour
     [ - ] Social Button icons Small in IE
     [ x] Google Partners logo Squashed in IE
+
+[ x ] Feedback two
+    [ x ] header and footer moved within body tags
+    [ x ] Lines between Navigation Buttons are incorrect colour
+    [ x ] rework Burger Menu to use Lines instead of an icons
+    [ x ] Remove Dash at the end of dropdown nav
+    [ x ] check colours are correct with CSSPeeper
+    [ x] Search input button dosent line up with the search box, Restructure HTML to style this correctly (?)
+    [ x ] The arrow in the carousel can be found ' https://fontawesome.com/icons/arrow-right?style=solid '
+    [ x ] Button in Carousel needs a border Radius
+    [ x ] carousel image is Squished, Increase hight of image.
+[ x ] Service Cards -
+    [ x ] Content in the cards is not centered
+    [ x ] fix hover for dash
+    [ x ] Underline dash needs to be slightly thicker
+    [ x ] cards should have a small amount of drop shadow on them.
+[ x ] News Cards -
+
+    [ x ] Cards missing the white background colour.
+    [ x ] cards missing drop Shadow
+    [ x ] background for this section should be white.
+    [ x ] Add transition time to image hover effect.
+    [ x ] news card labels should be against the edge of the card not floating over the image.   
+[ x ]newsLetter -
+    [ x ]Wrong background color used
+    [ x ] Wrong font weight for labels
+    [ x ] checkbox text and position slightly off.
+
+[ x ]About us -
+    [ x ] Small white space above this section shouldnt be there
+    [x ] Size of Background image is too large
+    [ x ] Text spans slightly wider then it should.
+
+[ ] Tool Tips -
+    [ ] Tool tip arrows should all be in the middle
+    [ ] Section should be centered on the page
+    [ ] Missing titles on Tool tips
+
+[ x] Footer -
+    [ x ] Buttons not placed correctly
+    [ x] Icons inconsistant sizes on social buttons
+    [ x ] google partners Logo is squished.  
+
+[ ] Media Queries issues
+    [ ] small gap under latest that shouldnt be there
+    [ ] width of service cards are slightly too thick, get them in a consistant page margin like the header
+    [ ] Margins between top of nav and lower parts of Nav are inconsistant in Larger screens
+    

@@ -11,7 +11,7 @@ $social-media: $facebook, $twitter, $linkedin;
 @each $name, $social, $color in $social-media{ 
     .social-#{$name}{
         background:darken($nm-secondary, 5%) $social no-repeat center;
-        background-size: 25%;
+        // background-size: 100% 100%;
         padding:20px 50px;
 
         &:hover{
@@ -20,4 +20,5 @@ $social-media: $facebook, $twitter, $linkedin;
     }
 
 }
+
 

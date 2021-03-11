@@ -9,7 +9,9 @@
 }
 
 .nav {
-    border: 1px solid $nm-tertiary;
+    border-left: 1px solid hsla(0,0%,100%,.1);
+    border-right: 1px solid #22242e;
+
     cursor: pointer;
     i{
       font-size: 1.25em;
@@ -43,20 +45,29 @@
     left:0%;
   }
   
-.dropdown-content a {
+.dropdown-content span {
+
+  a{
     color: $nm-primary;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.2em;
-   
-    &:hover{
+      &:hover{
         text-decoration: none;
         color:$nm-primary;
-    }
+      }
+  }
+    
     &::after{
+      color:$nm-primary;
         padding-left:25px;
         padding-right:25px;
-        content:"-"
+        content:"-";
+    }
+    &:last-of-type::after{
+      padding-left:25px;
+      padding-right:25px;
+      content:" ";
     }
   }
 

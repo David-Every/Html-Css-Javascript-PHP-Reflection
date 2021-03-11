@@ -1,17 +1,15 @@
 
 .about-us{
-    background-color: $nm-secondary;
     background-image: url(../img/Icons/branded.png);
     background-repeat:no-repeat;
-    // background-position: right;
-    background-size: cover;
-    // padding:25px;
-    // padding-left: 5.5%;
-    // height:500px;
+    
+    // backg
+    background-position: right;
+
+    background-color: $nm-secondary;
     color: $nm-primary;
     font-size:20px;
-    // padding: 20px;
-    // padding-bottom: 40px;
+    
 
     h1{
         text-transform:uppercase;
@@ -54,7 +52,7 @@
 @media(max-width:$break-sm){//max
     .content{
         width:90%;
-        
+        background-image: url(" ");
     }
     .about-us{
         padding-top: 20px;
@@ -71,7 +69,6 @@
     }
     .about-us{
         padding: 20px;
-        // padding-bottom: 40px;
     }
 }
 
@@ -79,16 +76,24 @@
     .content{
         padding-left:11%;
         width:87%;
+        background-size: 85% 100%;
     }
     .about-us{
         padding: 20px;
-        // padding-bottom: 40px;
     }
     
 }
 @media (min-width:$break-lg){
     .content{
         padding-left:13%;
-        width:50%;
+        width:45%;
     }
+    .about-us {
+        background-size: 85% 100%;
+        h1 {
+            margin-top:0;
+        }
+    }
+    
+
 }

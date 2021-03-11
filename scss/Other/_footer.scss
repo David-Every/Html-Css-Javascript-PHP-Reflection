@@ -62,6 +62,17 @@
     flex-wrap:wrap; 
 }
 
+.social-media{
+    width:27%;
+    a{
+        background-size: 25%;
+        padding:20px 50px;
+        margin-right:15px;
+        margin-top:10px; 
+        margin-bottom: 15px;
+    }
+}
+
 // //Small
 @media (max-width:$break-sm){//max
     .footer-icons, .footer-web-design,
@@ -73,11 +84,11 @@
         padding:15px;
     }
 
-    .social{
-        margin:10px;
-        width: 200px;
-        height:65px;
-    }
+    // .social{
+    //     margin:10px;
+    //     width: 200px;
+    //     height:65px;
+    // }
 }
 
 // Medium
@@ -95,15 +106,18 @@
     .website{
         width: 45%;
     }
-    .about,.social-media{
+    .about{
         width:50%;
     }
-    .social{
-        margin-right:5%;
-        margin-bottom:5%;
-        height:55px;
-        width:150px;
+    .social-media{
+        width:30%;
     }
+    // .social{
+    //     margin-right:5%;
+    //     margin-bottom:5%;
+    //     height:55px;
+    //     width:150px;
+    // }
 }
 @media (min-width:$break-m) and (max-width:$break-lg){
     .buisness-info{
@@ -117,15 +131,19 @@
     .website{
         width: 45%;
     }
-    .about,.social-media{
+    .about{
         width:50%;
     }
-    .social{
-        margin-right:5%;
-        margin-bottom:5%;
-        height:55px;
-        width:200px;
-    }
+    // .social-media{
+    //     width:5%;
+    // }
+
+    // .social{
+    //     margin-right:5%;
+    //     margin-bottom:5%;
+    //     height:55px;
+    //     width:200px;
+    // }
 
     .top-imgs ,.bottom-imgs {
         margin:35px 20px;
@@ -169,15 +187,15 @@
         width:20%;
         margin-right:3%;
     }
-    .social-media{
-        width:27%;
-        a{
-            background-size: 25%;
-            padding:20px 50px;
-            margin-right:5px;
-            margin-top:10px; 
-        }
-    }
+    // .social-media{
+    //     width:27%;
+    //     a{
+    //         background-size: 25%;
+    //         padding:20px 50px;
+    //         margin-right:5px;
+    //         margin-top:10px; 
+    //     }
+    // }
     .social{
         width:125px;
         height: 55px;
@@ -210,6 +228,20 @@
         }
         &:first-of-type{
             width:250px;
+            padding-right:100px;
+        }
+    }
+}
+
+
+@media(min-width:$break-xl){ 
+    .social-media{
+        width:350px;
+    }
+
+    .bottom-imgs .f-img{
+        &:first-of-type{
+            width:300px;
             padding-right:100px;
         }
     }

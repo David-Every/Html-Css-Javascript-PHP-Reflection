@@ -20,6 +20,8 @@
 
 .card{
     // position: relative;
+    // text-align: center;
+    // align-content: center;
     .rm{
         position: relative;
         width: 125px;
@@ -29,7 +31,7 @@
         border-radius:5%;
         padding:5px;
         text-transform: uppercase;
-        text-align:center;
+        // text-align:center;
         font-size: 1.25em;
         & p{
             font-size: 17px;
@@ -39,6 +41,10 @@
     p{
         font-size:13px;
         line-height: 1.5;
+        // width:85%;
+        padding-left: 7%;
+        padding-right:7%;
+        // text-align: center;
     }
     h3{
         font-size: 18px;
@@ -47,26 +53,34 @@
             display:block;
             position: absolute;
             width: 35px;
-            border:$nm-secondary solid 1px;
+            border:$nm-secondary solid 1.5px;
+            background-color: $nm-secondary;
             top: 100%;
             left: 44%;
         }
-        &:hover::after{
-            content: '';
-            display:block;
-            position: absolute;
-            width: 35px;
-            border:$nm-primary solid 1px;
-            top: 100%;
-            left: 44%;
-        }
-    }   
+        
+        
+    }
+
+    &:hover h3::after{
+        content: '';
+        display:block;
+        position: absolute;
+        width: 35px;
+        border:$nm-primary solid 1.5px;
+        background-color: $nm-primary;
+        top: 100%;
+        left: 44%;
+    }
+    &:hover{
+        box-shadow:inset 0px 0px 50px -30px rgba(0,0,0,0.5) ;
+    }
 }    
 
 .card-nav{
     padding-left:7%;
     padding-right: 7%;
-    background-color:darken($nm-primary, 5%);
+    // background-color:darken($nm-primary, 5%);
     padding-bottom:50px;
 
     .row-1{  //Parent of row 1
@@ -86,7 +100,7 @@
     }
     & i{
         padding-top:17px;
-        text-align: center;
+        // text-align: center;
         font-size: 23px;
     }
 } 
@@ -215,16 +229,16 @@
             bottom:10%;
             margin-bottom:5px;
         }
-        p{
-            width:95%;
-            padding-left:2.5%;
-            padding-right:2.5%;
-        }
+        // p{
+        //     width:95%;
+        //     padding-left:2.5%;
+        //     padding-right:2.5%;
+        // }
     }
     .row-2 .card{
         flex-wrap:nowrap;
         width:21.5%;
-        height:290px;
+        height:325px;
         margin-right:3.35%;
         
         &:last-child{
@@ -232,7 +246,7 @@
         }
         .rm{
             right:-20%;
-            bottom: 15%;
+            bottom: 5%;
         }
     }
 }

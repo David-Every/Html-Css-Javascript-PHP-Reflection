@@ -6,20 +6,12 @@
           box-sizing: border-box;
 }
 
-.newsletter,
-.card-nav,
-.carousel,
-.news-container {
-  background-color: #f2f2f2;
-}
-
 * {
   font-family: 'Poppins', sans-serif;
 }
 
 .social-fb {
   background: #282b36 url("../img/Icons/social-media-icons/facebook-svgrepo-com_white.svg") no-repeat center;
-  background-size: 25%;
   padding: 20px 50px;
 }
 
@@ -29,7 +21,6 @@
 
 .social-tw {
   background: #282b36 url("../img/Icons/social-media-icons/twitter-svgrepo-com_white.svg") no-repeat center;
-  background-size: 25%;
   padding: 20px 50px;
 }
 
@@ -39,7 +30,6 @@
 
 .social-li {
   background: #282b36 url("../img/Icons/social-media-icons/linkedin-svgrepo-com_white.svg") no-repeat center;
-  background-size: 25%;
   padding: 20px 50px;
 }
 
@@ -48,10 +38,10 @@
 }
 
 .about-us {
-  background-color: #333645;
   background-image: url(../img/Icons/branded.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: right;
+  background-color: #333645;
   color: #fff;
   font-size: 20px;
 }
@@ -94,6 +84,7 @@
 @media (max-width: 768px) {
   .content {
     width: 90%;
+    background-image: url(" ");
   }
   .about-us {
     padding-top: 20px;
@@ -115,6 +106,7 @@
   .content {
     padding-left: 11%;
     width: 87%;
+    background-size: 85% 100%;
   }
   .about-us {
     padding: 20px;
@@ -124,7 +116,13 @@
 @media (min-width: 1260px) {
   .content {
     padding-left: 13%;
-    width: 50%;
+    width: 45%;
+  }
+  .about-us {
+    background-size: 85% 100%;
+  }
+  .about-us h1 {
+    margin-top: 0;
   }
 }
 
@@ -133,6 +131,7 @@
   padding-right: 10%;
   padding-top: 3%;
   padding-bottom: 3%;
+  background-color: #dddddd;
 }
 
 #news-letter {
@@ -157,6 +156,7 @@
   font-weight: 500;
   background-color: #333645;
   color: #fff;
+  margin-top: 35px;
 }
 
 #news-letter #subscribe:hover {
@@ -197,11 +197,12 @@
 }
 
 #lc {
+  margin-left: 2%;
   font-size: 16px;
   color: #333645;
-  font-weight: bold;
-  line-height: 2;
-  letter-spacing: 1.5px;
+  font-weight: 600;
+  line-height: 2em;
+  letter-spacing: .4px;
   float: right;
 }
 
@@ -254,9 +255,6 @@ button:focus {
   .name-group {
     margin-bottom: 25px;
   }
-  .checkbox label {
-    line-height: 1.25;
-  }
 }
 
 @media (max-width: 992px) {
@@ -302,7 +300,7 @@ button:focus {
 .tt {
   position: absolute;
   top: 2%;
-  right: 5%;
+  right: 0%;
   padding: 4px 3px;
 }
 
@@ -340,32 +338,52 @@ button:focus {
   border-color: #333645 transparent transparent transparent;
 }
 
-.tool::before {
-  content: attr(data-text);
-  position: absolute;
-  -webkit-transform: translateY(-154%);
-          transform: translateY(-154%);
-  width: 250px;
-  height: 120px;
-  padding: 20px;
-  background-color: #333645;
+.tooltip-text {
+  display: none;
   color: #fff;
   text-align: center;
-  display: none;
+  position: absolute;
+  top: -175%;
 }
 
-.tool:hover::after {
-  content: " ";
+.tooltip-text h3 {
+  background-color: #333645;
+  width: 260px;
+  height: auto;
+  margin: 0;
+  padding-bottom: 3%;
+}
+
+.tooltip-text h3::after {
+  content: '';
+  display: block;
   position: absolute;
-  top: -100%;
-  left: 35%;
+  width: 35px;
+  border: #fff solid 1.5px;
+  background-color: #fff;
+  left: 32%;
+  margin-top: 10px;
+}
+
+.tooltip-text p {
+  background-color: #333645;
+  width: 80%;
+  padding-left: 23px;
+  padding-right: 19px;
+}
+
+.tool:hover:after {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: 25%;
   margin-left: -10px;
   border-width: 35px;
   border-style: solid;
   border-color: #333645 transparent transparent transparent;
 }
 
-.tt:hover::before, .tool:hover::before {
+.tt:hover::before, .tool:hover::before, .tooltip-text {
   display: block;
 }
 
@@ -446,6 +464,18 @@ button:focus {
       flex-wrap: wrap;
 }
 
+.social-media {
+  width: 27%;
+}
+
+.social-media a {
+  background-size: 25%;
+  padding: 20px 50px;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
 @media (max-width: 768px) {
   .footer-icons, .footer-web-design,
   .top-imgs, .bottom-imgs {
@@ -453,11 +483,6 @@ button:focus {
   }
   .buisness-info {
     padding: 15px;
-  }
-  .social {
-    margin: 10px;
-    width: 200px;
-    height: 65px;
   }
 }
 
@@ -478,14 +503,11 @@ button:focus {
   .website {
     width: 45%;
   }
-  .about, .social-media {
+  .about {
     width: 50%;
   }
-  .social {
-    margin-right: 5%;
-    margin-bottom: 5%;
-    height: 55px;
-    width: 150px;
+  .social-media {
+    width: 30%;
   }
 }
 
@@ -503,14 +525,8 @@ button:focus {
   .website {
     width: 45%;
   }
-  .about, .social-media {
+  .about {
     width: 50%;
-  }
-  .social {
-    margin-right: 5%;
-    margin-bottom: 5%;
-    height: 55px;
-    width: 200px;
   }
   .top-imgs, .bottom-imgs {
     margin: 35px 20px;
@@ -551,15 +567,6 @@ button:focus {
     width: 20%;
     margin-right: 3%;
   }
-  .social-media {
-    width: 27%;
-  }
-  .social-media a {
-    background-size: 25%;
-    padding: 20px 50px;
-    margin-right: 5px;
-    margin-top: 10px;
-  }
   .social {
     width: 125px;
     height: 55px;
@@ -588,6 +595,16 @@ button:focus {
   }
   .bottom-imgs .f-img:first-of-type {
     width: 250px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .social-media {
+    width: 350px;
+  }
+  .bottom-imgs .f-img:first-of-type {
+    width: 300px;
     padding-right: 100px;
   }
 }
@@ -940,7 +957,6 @@ button:focus {
   border-radius: 5%;
   padding: 5px;
   text-transform: uppercase;
-  text-align: center;
   font-size: 1.25em;
 }
 
@@ -952,6 +968,8 @@ button:focus {
 .card p {
   font-size: 13px;
   line-height: 1.5;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .card h3 {
@@ -963,25 +981,31 @@ button:focus {
   display: block;
   position: absolute;
   width: 35px;
-  border: #333645 solid 1px;
+  border: #333645 solid 1.5px;
+  background-color: #333645;
   top: 100%;
   left: 44%;
 }
 
-.card h3:hover::after {
+.card:hover h3::after {
   content: '';
   display: block;
   position: absolute;
   width: 35px;
-  border: #fff solid 1px;
+  border: #fff solid 1.5px;
+  background-color: #fff;
   top: 100%;
   left: 44%;
+}
+
+.card:hover {
+  -webkit-box-shadow: inset 0px 0px 50px -30px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0px 0px 50px -30px rgba(0, 0, 0, 0.5);
 }
 
 .card-nav {
   padding-left: 7%;
   padding-right: 7%;
-  background-color: #f2f2f2;
   padding-bottom: 50px;
 }
 
@@ -1033,7 +1057,6 @@ button:focus {
 
 .card-nav i {
   padding-top: 17px;
-  text-align: center;
   font-size: 23px;
 }
 
@@ -1155,16 +1178,11 @@ button:focus {
     bottom: 10%;
     margin-bottom: 5px;
   }
-  .row-1 .card p {
-    width: 95%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-  }
   .row-2 .card {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     width: 21.5%;
-    height: 290px;
+    height: 325px;
     margin-right: 3.35%;
   }
   .row-2 .card:last-child {
@@ -1172,7 +1190,7 @@ button:focus {
   }
   .row-2 .card .rm {
     right: -20%;
-    bottom: 15%;
+    bottom: 5%;
   }
 }
 
@@ -1186,6 +1204,9 @@ button:focus {
 }
 
 .news-container {
+  background: #DEDEDE;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#FFFFFF));
+  background: linear-gradient(to bottom, #F0F0F0 0%, #FFFFFF 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1203,6 +1224,7 @@ button:focus {
 .news-container .news-card {
   border: 1px #d9d9d9 solid;
   border-radius: 5px 5px;
+  background-color: #fff;
   cursor: pointer;
 }
 
@@ -1210,9 +1232,13 @@ button:focus {
   background-color: #333645;
   width: 100%;
   height: 75%;
+  -webkit-transition: all 0.2s 0s ease-out;
+  transition: all 0.2s 0s ease-out;
 }
 
 .news-container .news-card .latest-img:hover {
+  -webkit-transition: all .2s 0s ease-in;
+  transition: all .2s 0s ease-in;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   color: #fff;
@@ -1426,7 +1452,8 @@ button:focus {
 }
 
 .nav {
-  border: 1px solid #666666;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid #22242e;
   cursor: pointer;
 }
 
@@ -1461,22 +1488,29 @@ button:focus {
   left: 0%;
 }
 
-.dropdown-content a {
+.dropdown-content span a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.2em;
 }
 
-.dropdown-content a:hover {
+.dropdown-content span a:hover {
   text-decoration: none;
   color: #fff;
 }
 
-.dropdown-content a::after {
+.dropdown-content span::after {
+  color: #fff;
   padding-left: 25px;
   padding-right: 25px;
   content: "-";
+}
+
+.dropdown-content span:last-of-type::after {
+  padding-left: 25px;
+  padding-right: 25px;
+  content: " ";
 }
 
 .dropdown-container:hover .dropdown-content {
@@ -1598,50 +1632,65 @@ button:focus {
   background-color: #999999;
 }
 
-.b-menu a, .b-menu-sm a {
+.b-menu a {
   background-color: #333645;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 56px;
+  width: 56px;
+  line-height: 8px;
+  border-radius: 3px;
+  font-size: 3em;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #fff;
 }
 
-.b-menu a:hover, .b-menu-sm a:hover {
+.b-menu a:hover, .b-menu a :visited {
+  color: #fff;
   background-color: #1d1f28;
+  text-decoration: none;
 }
 
-.b-menu::after {
+.b-menu a span {
+  padding-left: 12px;
+}
+
+.b-menu a span:last-of-type:after {
   content: "menu";
   text-transform: uppercase;
   font-size: 12px;
   color: #fff;
   position: relative;
-  right: 52%;
-  top: 30%;
+  right: 15%;
 }
 
-.b-menu-sm::after {
-  content: "";
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #fff;
-  position: relative;
-  right: 52%;
-  bottom: 30%;
-}
-
-.b-menu-sm, .search-button-sm {
+.search-button-sm {
   display: none;
 }
 
-.search-button, .b-menu, .b-menu-sm {
+.search-button {
   margin-top: 10px;
 }
 
-.search-button a, .b-menu a, .b-menu-sm a {
+.search-button a {
   color: #fff;
   font-size: 1.5em;
-  padding: 12px 20px 17px;
+  padding: 10.2px 18px 17px;
   border-radius: 3px;
 }
 
-.search-button a:hover, .b-menu a:hover, .b-menu-sm a:hover {
+.search-button a:hover {
   text-decoration: none;
   color: #fff;
 }
@@ -1651,7 +1700,7 @@ button:focus {
 }
 
 @media (max-width: 768px) {
-  .nav-buttons, .search-button, .nav-wrapper, .b-menu {
+  .nav-buttons, .search-button, .nav-wrapper {
     display: none;
   }
   .phone {
@@ -1667,7 +1716,7 @@ button:focus {
     position: relative;
     right: -5;
   }
-  .b-menu-sm {
+  .b-menu {
     position: absolute;
     right: 2%;
   }
@@ -1676,9 +1725,6 @@ button:focus {
     margin-top: 15px;
     margin-left: 10px;
     margin-bottom: 15px;
-  }
-  .b-menu-sm {
-    display: initial;
   }
   form {
     width: 100%;
@@ -1707,7 +1753,7 @@ button:focus {
 }
 
 @media (min-width: 992px) and (max-width: 1260px) {
-  .search-button-sm, .b-menu-sm, .phone, .search-bar {
+  .search-button-sm, .phone, .search-bar {
     display: none;
   }
   .search-button {
@@ -1789,7 +1835,6 @@ button:focus {
   }
   .b-menu {
     position: relative;
-    right: 0%;
   }
   .navigation {
     position: relative;
@@ -1798,10 +1843,12 @@ button:focus {
   .nav-bar {
     position: absolute;
     width: 100%;
+    height: 99px;
     padding-left: 13.5%;
   }
   .nav-bar .nav {
-    width: 195px;
+    width: 192px;
+    height: 99px;
   }
 }
 
@@ -1809,10 +1856,6 @@ button:focus {
   width: 100%;
   height: 550px;
   padding-bottom: 3.5%;
-}
-
-.opacity {
-  background-color: linear-gradient(to right, black 4%, rgba(0, 0, 0, 0) 100%);
 }
 
 .carousel-overlay {
@@ -1842,6 +1885,7 @@ button:focus {
   text-transform: uppercase;
   font-size: 20px;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 .carousel-overlay a:hover {
@@ -1853,18 +1897,13 @@ button:focus {
 @media (max-width: 768px) {
   .carousel {
     width: 100%;
-    height: 550px;
+    height: 450px;
   }
   .carousel-overlay {
     position: absolute;
     width: 75%;
-    top: 40%;
-    margin-left: 25%;
-  }
-  .opacity {
-    width: 100%;
-    height: 550px;
-    top: 20.5%;
+    top: 30%;
+    left: 15%;
   }
 }
 
@@ -1877,19 +1916,9 @@ button:focus {
     top: 30%;
     left: 20%;
   }
-  .opacity {
-    width: 100%;
-    height: 550px;
-    top: 16.5%;
-  }
 }
 
 @media (min-width: 992px) and (max-width: 1260px) {
-  .opacity {
-    width: 100%;
-    height: 550px;
-    top: 27%;
-  }
   .carousel-overlay {
     position: absolute;
     top: 44.5%;
@@ -1899,7 +1928,8 @@ button:focus {
 
 @media (min-width: 1260px) {
   .carousel {
-    height: 550px;
+    width: 100%;
+    height: auto;
   }
   .carousel-container {
     position: relative;
@@ -1909,11 +1939,6 @@ button:focus {
     position: absolute;
     top: 25.5%;
     left: 14%;
-  }
-  .opacity {
-    width: 100%;
-    height: 550px;
-    top: 0%;
   }
 }
 
