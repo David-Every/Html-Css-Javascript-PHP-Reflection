@@ -7,14 +7,17 @@
 
 .carousel-overlay{
     color: $nm-primary;
+    position:absolute;   
     
     h1{
+        text-align: center;
         margin:none;
         text-transform: uppercase;
         font-size: 48px;
         font-weight: 400;
     }
     p{
+        text-align: center;
         width:60%;
         font-size:20px;
         font-weight:700;
@@ -22,6 +25,7 @@
         font-weight: 400;
     }
     a{
+        position: absolute;
         background-color: $nm-web;
         padding:10px;
         text-decoration: none;
@@ -49,10 +53,23 @@
         
     }
     .carousel-overlay{
-        position: absolute;
-        width:75%;
-        top:30%;
+        h1{
+            padding-bottom:5%;
+            // margin-left:0;
+        }
+        h1,p{
+            width:80%;
+            margin:0;
+        }
+        // position: absolute;
+        width:90%;
+        top:35%;
+        left:10%;
+        // margin-right: 5%;
+    }
+    a{
         left:15%;
+        top:120%;
     }
 }
 
@@ -64,34 +81,60 @@
     }
    
     .carousel-overlay{
-        position: absolute;
-        top:30%;
+        h1{
+            width:70%;
+        }
+        p{
+            width: 80%;
+        }
+        a{
+            left:20%;
+        }
+        top:40%;
         left:20%;
     }
 }
 @media(min-width:$break-m) and (max-width:$break-lg){
 
     .carousel-overlay{
-        position: absolute;
         top: 44.5%;
         left:12.5%;
     }
 }
 
-@media (min-width:$break-lg){
+@media (min-width:$break-lg) /*and (max-width:$break-xl)*/{
     .carousel{
         width:100%;
         height:auto;
         // margin-bottom: 35px;
     }
-
     .carousel-container {
-        position: relative;
+        // position: relative;
         color:$nm-primary;
         .carousel-overlay{
-            position: absolute;
-            top: 25.5%;
-            left:14%;
+            // position: absolute;
+            p,h1{
+                text-align: left;
+                width:60%;
+            }
+            top: 35%;
+            left: 5%;
         }
+    }
+}
+@media(max-width:$break-xl){
+    .carousel-overlay{
+        // position:absolute;
+        // left:50%;
+        // top:20%;
+        margin-right:11%;
+    }
+}
+
+@media(min-width:$break-4k){
+    .carousel-overlay{
+        position:absolute;
+        left:0%;
+        top:20%;
     }
 }

@@ -1,24 +1,43 @@
 
 //url variables
-$facebook: 'fb' url("../img/Icons/social-media-icons/facebook-svgrepo-com_white.svg") $facebook-hover;
-$twitter: 'tw' url("../img/Icons/social-media-icons/twitter-svgrepo-com_white.svg") $twitter-hover;
-$linkedin: 'li' url("../img/Icons/social-media-icons/linkedin-svgrepo-com_white.svg") $linkedin-hover;
+// $facebook: 'fb' url("../img/Icons/social-media-icons/facebook-svgrepo-com_white.svg") $facebook-hover;
+// $twitter: 'tw' url("../img/Icons/social-media-icons/twitter-svgrepo-com_white.svg") $twitter-hover;
+// $linkedin: 'li' url("../img/Icons/social-media-icons/linkedin-svgrepo-com_white.svg") $linkedin-hover;
 
-$social-media: $facebook, $twitter, $linkedin;
+// $facebook: 'fb' $facebook-hover;
+// $twitter: 'tw' $twitter-hover;
+// $linkedin: 'li' $linkedin-hover;
 
-//cycles through each social media variable and sets the default colour and what colour
-//they will be when hovered over.
-@each $name, $social, $color in $social-media{ 
-    .social-#{$name}{
-        background:darken($nm-secondary, 5%) $social no-repeat center;
-        // background-size: 100% 100%;
-        padding:20px 50px;
+// $social-media: $facebook, $twitter, $linkedin;
 
-        &:hover{
-            background-color: $color;
-        }
+// //cycles through each social media variable and sets the default colour and what colour
+// //they will be when hovered over.
+// @each $name, $social, $color in $social-media{ 
+//     .social-#{$name}{
+//         background:darken($nm-secondary, 5%) $social no-repeat center;
+//         // background-size: 100% 100%;
+//         transform: scale(1.1);
+//         padding:20px 50px;
+
+//         &:hover{
+//             background-color: $color;
+//         }
+//     }
+// }
+
+.social{
+    padding:20px 50px;
+    background-color: darken($nm-secondary, 5%);
+    &.social-fb:hover {background-color: $facebook-hover;}
+    &.social-tw:hover {background-color: $twitter-hover;}
+    &.social-li:hover {background-color: $linkedin-hover;}
+
+    i{
+        font-size: 2em;
+        // margin-bottom:20px;
+        position: relative;
+        top:-25%;
     }
-
 }
 
 

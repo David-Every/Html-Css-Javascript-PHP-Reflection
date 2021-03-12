@@ -42,10 +42,6 @@
 }
 
 // .tool::before{
-//     // [data-text]::before{
-//     //     content: "Bussys";
-//     // }
-//     // content: "Title";
 //     content: attr(data-text);
 //     position:absolute;
 //     transform:translateY(-126%);
@@ -58,59 +54,101 @@
 //     display:none;
 // }
 
-.tooltip-text{
-display: none;
-color:$nm-primary;
-text-align: center;
-position:absolute;
-top:-175%;
+.tool{
+    
+    .tooltip-text{
+    display:none;
+    color:$nm-primary;
+    text-align: center;
+    align-content: center;
+    position:absolute;
+    // top:-300%;
+    // left:-10%;
+        h3{
+            // display: none;
+            font-size: 18px;
+            font-weight: 400;
+            background-color: $nm-secondary;
+            width:260px;
+            height:auto;
+            margin:0;
+            padding-top:5%;
+            padding-bottom:3%;
+            &::after{
+                content: '';
+                display:block;
+                position: absolute;
+                width: 35px;
+                border:$nm-primary solid 1.5px;
+                background-color: $nm-primary;
+                // top: 100%;
+                left: 42%;
+                margin-top:10px;
 
-    h3{
-        // display: none;
-        background-color: $nm-secondary;
-        width:260px;
-        height:auto;
-        margin:0;
-        padding-bottom:3%;
-        &::after{
-            content: '';
-            display:block;
-            position: absolute;
-            width: 35px;
-            border:$nm-primary solid 1.5px;
-            background-color: $nm-primary;
-            // top: 100%;
-            left: 32%;
-            margin-top:10px;
+            }
+        }
+        p{
+            // display: none;
+            font-size: 13px;
+            font-weight:400;
+            background-color: $nm-secondary;
+            width:260px;
+            padding:20px;
+
+            //Adds arrow
+            &:after{
+                content: "";
+                position: absolute;
+                top:90%;
+                left: 40%;
+                margin-left: -10px;
+                border-width: 35px;
+                border-style: solid;
+                border-color: $nm-secondary transparent transparent transparent;
+
+                //Select the second and the last
+
+            }
 
         }
+    
     }
-    p{
-        // display: none;
-        background-color: $nm-secondary;
-        width:80%;
-        padding-left:23px;
-        padding-right:19px;
-
+    
+    &:hover{
+        .tooltip-text,.colour-Img{
+            display: block;
+        }
+        .gray-img{
+            display: none;
+        }
+        
     }
 
-}
+    //Positioning Tooltips
+    .busseys-tt{
+        top:-220%;
+        left:-15%;
+    }
+    .crane-tt{
+        top:-280%;
+        left:-7%;
+    }
+    .beat-tt{
+        top:-250%;
+        left:-52%;
+    }
+    .diver-tt{
+        top:-280%;
+        left:5%;
+    }
 
-// //Adds arrow 
-.tool:hover:after{
-    content: "";
-    position: absolute;
-    top:-60%;
-    left: 25%;
-    margin-left: -10px;
-    border-width: 35px;
-    border-style: solid;
-    border-color: $nm-secondary transparent transparent transparent;
+    .colour-Img{
+        display:none;
+    }
 }
-
 
 //Sets the tooltip display to block to user can see the tool tip when hovered over.
-.tt:hover::before,.tool:hover::before, .tooltip-text{
+.tt:hover::before{
     display:block;
 }
 

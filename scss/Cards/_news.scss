@@ -169,6 +169,18 @@
         // padding-left:13.5%;
         margin-top:15.5%;
         padding-top:4%;
+        .news-card{
+            width:45%;
+            height:auto;
+    
+            &:first-child{
+                margin-left:2%;
+                margin-right:5%;
+            }
+            &:last-child{
+                display: none;
+            }
+        }
     }
     .break{ 
         left:2.5%;
@@ -177,18 +189,7 @@
     }
 
 
-    .news-card{
-        width:45%;
-        height:auto;
-
-        &:first-child{
-            margin-left:2%;
-            margin-right:2%;
-        }
-        &:last-child{
-            display: none;
-        }
-    }
+    
     .news{
         height:500px;
     }
@@ -201,9 +202,9 @@
             margin-right:2%;
             margin-top:2%;
 
-            &:first-of-type{
-                margin-left:12%;
-            }
+            // &:first-of-type{
+            //     margin-left:12%;
+            // }
 
             &:last-of-type{
                 display:none;
@@ -215,8 +216,9 @@
             padding-top:4%;
         }
         
-    .break{ 
-        left:12%;
+    .break{
+        // top: 304%;
+        left:5%;
         padding-bottom:20px;
         padding-top: 35px;
     }
@@ -224,23 +226,63 @@
 
 @media(min-width:$break-lg){
     .news-container{
-        padding-left:13.5%;
+        // padding-left:13.5%;
         margin-top:6.5%;
         padding-top:3%;
+        padding-right: 5%;
     }
-    .break{ 
-        left:13.5%;
+    .break{
+        top:258%;
+        left:5%;
         padding-bottom:30px;
         padding-top: 40px;
     }
-
     .news-card{
-        width: 27%;
+        width:45%;
+        margin-right:2%;
+        margin-top:2%;
+
+        &:first-of-type{
+            margin-left:5%;
+            margin-right:3%;
+        }
+
+        &:last-of-type{
+            display:none;
+        }
+    }
+
+    
+}
+
+@media(min-width:$break-xl){
+    .break{
+        top:243%;
+        left:13%;
+    }
+    .news-card{
+        width: 25%;
             height: auto;
             margin-right:2%;
+            &:first-of-type{
+                margin-left:13.5%;
+                // margin-right:3%;
+            }
         &:last-child{
             margin-right: 0%;
             display: initial;
+        }
+    }
+}
+
+@media(min-width:$break-4k){
+    .news-card{
+        width:15%;
+        &:first-of-type{
+            margin-left:$xxlPadding;
+        }
+        &:last-of-type{
+            margin-right:10%;
         }
     }
 }

@@ -29,3 +29,11 @@
 body{
     user-select: none;
 }
+
+//Removes default focus styles from browsers.
+input:focus,
+select:focus,
+textarea:focus,
+button:focus{
+    outline: none;
+}

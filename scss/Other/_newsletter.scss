@@ -11,7 +11,7 @@
 }
 
 #news-letter{
-    width:80%;
+    width:95%;
     h2{
         font-size: 32px;
         // width:500px;
@@ -80,13 +80,17 @@
             color:$nm-secondary;
         }
     }
-    //positioning
-    float:right;
+}
+
+// input bars
+.name-group{
+    margin-bottom:25px;
 }
 .name-group,.email-group{
+    // width:50%;
     label {
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 500;
         color:$nm-secondary;
         letter-spacing: 1px;
         small{
@@ -94,78 +98,56 @@
         }
     } 
 }
-//Removes default focus styles from browsers.
-input:focus,
-select:focus,
-textarea:focus,
-button:focus{
-    outline: none;
-}
+
 
 #name,#email{
+    width:100%;
     height:45px;
     padding:10px;
 }
+
 
 @media(max-width:$break-sm){
     .newsletter{
         padding-left: 5%;
     }
     .form-wrapper{
+        width:100%;
         display:flex;
         flex-wrap: wrap;
     }
-    #name,#email{
-        width:100px;
-        
-    }
-    .name-group{
-        margin-bottom: 25px;
-    }
-
-    //line hight change
-    // .checkbox label{
-    //     line-height: 2em;
-    //     letter-spacing: 0.4px;
-    //     color: pink;
-    // }
     
 }
 
-@media(max-width:$break-m){   
-    #name,#email{
-        width:400px;
-    }
-    .name-group{
-        margin-bottom: 25px;
-    }
-}
+// @media(max-width:$break-m){   
+  
+// }
 
 @media(min-width:$break-m) and (max-width:$break-lg){
     .form-wrapper{
         display:inline-flex;
         margin-bottom:35px;
-
-    }
-    #name,#email{
-        width:400px;
-    }
-    .name-group{
-        margin-bottom: 25px;
-        margin-right: 4%;
     }
 }
 
 @media(min-width:$break-lg){
     .form-wrapper{
+        width:100%;
         display:inline-flex;
         margin-bottom:35px;
     }
-    #name,#email{
-        width:575px;
+    .email-group,.name-group{
+        width:100%;
     }
     .name-group{
-        margin-right:4%;
+        margin-right:5%;
+    }    
+}
+@media(min-width:$break-4k){
+    .newsletter{
+        padding-left: $xxlPadding;
     }
-    
+    .email-group,.name-group{
+        width:700px;
+    }
 }

@@ -119,18 +119,23 @@ Things i need to do -
     [x ] Size of Background image is too large
     [ x ] Text spans slightly wider then it should.
 
-[ ] Tool Tips -
-    [ ] Tool tip arrows should all be in the middle
-    [ ] Section should be centered on the page
-    [ ] Missing titles on Tool tips
+[ x ] Tool Tips -
+    [ x ] Tool tip arrows should all be in the middle
+    [ x] Section should be centered on the page
+    [ x ] Missing titles on Tool tips
 
-[ x] Footer -
+[ x ] Footer -
     [ x ] Buttons not placed correctly
     [ x] Icons inconsistant sizes on social buttons
-    [ x ] google partners Logo is squished.  
+    [ x ] google partners Logo is squished.
+    [ x ] Incorrect Images for 'IE'
 
 [ ] Media Queries issues
     [ ] small gap under latest that shouldnt be there
-    [ ] width of service cards are slightly too thick, get them in a consistant page margin like the header
+    [ x ] width of service cards are slightly too thick, get them in a consistant page margin like the header
     [ ] Margins between top of nav and lower parts of Nav are inconsistant in Larger screens
+    [ x ] newsletter input boxes
+    [ ] add a lg - XL mq for navigation and footer
+
+    [ ] rework Large Media query to work as 1024px 
     
