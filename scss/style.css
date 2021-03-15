@@ -117,6 +117,7 @@
   .content {
     padding-left: 5%;
     width: 100%;
+    padding-right: 5%;
   }
   .about-us {
     background-size: 100% 100%;
@@ -281,6 +282,10 @@
 }
 
 @media (min-width: 1024px) {
+  .newsletter {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   .form-wrapper {
     width: 100%;
     display: -webkit-inline-box;
@@ -296,9 +301,17 @@
   }
 }
 
+@media (min-width: 1260px) {
+  .newsletter {
+    padding-left: 13.5%;
+    padding-right: 10%;
+  }
+}
+
 @media (min-width: 2560px) {
   .newsletter {
-    padding-left: 25%;
+    padding-left: 27%;
+    padding-right: 27%;
   }
   .email-group, .name-group {
     width: 700px;
@@ -617,6 +630,9 @@
   .social i {
     padding-left: 44px;
   }
+  .top-imgs {
+    padding-left: 5%;
+  }
 }
 
 @media (min-width: 1260px) {
@@ -644,7 +660,11 @@
   .social-buttons {
     width: 300px;
   }
-  .top-imgs, .bottom-imgs {
+  .top-imgs {
+    margin-left: 8%;
+    margin-bottom: 2%;
+  }
+  .bottom-imgs {
     margin-left: 13.5%;
     margin-top: 35px;
     margin-bottom: 35px;
@@ -677,12 +697,19 @@
 }
 
 @media (min-width: 2560px) {
+  .contact-info, .website, .about {
+    width: 15%;
+    margin-right: 3%;
+  }
   .buisness-info {
     padding-left: 25%;
     padding-right: 10%;
   }
-  .top-imgs, .bottom-imgs {
-    margin-left: 30%;
+  .top-imgs {
+    margin-left: 21%;
+  }
+  .bottom-imgs {
+    margin-left: 25%;
   }
 }
 
@@ -1245,12 +1272,12 @@
   .row-1 .card {
     margin-right: 3%;
     margin-bottom: 0;
-    height: 312px;
+    height: 350px;
     width: 370px;
   }
   .row-1 .card .rm {
-    right: -30%;
-    bottom: 10%;
+    right: -25%;
+    bottom: 0%;
     margin-bottom: 5px;
   }
   .row-2 .card {
@@ -1264,7 +1291,7 @@
     margin-right: 0%;
   }
   .row-2 .card .rm {
-    right: -20%;
+    right: -33%;
     bottom: 5%;
   }
 }
@@ -1452,9 +1479,11 @@
 }
 
 .break {
+  width: 17%;
   text-transform: uppercase;
   font-size: 20px;
-  position: absolute;
+  position: relative;
+  font-weight: 400;
 }
 
 .break::before {
@@ -1464,17 +1493,19 @@
   width: 100%;
   border: #333645 solid 2px;
   top: 100%;
+  margin-top: 20px;
 }
 
 @media (max-width: 600px) {
   .news-container {
-    margin-top: 17%;
+    margin-top: 6%;
     padding-top: 2%;
   }
   .break {
     left: 3%;
     padding-bottom: 20px;
     margin-top: 35px;
+    margin-bottom: 5px;
   }
   .news-card {
     width: 100%;
@@ -1488,7 +1519,6 @@
 
 @media (min-width: 600px) and (max-width: 900px) {
   .news-container {
-    margin-top: 15.5%;
     padding-top: 4%;
   }
   .news-container .news-card {
@@ -1503,9 +1533,11 @@
     display: none;
   }
   .break {
+    width: 10%;
     left: 2.5%;
     padding-bottom: 40px;
     padding-top: 45px;
+    margin-bottom: 20px;
   }
   .news {
     height: 500px;
@@ -1522,27 +1554,20 @@
     display: none;
   }
   .news-container {
-    margin-top: 8%;
     padding-top: 4%;
-  }
-  .break {
-    left: 5%;
-    padding-bottom: 20px;
-    padding-top: 35px;
   }
 }
 
 @media (min-width: 1024px) {
   .news-container {
-    margin-top: 6.5%;
     padding-top: 3%;
     padding-right: 5%;
   }
   .break {
-    top: 258%;
+    width: 8%;
+    margin-top: 35px;
+    margin-bottom: 25px;
     left: 5%;
-    padding-bottom: 30px;
-    padding-top: 40px;
   }
   .news-card {
     width: 45%;
@@ -1560,7 +1585,8 @@
 
 @media (min-width: 1260px) {
   .break {
-    top: 243%;
+    width: 5%;
+    margin-top: 2%;
     left: 13%;
   }
   .news-card {
@@ -1573,16 +1599,20 @@
   }
   .news-card:last-child {
     margin-right: 0%;
-    display: initial;
+    display: block;
   }
 }
 
 @media (min-width: 2560px) {
+  .break {
+    width: 3%;
+    left: 25%;
+  }
   .news-card {
     width: 15%;
   }
   .news-card:first-of-type {
-    margin-left: 25%;
+    margin-left: 2%;
   }
   .news-card:last-of-type {
     margin-right: 10%;
@@ -1798,17 +1828,15 @@
   text-decoration: none;
 }
 
-.b-menu a span {
-  padding-left: 12px;
+.b-menu a small {
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
-.b-menu a span:last-of-type:after {
-  content: "menu";
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #fff;
-  position: relative;
-  right: 15%;
+.b-menu a span {
+  padding-left: 12px;
 }
 
 .search-button-sm {
@@ -1884,6 +1912,11 @@
   .logo .f-logo {
     width: 80%;
   }
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media (min-width: 900px) and (max-width: 1023px) {
@@ -1906,6 +1939,11 @@
   .logo .f-logo {
     width: 90%;
   }
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1260px) {
@@ -1927,6 +1965,11 @@
     width: 90%;
   }
   .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation .search-bar {
     display: none;
   }
   .nav-bar {
@@ -1951,7 +1994,14 @@
 
 @media (min-width: 1260px) {
   .navigation {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30%;
+    margin-right: 1%;
+  }
+  .search-bar {
+    width: 70%;
   }
   .top-nav {
     display: -webkit-inline-box;
@@ -1964,7 +2014,7 @@
     width: 100%;
   }
   .logo {
-    padding-right: 11%;
+    padding-right: 8%;
   }
   .f-logo {
     height: 64.42px;
@@ -1972,9 +2022,6 @@
   }
   form {
     width: 20%;
-  }
-  .b-menu {
-    position: relative;
   }
   .navigation {
     position: relative;
@@ -2014,17 +2061,17 @@
 
 .carousel, .opacity {
   width: 100%;
-  height: 550px;
   padding-bottom: 3.5%;
 }
 
 .carousel-overlay {
   color: #fff;
   position: absolute;
+  top: 45%;
+  left: 13.5%;
 }
 
 .carousel-overlay h1 {
-  text-align: center;
   margin: none;
   text-transform: uppercase;
   font-size: 48px;
@@ -2032,7 +2079,6 @@
 }
 
 .carousel-overlay p {
-  text-align: center;
   width: 60%;
   font-size: 20px;
   font-weight: 700;
@@ -2064,20 +2110,15 @@
     height: 450px;
   }
   .carousel-overlay {
-    width: 90%;
     top: 35%;
-    left: 10%;
-  }
-  .carousel-overlay h1 {
-    padding-bottom: 5%;
+    left: 5%;
   }
   .carousel-overlay h1, .carousel-overlay p {
-    width: 80%;
-    margin: 0;
+    text-align: center;
+    width: 95%;
   }
-  a {
-    left: 15%;
-    top: 120%;
+  .carousel-overlay a {
+    left: 20%;
   }
 }
 
@@ -2086,14 +2127,12 @@
     height: 550px;
   }
   .carousel-overlay {
-    top: 40%;
+    top: 25%;
     left: 20%;
   }
-  .carousel-overlay h1 {
+  .carousel-overlay h1, .carousel-overlay p {
+    text-align: center;
     width: 70%;
-  }
-  .carousel-overlay p {
-    width: 80%;
   }
   .carousel-overlay a {
     left: 20%;
@@ -2101,41 +2140,59 @@
 }
 
 @media (min-width: 900px) and (max-width: 1024px) {
+  .carousel {
+    height: 500px;
+  }
   .carousel-overlay {
-    top: 44.5%;
-    left: 12.5%;
+    top: 30%;
+    left: 25%;
+  }
+  .carousel-overlay h1, .carousel-overlay p {
+    text-align: center;
+    width: 70%;
+  }
+  .carousel-overlay a {
+    left: 20%;
   }
 }
 
 @media (min-width: 1024px) {
   .carousel {
     width: 100%;
-    height: auto;
+    height: 450px;
   }
-  .carousel-container {
-    color: #fff;
-  }
-  .carousel-container .carousel-overlay {
+  .carousel-overlay {
+    width: 60%;
     top: 35%;
     left: 5%;
   }
-  .carousel-container .carousel-overlay p, .carousel-container .carousel-overlay h1 {
+  .carousel-overlay h1, .carousel-overlay p {
     text-align: left;
-    width: 60%;
+    width: 70%;
+  }
+  .carousel-overlay a {
+    left: 0%;
   }
 }
 
-@media (max-width: 1260px) {
+@media (min-width: 1260px) {
+  .carousel {
+    height: auto;
+  }
   .carousel-overlay {
-    margin-right: 11%;
+    top: 40%;
+    left: 13.5%;
   }
 }
 
 @media (min-width: 2560px) {
+  .carousel {
+    height: auto;
+  }
   .carousel-overlay {
-    position: absolute;
-    left: 0%;
-    top: 20%;
+    width: 25%;
+    left: 25%;
+    top: 35%;
   }
 }
 

@@ -131,6 +131,10 @@
 }
 
 @media(min-width:$break-lg){
+    .newsletter{
+        padding-left:5%;
+        padding-right: 5%;
+    }
     .form-wrapper{
         width:100%;
         display:inline-flex;
@@ -143,9 +147,16 @@
         margin-right:5%;
     }    
 }
+@media(min-width:$break-xl){
+    .newsletter{
+        padding-left: 13.5%;
+        padding-right:10%;
+    }
+}
 @media(min-width:$break-4k){
     .newsletter{
-        padding-left: $xxlPadding;
+        padding-left:27%;
+        padding-right: 27%;
     }
     .email-group,.name-group{
         width:700px;

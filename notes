@@ -130,12 +130,17 @@ Things i need to do -
     [ x ] google partners Logo is squished.
     [ x ] Incorrect Images for 'IE'
 
-[ ] Media Queries issues
-    [ ] small gap under latest that shouldnt be there
+[ x ] Media Queries issues
+    [ x ] small gap under latest that shouldnt be there
     [ x ] width of service cards are slightly too thick, get them in a consistant page margin like the header
-    [ ] Margins between top of nav and lower parts of Nav are inconsistant in Larger screens
+    [ x ] Margins between top of nav and lower parts of Nav are inconsistant in Larger screens
     [ x ] newsletter input boxes
-    [ ] add a lg - XL mq for navigation and footer
+    [ x ] add a lg - XL mq for navigation and footer
 
-    [ ] rework Large Media query to work as 1024px 
-    
+    [ x ] rework Large Media query to work as 1024px
+
+[ x ] Check Site and note down any Known Adjustments to be made.
+    [ x ] Rework Carousel overlay so thats its base position is alwaysover the carousel
+        Then adjust the position and style accordingly.
+    [ x ] Re work news so it works again in IE 
+    [ x ] Top Navigation slightly broken in IE and firefox.

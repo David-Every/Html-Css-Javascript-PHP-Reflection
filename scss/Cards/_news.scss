@@ -127,9 +127,12 @@
 
 //|| 'Latest' Page Break ||\\
 .break{
+    width:17%;
     text-transform: uppercase;
     font-size: 20px;
-    position: absolute;
+    position: relative;
+    font-weight: 400;
+    // top: 400%;
     &::before{
         content: '';
         display:block;
@@ -137,6 +140,7 @@
         width: 100%;
         border:$nm-secondary solid 2px;
         top: 100%;
+        margin-top: 20px;
     }
 }
 
@@ -145,13 +149,15 @@
 @media(max-width:$break-sm){
 
     .news-container{
-        margin-top:17%;
+        margin-top:6%;
         padding-top:2%;
     }
-    .break{ 
+    .break{
+        // top:auto; 
         left:3%;
         padding-bottom:20px;
         margin-top: 35px;
+        margin-bottom: 5px;
     }
     .news-card{
         width:100%;
@@ -167,7 +173,7 @@
 
     .news-container{
         // padding-left:13.5%;
-        margin-top:15.5%;
+        // margin-top:15.5%;
         padding-top:4%;
         .news-card{
             width:45%;
@@ -183,9 +189,11 @@
         }
     }
     .break{ 
+        width:10%;
         left:2.5%;
         padding-bottom:40px;
         padding-top: 45px;
+        margin-bottom: 20px;
     }
 
 
@@ -212,30 +220,33 @@
         }
 
         .news-container{
-            margin-top:8%;
+            // margin-top:8%;
             padding-top:4%;
         }
         
-    .break{
-        // top: 304%;
-        left:5%;
-        padding-bottom:20px;
-        padding-top: 35px;
-    }
+    // .break{
+    //     // top: 304%;
+    //     left:5%;
+    //     padding-bottom:20px;
+    //     padding-top: 35px;
+    // }
 }
 
 @media(min-width:$break-lg){
     .news-container{
         // padding-left:13.5%;
-        margin-top:6.5%;
+        // margin-top:6.5%;
         padding-top:3%;
         padding-right: 5%;
     }
     .break{
-        top:258%;
+        width:8%;
+        // top:258%;
+        margin-top:35px;
+        margin-bottom:25px;
         left:5%;
-        padding-bottom:30px;
-        padding-top: 40px;
+    //     padding-bottom:30px;
+    //     padding-top: 40px;
     }
     .news-card{
         width:45%;
@@ -257,8 +268,12 @@
 
 @media(min-width:$break-xl){
     .break{
-        top:243%;
+        width: 5%;
+        margin-top:2%;
         left:13%;
+        // &::after{
+        //     margin-bottom: 35px;
+        // }
     }
     .news-card{
         width: 25%;
@@ -266,20 +281,23 @@
             margin-right:2%;
             &:first-of-type{
                 margin-left:13.5%;
-                // margin-right:3%;
             }
         &:last-child{
             margin-right: 0%;
-            display: initial;
+            display: block;
         }
     }
 }
 
 @media(min-width:$break-4k){
+    .break{
+        width:3%;
+        left:25%;
+    }
     .news-card{
         width:15%;
         &:first-of-type{
-            margin-left:$xxlPadding;
+            margin-left:2%;
         }
         &:last-of-type{
             margin-right:10%;

@@ -172,6 +172,7 @@
 
 // //Large
 @media (min-width:$break-lg){ 
+    
     .buisness-info{
         padding:5%;
     }
@@ -187,6 +188,10 @@
         i{
             padding-left:44px;
         }
+    }
+
+    .top-imgs{
+        padding-left: 5%;
     }
 
 }
@@ -217,7 +222,11 @@
             width:300px;
         }
     
-        .top-imgs ,.bottom-imgs {
+        .top-imgs{
+            margin-left:8%;
+            margin-bottom:2%;
+        }
+        .bottom-imgs {
             margin-left:13.5%;
             margin-top:35px;
             margin-bottom:35px;
@@ -257,12 +266,20 @@
 }
 
 @media(min-width:$break-4k){
+
+    .contact-info,.website,.about{
+        width:15%;
+        margin-right:3%;
+    }
     .buisness-info{
         padding-left:$xxlPadding;
         padding-right:10%;
 
     }
-    .top-imgs ,.bottom-imgs {
-        margin-left:30%;
+    .top-imgs{
+        margin-left:21%;
+    }
+    .bottom-imgs {
+        margin-left:25%;
     }
 }
