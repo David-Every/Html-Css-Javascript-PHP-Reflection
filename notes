@@ -68,7 +68,7 @@ Things i need to do -
             "Hover style incorrect, use a div to wrap the image and set it to overflow hidden, 
             this way when it gets larger you won't see the edges go over the card."
     [ x ] Logo's not centered.
-    [ ] Logo Popup not styled correctly
+    [ x] Logo Popup not styled correctly
     [ x ] Focus Style Incorrect, Same with search bar at top (When clicking bars they look incorrect)
     [x ]Bottom Page Logo's Not centered correctly.
     [x ] Social Buttons not correct.
@@ -83,10 +83,9 @@ Things i need to do -
     I should probably re work the media Queries from what James mentioned. using better Breakpoints  
 [ x ] IE
     [ x ] News Cards in IE broken
-    [ - ] Logos in IE are in colour
-    [ - ] Social Button icons Small in IE
+    [ x ] Logos in IE are in colour
+    [ x ] Social Button icons Small in IE
     [ x] Google Partners logo Squashed in IE
-
 [ x ] Feedback two
     [ x ] header and footer moved within body tags
     [ x ] Lines between Navigation Buttons are incorrect colour
@@ -113,32 +112,26 @@ Things i need to do -
     [ x ]Wrong background color used
     [ x ] Wrong font weight for labels
     [ x ] checkbox text and position slightly off.
-
 [ x ]About us -
     [ x ] Small white space above this section shouldnt be there
     [x ] Size of Background image is too large
     [ x ] Text spans slightly wider then it should.
-
 [ x ] Tool Tips -
     [ x ] Tool tip arrows should all be in the middle
     [ x] Section should be centered on the page
     [ x ] Missing titles on Tool tips
-
 [ x ] Footer -
     [ x ] Buttons not placed correctly
     [ x] Icons inconsistant sizes on social buttons
     [ x ] google partners Logo is squished.
     [ x ] Incorrect Images for 'IE'
-
 [ x ] Media Queries issues
     [ x ] small gap under latest that shouldnt be there
     [ x ] width of service cards are slightly too thick, get them in a consistant page margin like the header
     [ x ] Margins between top of nav and lower parts of Nav are inconsistant in Larger screens
     [ x ] newsletter input boxes
     [ x ] add a lg - XL mq for navigation and footer
-
     [ x ] rework Large Media query to work as 1024px
-
 [ x ] Check Site and note down any Known Adjustments to be made.
     [ x ] Rework Carousel overlay so thats its base position is alwaysover the carousel
         Then adjust the position and style accordingly.
