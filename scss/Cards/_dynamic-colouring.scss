@@ -1,5 +1,5 @@
 
-$service-colors:('web' $nm-web, 'it' $nm-it, 'tc' $nm-tc, 'bs' $nm-bs, 'mk' $nm-marketing, 'cs' $nm-security, 'dt' $nm-training);
+$service-colors:('web' $nm-web, 'it' $nm-it, 'tc' $nm-tc, 'bs' $nm-bs, 'mk' $nm-marketing, 'cs' $nm-security, 'dt' $nm-web);
 
 
 @each $name, $color in $service-colors{

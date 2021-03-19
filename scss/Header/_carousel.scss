@@ -25,18 +25,35 @@
     }
     a{
         position: absolute;
+        display: flex;
+        // width:36.5%;
         background-color: $nm-web;
-        padding:10px;
+        padding:20px;
         text-decoration: none;
         color:$nm-primary;
         text-transform: uppercase;
         font-size: 20px;
+        
         cursor: pointer;
         border-radius: 3px;
+        p{
+            line-height: 22.8571px;
+            letter-spacing: 0.4px;
+            text-align: start;
+            width:95%;
+            // height:5%;
+            margin:0;
+            margin-right:20px;
+        }
+        i{
+            padding-top:5px;
+            // padding:0;
+            // margin:0;
+        }
         &:hover{
             text-decoration: none;
             color: $nm-primary;
-            background-color:darken($nm-web, 10%);
+            background-color:$nm-web-hover;
         }
     }
 }
@@ -122,10 +139,9 @@
         height:auto;
     }
     .carousel-overlay{
+        width:45%;
         top:40%;
         left:13.5%;
-    //     left:initial;
-    //     top:initial;
     }
 }
 

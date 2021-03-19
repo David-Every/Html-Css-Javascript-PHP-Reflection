@@ -1,5 +1,5 @@
 
-$nav-height:55px;
+$nav-height:57px;
 
 // .top-nav{
 //     display:flex;
@@ -46,17 +46,17 @@ $nav-height:55px;
     }
     //Sets  "Support" button and it s hoverstates colour
     .btn-1{
-        background-color: $nm-it;
+        background-color: $nm-button-blue;
         &:hover{
-            background-color:darken($nm-it,10%);
+            background-color:$nm-support-hover;
         }
     }
 
     // sets the "Contact buttons colout and its hoverstakes colour
     .btn-2{
-        background-color:lighten($nm-tertiary,30%);
+        background-color:$nm-contact;
         &:hover{
-            background-color:lighten($nm-tertiary,20%);
+            background-color:$nm-contact-hover;
         }
     }
     .btn-1,.btn-2{
@@ -72,8 +72,12 @@ $nav-height:55px;
     height:$nav-height;
     padding-left:10px;
     border:1px solid $nm-tertiary;
+    box-shadow: rgba(0,0,0,0.075) 0px 1px 1px 0px inset;
     &:active{
-        border: 1px solid $nm-tertiary;
+        // border: 1px solid $nm-tertiary;
+        box-shadow: rgba(0,0,0,0.075) 0px 1px 1px 0px inset,
+                    rgba(91,192,222,0.6) 0px 0px 8px 0px;
+
     }
 }
 .phone{
@@ -108,15 +112,25 @@ $nav-height:55px;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 56px;
-    width: 56px;
+    // width: 56px;
+    width: 63.03px;
+    height: $nav-height;
+
     line-height: 8px;
     border-radius: 3px;
 
-    font-size: 3em;
-    padding-left: 5px;
-    padding-right:5px;
+    // font-size: 3em;
+    // padding-left: 5px;
+    // padding-right:5px;
     color:$nm-primary;
+
+    #burger-line{
+        margin-left:15px;
+        width: 33px;
+        height: 3px;
+        background-color: $nm-primary;
+        margin-bottom: 5px;
+    }
 
     
     &:hover,:visited{
@@ -127,7 +141,7 @@ $nav-height:55px;
     small{
         font-size: 13px;
         text-transform: uppercase;
-        margin-left:5px;
+        margin-left:12px;
         margin-top:5px;
     }
     span{
@@ -145,16 +159,16 @@ $nav-height:55px;
 .search-button a{
     color:$nm-primary;
     font-size: 1.5em;
-    padding:10.2px 18px 17px;
-    border-radius: 3px;
+    padding: 10px 21px 18px 21px;
+    border-radius: 0 3px 3px 0;
     &:hover{
         text-decoration: none;
         color:$nm-primary;
     }
 }
-.search-button a{
-    border-radius: 0px 3px 3px 0px;
-}
+// .search-button a{
+//     border-radius: 0px 3px 3px 0px;
+// }
 
 // || Media Queries ||
 

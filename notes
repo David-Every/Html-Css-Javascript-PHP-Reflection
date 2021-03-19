@@ -137,3 +137,54 @@ Things i need to do -
         Then adjust the position and style accordingly.
     [ x ] Re work news so it works again in IE 
     [ x ] Top Navigation slightly broken in IE and firefox.
+
+[ ] xxl View -
+    [ ] Nav menu should span the same width as the logos and buttons
+    [ ] Gap between burger menu and search box too big.
+    [ x ] service cards dont line up on the right side of page.
+    [x ] cards still too wide compared to origional (news).
+    [ x ] Styling for sign up form and logos doesent match up with the website.
+    [ ] check all colours and buttons are correct.
+
+[ ] new adjustment -
+    [ ] Adjust site nav to match rest of site
+    [ ] adjust everything to be inlign on the left in XL
+    [ ] Latest Pushes too far to the right in 1440
+    [ ] adjust Mobile view to work as a percentage to get it to not push the site out.
+
+[ x ] Quick Fixes -
+    [ x ] Background colour on support button is too dark
+    [ x ] Search input outline is incorrect
+    [ x ] carousel paragraph should span 2 lines in large view.
+    [ x ] more padding for carousel button.
+    [ x ] space between arrow and the text on the carousel button is incorrect.
+    [ x ] Purple used on dev training needs to be the same as web design.
+    [ x ] service cards should have a box shadow.
+    [ x ] border radius is too much on the cards
+    [ x ] add a little drop shadow to the google partners logo.
+    [ x ] Wrong transition used on cards hover, use ease-in-out.
+    [ x ] Cards should have a consistent padding, Lower cards have less padding under the button.
+    [ x ] line under latest should be the same size as latest.
+    [ x ] Gutters between social buttons are incorrect.
+    [ x ] change Burger menu to have a set width and height with a white background colour.
+    [ x ] Search HTML needs restructuring and styling the button is bigger then the input making them not sit well together
+    [ x ] fix width of footer icons (Google)
+    [ x ] Missing shadow under the part that says latest(?)
+    [ x ] reorganise how latest is positioned
+    [ x ] rework distance in latest.
+    [ x ] fix social buttons margin in ;large views
+    
+
+[ ] SM - M
+    [ ] News cards dont adjust to be next to eachother.
+
+[ ] M / m-L
+    [ ] news hasnt adjusted left padding
+    [ ] newsletter input too close together
+
+[ ] L
+    [ ] bottom parners too close together.
+
+[ ] L-XL
+    [ ] search bar almost non-existant 
+    

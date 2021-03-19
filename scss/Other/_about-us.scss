@@ -50,21 +50,19 @@
 // Adapts Padding and width
 @media(max-width:$break-sm){//max
     .content{
-        width:90%;
+        // width:90%;
         background-image: url(" ");
     }
     .about-us{
         padding-top: 20px;
-        padding-left: 10px;
+        padding-left: 15px;
         padding-bottom: 25px;
     }
-
-    
 }
-
-@media(max-width:$break-m){
+@media(min-width:$break-sm) and(max-width:$break-m){
     .content{
         width:95%;
+        padding-left: $m;
     }
     .about-us{
         padding: 20px;
@@ -74,6 +72,9 @@
         }
     }
 }
+
+// @media(max-width:$break-m){
+//     
 
 @media(min-width:$break-m) and (max-width:$break-lg){
     .content{
@@ -101,8 +102,8 @@
 }
 @media (min-width:$break-xl){
     .content{
-        padding-left:13%;
-        width:47%;
+        padding-left:$xlPadding;
+        width:54%;
     }
     .about-us {
         background-size: 85% 100%;
@@ -114,7 +115,7 @@
 
 @media(min-width:$break-4k){
     .content{
-        padding-left:$xxlPadding;
+        padding-left:28%;
     }
     .about-us{
         background-size: 55%;
