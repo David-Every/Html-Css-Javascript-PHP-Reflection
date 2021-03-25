@@ -1,15 +1,14 @@
 
 $nav-height:57px;
-
-// .top-nav{
-//     display:flex;
-//     flex-wrap:wrap;
-// }
+.top-nav{
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+}
 .f-logo{
     width: 100%;
     height:120%;
 }
-
 
 .phone a:link, .phone a:visited{
     color:$nm-secondary;
@@ -22,11 +21,6 @@ $nav-height:57px;
 .lg,.m,.sm{
     display:none;
 }
-
-// .top-nav{
-//     width:90%;
-//     height:auto;
-// }
 
 .nav-buttons{
     display:inline-flex;
@@ -67,18 +61,16 @@ $nav-height:57px;
 //|| Navigation Sizes ||
 
 .search-bar{
-    border:$nm-tertiary 1px solid;
-    width: auto;
+    // border:$nm-tertiary 1px solid;
+    border:1px solid #e5e5e5;
+    width: 240px;
     height:$nav-height;
     padding-left:10px;
-    border:1px solid $nm-tertiary;
+    // border:1px solid $nm-tertiary;
     box-shadow: rgba(0,0,0,0.075) 0px 1px 1px 0px inset;
-    &:active{
-        // border: 1px solid $nm-tertiary;
-        box-shadow: rgba(0,0,0,0.075) 0px 1px 1px 0px inset,
-                    rgba(91,192,222,0.6) 0px 0px 8px 0px;
-
-    }
+    font-size: 14px;
+    line-height:20px;
+    letter-spacing: normal;
 }
 .phone{
     i{
@@ -105,23 +97,16 @@ $nav-height:57px;
     }
 }
 
-.b-menu a{
-
+.b-menu a, .b-menu-sm a{
     background-color: $nm-secondary;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    // width: 56px;
     width: 63.03px;
     height: $nav-height;
-
     line-height: 8px;
     border-radius: 3px;
-
-    // font-size: 3em;
-    // padding-left: 5px;
-    // padding-right:5px;
     color:$nm-primary;
 
     #burger-line{
@@ -131,7 +116,9 @@ $nav-height:57px;
         background-color: $nm-primary;
         margin-bottom: 5px;
     }
-
+    .b-menu-sm{
+        display:none;
+    }
     
     &:hover,:visited{
         color:$nm-primary;
@@ -166,49 +153,37 @@ $nav-height:57px;
         color:$nm-primary;
     }
 }
-// .search-button a{
-//     border-radius: 0px 3px 3px 0px;
-// }
-
 // || Media Queries ||
 
-//Small if the max is 600px
-
 @media (max-width:$break-sm){
-
     //Remove un-needed elements
-    .nav-buttons, .search-button, .nav-wrapper{
+    .nav-buttons, .search-button, .b-menu{
         display:none;
     }
-    .phone{
+    .phone, .b-menu-sm{
         display: inline;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:2%;
     }
-    //Resize Netmatters logo
+    .b-menu-sm{
+        margin-right:5%;
+    }
+    // //Resize Netmatters logo
     .logo{
-        .f-logo{
-            width:60%;
-        }
+        width:60%;
+        margin-right:auto;
     }
-    .phone{
-        margin-right:20px;
-        position:relative;
-        right:-5;
-    }
-    .b-menu{
-        position:absolute;
-        top: 3%;
-        right:5%;
-    }
-
-    //Make everything inline and certain things appear
+    // //Make everything inline and certain things appear
     .top-nav{
+        flex-wrap: wrap;
         width:95%;
         margin-top: 5%;
         margin-left: 5%;
         margin-bottom:15px;
     }
 
-    //Modify sizes and add whitespace
+    // //Modify sizes and add whitespace
     form{
         width:100%;
     }
@@ -217,12 +192,15 @@ $nav-height:57px;
         margin-top:5%;
         background-color: lighten($nm-tertiary,50%);
     }
+    .navigation{
+        display: inline-flex;
+    }
 }
 
 //Medium Between 600px and 900px
 @media (min-width:$break-sm) and (max-width:$break-m){
     //Remove elements
-    .nav-buttons, .nav-wrapper,.phone{
+    .nav-buttons, .nav-wrapper,.phone, .b-menu-sm{
         display:none;
     }
     .top-nav{
@@ -231,12 +209,14 @@ $nav-height:57px;
     }
 
     .logo{
+        margin-left:auto;
         .f-logo{
             width:80%;
         }
     }
     .navigation{
         display: flex;
+        margin-right: auto;
     }
 }
 
@@ -244,146 +224,111 @@ $nav-height:57px;
 @media(min-width:$break-m) and (max-width:1023px){
     // remove elements
     .search-button-sm, .phone,
-    .nav-buttons,.nav-wrapper{
+    .nav-buttons,.nav-wrapper, .b-menu-sm{
         display:none;
     }
-    // .search-button{
-    //     border-radius: 5px;
-    // }
     .top-nav{
         display: inline-flex;
-        // width:100%;
-        
+        width:960px;
         margin-top:3%;
-        margin-right:10%;
-        margin-left:10%;
-        margin-bottom: 5%;
+        margin-bottom: 3%;
     }
     .logo{
-        margin-right: 5%;
+        margin-left: auto;
+        margin-right: 3%;
+        width:35%;
         .f-logo{
-            width:90%;
+            width:100%;
         }
     }
-    
     .navigation{
-        display: flex;
-    }
-    
+        display:inline-flex;
+        margin-right:auto;
+        .search-bar{
+            width:174px;
+        }
+    }   
 }
 
  //Large if the minumum is 1024
 @media (min-width:$break-lg) and (max-width:$break-xl){
-    .top-nav{
-        width:100%;
-        display:inline-flex;
-        padding-left:5%;
-        padding-right:5%;
-        margin-top:1.5%;
-        margin-bottom: 1.5%;
-        .logo{
-            height:50%;
-            margin-right:4.5%;
-        }
-        .f-logo{
-            width:90%;
-        }    
+
+    .b-menu-sm, .search-bar{
+        display:none;
+    }
+    .b-menu-sm{
+        display:none;
     }
     .navigation{
         display: flex;
-        .search-bar{
-            display: none;
-        }
-    }
-    .nav-bar{
-        position: absolute;
-        width:100%;
-        height:99px;
-        padding-left: 5%;
+        margin-right:auto;
 
-        .nav{
-            width:154.33px;
-            height:99px;
-
-            i{
-                padding-top:15px;
-                position: relative;
-            }
-    
-            p{
-                font-size: 1.3em;
-                text-align: center;
-            }
-        }
-    }
-}
-
-@media (min-width:$break-xl){
-    .navigation{
-        display: flex;
-        width:30%;
-        margin-right:1%;
-
-    }
-    .search-bar{
-        width:70%;
     }
     .top-nav{
-        display:inline-flex;
-        padding-left:13.5%;
-        padding-right:14%;
+        width:920px;
         margin-top:1.5%;
         margin-bottom: 1.5%;
-        width:100%;
     }
     .logo{
-       padding-right:8%;
+    margin-right:5%;
     }
     .f-logo{
         height:64.42px;
         width:370px;
-
-        
     }
     form{
         width:20%;
     }
-   
-    .navigation{
-        position:relative;
-        right:10;
-    }
-
-    .nav-bar{
-        position: absolute;
-        width:100%;
-        height:99px;
-        padding-left: 13.5%;
-
-        .nav{
-            width:192.67px;
-            height:99px;
-            i{
-                padding-top:15px;
-                position: relative;
-            }
     
-            p{
-                font-size: 1.3em;
-                text-align: center;
-            }
-            
-        }
-    }
+    // .top-nav{
+    //     // display:inline-flex;
+    //     // flex-wrap: wrap;
+    //     width:963px;
+    //     height:50%;
+    //     margin-right:4%;
+    // }
+    // .f-logo{
+    //     width:90%;
+    // }  d
+    // .navigation{
+    //     display: inline-flex;
+    // }
 }
-@media(min-width:$break-4k){
-    .top-nav, .nav-bar{
-        padding-left:$xxlPadding;
+
+@media (min-width:$break-xl){
+    .b-menu-sm{
+        display:none;
+    }
+    .navigation{
+        display: flex;
+        margin-right:auto;
+
+    }
+    .top-nav{
+        width:1175px;
+        margin-top:1.5%;
+        margin-bottom: 1.5%;
     }
     .logo{
-        padding-right:7%;
+    margin-right:10%;
     }
-    .navigation{
-        width:12%;
+    .f-logo{
+        height:64.42px;
+        width:370px;
+    }
+    form{
+        width:20%;
+    }
+}
+
+@media(min-width:$break-4k){
+    .b-menu-sm{
+        display:none;
+    }
+    .top-nav{
+        width:1175px;
+    }
+    .logo{
+        margin-right:10%;
     }
 }

@@ -3,20 +3,25 @@
 $nm-primary: #fff;
 $nm-secondary: #333645; 
 $nm-tertiary: #666666;
+
+
 $nm-web: #926fb1; //Web design Button
-$nm-web-hover: #7e57a0; //Web design hover
-
-
-$nm-it: #286ABD; //IT support
-$nm-tc: #BC2C28; // Telecoms
-$nm-bs: #526781; //Bespoke software
-$nm-marketing: #25A25A; //marketing
-$nm-security: #DE093F; //security
+$nm-it: #4183d7; //IT support
+$nm-tc: #d64541; // Telecoms
+$nm-bs: #67809f; //Bespoke software
+$nm-marketing: #2ecc71; //marketing
+$nm-security: #f62459; //security
 $nm-training: darken($nm-web,10%);
 $nm-newsletter: #dddddd;
 
-$nm-support-hover:#2a6ec6;
+$nm-web-hover: #7e57a0; //Web design hover
+$nm-it-hover: #286abd;
+$nm-tc-hover: #bc2c28 ;
+$nm-bs-hover: #526781;
+$nm-marketing-hover:#25a25a;
+$nm-security-hover:#de093f;
 
+$nm-support-hover:#2a6ec6;
 $nm-contact: #999aa2;
 $nm-contact-hover: #84858f;
 // $nm-darken:false;

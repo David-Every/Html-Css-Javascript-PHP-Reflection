@@ -1,8 +1,15 @@
 
-$service-colors:('web' $nm-web, 'it' $nm-it, 'tc' $nm-tc, 'bs' $nm-bs, 'mk' $nm-marketing, 'cs' $nm-security, 'dt' $nm-web);
+$service-colors:
+('web' $nm-web $nm-web-hover, 
+'it' $nm-it $nm-it-hover, 
+'tc' $nm-tc $nm-tc-hover, 
+'bs' $nm-bs $nm-bs-hover, 
+'mk' $nm-marketing $nm-marketing-hover, 
+'cs' $nm-security $nm-security-hover,
+ 'dt' $nm-web);
 
 
-@each $name, $color in $service-colors{
+@each $name, $color, $hover-colour in $service-colors{
     //Colours the navigation buttons at the top of site.
     .nav-#{$name}{
         i{
@@ -15,9 +22,9 @@ $service-colors:('web' $nm-web, 'it' $nm-it, 'tc' $nm-tc, 'bs' $nm-bs, 'mk' $nm-
             }
         }
     }
-
+    //Colours the Dropdown. 
     .nav-#{$name} .dropdown-content{
-        background-color: darken($color,5%); /*Test color*/
+        background-color: $hover-colour; 
     }
 
     //Colours service cards, sets them as a default colour of $nm-primary

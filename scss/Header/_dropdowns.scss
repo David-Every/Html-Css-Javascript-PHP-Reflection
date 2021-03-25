@@ -1,37 +1,4 @@
 
-.nav-wrapper{
-    background-color: $nm-secondary;
-    height:100px;
-}
-.nav-bar{
-    // width:100%;
-    display:inline-flex;
-}
-
-.nav {
-    border-left: 1px solid hsla(0,0%,100%,.1);
-    border-right: 1px solid #22242e;
-
-    cursor: pointer;
-    i{
-      font-size: 1.25em;
-      left:45%;
-    }
-    p{
-      color: $nm-primary;
-      text-decoration: none;      
-    }
-    a:hover{
-      text-decoration: none;
-    }
-}
-
-.nav-title{
-  text-transform: uppercase;
-  small{
-    font-size: 10px;
-  }
-}
 
 
 //Start the Dropdown tooltips here.
@@ -39,7 +6,7 @@
   .dropdown-content {
     display:none;
     position: absolute;
-    padding:10px 7% 10px 14%;
+    // padding:10px 7% 10px 14%;
     width: 100%;
     z-index: 1;
     left:0%;
@@ -51,7 +18,7 @@
     color: $nm-primary;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.2em;
+    // font-size: 1.2em;
       &:hover{
         text-decoration: none;
         color:$nm-primary;
@@ -60,17 +27,59 @@
     
     &::after{
       color:$nm-primary;
-        padding-left:25px;
-        padding-right:25px;
+        // padding-left:25px;
+        // padding-right:25px;
         content:"-";
     }
     &:last-of-type::after{
-      padding-left:25px;
-      padding-right:25px;
+      // padding-left:25px;
+      // padding-right:25px;
       content:" ";
     }
   }
 
   .dropdown-container:hover .dropdown-content{
     display: inline-flex;
+  }
+
+  @media(min-width:$break-lg){
+
+    .dropdown-content{
+      // width:100%;
+      padding-left: 6%;
+
+      // font-size: 13px;
+      span{
+        padding-left:15px;
+        padding-bottom:10px;
+        padding-top:10px;
+
+        a{
+          padding-right:15px;
+        }
+        &:first-of-type{
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  @media(min-width:$break-xl){
+
+    .dropdown-content{
+      padding-left: 13%;
+      span{
+        padding-left: 30px;
+        a{
+          font-size:16px;
+          padding-right:30px;
+        }
+      }
+    }
+  }
+
+  @media(min-width:$break-4k){
+    .dropdown-content{
+      padding-left:28%;
+    }
   }

@@ -62,7 +62,9 @@
 @media(min-width:$break-sm) and(max-width:$break-m){
     .content{
         width:95%;
-        padding-left: $m;
+        // padding-left: $m;
+        margin-left: auto;
+        margin-right:auto;
     }
     .about-us{
         padding: 20px;
@@ -71,16 +73,15 @@
             padding-top: 0;
         }
     }
-}
-
-// @media(max-width:$break-m){
-//     
+}  
 
 @media(min-width:$break-m) and (max-width:$break-lg){
     .content{
-        padding-left:11%;
-        width:87%;
-        background-size: 85% 100%;
+        width:79%;
+        margin-left:auto;
+        margin-right:auto;
+
+        // background-size: 85% 100%;
     }
     .about-us{
         padding: 20px;
@@ -89,9 +90,9 @@
 }
 @media (min-width:$break-lg){
     .content{
-        padding-left:5%;
-        width:100%;
-        padding-right:5%;
+        width:930px;
+        margin-left:auto;
+        margin-right:auto;
     }
     .about-us {
         background-size: 100% 100%;
@@ -102,8 +103,9 @@
 }
 @media (min-width:$break-xl){
     .content{
-        padding-left:$xlPadding;
-        width:54%;
+        width: 1175px;
+        padding-right:30%;
+        margin-left:auto;
     }
     .about-us {
         background-size: 85% 100%;
@@ -115,7 +117,7 @@
 
 @media(min-width:$break-4k){
     .content{
-        padding-left:28%;
+        padding-right:20%;
     }
     .about-us{
         background-size: 55%;

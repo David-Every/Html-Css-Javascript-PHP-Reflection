@@ -138,19 +138,24 @@ Things i need to do -
     [ x ] Re work news so it works again in IE 
     [ x ] Top Navigation slightly broken in IE and firefox.
 
-[ ] xxl View -
-    [ ] Nav menu should span the same width as the logos and buttons
-    [ ] Gap between burger menu and search box too big.
+[ x ] xxl View -
+    [ x ] Nav menu should span the same width as the logos and buttons
+    [ x ] Gap between burger menu and search box too big.
     [ x ] service cards dont line up on the right side of page.
     [x ] cards still too wide compared to origional (news).
     [ x ] Styling for sign up form and logos doesent match up with the website.
-    [ ] check all colours and buttons are correct.
+    [ x ] check all colours and buttons are correct.
 
 [ ] new adjustment -
     [ ] Adjust site nav to match rest of site
-    [ ] adjust everything to be inlign on the left in XL
-    [ ] Latest Pushes too far to the right in 1440
-    [ ] adjust Mobile view to work as a percentage to get it to not push the site out.
+    [ x ] adjust everything to be inlign on the left in XL
+    [ x ] Latest Pushes too far to the right in 1440
+    [x ] adjust Mobile view to work as a percentage to get it to not push the site out.
+    [ ] run through HTML Validator
+    [ ] Check IE
+        [] search bar incorrect size.
+    [] Check Firefox
+        []
 
 [ x ] Quick Fixes -
     [ x ] Background colour on support button is too dark
@@ -173,18 +178,11 @@ Things i need to do -
     [ x ] reorganise how latest is positioned
     [ x ] rework distance in latest.
     [ x ] fix social buttons margin in ;large views
-    
 
-[ ] SM - M
-    [ ] News cards dont adjust to be next to eachother.
+[ x ] Find new wat to work with header buttons
+[ x ] find out if there is a way to subtract margin percentage.
+        I forgot margin: auto is a thing 
+[ x ] Check sizes are correct for service cards.
 
-[ ] M / m-L
-    [ ] news hasnt adjusted left padding
-    [ ] newsletter input too close together
 
-[ ] L
-    [ ] bottom parners too close together.
-
-[ ] L-XL
-    [ ] search bar almost non-existant 
     

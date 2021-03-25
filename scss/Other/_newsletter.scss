@@ -1,17 +1,17 @@
 
 //|| Style ||\\
 .newsletter{
-    padding-left: 13%;
-    padding-right: 10%;
-    padding-top:3%;
-    padding-bottom: 3%;
+    // padding-left: 13%;
+    // padding-right: 10%;
+    // padding-top:3%;
+    // padding-bottom: 3%;
 
     background-color: $nm-newsletter;
     
 }
 
 #news-letter{
-    width:95%;
+    // width:100%;
     h2{
         font-size: 32px;
         // width:500px;
@@ -70,9 +70,10 @@
     margin-left:2%;
     font-size:16px;
     color:$nm-secondary;
-    font-weight:600;
-    line-height: 2em;
+    font-weight:500;
+    line-height: 32px;
     letter-spacing:.4px;
+    width:90%;
     a{
         color:$nm-secondary;
         text-decoration: underline;
@@ -87,7 +88,6 @@
     margin-bottom:25px;
 }
 .name-group,.email-group{
-    // width:50%;
     label {
         font-size: 16px;
         font-weight: 500;
@@ -98,79 +98,140 @@
         }
     } 
 }
-
-
 #name,#email{
     width:100%;
     height:45px;
     padding:10px;
-
-    // &input:focus{
-    //     // 
-    //     
-    // }
+    border: none;
+    border-radius: 3px 3px;
 }
 
-input[type ="email"]:focus,
-input[type="text"]:focus{ // this is also working for the searchbar as it used the same type
+input[type ="email"],
+input[type="text"]{ // this is also working for the searchbar as it uses the same type
     outline: none;
-    border: 1px solid rgb(91,192,222);
-    box-shadow: 0px 0px 8px rgba(91,192,222,.6);
-}
 
+    &:focus{
+        outline: none;
+        transition: .15s ease-in-out;
+        border: 1px solid rgb(91,192,222);
+        transition: .15s ease-in-out;
+        box-shadow: 0px 0px 8px rgba(91,192,222,.6);
+    }
+}
 
 @media(max-width:$break-sm){
     .newsletter{
-        padding-left: 5%;
+        padding-left: 15%;
+        padding-right:15%;
+        padding-top: 50px;
+        padding-bottom:50px;
     }
-    .form-wrapper{
-        width:100%;
-        display:flex;
-        flex-wrap: wrap;
+    #checkbox{
+        margin-left:-1%;
+    }
+    #lc{
+        margin-left:9%;
     }
     
 }
 
-// @media(max-width:$break-m){   
-  
-// }
+
+@media(min-width:$break-sm) and (max-width:$break-m){
+    .newsletter{
+        padding-left: 10%;
+        padding-right:10%;
+        padding-top: 50px;
+        padding-bottom:50px;
+    }
+    #checkbox{
+        margin-left:-2%;
+    }
+    #lc{
+        margin-left:5%;
+    }
+}
 
 @media(min-width:$break-m) and (max-width:$break-lg){
+    .newsletter{
+        padding-left: 15%;
+        padding-right:15%;
+        padding-top: 50px;
+        padding-bottom:50px;
+    }
+    
+    #checkbox{
+        margin-left:-2%;
+    }
+}
+@media(min-width:$break-lg) and (max-width:$break-xl){
+    #news-letter{
+        width:900px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .newsletter{
+        // width:900px;
+        // padding-left: 5%;
+        // padding-right:5%;
+        padding-top: 50px;
+        padding-bottom:50px;
+        // padding-right:10%;
+    }
     .form-wrapper{
-        display:inline-flex;
-        margin-bottom:35px;
+        width:100%;
+        display: inline-flex;
+    }
+    .name-group,.email-group{
+        // margin-right:30px;
+        width:47%;
+    }
+    .name-group{
+        margin-right:30px;
     }
 }
 
-@media(min-width:$break-lg){
+@media(min-width:$break-xl) and (max-width:$break-4k){
+    #news-letter{
+        width:1100px;
+        margin-left:auto;
+        margin-right:auto;
+    }
     .newsletter{
-        padding-left:5%;
-        padding-right: 5%;
+        padding-top: 50px;
+        padding-bottom:50px;
     }
     .form-wrapper{
         width:100%;
-        display:inline-flex;
-        margin-bottom:35px;
+        display: inline-flex;
     }
-    .email-group,.name-group{
-        width:100%;
+    .name-group,.email-group{
+        width:49%;
     }
     .name-group{
-        margin-right:5%;
-    }    
-}
-@media(min-width:$break-xl){
-    .newsletter{
-        padding-left: 13.5%;
-        padding-right:10%;
+        margin-right:30px;
     }
 }
+
+
+
 @media(min-width:$break-4k){
-    .newsletter{
-        padding-left:27%;
-        padding-right: 27%;
+    #news-letter{
+        width:1100px;
+        margin-left:auto;
+        margin-right:auto;
     }
-    .email-group,.name-group{
-        width:700px;
+    .newsletter{
+        padding-top: 50px;
+        padding-bottom:50px;
+    }
+    .form-wrapper{
+        width:100%;
+        display: inline-flex;
+    }
+    .name-group,.email-group{
+        width:49%;
+    }
+    .name-group{
+        margin-right:30px;
     }
 }
