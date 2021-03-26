@@ -25,12 +25,15 @@
         &::after{
             content: '';
             display:block;
-            position: absolute;
+            // position: absolute;
             width: 35px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:10px;
             border:$nm-secondary solid 1.5px;
             background-color: $nm-secondary;
-            top: 100%;
-            left: 46.5%;
+            // top: 100%;
+            // left: 46.5%;
             // margin-top:10px;
         }
         
@@ -40,12 +43,14 @@
     &:hover h3::after{
         content: '';
         display:block;
-        position: absolute;
+        // position: absolute;
         width: 35px;
+        margin-left: auto;
+        margin-right: auto;
         border:$nm-primary solid 1.5px;
         background-color: $nm-primary;
-        top: 100%;
-        left: 44%;
+        // top: 100%;
+        // left: 44%;
     }
     &:hover{
         box-shadow:inset 0px 0px 50px -30px rgba(0,0,0,0.5) ;
@@ -103,12 +108,12 @@
 
             // min-height:66px;
         // }
-            .rm{
-                // position: absolute;
-                right:-30%;
-                left:50;
-                bottom:-5%;
-            }
+            // .rm{
+            //     // position: absolute;
+            //     right:-30%;
+            //     left:50;
+            //     bottom:-5%;
+            // }
         }
     }
     .row-2 .card:last-of-type{
@@ -133,8 +138,7 @@
             margin-right:5%;
             margin-bottom:30px;
             .rm{
-                right: -40%;
-                bottom:20%;
+                bottom:15%;
             }
         }
     }
@@ -148,8 +152,7 @@
             margin-bottom: 30px;
 
             .rm{
-                right: -30%;
-                bottom: 10%;
+                bottom: 7%;
             }
             &:nth-of-type(2),&:nth-of-type(4){
                 margin-left: 15px;
@@ -179,8 +182,7 @@
             margin-bottom:30px;
 
             .rm{
-                right:-39%;
-                bottom: 12%;
+                bottom: 13%;
 
             }
         }
@@ -190,17 +192,14 @@
         flex-wrap: wrap;
         .card{
             width:35%;
-            // min-width: 345px;
             height:312px;
             margin-bottom: 30px;
 
             .rm{
-                right: -27%;
-                bottom: 5%;
+                bottom:10%;
             }
             &:nth-of-type(2),&:nth-of-type(4){
                 margin-left: 15px;
-                // margin-right:13.5%;
             }
             &:nth-of-type(1),&:nth-of-type(3){
                 margin-left: 13.5%;
@@ -224,19 +223,12 @@
     .row-1 .card{
         width:32%;
         height:356px;
-        // &:nth-of-type(1){
-        //     margin-left:5%;
-        // }
         &:nth-of-type(2){
             margin-left:30px;
             margin-right:30px;
         }
-        // &:nth-of-type(3){
-        //     margin-right: 5%;
-        // }
         .rm{
-            right:-25%;
-            bottom:-10%;
+            bottom:-7%;
         }
     }
     .row-2 {
@@ -248,13 +240,9 @@
             margin-top:30px;
             &:nth-of-type(1), &:nth-of-type(3){
                 margin-right: 30px;
-                // margin-left:5%;
             }
-            // &:nth-of-type(2), &:nth-of-type(4){
-            //     margin-right:5%;
-            // }
             .rm{
-                right:-35%;
+                // right:-35%;
                 bottom:13%;
             }
         }
@@ -278,7 +266,8 @@
             width:100%;
         }
         .rm{
-            right:-25%;
+            // right:-25%;
+            // position: relative;
             bottom:7%;
         }
     }
@@ -294,10 +283,9 @@
         &:nth-of-type(3){
             margin-right: 30px;
         }
-        .rm{
-            right:-22%;
-            bottom: 3%;
-        }
+        // .rm{
+        //     bottom: 3%;
+        // }
     }
 }
 

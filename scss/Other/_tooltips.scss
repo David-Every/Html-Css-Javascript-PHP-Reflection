@@ -114,15 +114,9 @@
     
     }
     
-    // &:hover{
-    //     .tooltip-text,.colour-Img{
-    //         display: block;
-    //     }
-    //     .gray-img{
-    //         display: none;
-    //     }
-        
-    // }
+    &:hover .tooltip-text{
+        display: block;
+    }
 
     //Positioning Tooltips
     .busseys-tt{
@@ -143,7 +137,7 @@
     }
 
     .colour-Img{
-        display:none;
+        display:block;
     }
 }
 

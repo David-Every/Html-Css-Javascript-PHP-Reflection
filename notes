@@ -147,15 +147,15 @@ Things i need to do -
     [ x ] check all colours and buttons are correct.
 
 [ ] new adjustment -
-    [ ] Adjust site nav to match rest of site
+    [x ] Adjust site nav to match rest of site
     [ x ] adjust everything to be inlign on the left in XL
     [ x ] Latest Pushes too far to the right in 1440
     [x ] adjust Mobile view to work as a percentage to get it to not push the site out.
     [ ] run through HTML Validator
     [ ] Check IE
-        [] search bar incorrect size.
-    [] Check Firefox
-        []
+    [ ] Check Firefox
+    [ ] IE and Firefox fixes -
+    [ ] re work site navigation as it looks inconsistant in these browsers
 
 [ x ] Quick Fixes -
     [ x ] Background colour on support button is too dark

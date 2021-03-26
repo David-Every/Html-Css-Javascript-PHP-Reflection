@@ -476,6 +476,10 @@ input[type="text"]:focus {
   border-color: #333645 transparent transparent transparent;
 }
 
+.tool:hover .tooltip-text {
+  display: block;
+}
+
 .tool .busseys-tt {
   top: -220%;
   left: -15%;
@@ -497,7 +501,7 @@ input[type="text"]:focus {
 }
 
 .tool .colour-Img {
-  display: none;
+  display: block;
 }
 
 .tt:hover::before {
@@ -742,18 +746,64 @@ input[type="text"]:focus {
   height: 70px;
 }
 
-.top-imgs .site,
+.footer-web-design, .site,
 .bottom-imgs .f-img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
+.bottom-imgs .f-img:first-of-type {
+  -webkit-box-shadow: 0px 12px 50px -30px #000000;
+          box-shadow: 0px 12px 50px -30px #000000;
+  -webkit-filter: none;
+          filter: none;
+}
+
+.top-imgs, .bottom-imgs {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 766px) {
+  .footer-icons, .footer-web-design,
+  .top-imgs, .bottom-imgs {
+    display: none;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 1023px) {
+  .footer-icons, .footer-web-design,
+  .top-imgs, .bottom-imgs {
+    display: none;
+  }
+}
+
+@media (min-width: 1023px) {
+  .bottom-imgs {
+    width: 970px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .bottom-imgs .f-img img {
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+  .top-imgs {
+    width: 950px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .top-imgs .f-img img {
+    width: 75%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
 @media (min-width: 1260px) {
   .bottom-imgs {
     width: 1175px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 50px;
     margin-top: 50px;
   }
@@ -763,6 +813,16 @@ input[type="text"]:focus {
   .bottom-imgs .f-img img {
     margin-right: 55px;
     margin-left: 55px;
+  }
+  .top-imgs {
+    width: 1175px;
+    height: 75px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .top-imgs .f-img img {
+    margin-right: 35px;
+    margin-left: 35px;
   }
 }
 
@@ -1099,23 +1159,22 @@ input[type="text"]:focus {
 .card h3::after {
   content: '';
   display: block;
-  position: absolute;
   width: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
   border: #333645 solid 1.5px;
   background-color: #333645;
-  top: 100%;
-  left: 46.5%;
 }
 
 .card:hover h3::after {
   content: '';
   display: block;
-  position: absolute;
   width: 35px;
+  margin-left: auto;
+  margin-right: auto;
   border: #fff solid 1.5px;
   background-color: #fff;
-  top: 100%;
-  left: 44%;
 }
 
 .card:hover {
@@ -1150,12 +1209,12 @@ input[type="text"]:focus {
 
 .card-nav .row-1 .card i {
   padding-top: 17px;
+  margin-bottom: 17px;
   font-size: 23px;
 }
 
 .card-nav .row-1 .card .c-title {
   text-transform: capitalize;
-  padding-bottom: 20px;
   position: relative;
   font-size: 18px;
   line-height: 19.8px;
@@ -1165,6 +1224,8 @@ input[type="text"]:focus {
 }
 
 .card-nav .row-1 .card .rm {
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   width: 125px;
   height: 45px;
@@ -1206,12 +1267,12 @@ input[type="text"]:focus {
 
 .card-nav .row-2 .card i {
   padding-top: 17px;
+  margin-bottom: 17px;
   font-size: 23px;
 }
 
 .card-nav .row-2 .card .c-title {
   text-transform: capitalize;
-  padding-bottom: 20px;
   position: relative;
   font-size: 18px;
   line-height: 19.8px;
@@ -1221,6 +1282,8 @@ input[type="text"]:focus {
 }
 
 .card-nav .row-2 .card .rm {
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   width: 125px;
   height: 45px;
@@ -1251,11 +1314,6 @@ input[type="text"]:focus {
     min-height: 312px;
     margin-top: 30px;
   }
-  .row-1 .card .rm, .row-2 .card .rm {
-    right: -30%;
-    left: 50;
-    bottom: -5%;
-  }
   .row-2 .card:last-of-type {
     margin-bottom: 30px;
   }
@@ -1277,8 +1335,7 @@ input[type="text"]:focus {
     margin-bottom: 30px;
   }
   .row-1 .card .rm {
-    right: -40%;
-    bottom: 20%;
+    bottom: 15%;
   }
   .row-2 {
     -ms-flex-wrap: wrap;
@@ -1290,8 +1347,7 @@ input[type="text"]:focus {
     margin-bottom: 30px;
   }
   .row-2 .card .rm {
-    right: -30%;
-    bottom: 10%;
+    bottom: 7%;
   }
   .row-2 .card:nth-of-type(2), .row-2 .card:nth-of-type(4) {
     margin-left: 15px;
@@ -1319,8 +1375,7 @@ input[type="text"]:focus {
     margin-bottom: 30px;
   }
   .row-1 .card .rm {
-    right: -39%;
-    bottom: 12%;
+    bottom: 13%;
   }
   .row-2 {
     -ms-flex-wrap: wrap;
@@ -1332,8 +1387,7 @@ input[type="text"]:focus {
     margin-bottom: 30px;
   }
   .row-2 .card .rm {
-    right: -27%;
-    bottom: 5%;
+    bottom: 10%;
   }
   .row-2 .card:nth-of-type(2), .row-2 .card:nth-of-type(4) {
     margin-left: 15px;
@@ -1362,8 +1416,7 @@ input[type="text"]:focus {
     margin-right: 30px;
   }
   .row-1 .card .rm {
-    right: -25%;
-    bottom: -10%;
+    bottom: -7%;
   }
   .row-2 {
     display: -webkit-box;
@@ -1381,7 +1434,6 @@ input[type="text"]:focus {
     margin-right: 30px;
   }
   .row-2 .card .rm {
-    right: -35%;
     bottom: 13%;
   }
 }
@@ -1404,7 +1456,6 @@ input[type="text"]:focus {
     width: 100%;
   }
   .row-1 .card .rm {
-    right: -25%;
     bottom: 7%;
   }
   .row-2 .card {
@@ -1419,10 +1470,6 @@ input[type="text"]:focus {
   }
   .row-2 .card:nth-of-type(3) {
     margin-right: 30px;
-  }
-  .row-2 .card .rm {
-    right: -22%;
-    bottom: 3%;
   }
 }
 
@@ -1918,7 +1965,7 @@ input[type="text"]:focus {
   color: #fff;
 }
 
-.b-menu a #burger-line, .b-menu-sm a #burger-line {
+.b-menu a .burger-line, .b-menu-sm a .burger-line {
   margin-left: 15px;
   width: 33px;
   height: 3px;
@@ -2233,33 +2280,38 @@ input[type="text"]:focus {
   padding-bottom: 3.5%;
 }
 
-.carousel-overlay {
+.carousel-wrapper {
+  width: 100%;
   color: #fff;
   position: absolute;
-  top: 45%;
-  left: 13.5%;
+  top: 35%;
 }
 
-.carousel-overlay h1 {
-  margin: none;
+.carousel-wrapper .carousel-overlay {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-wrapper h1 {
   text-transform: uppercase;
   font-size: 48px;
   font-weight: 400;
 }
 
-.carousel-overlay p {
-  width: 60%;
+.carousel-wrapper p {
+  width: 40%;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 35px;
   font-weight: 400;
 }
 
-.carousel-overlay a {
-  position: absolute;
+.carousel-wrapper a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 250px;
   background-color: #926fb1;
   padding: 20px;
   text-decoration: none;
@@ -2270,20 +2322,21 @@ input[type="text"]:focus {
   border-radius: 3px;
 }
 
-.carousel-overlay a p {
+.carousel-wrapper a p {
   line-height: 22.8571px;
   letter-spacing: 0.4px;
   text-align: start;
   width: 95%;
   margin: 0;
-  margin-right: 20px;
 }
 
-.carousel-overlay a i {
+.carousel-wrapper a i {
   padding-top: 5px;
+  padding: 0;
+  margin: 0;
 }
 
-.carousel-overlay a:hover {
+.carousel-wrapper a:hover {
   text-decoration: none;
   color: #fff;
   background-color: #7e57a0;
@@ -2294,16 +2347,17 @@ input[type="text"]:focus {
     width: 100%;
     height: 450px;
   }
-  .carousel-overlay {
-    top: 35%;
-    left: 5%;
+  .carousel-wrapper {
+    position: absolute;
+    top: 30%;
   }
-  .carousel-overlay h1, .carousel-overlay p {
+  .carousel-overlay h1, .carousel-overlay p, .carousel-overlay a {
     text-align: center;
-    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .carousel-overlay a {
-    left: 20%;
+  .carousel-overlay p {
+    width: 80%;
   }
 }
 
@@ -2311,63 +2365,62 @@ input[type="text"]:focus {
   .carousel {
     height: 550px;
   }
-  .carousel-overlay {
+  .carousel-wrapper {
+    position: absolute;
     top: 25%;
-    left: 20%;
   }
-  .carousel-overlay h1, .carousel-overlay p {
+  .carousel-overlay h1, .carousel-overlay p, .carousel-overlay a {
     text-align: center;
-    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .carousel-overlay a {
-    left: 20%;
+  .carousel-overlay p {
+    width: 50%;
   }
 }
 
 @media (min-width: 900px) and (max-width: 1023px) {
   .carousel {
-    height: 500px;
+    height: 550px;
   }
-  .carousel-overlay {
-    top: 30%;
-    left: 25%;
+  .carousel-wrapper {
+    position: absolute;
+    top: 25%;
   }
-  .carousel-overlay h1, .carousel-overlay p {
+  .carousel-overlay h1, .carousel-overlay p, .carousel-overlay a {
     text-align: center;
-    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .carousel-overlay a {
-    left: 20%;
+  .carousel-overlay p {
+    width: 40%;
   }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1023px) and (max-width: 1260px) {
   .carousel {
     width: 100%;
     height: 450px;
   }
+  .carousel-wrapper {
+    position: absolute;
+    top: 30%;
+  }
   .carousel-overlay {
-    width: 60%;
-    top: 35%;
-    left: 5%;
-  }
-  .carousel-overlay h1, .carousel-overlay p {
-    text-align: left;
-    width: 70%;
-  }
-  .carousel-overlay a {
-    left: 0%;
+    width: 930px;
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 2560px) {
   .carousel {
     height: auto;
   }
-  .carousel-overlay {
-    width: 45%;
+  .carousel-wrapper {
+    position: absolute;
     top: 40%;
-    left: 13.5%;
+  }
+  .carousel-overlay {
+    width: 1175px;
   }
 }
 
@@ -2375,10 +2428,12 @@ input[type="text"]:focus {
   .carousel {
     height: auto;
   }
+  .carousel-wrapper {
+    position: absolute;
+    top: 50%;
+  }
   .carousel-overlay {
-    width: 25%;
-    left: 28%;
-    top: 35%;
+    width: 1175px;
   }
 }
 

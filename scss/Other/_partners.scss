@@ -1,11 +1,3 @@
-// .footer-icons, .footer-web-design,
-//      .top-imgs, .bottom-imgs{
-//         display:inline-flex;
-//     }
-// .footer-web-design{
-//     height:75px;
-//     border: 1px solid red;
-// }
 
 .f-img {
     .colourimg, .colour-Img{
@@ -25,32 +17,67 @@
          
     }
 }
-.top-imgs .site,
+
+.footer-web-design, .site,
 .bottom-imgs .f-img{
     display: inline-flex;
 }
 
-// .bottom-imgs .f-img{
-//     &:first-of-type{
-//         box-shadow: 0px 12px 50px -30px #000000;
-//         filter: none;
-//         width:150px;
-//         height: 75px;
-//     }
-// }
+.bottom-imgs .f-img{
+    &:first-of-type{
+        box-shadow: 0px 12px 50px -30px #000000;
+        filter: none;
+    //     width:150px;
+    //     height: 75px;
+    }
+}
 
-// @media (max-width:$break-sm){//max
-//     .footer-icons, .footer-web-design,
-//     .top-imgs, .bottom-imgs{
-//         display:none;
-//     }
-// }
+.top-imgs, .bottom-imgs{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:$break-sm){//max
+    .footer-icons, .footer-web-design,
+    .top-imgs, .bottom-imgs{
+        display:none;
+    }
+}
+@media(min-width:$break-sm) and (max-width:$break-lg){
+    .footer-icons, .footer-web-design,
+    .top-imgs, .bottom-imgs{
+        display:none;
+    }
+}
+
+@media (min-width:$break-lg){
+    .bottom-imgs{
+        width:970px;
+        margin-bottom:50px;
+        margin-top: 50px;
+        // margin-left:auto;
+        .f-img img{
+            margin-right:35px;
+            margin-left:35px;  
+        }
+    }
+
+    .top-imgs{
+        width: 950px;
+        margin-bottom:50px;
+        margin-top: 50px;
+        .f-img img{
+            width:75%;
+            // height:auto;
+            margin-right:20px;
+            margin-left:20px;
+        }
+    }
+}
 
 @media (min-width:$break-xl){//max
     .bottom-imgs{
         width: 1175px;
-        margin-left: auto;
-        margin-right: auto;
         margin-bottom:50px;
         margin-top: 50px;
         .google{
@@ -63,15 +90,16 @@
         }
     }
 
-    // .top-imgs{
-    //     width: 1175px;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     margin-bottom:50px;
-    //     margin-top: 50px;
-    //     .f-img img{
-    //         margin-right:30px;
-    //         margin-left:30px;
-    //     }
-    // }
+    .top-imgs{
+        width: 1175px;
+        height:75px;
+        // margin-left: auto;
+        // margin-right: auto;
+        margin-bottom:50px;
+        margin-top: 50px;
+        .f-img img{
+            margin-right:35px;
+            margin-left:35px;
+        }
+    }
 }
