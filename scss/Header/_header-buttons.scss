@@ -3,11 +3,9 @@
     height:99px;
 }
 
-
 #invis .navis, #invis-2 .navis{
   width:1px;
   height:99px;
-  // background-color: black;
 }
 #invis .navis{
   border-right: 1px solid #22242e;
@@ -22,7 +20,6 @@
     height:100px;
 }
 .nav-bar{
-    // min-width:992px;
     margin-left:auto;
     margin-right:auto;
     display:flex;
@@ -36,20 +33,14 @@
     
         i{
           font-size: 1.25em;
-        //   left:45%;
-        height:20px;
-        width:20px;
+          height:20px;
+          width:20px;
           padding-top:15px;
-          
-        //   padding-left:;
-        //   padding-right:5%;
-        //   position: relative;
         }
         p{
             color: $nm-primary;
             text-decoration: none;  
-            font-size: 1.3em;
-                
+            font-size: 1.3em;    
         }
         a:hover{
           text-decoration: none;

@@ -137,7 +137,6 @@ Things i need to do -
         Then adjust the position and style accordingly.
     [ x ] Re work news so it works again in IE 
     [ x ] Top Navigation slightly broken in IE and firefox.
-
 [ x ] xxl View -
     [ x ] Nav menu should span the same width as the logos and buttons
     [ x ] Gap between burger menu and search box too big.
@@ -145,18 +144,16 @@ Things i need to do -
     [x ] cards still too wide compared to origional (news).
     [ x ] Styling for sign up form and logos doesent match up with the website.
     [ x ] check all colours and buttons are correct.
-
-[ ] new adjustment -
+[x ] new adjustment -
     [x ] Adjust site nav to match rest of site
     [ x ] adjust everything to be inlign on the left in XL
     [ x ] Latest Pushes too far to the right in 1440
     [x ] adjust Mobile view to work as a percentage to get it to not push the site out.
-    [ ] run through HTML Validator
-    [ ] Check IE
-    [ ] Check Firefox
-    [ ] IE and Firefox fixes -
-    [ ] re work site navigation as it looks inconsistant in these browsers
-
+    [x ] run through HTML Validator
+    [x ] Check IE
+    [x ] Check Firefox
+    [x ] IE and Firefox fixes -
+    [x ] re work site navigation as it looks inconsistant in these browsers
 [ x ] Quick Fixes -
     [ x ] Background colour on support button is too dark
     [ x ] Search input outline is incorrect
@@ -178,11 +175,19 @@ Things i need to do -
     [ x ] reorganise how latest is positioned
     [ x ] rework distance in latest.
     [ x ] fix social buttons margin in ;large views
-
 [ x ] Find new wat to work with header buttons
 [ x ] find out if there is a way to subtract margin percentage.
         I forgot margin: auto is a thing 
 [ x ] Check sizes are correct for service cards.
 
-
-    
+[ x ] Feedback- 4
+    [ x ]  arrow on carousel button is not in right place, no need to give text a width, give the icon a left margin or the text a right margin
+    [ x ]  space at top and bottom of service cards section should be the same (padding at t/b of the section)
+    [ x ] padding of bottom of lower cards is not the same as the bottom padding of the cards above (Distance between bottom of card and button)
+    [ x ] background image should not show on about us section on smaller view points.
+    [ x ] News Tags are not quite right, check completely.
+    [ x ] Box shadow surrounding google partner should be like a subtle outline.
+    [ x ] dropdown menu isnt always aligned with first button.
+    [ x ] Carousel Image needs to be taller on mobile. and the image is squished.
+    [ x ] Logo Issue on Mobile and on Tablet
+    [ x ] Validate HTML

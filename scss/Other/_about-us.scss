@@ -51,14 +51,16 @@
 @media(max-width:$break-sm){//max
     .content{
         // width:90%;
-        background-image: url(" ");
+        
     }
     .about-us{
+        background-image: none;
         padding-top: 20px;
         padding-left: 15px;
         padding-bottom: 25px;
     }
 }
+
 @media(min-width:$break-sm) and(max-width:$break-m){
     .content{
         width:95%;

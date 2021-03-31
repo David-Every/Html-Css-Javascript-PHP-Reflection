@@ -1,45 +1,52 @@
 
 .tt{
     position: absolute;
-    top: 2%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 23.008px;
+    letter-spacing: 0.4px;
+    top: 4%;
     right: 0%;
-    padding: 4px 3px;
-    a, a:visited{
-        color:$nm-primary;
-        text-transform: uppercase;
-        &:hover{
+    // padding: 4px 3px;
+    a{
+        padding:0px 10px;
+        &:visited{
             color:$nm-primary;
-        }
-    } 
+            text-transform: uppercase;
+            &:hover{
+                color:$nm-primary;
+            }
+        } 
+    }
 }
 
 //Creates the tool-tip adds in the text and sets default display to show nothing.
-.tt::before{
-    content: attr(data-text);
-    position:absolute;
-    transform:translateY(-128%);
-    width:200px;
-    height:65px;
-    padding:10px;
-    background-color:$nm-secondary;
-    color: $nm-primary;
-    text-align:center;
-    display:none;
-    // z-index: 1;
-}
+// .tt::before{
+//     content: attr(data-text);
+//     position:absolute;
+//     transform:translateY(-128%);
+//     width:200px;
+//     height:65px;
+//     padding:10px;
+//     background-color:$nm-secondary;
+//     color: $nm-primary;
+//     text-align:center;
+//     display:none;
+//     // z-index: 1;
+// }
 //Adds the Arrow to the tooltip that points to where it came from.
-.tt:hover::after{
-    overflow-y:visible;
-    content: " ";
-    position: absolute;
-    top:-52%;
-    left: 50%;
-    // margin-left: -10px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: $nm-secondary transparent transparent transparent;
-    // z-index: 1;
-}
+// .tt:hover::after{
+//     overflow-y:visible;
+//     content: " ";
+//     position: absolute;
+//     top:-52%;
+//     left: 50%;
+//     // margin-left: -10px;
+//     border-width: 10px;
+//     border-style: solid;
+//     border-color: $nm-secondary transparent transparent transparent;
+//     // z-index: 1;
+// }
 
 // .tool::before{
 //     content: attr(data-text);

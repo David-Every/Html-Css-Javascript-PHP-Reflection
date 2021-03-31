@@ -99,11 +99,11 @@
         margin-bottom:40px;
     }
 
-    .news-tag{ 
+    .news-tag{
         background-color: $nm-it;
-        &:hover{
-            background-color: darken($nm-it,10%);
-        }
+        // &:hover{
+        //     background-color: $nm-it-hover;
+        // }
     }
     .news-tag-title{
         color:$nm-it;
@@ -112,9 +112,9 @@
     }
     .career-tag{
         background-color: $nm-bs;
-        &:hover{
-            background-color: darken($nm-bs,10%);
-        }
+        // &:hover{
+        //     background-color: $nm-bs-hover;
+        // }
     }
     .career-tag-title{
         color:$nm-bs;

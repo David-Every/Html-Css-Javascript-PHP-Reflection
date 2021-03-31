@@ -7,7 +7,7 @@
     border-radius: 100%;
 }
 .card p{
-    height: 100px;
+    // height: 100px;
 }
 
 .row-1 a, .row-2 a{
@@ -58,9 +58,7 @@
 }    
 
 .card-nav{
-    // padding-left:7%;
-    // padding-right: 7%;
-    // padding-bottom:50px;
+padding:30px 0px;
 
     .row-1{  //Parent of row 1
         display:flex;
@@ -95,30 +93,13 @@
         .card{
             // width:395px;
             width:100%;
-
             min-height:312px;
             margin-top:30px;
-
-        // p{
-            // text-align: center;
-            // width: 283px;
-            // max-width: 400px;
-
-            // width: 333px;
-
-            // min-height:66px;
-        // }
-            // .rm{
-            //     // position: absolute;
-            //     right:-30%;
-            //     left:50;
-            //     bottom:-5%;
-            // }
         }
     }
-    .row-2 .card:last-of-type{
-        margin-bottom:30px;
-    }
+    // .row-2 .card:last-of-type{
+    //     margin-bottom:30px;
+    // }
 }
 
 // Medium Screen View
@@ -126,7 +107,7 @@
     //top row has its 3
 
     .card-nav{
-        padding-top:50px;
+        padding:50px 0px;
     }
     .row-1{
         flex-wrap: wrap;
@@ -137,9 +118,9 @@
             margin-left: 5%;
             margin-right:5%;
             margin-bottom:30px;
-            .rm{
-                bottom:15%;
-            }
+            // .rm{
+            //     bottom:15%;
+            // }
         }
     }
     //row 2 breaks into 2 rows of 2
@@ -151,9 +132,9 @@
             height:312px;
             margin-bottom: 30px;
 
-            .rm{
-                bottom: 7%;
-            }
+            // .rm{
+            //     bottom: 7%;
+            // }
             &:nth-of-type(2),&:nth-of-type(4){
                 margin-left: 15px;
                 margin-right:5%;
@@ -162,6 +143,9 @@
                 margin-left: 5%;
                 margin-right:15px;
             }
+            &:nth-of-type(3),&:nth-of-type(4){
+                margin-bottom:0;
+            }
         }
     }
  }
@@ -169,7 +153,7 @@
 @media(min-width:$break-m) and (max-width:$break-lg){ //low of 900px high of 1024px
 
     .card-nav{
-        padding-top:50px;
+        padding:50px 0px;
     }
     .row-1{
         flex-wrap: wrap;
@@ -181,10 +165,10 @@
             margin-right:13.5%;
             margin-bottom:30px;
 
-            .rm{
-                bottom: 13%;
+            // .rm{
+            //     bottom: 13%;
 
-            }
+            // }
         }
     }
     //row 2 breaks into 2 rows of 2
@@ -195,15 +179,18 @@
             height:312px;
             margin-bottom: 30px;
 
-            .rm{
-                bottom:10%;
-            }
+            // .rm{
+            //     bottom:10%;
+            // }
             &:nth-of-type(2),&:nth-of-type(4){
                 margin-left: 15px;
             }
             &:nth-of-type(1),&:nth-of-type(3){
                 margin-left: 13.5%;
                 margin-right:15px;
+            }
+            &:nth-of-type(3),&:nth-of-type(4){
+                margin-bottom:0;
             }
         }
     }
@@ -212,7 +199,7 @@
 //large screen view
 @media(min-width:$break-lg) and (max-width:$break-xl){
     .card-nav{
-        margin-bottom:50px;
+        padding:50px 0px;
         
     }
     .row-1 ,.row-2{
@@ -227,9 +214,9 @@
             margin-left:30px;
             margin-right:30px;
         }
-        .rm{
-            bottom:-7%;
-        }
+        // .rm{
+        //     bottom:-7%;
+        // }
     }
     .row-2 {
         display: flex;
@@ -241,15 +228,19 @@
             &:nth-of-type(1), &:nth-of-type(3){
                 margin-right: 30px;
             }
-            .rm{
-                // right:-35%;
-                bottom:13%;
-            }
+            // .rm{
+            //     // right:-35%;
+            //     bottom:13%;
+            // }
         }
     }
 }
 
 @media (min-width:$break-xl){ //and (max-width:$break-4k){
+    .card-nav{
+        padding:50px 0px;
+        
+    }
     .row-1,.row-2{
         width:1175px;
         margin-left:auto;
@@ -265,17 +256,17 @@
         h3{
             width:100%;
         }
-        .rm{
-            // right:-25%;
-            // position: relative;
-            bottom:7%;
-        }
+        // .rm{
+        //     // right:-25%;
+        //     // position: relative;
+        //     // bottom:7%;
+        // }
     }
     .row-2 .card{
         width:23%;//width:270px;
         height:312px;
         margin-top:30px;
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
         &:nth-of-type(2){
             margin-left:30px;
             margin-right:30px;
@@ -283,9 +274,6 @@
         &:nth-of-type(3){
             margin-right: 30px;
         }
-        // .rm{
-        //     bottom: 3%;
-        // }
     }
 }
 

@@ -1,7 +1,7 @@
 
 .carousel, .opacity{
     width:100%;
-    padding-bottom:3.5%;
+    // padding-bottom:3.5%;
 }
 
 .carousel-wrapper{
@@ -30,9 +30,10 @@
     }
     a{
         display: flex;
-        width:250px;
+        width:220px;
         background-color: $nm-web;
-        padding:20px;
+        // padding:20px;
+        padding:20px 5px 20px 20px;
         text-decoration: none;
         color:$nm-primary;
         text-transform: uppercase;
@@ -44,16 +45,16 @@
             line-height: 22.8571px;
             letter-spacing: 0.4px;
             text-align: start;
-            width:95%;
-            // height:5%;
+            width:80%;
+            // height:50px;
             margin:0;
-            // margin-right:20px;
+            margin-right:10px;
         }
-        i{
-            padding-top:5px;
-            padding:0;
-            margin:0;
-        }
+        // i{
+        //     padding-top:5px;
+        //     padding:0;
+        //     margin:0;
+        // }
         &:hover{
             text-decoration: none;
             color: $nm-primary;
@@ -68,12 +69,15 @@
 
 @media(max-width:$break-sm){
     .carousel{
-        width:100%;
-        height:450px;
+        width:auto;
+        height:731px;
     }
     .carousel-wrapper{
         position: absolute;
         top:30%;
+    }
+    .carousel-container{
+        overflow: hidden;
     }
     .carousel-overlay{
 

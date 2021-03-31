@@ -1,5 +1,6 @@
 
 .f-img {
+    // background-color: black;
     .colourimg, .colour-Img{
         display: none;
     }
@@ -23,13 +24,18 @@
     display: inline-flex;
 }
 
-.bottom-imgs .f-img{
-    &:first-of-type{
-        box-shadow: 0px 12px 50px -30px #000000;
-        filter: none;
-    //     width:150px;
-    //     height: 75px;
-    }
+// .bottom-imgs .f-img{
+//     &:first-of-type{
+//         // 
+//         // filter: none;
+//     //     width:150px;
+//     //     height: 75px;
+//     }
+// }
+.google{
+        // width:200px;
+        box-shadow: 8px 7px 10px -7px rgba(0,0,0,0.2);
+    
 }
 
 .top-imgs, .bottom-imgs{
@@ -80,10 +86,6 @@
         width: 1175px;
         margin-bottom:50px;
         margin-top: 50px;
-        .google{
-            padding-right:50px;
-            // padding-bottom:20px;
-        }
         .f-img img{
             margin-right:55px;
             margin-left:55px;  
