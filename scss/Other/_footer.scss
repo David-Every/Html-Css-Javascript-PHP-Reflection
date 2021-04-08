@@ -28,6 +28,7 @@
     a{
         color:$nm-primary;
         text-decoration: none;
+        text-align: center;
     }
     a:hover{
         color:$nm-primary;
@@ -49,13 +50,8 @@
 }
 
 .social-media{
-    // width:100%;
     a{
-        // background-size: 25%;
-        // padding:20px 50px;
         margin-right:30px;
-        
-        // margin-bottom: 15px;
         &:last-of-type{
             margin-top:30px; 
         }
@@ -74,15 +70,21 @@
     }
     .social-media{
         width:100%;
-        a{
+        a{  
+            margin:0;
             margin-top:30px;
-        }
-    }
-    .social{
-        width:35%;
-        height:55px;
-        i{
-            padding-left:30%;
+            width:46%;
+            // margin-right: 15px;
+            // margin-left:15px;
+            &:first-of-type{
+                margin-left: 0;
+                margin-right:20px;
+
+            }
+            &:last-of-type{
+                margin-left: 0;
+            }
+            height:55px;
         }
     }
 }
@@ -104,6 +106,13 @@
     .social-media{
         // width:30%;
         width:50%;
+        a{
+            width:45%;
+            margin-right:0;
+            &:first-of-type{
+                margin-right: 30px;
+            }
+        }
         
     }
 }
@@ -126,7 +135,15 @@
     }
     .social-media{
         width:45%;
+        a{
+            width:45%;
+            margin-right:0;
+            &:first-of-type{
+                margin-right: 30px;
+            }
+        }
     }
+
     .website,.social-media{
         margin-top:30px;
     }
@@ -159,9 +176,9 @@
     .social{
         width:212.5px;
         height:55px;
-        i{
-            padding-left:44px;
-        }
+        // i{
+        //     padding-left:44px;
+        // }
     }
 
 }
@@ -190,7 +207,7 @@
         width:125px;
         height: 55px;
         i{
-            padding-left: 0;
+            padding: 0;
         }
     }
 }

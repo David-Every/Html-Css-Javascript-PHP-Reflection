@@ -191,3 +191,15 @@ Things i need to do -
     [ x ] Carousel Image needs to be taller on mobile. and the image is squished.
     [ x ] Logo Issue on Mobile and on Tablet
     [ x ] Validate HTML
+
+[ x ] Feedback-final?
+    [ x ] News card tags should be Capitalised (must have accidentally removed it)
+    [ x ] Missing hover style on new card buttons.
+    [ x ] Missing box shadow on news cards
+    [ x ] Text Overlay should be Vertically centered to the image on moblie view (Carousel)
+    [ x ] Netmatters Logo is against the edge at tablet needs more margin space. 
+    [ x ] Social Media Buttons should be wider on mobile view
+    [ x ] Tablet view Social Media Buttons should be wider. 
+    [ x ] Logos missing in footer top and bottom on tablet views.
+    [ x ] Beat Logo stratched.
+    [ x ] adjust positioning of tooltips?

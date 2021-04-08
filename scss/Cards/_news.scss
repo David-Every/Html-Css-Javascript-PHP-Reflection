@@ -20,7 +20,8 @@
 
     .news-card{
         border: 1px lighten($nm-tertiary, 45%) solid;
-        border-radius: 5px 5px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+        border-radius: 0px 0px 3px 3px;
         background-color: $nm-primary;
         .latest-img{
             background-color: $nm-secondary;
@@ -101,9 +102,9 @@
 
     .news-tag{
         background-color: $nm-it;
-        // &:hover{
-        //     background-color: $nm-it-hover;
-        // }
+        &:hover{
+            background-color: $nm-it-hover;
+        }
     }
     .news-tag-title{
         color:$nm-it;
@@ -112,9 +113,9 @@
     }
     .career-tag{
         background-color: $nm-bs;
-        // &:hover{
-        //     background-color: $nm-bs-hover;
-        // }
+        &:hover{
+            background-color: $nm-bs-hover;
+        }
     }
     .career-tag-title{
         color:$nm-bs;

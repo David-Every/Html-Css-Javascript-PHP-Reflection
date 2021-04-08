@@ -3,6 +3,7 @@
     position: absolute;
     font-size: 12px;
     font-weight: 500;
+    text-transform: uppercase;
     line-height: 23.008px;
     letter-spacing: 0.4px;
     top: 4%;
@@ -126,22 +127,7 @@
     }
 
     //Positioning Tooltips
-    .busseys-tt{
-        top:-220%;
-        left:-15%;
-    }
-    .crane-tt{
-        top:-280%;
-        left:-7%;
-    }
-    .beat-tt{
-        top:-250%;
-        left:-52%;
-    }
-    .diver-tt{
-        top:-280%;
-        left:5%;
-    }
+ 
 
     .colour-Img{
         display:block;
@@ -153,3 +139,78 @@
     display:block;
 }
 
+
+@media(min-width:$break-sm) and (max-width:$break-lg){
+    .busseys-tt{
+        top:-390%;
+        left:-40%;
+    }
+    .crane-tt{
+        top:-450%;
+        left:-20%;
+    }
+    .beat-tt{
+        top:-400%;
+        left:-135%;
+    }
+    .diver-tt{
+        top:-450%;
+        left:-10%;
+    }
+}
+
+@media(min-width:$break-lg) and (max-width:$break-xl){
+    .busseys-tt{
+        top:-300%;
+        left:-10%;
+    }
+    .crane-tt{
+        top:-370%;
+        left:0;
+    }
+    .beat-tt{
+        top:-330%;
+        left:-52%;
+    }
+    .diver-tt{
+        top:-350%;
+        left:20%;
+    }
+}
+
+@media(min-width:$break-xl) and (max-width:$break-4k){
+    .busseys-tt{
+        top:-250%;
+        left:5%;
+    }
+    .crane-tt{
+        top:-300%;
+        left:5%;
+    }
+    .beat-tt{
+        top:-250%;
+        left:-40%;
+    }
+    .diver-tt{
+        top:-280%;
+        left:20%;
+    }
+}
+@media(min-width:$break-4k){
+    .busseys-tt{
+        top:-250%;
+        left:5%;
+    }
+    .crane-tt{
+        top:-300%;
+        left:5%;
+    }
+    .beat-tt{
+        top:-250%;
+        left:-40%;
+    }
+    .diver-tt{
+        top:-280%;
+        left:20%;
+    }
+}
