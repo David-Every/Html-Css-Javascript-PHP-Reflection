@@ -1,0 +1,33 @@
+{
+  "name": "html-css-reflection",
+  "version": "1.0.0",
+  "description": "html css reflection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/David-Every/Html-Css-Reflection.git"
+  },
+  "author": "David Every",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/David-Every/Html-Css-Reflection/issues"
+  },
+  "homepage": "https://github.com/David-Every/Html-Css-Reflection#readme",
+  "dependencies": {
+    "hamburgers": "^1.1.3",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-uglifycss": "^1.1.0",
+    "jsdom": "^16.5.3",
+    "uglify-js": "^3.13.5",
+    "uglifycss": "0.0.29"
+  }
+}

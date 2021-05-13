@@ -1,0 +1,46 @@
+[ x ]Banner carousel (slick)
+[ ]mobile Menu
+[ x ] Sticky header
+    [ x ] Make sure it pops up when scrolling up
+    [ ] Adjust Margins for smaller screens above carousel
+[ ] Pop up notifying the user the website uses cookies.
+    [ ] This should store locally and prevent the pop up re-appearing on page reload
+[ ] Use a Mix of Jquery and vanilla JS Use plugins for more complex features.
+
+[ x ] create JS Folder
+[ x ] Create app.js file
+[ x ] link up to HTML
+[ x ] get JQuery set up
+[ x ] Test jquery is working.
+[ x ] See if i can get the Carousel to work with JSON
+    [ x ] complete Carousel as normal first and then convert to JSON
+
+[ ] Carousel works as it should
+    [ x ] carousel slideshow works
+    [ ] Positioning of text is correct in all views
+        [ ] Adjustment of css needed.
+[ ] Navigation slider works fully.
+    [ ] Adjusted carousels margin-top for whitespace in all views
+    [ x ] Navigation animates its slide down
+    [ ] Navigation animates its slide up
+    [ x ] navigations default position and reset works
+
+[ ] Main side menu works
+    [ x ] basic CSS styling for side menu is done
+    [ ] finished fine details of side menu
+    [ ] Used Pushy to push the pages content use it to create a sidebar
+    [ ] site Darkens and becomes unscrollable when sidemenu is open.
+
+[ ] Mobile sidemenu works
+    [ ] Styling of menu is done
+    [ ] when b-menu selected it works just like the main side menu
+
+[ ] Cookie consent complete
+    [ ] consent form created and is positioned correctly
+    [ ] cookie stored locally.
+
+Animating side menu
+https://www.jqueryscript.net/menu/Cool-Animated-Side-Menus-with-Sliding-Pushing-Effects.html
+
+B-menu
+https://jonsuh.com/hamburgers/

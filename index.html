@@ -5,15 +5,77 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-        <link href = "scss/style.css" rel ="stylesheet" > 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/8ac16a56cb.js" crossorigin="anonymous"></script>
+        <!-- <link href="dist/hamburgers.css" rel="stylesheet"> -->
+        <link rel = "stylesheet" href ="/slick/slick.css">
+        <link rel = "stylesheet" href = "/slick/slick-theme.css">
+        <link href = "scss/style.css" rel ="stylesheet" > 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body>
+        <div id = "sideMenu">
+            <ul>
+                <li><a>training</a></li>
+                <li><a>web developer course</a></li>
+                <li><a>SCS Frequently asked Questions</a></li>
+                <li><a>scion collaborators</a></li>
+            </ul>
+            <ul>
+                <li><a> events</a></li>
+                <li><a>Buisness Automation seminar</a></li>
+            </ul>
+            <ul>
+                <li><a>Our company</a></li>
+                <li><a>our culture</a></li>
+                <li><a>our team</a></li>
+                <li><a>our careers</a></li>
+                <li><a>our benefits</a></li>
+                <li><a>our great yarmouth office</a></li>
+            </ul>
+            <ul>
+                <li><a>Our work</a></li>
+                <li><a>Case Studies</a></li>
+            </ul>
+            <ul>
+                <li><a>Our Knowledge</a></li>
+                <li><a>Guides</a></li>
+                <li><a>news</a></li>
+                <li><a>insights</a></li>
+            </ul>
+            <ul>
+                <li><a>Covid Risk Assessment</a></li>
+            </ul>
+        </div>
+        
+        <div id = "over"></div>
+        <div id = "netmattersPopUp">
+            <h2> Cookie Policy</h2>
+            <p>
+                We use cookies to obtain aggregate data regarding site traffic and interaction,
+                in order to identify user trends and obtain insights in order to continually improve
+                our site. These cookies enable us to improve your customer experience as you use our
+                site and help provide you with relevent online marketing.
+            </p>
+            <p>
+                You can see a list of the other companies who use cookies on this website by visiting
+                cookie settings at the bottom of each page. For full details of how we use your personal 
+                infomation, and your rights in relation to it, view our privacy policy.
+            </p>
+            <div id ="cookieButtons">
+                <a href ="#">
+                    <h3> Change settings</h3>
+                </a>
+                <a id ="accCoo" href ="#">
+                    <h3> Accept Cookies</h3>
+                </a>
+        
+            </div>
+        </div>
 
-        <header>
+<main id ="main"> 
+    <header id ="header">
             <!-- Top of page Navigation  with buttons and search bar -->
         <div class = "top-nav" >
             <a class ="logo" href ="#">  
@@ -44,14 +106,15 @@
                     
                  </div>
                 
-                 <div class = "b-menu"> 
+                 <div class = "b-menu" id = "menu"> 
                     <a href ="#">
-                       <span class ="burger-line"></span>
-                       <span class ="burger-line"></span>
-                       <span class ="burger-line"></span>
+                       <span class ="burger-line" id = "topLine"></span>
+                       <span class ="burger-line" id = "middleLine"></span>
+                       <span class ="burger-line" id = "bottomLine"></span>
                        <small> menu </small>
                     </a>
                 </div>
+                
             </form>
     
             <!-- <div class ="ser-bur"> 
@@ -218,25 +281,11 @@
         </div>
         <!-- /Navigation -->   
     
-        </header>
+    </header>
 
-        <div class = "top-img">
-            <div class ="carousel-container">
-                <img class ="carousel opacity"  src ="img/Carousel-images/web_design_slide_1-edited.png" alt ="carousel" >
-                <div class ="carousel-wrapper"> 
-                    <div class ="carousel-overlay"> 
-                        <h1>Web Design</h1>
-                        <p> For businesses looking to make a strong and effective first impression</p>
-                        <a>
-                            <p>Find out More</p> 
-                            <i class=" fas fa-arrow-right"></i> 
-                        </a>
-                    </div>
-                </div>
-            </div>   
-        </div>
-          <!-- Cards -->
+    <div id = "slides"></div>
 
+        <!-- Cards -->
         <div class = "card-nav">
             <div class = "row-1" >
 
@@ -245,7 +294,7 @@
                         <h3 class = "c-title" >Bespoke Software</h3>
                         <p>
                             Tailored software solutions to improve
-                            buisness productivity and online profits.
+                            business productivity and online profits.
                             Our expert team will ensure a software 
                             solution.
                         </p>
@@ -256,7 +305,7 @@
                     <i class = "fa fa-desktop card-icon"></i>
                     <h3 class = "c-title" >IT support</h3>
                     <p>Remotely managed IT Services that is catered
-                        to your buisnesses needs, adds value and
+                        to your businesses needs, adds value and
                         reduces costs.
                     </p>
                     <div class = "rm rm-it" >read more</div>
@@ -292,7 +341,7 @@
                     <i class = "fa fa-code card-icon"> </i> 
                     <h3 class = "c-title" >web design</h3>
                     <p>
-                        User-centric design for buisnesses looking to
+                        User-centric design for businesses looking to
                         make a lasting first impression.
                     </p>
                     <div class = "rm rm-web" >read more</div>
@@ -301,7 +350,7 @@
                 <a href = "#" class = "card service card-nav-cs ">
                     <i class = "fa fa-shield card-icon"> </i>
                     <h3 class = "c-title" > cyber security</h3>
-                    <p>Ensuring your online buisness stays secure 24/7, 
+                    <p>Ensuring your online business stays secure 24/7, 
                         365 days of the year 
                     </p>
                     <div class = "rm rm-cs" >read more</div>
@@ -330,13 +379,13 @@
                 <p> Netmatters Ltd is a leading web design,IT support and digital
                     marketing agency based in Wymondham, Norfolk.
                 </p>
-                <p>Founded in 2008, we work with buisnesses from a variety of 
+                <p>Founded in 2008, we work with businesses from a variety of 
                     industries to gain new prospects, nurture existing leads
                     and further grow their sales.
                 </p>
                 <p>We provide cost effective, reliable solutions to a range of services;
                     from bespoke cloud-based management systems, workflow and IT solutions
-                    through to creative website development and intagrated
+                    through to creative website development and integrated
                     digital campaigning.
                 </p>
                 <label class = "culture">  Our culture <i class="fas fa-arrow-right"></i> </label>
@@ -382,7 +431,7 @@
                 </div>
                 <div class ="info">
                     <h4><a class = "news-tag-title" href ="#">ZSEA IT Support case study</a></h4>
-                    <p class ="para"> As the world continues to change, and buisnesses evolve, 
+                    <p class ="para"> As the world continues to change, and businesses evolve, 
                         they need to look to ways of futurep...
                     </p>
                     <div class ="rm-n news-tag"><a href ="#">  Read more </a> </div>
@@ -468,8 +517,8 @@
                                 </div>
                             </div>
                         </div>
-    
-                        <!-- Northerm Diver -->
+
+                        <!-- Northern Diver -->
                         <div class ="site">
                              <div class ="tool">
                                 <div class = "tooltip-text diver-tt">
@@ -596,6 +645,24 @@
                     </div>
                 </div>
             </div>
-        </footer> 
+        </footer>
+</main>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src ="/slick/slick.min.js"></script>
+       
+        <!-- Temp file for header -->
+        <!-- <script src ="/src/stickyHead.js"></script> -->
+        <script src ="/src/hamburgerAnim.js"></script>
+        <script src ="src/menu.js"></script>
+
+        <script src="/src/app.js"></script>
+        <Script src ="/src/json.js"></Script>
+        <script>
+            $('#slides').slick({
+                arrows:false,
+                autoplay:4000,
+                dots: true,
+            });
+        </script>
     </body>
 </html>

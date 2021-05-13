@@ -1,19 +1,22 @@
 
 .carousel, .opacity{
+    // margin-top:210px;
     width:100%;
     // padding-bottom:3.5%;
 }
 
 .carousel-wrapper{
-    width:100%;
+    width:8%;
     color: $nm-primary;
     position:absolute;
-    top:35%;
+    top:25%;
+    // z-index: 1000;
 
     .carousel-overlay{
-        position: relative;
+        // position: relative;
         margin-left: auto;
         margin-right:auto;
+        // z-index: 1000;
     }
     
     h1{
@@ -63,6 +66,31 @@
     }
 }
 
+.slick-dots {
+    bottom: 50px;
+    li button:before{
+        text-align: center;
+        line-height: 22.8571px;
+        letter-spacing: 0.4px;
+        font-size: 16px;
+        color:$nm-primary;
+    }
+    li button:hover::before{
+        color: #869791;
+    }
+
+    li.slick-active button::before{
+        color:$nm-primary;
+        // position: absolute;
+        // padding:5px 10px;
+        // padding-right: 5px;
+        border: 3px solid $nm-primary;
+        width: 27px;
+        height:25px;
+        border-radius: 50%;
+    }
+}
+
 //||Media Queries||
 //Changes the size of backgtound image and adapts the gradient to always fit over the image.
 //Moves the position of the text overlay depending on screen size.
@@ -74,9 +102,10 @@
     }
     .carousel-wrapper{
         position: absolute;
-        top:40%;
+        top:30%;
+        margin:0 auto;
     }
-    .carousel-container{
+    #carousel-container{
         overflow: hidden;
     }
     .carousel-overlay{
@@ -131,7 +160,6 @@
         }
         p{
             width:40%;
-
         }
     }
 }
@@ -157,7 +185,7 @@
     }
     .carousel-wrapper{
         position: absolute;
-        top:40%;
+        top:25%;
     }
     .carousel-overlay{
         width:1175px;
@@ -170,7 +198,7 @@
     }
     .carousel-wrapper{
         position: absolute;
-        top:50%;
+        top:25%;
     }
     .carousel-overlay{
         width:1175px;
