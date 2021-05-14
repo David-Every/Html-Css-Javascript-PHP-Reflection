@@ -109,45 +109,52 @@ $nav-height:57px;
 .search-button-sm{
     display:none;
 }
-
-.b-menu a , .b-menu-sm a {
-    background-color: $nm-secondary;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 63.03px;
-    height: $nav-height;
-    line-height: 8px;
-    border-radius: 3px;
-    color:$nm-primary;
-    .burger-line{
-        margin-left:15px;
-        width: 33px;
-        height: 3px;
-        background-color: $nm-primary;
-        margin-bottom: 5px;
-    }
-    .b-menu-sm{
-        display:none;
-    }
-    
-    &:hover,:visited{
-        color:$nm-primary;
-        background-color: darken($nm-secondary, 10%);
-        text-decoration: none;
-    }
-    small{
-        font-size: 13px;
-        text-transform: uppercase;
-        margin-left:12px;
-        margin-top:5px;
-    }
-    span{
-        padding-left:12px;
-    }
-    
+.H-Lab small{
+    font-size: 13px;
+    text-transform: uppercase;
+    // margin-left:px;
+    margin-top:5px;
+    color: $nm-primary;
 }
+
+// .b-menu , .b-menu-sm {
+//     background-color: $nm-secondary;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-content: center;
+//     width: 63.03px;
+//     height: $nav-height;
+//     line-height: 8px;
+//     border-radius: 3px;
+//     color:$nm-primary;
+//     .burger-line{
+//         margin-left:15px;
+//         width: 33px;
+//         height: 3px;
+//         background-color: $nm-primary;
+//         margin-bottom: 5px;
+//     }
+//     .b-menu-sm{
+//         display:none;
+//     }
+    
+//     &:hover,:visited{
+//         color:$nm-primary;
+//         background-color: darken($nm-secondary, 10%);
+//         text-decoration: none;
+//     }
+//     small{
+//         font-size: 13px;
+//         text-transform: uppercase;
+//         margin-left:12px;
+//         margin-top:5px;
+//     }
+//     span{
+//         padding-left:12px;
+//     }
+    
+// }
 
 #header{
     background-color: $nm-primary;
@@ -169,11 +176,11 @@ $nav-height:57px;
         margin-right:auto;
         margin-top:15px;
     }
-    .b-menu-sm{
-        display: block;
-        margin-right: auto;
-        margin-top:2%;
-    }
+    // .b-menu-sm{
+    //     display: block;
+    //     margin-right: auto;
+    //     margin-top:2%;
+    // }
     // //Resize Netmatters logo
     .logo{
         max-width:65%;
@@ -256,9 +263,9 @@ $nav-height:57px;
     .b-menu-sm, .search-bar{
         display:none;
     }
-    .b-menu-sm{
-        display:none;
-    }
+    // .b-menu-sm{
+    //     display:none;
+    // }
     .navigation{
         display: inline-flex;
         margin-right:auto;
@@ -284,9 +291,9 @@ $nav-height:57px;
 }
 
 @media (min-width:$break-xl){
-    .b-menu-sm{
-        display:none;
-    }
+    // .b-menu-sm{
+    //     display:none;
+    // }
     .navigation{
         display: flex;
         margin-right:auto;
@@ -313,9 +320,9 @@ $nav-height:57px;
 }
 
 @media(min-width:$break-4k){
-    .b-menu-sm{
-        display:none;
-    }
+    // .b-menu-sm{
+    //     display:none;
+    // }
     .top-nav{
         width:1175px;
     }

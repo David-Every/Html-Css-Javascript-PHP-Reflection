@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id = "html">
     <head>
         <title>Netmatters | Full Service Digital Agency | Norwich, Norfolk</title>
         <meta charset="UTF-8">
@@ -8,48 +8,71 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/8ac16a56cb.js" crossorigin="anonymous"></script>
-        <!-- <link href="dist/hamburgers.css" rel="stylesheet"> -->
+
+        <link rel="stylesheet" href="/hamburger/hamburgers.css" >
+        <!-- <link rel = "stylesheet" href ="/pushy/css/mypushy.css"> -->
         <link rel = "stylesheet" href ="/slick/slick.css">
         <link rel = "stylesheet" href = "/slick/slick-theme.css">
         <link href = "scss/style.css" rel ="stylesheet" > 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     </head>
-    <body>
-        <div id = "sideMenu">
-            <ul>
-                <li><a>training</a></li>
-                <li><a>web developer course</a></li>
-                <li><a>SCS Frequently asked Questions</a></li>
-                <li><a>scion collaborators</a></li>
-            </ul>
-            <ul>
-                <li><a> events</a></li>
-                <li><a>Buisness Automation seminar</a></li>
-            </ul>
-            <ul>
-                <li><a>Our company</a></li>
-                <li><a>our culture</a></li>
-                <li><a>our team</a></li>
-                <li><a>our careers</a></li>
-                <li><a>our benefits</a></li>
-                <li><a>our great yarmouth office</a></li>
-            </ul>
-            <ul>
-                <li><a>Our work</a></li>
-                <li><a>Case Studies</a></li>
-            </ul>
-            <ul>
-                <li><a>Our Knowledge</a></li>
-                <li><a>Guides</a></li>
-                <li><a>news</a></li>
-                <li><a>insights</a></li>
-            </ul>
-            <ul>
-                <li><a>Covid Risk Assessment</a></li>
-            </ul>
-        </div>
+    <body id ="body">
+
+        <nav class = "pushy pushy-right">
+            <div class ="pushy-content" id ="pushy-cont">
+                <!-- <ul> -->
+                    <!-- Submenu -->
+                    <!-- <li class="pushy-link"><a href="#">Item 1</a></li>
+                    <li class="pushy-link"><a href="#">Item 2</a></li> -->
+                    <ul>
+                        <li><a>training</a></li>
+                        <li><a>web developer course</a></li>
+                        <li><a>SCS Frequently asked Questions</a></li>
+                        <li><a>scion collaborators</a></li>
+                    </ul>
+                    <ul>
+                        <li><a> events</a></li>
+                        <li><a>Buisness Automation seminar</a></li>
+                    </ul>
+                    <ul>
+                        <li><a>Our company</a></li>
+                        <li><a>our culture</a></li>
+                        <li><a>our team</a></li>
+                        <li><a>our careers</a></li>
+                        <li><a>our benefits</a></li>
+                        <li><a>our great yarmouth office</a></li>
+                    </ul>
+                    <ul>
+                        <li><a>Our work</a></li>
+                        <li><a>Case Studies</a></li>
+                    </ul>
+                    <ul>
+                        <li><a>Our Knowledge</a></li>
+                        <li><a>Guides</a></li>
+                        <li><a>news</a></li>
+                        <li><a>insights</a></li>
+                    </ul>
+                    <ul>
+                        <li><a>Covid Risk Assessment</a></li>
+                    </ul>
+                    <ul>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                <!-- </ul> -->
+            </div>
+        </nav>
+
+        <div class="site-overlay"></div>
+        <!-- <nav class ="pushy pushy-right"> 
+            <div class ="pushy-content">
+                <div id = "sideMenu" >
+                    
+                </div>
+            </div>
+        </nav> -->
         
-        <div id = "over"></div>
+        <!-- <div id = "over"></div> -->
         <div id = "netmattersPopUp">
             <h2> Cookie Policy</h2>
             <p>
@@ -74,7 +97,7 @@
             </div>
         </div>
 
-<main id ="main"> 
+<main id ="container"> 
     <header id ="header">
             <!-- Top of page Navigation  with buttons and search bar -->
         <div class = "top-nav" >
@@ -83,16 +106,7 @@
             </a>
             <div class ="phone "> 
                 <a href= "tel:00000000000"> <i class = "fas fa-phone-volume"></i> </a> 
-            </div>
-
-            <div class = "b-menu-sm"> 
-                <a href ="#">
-                   <span class ="burger-line"></span>
-                   <span class ="burger-line"></span>
-                   <span class ="burger-line"></span>
-                   <small> menu </small>
-                </a>
-            </div>
+            </div>            
             
             <div class ="nav-buttons"> 
                 <div ><a href = "#" class = " btn btn-1">  <i class="fas fa-mouse"> </i>Support </a> </div> 
@@ -106,22 +120,13 @@
                     
                  </div>
                 
-                 <div class = "b-menu" id = "menu"> 
-                    <a href ="#">
-                       <span class ="burger-line" id = "topLine"></span>
-                       <span class ="burger-line" id = "middleLine"></span>
-                       <span class ="burger-line" id = "bottomLine"></span>
-                       <small> menu </small>
-                    </a>
-                </div>
-                
-            </form>
-    
-            <!-- <div class ="ser-bur"> 
-                <a href ="#" class = " search-button-sm">  <i class = "fas fa-search"></i> </a>
-            </div> -->
-
-            
+                <button id ="hamburger" class=" hamburger hamburger--spin menu-btn " type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                    <span class ="H-Lab"><small>Menu</small></span>
+                  </button>
+            </form>         
 
         </div>
         <!-- Main site Navigation -->
@@ -649,11 +654,12 @@
 </main>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src ="/slick/slick.min.js"></script>
+        <script src ="/pushy/JS/pushy.js"></script>
        
         <!-- Temp file for header -->
-        <!-- <script src ="/src/stickyHead.js"></script> -->
-        <script src ="/src/hamburgerAnim.js"></script>
-        <script src ="src/menu.js"></script>
+        <script src ="/src/stickyHead.js"></script>
+        <!-- <script src ="/src/hamburgerAnim.js"></script> Null -->
+        <script src ="/src/menu.js"></script>
 
         <script src="/src/app.js"></script>
         <Script src ="/src/json.js"></Script>
