@@ -55,7 +55,7 @@ var CarouselContent  =
     }]
 let slideNum = 0;
     function slideTemplate(slide){
-        console.log(slideNum);
+        // console.log(slideNum);
         slideNum++;
         if (slideNum === 5){
             return `

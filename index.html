@@ -21,10 +21,69 @@
 
         <nav class = "pushy pushy-right">
             <div class ="pushy-content" id ="pushy-cont">
-                <!-- <ul> -->
-                    <!-- Submenu -->
-                    <!-- <li class="pushy-link"><a href="#">Item 1</a></li>
-                    <li class="pushy-link"><a href="#">Item 2</a></li> -->
+
+                <div id ="small-additions">
+                    <ul>
+                        <li class ="side-nav-main"><a>Contact Us</a></li>
+                    </ul>
+                    <div id ="main-info-pushy-small">
+                        <ul>
+                            <li class ="side-nav-main"><a><i class = "fa fa-code icon" style="color:#926fb1;"> </i><br><small>web</small><br>design</a></li>
+                            <li><a>Stylish Websites</a></li>
+                            <li><a>Ecommerce stores</a></li>
+                            <li><a>Branding</a></li>
+                            <li><a>apps</a></li>
+                            <li><a>Web Hosting</a></li>
+                            <li><a>Pay Monthly websites</a></li>
+                        </ul>
+                        <ul>
+                            <li class ="side-nav-main"><a><i class = "fa fa-desktop icon" style="color:#4183d7;"></i><br><small>it</small><br>support</a></li>
+                            <li><a>Managed it</a></li>
+                            <li><a>Business it</a></li>
+                            <li><a>Office 365</a></li>
+                            <li><a>consultancy</a></li>
+                            <li><a>cloud provider</a></li>
+                            <li><a>data backup</a></li>
+                        </ul>
+                        <ul>
+                            <li class ="side-nav-main"><a><i class ="fa fa-volume-control-phone icon" style="color:#d64541;"></i><br><small>Telecoms</small><br>services</a></li>
+                            <li><a>gigabit voucher</a></li>
+                            <li><a>hosted VOIP</a></li>
+                            <li><a>Business VOIP</a></li>
+                            <li><a>Business broadband</a></li>
+                            <li><a>leased line</a></li>
+                            <li><a>3cx system</a></li>
+                        </ul>
+                        <ul>
+                            <li class ="side-nav-main"><a><i class ="glyphicon glyphicon-th icon" style="color:#67809f;"></i><br><small>bespoke</small><br>support</a></li>
+                            <li><a>Workflow</a></li>
+                            <li><a>Automation</a></li>
+                            <li><a>intergration</a></li>
+                            <li><a>database</a></li>
+                            <li><a>sharepoint</a></li>
+                            <li><a>business management</a></li>
+                        </ul>
+                        <ul>
+                            <li class ="side-nav-main"><a><i class = "glyphicon glyphicon-signal icon" style="color:#2ecc71;" ></i><br><small>Digital</small><br>marketing</a></li>
+                            <li><a>search (SEO)</a></li>
+                            <li><a>Paid (ppc)</a></li>
+                            <li><a>conversion (cro)</a></li>
+                            <li><a>Email</a></li>
+                            <li><a>social media</a></li>
+                            <li><a>content</a></li>
+                        </ul>
+                        <ul>
+                            <li class ="side-nav-main"><a><i class = "fa fa-shield icon" style="color:#f62459;"> </i><br><small>cyber</small><br>Security</a></li>
+                            <li><a>Assessment</a></li>
+                            <li><a>management</a></li>
+                            <li><a>penetration testing</a></li>
+                            <li><a>cyber essentials</a></li>
+                            <li><a>pci/dss</a></li>
+                            <li><a>Hacker prevention</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id ="main-info-all"> 
                     <ul>
                         <li><a>training</a></li>
                         <li><a>web developer course</a></li>
@@ -59,22 +118,15 @@
                     <ul>
                         <li><a>Contact Us</a></li>
                     </ul>
-                <!-- </ul> -->
+                </div>
             </div>
         </nav>
 
         <div class="site-overlay"></div>
-        <!-- <nav class ="pushy pushy-right"> 
-            <div class ="pushy-content">
-                <div id = "sideMenu" >
-                    
-                </div>
-            </div>
-        </nav> -->
-        
-        <!-- <div id = "over"></div> -->
+        <div id = "site-overlay-pop"></div> 
+
         <div id = "netmattersPopUp">
-            <h2> Cookie Policy</h2>
+            <h2> Cookie Policy (Work in progress)</h2>
             <p>
                 We use cookies to obtain aggregate data regarding site traffic and interaction,
                 in order to identify user trends and obtain insights in order to continually improve
@@ -106,7 +158,16 @@
             </a>
             <div class ="phone "> 
                 <a href= "tel:00000000000"> <i class = "fas fa-phone-volume"></i> </a> 
-            </div>            
+            </div> 
+            <!--id ="hamburger "--> 
+            <!-- <div id ="hammy-sm"> 
+                <button id ="hamburger" class=" hamburger hamburger--spin menu-btn hb-sm" type="button">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                    <span class ="H-Lab"><small>Menu</small></span>
+                </button>
+            </div> -->
             
             <div class ="nav-buttons"> 
                 <div ><a href = "#" class = " btn btn-1">  <i class="fas fa-mouse"> </i>Support </a> </div> 
@@ -119,13 +180,15 @@
                     <a href ="#" ><i class = "fas fa-search"></i></a>
                     
                  </div>
-                
-                <button id ="hamburger" class=" hamburger hamburger--spin menu-btn " type="button">
-                    <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
-                    </span>
-                    <span class ="H-Lab"><small>Menu</small></span>
-                  </button>
+                <!-- id ="hamburger " -->
+                <div id ="hammy-lg"> 
+                    <button id ="hamburger" class=" hamburger hamburger--spin menu-btn hb-lg " type="button">
+                        <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                        </span>
+                        <span class ="H-Lab"><small>Menu</small></span>
+                    </button>
+                </div>
             </form>         
 
         </div>
@@ -287,7 +350,7 @@
         <!-- /Navigation -->   
     
     </header>
-
+    <div id ="placeholder"></div>
     <div id = "slides"></div>
 
         <!-- Cards -->
@@ -657,10 +720,8 @@
         <script src ="/pushy/JS/pushy.js"></script>
        
         <!-- Temp file for header -->
-        <script src ="/src/stickyHead.js"></script>
-        <!-- <script src ="/src/hamburgerAnim.js"></script> Null -->
-        <script src ="/src/menu.js"></script>
-
+        <!-- <script src ="/src/stickyHead.js"></script> -->
+        <!-- <script src ="/src/menu.js"></script> -->
         <script src="/src/app.js"></script>
         <Script src ="/src/json.js"></Script>
         <script>

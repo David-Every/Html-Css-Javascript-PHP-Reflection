@@ -1,14 +1,16 @@
 #netmattersPopUp{
     position: fixed;
     align-self: center;
-    top:5%;
+    top:20%;
     left:5%;
     width:90%;
     height:90%;
     padding:15px;
     border: 3px solid $nm-secondary;
     background-color: $nm-primary;
-    z-index: 1000;
+    z-index: 9999;
+    // -webkit-animation: fade 500ms;
+    // animation: fade 500ms;
 
     overflow:scroll;
     h2{
@@ -45,11 +47,24 @@
     }
 }
 
+#site-overlay-pop{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0.5);
+    // -webkit-animation: fade 500ms;
+    // animation: fade 500ms;
+}
+
 @media (min-width:$break-m){
     #netmattersPopUp{
-        top:15%;
+        top:20%;
         left:30%;
-        width: 550px;
+        width: 650px;
         height: 500px;
         overflow: hidden;
         #cookieButtons{

@@ -782,13 +782,18 @@ input[type="text"]:focus {
   }
 }
 
+:root {
+  --pushywidth: 400px;
+  --minusPushyWidth:-400px;
+}
+
 .pushy {
   position: fixed;
-  width: 400px;
+  width: var(--pushywidth);
   height: 100%;
   top: 0;
   z-index: 9999;
-  background: #333645;
+  background-color: #333645;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   /* enables momentum scrolling in iOS overflow elements */
@@ -799,10 +804,6 @@ input[type="text"]:focus {
   color: #b3b3b1;
   padding: 15px 30px;
   text-decoration: none;
-}
-
-.pushy a:hover {
-  color: #FFF;
 }
 
 .pushy ul:first-child {
@@ -822,14 +823,14 @@ input[type="text"]:focus {
 }
 
 .pushy-right {
-  -webkit-transform: translate3d(400px, 0, 0);
-  transform: translate3d(400px, 0, 0);
+  -webkit-transform: translate3d(var(--pushywidth), 0, 0);
+  transform: translate3d(var(--pushywidth), 0, 0);
 }
 
 .pushy-open-right #container,
 .pushy-open-right .push {
-  -webkit-transform: translate3d(-400px, 0, 0);
-  transform: translate3d(-400px, 0, 0);
+  -webkit-transform: translate3d(var(--minusPushyWidth), 0, 0);
+  transform: translate3d(var(--minusPushyWidth), 0, 0);
 }
 
 .pushy-open-left .pushy,
@@ -895,49 +896,83 @@ input[type="text"]:focus {
   }
 }
 
-#pushy-cont {
+.side-nav-main {
+  outline: #22242e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 25px 0;
+}
+
+#small-additions {
+  background-color: #333645;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#small-additions ul li {
+  border-top: 1px solid #22242e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #22242e;
+}
+
+#small-additions ul li a, #small-additions ul li a:hover {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#small-additions ul li:first-of-type {
+  background-color: #333645;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+#small-additions ul:hover li:first-of-type,
+#main-info-all ul:hover li:first-of-type {
+  background-color: #3d404e;
+}
+
+#main-info-all {
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
-  overflow-y: scroll;
   letter-spacing: 0.4px;
 }
 
-#pushy-cont ul {
+#main-info-all ul {
   list-style: none;
   cursor: pointer;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-#pushy-cont ul li {
+#main-info-all ul li {
   border-top: 1px solid #22242e;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #22242e;
 }
 
-#pushy-cont ul li:first-of-type {
-  background-color: #3e4154;
+#main-info-all ul li:first-of-type {
+  background-color: #333645;
   color: #fff;
   padding: 10px;
 }
 
-#pushy-cont ul li:first-of-type a::before {
+#main-info-all ul li:first-of-type a::before {
   content: " ";
   padding: 0;
 }
 
-#pushy-cont ul li a {
+#main-info-all ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-#pushy-cont ul li a::before {
+#main-info-all ul li a::before {
   content: "\00BB";
   padding-right: 20px;
-}
-
-#pushy-cont ul:hover li:first-of-type {
-  background-color: #5e6480;
 }
 
 .f-img .colourimg, .f-img .colour-Img {
@@ -2200,11 +2235,11 @@ input[type="text"]:focus {
 #header {
   background-color: #fff;
   position: relative;
-  z-index: 9999;
+  z-index: 1000;
 }
 
 @media (max-width: 766px) {
-  .nav-buttons, .search-button, .b-menu {
+  .nav-buttons, .search-button {
     display: none;
   }
   .phone {
@@ -2245,7 +2280,7 @@ input[type="text"]:focus {
 }
 
 @media (min-width: 766px) and (max-width: 900px) {
-  .nav-buttons, .nav-wrapper, .phone, .b-menu-sm {
+  .nav-buttons, .nav-wrapper, .phone {
     display: none;
   }
   .top-nav {
@@ -2266,7 +2301,7 @@ input[type="text"]:focus {
 
 @media (min-width: 900px) and (max-width: 1023px) {
   .search-button-sm, .phone,
-  .nav-buttons, .nav-wrapper, .b-menu-sm {
+  .nav-buttons, .nav-wrapper {
     display: none;
   }
   .top-nav {
@@ -2285,7 +2320,7 @@ input[type="text"]:focus {
 }
 
 @media (min-width: 1023px) and (max-width: 1260px) {
-  .b-menu-sm, .search-bar {
+  .search-bar {
     display: none;
   }
   .navigation {
@@ -2633,14 +2668,14 @@ input[type="text"]:focus {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  top: 5%;
+  top: 20%;
   left: 5%;
   width: 90%;
   height: 90%;
   padding: 15px;
   border: 3px solid #333645;
   background-color: #fff;
-  z-index: 1000;
+  z-index: 9999;
   overflow: scroll;
   margin: 0 auto;
 }
@@ -2677,11 +2712,22 @@ input[type="text"]:focus {
   background-color: grey;
 }
 
+#site-overlay-pop {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9998;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 @media (min-width: 900px) {
   #netmattersPopUp {
-    top: 15%;
+    top: 20%;
     left: 30%;
-    width: 550px;
+    width: 650px;
     height: 500px;
     overflow: hidden;
   }

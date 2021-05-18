@@ -159,15 +159,14 @@ $nav-height:57px;
 #header{
     background-color: $nm-primary;
     position: relative;
-    z-index: 9999;
-    // z-index: 10000;
+    z-index: 1000;
 }
 
 // || Media Queries ||
 
 @media (max-width:$break-sm){
     //Remove un-needed elements
-    .nav-buttons, .search-button, .b-menu{
+    .nav-buttons, .search-button{
         display:none;
     }
     .phone{
@@ -216,7 +215,7 @@ $nav-height:57px;
 //Medium Between 600px and 900px
 @media (min-width:$break-sm) and (max-width:$break-m){
     //Remove elements
-    .nav-buttons, .nav-wrapper,.phone, .b-menu-sm{
+    .nav-buttons, .nav-wrapper,.phone{
         display:none;
     }
     .top-nav{
@@ -239,7 +238,7 @@ $nav-height:57px;
 @media(min-width:$break-m) and (max-width:1023px){
     // remove elements
     .search-button-sm, .phone,
-    .nav-buttons,.nav-wrapper, .b-menu-sm{
+    .nav-buttons,.nav-wrapper{
         display:none;
     }
     .top-nav{
@@ -260,7 +259,7 @@ $nav-height:57px;
  //Large if the minumum is 1024
 @media (min-width:$break-lg) and (max-width:$break-xl){
 
-    .b-menu-sm, .search-bar{
+    .search-bar{
         display:none;
     }
     // .b-menu-sm{
