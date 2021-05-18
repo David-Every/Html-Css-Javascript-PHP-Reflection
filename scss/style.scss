@@ -2,6 +2,7 @@
 
 @import
 
+
 // Structure, Keep at the top //
 '../scss/structure/colours',
 '../scss/structure/fonts',
@@ -9,12 +10,16 @@
 '../scss/structure/mixins',
 '../scss/structure/social-media',
 
+
+
 // Other //
 '../scss/Other/about-us',
 '../scss/Other/newsletter',
 '../scss/Other/tooltips',
-'../scss/Other/footer', 
+'../scss/Other/footer',
+'../scss/Other/myPushy', 
 '../scss/Other/partners',
+
 
 
 // Cards //
@@ -24,14 +29,24 @@
 
 //Header
 '../scss/Header/dropdowns',
+// '../scss/Header/spin',
+
 '../scss/Header/site-navigation',
 '../scss/Header/header-buttons',
-'../scss/Header/carousel';
+'../scss/Header/carousel',
+
+// Cookies
+'../scss/Cookies/cookiePopup';
+
+
+
 
 /* Stops items from being selected / copied*/
 body{
     user-select: none;
 }
+
+
 
 //Removes default focus styles from browsers.
 // input:focus,

@@ -109,51 +109,64 @@ $nav-height:57px;
 .search-button-sm{
     display:none;
 }
+.H-Lab small{
+    font-size: 13px;
+    text-transform: uppercase;
+    // margin-left:px;
+    margin-top:5px;
+    color: $nm-primary;
+}
 
-.b-menu a, .b-menu-sm a{
-    background-color: $nm-secondary;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 63.03px;
-    height: $nav-height;
-    line-height: 8px;
-    border-radius: 3px;
-    color:$nm-primary;
-    .burger-line{
-        margin-left:15px;
-        width: 33px;
-        height: 3px;
-        background-color: $nm-primary;
-        margin-bottom: 5px;
-    }
-    .b-menu-sm{
-        display:none;
-    }
+// .b-menu , .b-menu-sm {
+//     background-color: $nm-secondary;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-content: center;
+//     width: 63.03px;
+//     height: $nav-height;
+//     line-height: 8px;
+//     border-radius: 3px;
+//     color:$nm-primary;
+//     .burger-line{
+//         margin-left:15px;
+//         width: 33px;
+//         height: 3px;
+//         background-color: $nm-primary;
+//         margin-bottom: 5px;
+//     }
+//     .b-menu-sm{
+//         display:none;
+//     }
     
-    &:hover,:visited{
-        color:$nm-primary;
-        background-color: darken($nm-secondary, 10%);
-        text-decoration: none;
-    }
-    small{
-        font-size: 13px;
-        text-transform: uppercase;
-        margin-left:12px;
-        margin-top:5px;
-    }
-    span{
-        padding-left:12px;
-    }
+//     &:hover,:visited{
+//         color:$nm-primary;
+//         background-color: darken($nm-secondary, 10%);
+//         text-decoration: none;
+//     }
+//     small{
+//         font-size: 13px;
+//         text-transform: uppercase;
+//         margin-left:12px;
+//         margin-top:5px;
+//     }
+//     span{
+//         padding-left:12px;
+//     }
     
+// }
+
+#header{
+    background-color: $nm-primary;
+    position: relative;
+    z-index: 1000;
 }
 
 // || Media Queries ||
 
 @media (max-width:$break-sm){
     //Remove un-needed elements
-    .nav-buttons, .search-button, .b-menu{
+    .nav-buttons, .search-button{
         display:none;
     }
     .phone{
@@ -162,11 +175,11 @@ $nav-height:57px;
         margin-right:auto;
         margin-top:15px;
     }
-    .b-menu-sm{
-        display: block;
-        margin-right: auto;
-        margin-top:2%;
-    }
+    // .b-menu-sm{
+    //     display: block;
+    //     margin-right: auto;
+    //     margin-top:2%;
+    // }
     // //Resize Netmatters logo
     .logo{
         max-width:65%;
@@ -180,7 +193,7 @@ $nav-height:57px;
     .top-nav{
         flex-wrap: wrap;
         width:95%;
-        margin-top: 5%;
+        padding-top: 5%;
         margin-left: 5%;
         margin-bottom:15px;
     }
@@ -202,13 +215,13 @@ $nav-height:57px;
 //Medium Between 600px and 900px
 @media (min-width:$break-sm) and (max-width:$break-m){
     //Remove elements
-    .nav-buttons, .nav-wrapper,.phone, .b-menu-sm{
+    .nav-buttons, .nav-wrapper,.phone{
         display:none;
     }
     .top-nav{
         width:750px;
         // margin:3% auto;
-        margin-top:3%;
+        padding-top:3%;
         margin-bottom: 3%;
         // margin-left: auto;
         margin-right: auto;
@@ -225,12 +238,12 @@ $nav-height:57px;
 @media(min-width:$break-m) and (max-width:1023px){
     // remove elements
     .search-button-sm, .phone,
-    .nav-buttons,.nav-wrapper, .b-menu-sm{
+    .nav-buttons,.nav-wrapper{
         display:none;
     }
     .top-nav{
         width:775px;
-        margin-top:3%;
+        padding-top:3%;
         margin-bottom: 3%;
     }
     .logo{
@@ -241,22 +254,24 @@ $nav-height:57px;
     }   
 }
 
+
+
  //Large if the minumum is 1024
 @media (min-width:$break-lg) and (max-width:$break-xl){
 
-    .b-menu-sm, .search-bar{
+    .search-bar{
         display:none;
     }
-    .b-menu-sm{
-        display:none;
-    }
+    // .b-menu-sm{
+    //     display:none;
+    // }
     .navigation{
         display: inline-flex;
         margin-right:auto;
     }
     .top-nav{
         width:920px;
-        margin-top:1.5%;
+        padding-top:1.5%;
         margin-bottom: 1.5%;
     }
     .logo{
@@ -275,9 +290,9 @@ $nav-height:57px;
 }
 
 @media (min-width:$break-xl){
-    .b-menu-sm{
-        display:none;
-    }
+    // .b-menu-sm{
+    //     display:none;
+    // }
     .navigation{
         display: flex;
         margin-right:auto;
@@ -289,7 +304,7 @@ $nav-height:57px;
     }
     .top-nav{
         width:1175px;
-        margin-top:1.5%;
+        padding-top:1.5%;
         margin-bottom: 1.5%;
     }
     .logo{
@@ -304,9 +319,9 @@ $nav-height:57px;
 }
 
 @media(min-width:$break-4k){
-    .b-menu-sm{
-        display:none;
-    }
+    // .b-menu-sm{
+    //     display:none;
+    // }
     .top-nav{
         width:1175px;
     }

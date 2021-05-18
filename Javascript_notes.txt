@@ -1,0 +1,54 @@
+[ x ]Banner carousel (slick)
+[ x ]mobile Menu
+[ x ] Sticky header
+    [ x ] Make sure it pops up when scrolling up
+    [ x ] Adjust Margins for smaller screens above carousel
+[ ] Pop up notifying the user the website uses cookies.
+    [ ] This should store locally and prevent the pop up re-appearing on page reload
+[ x ] Use a Mix of Jquery and vanilla JS Use plugins for more complex features.
+
+[ x ] create JS Folder
+[ x ] Create app.js file
+[ x ] link up to HTML
+[ x ] get JQuery set up
+[ x ] Test jquery is working.
+[ x ] See if i can get the Carousel to work with JSON
+    [ x ] complete Carousel as normal first and then convert to JSON
+
+[ ] Carousel works as it should
+    [ x ] carousel slideshow works
+    [ ] Positioning of text is correct in all views
+        [ x ] Adjustment of css needed.
+[ ] Navigation slider works fully.
+    [ x ] Adjusted carousels margin-top for whitespace in all views
+    [ x ] Navigation animates its slide down
+    [ ] Navigation animates its slide up
+    [ x ] navigations default position and reset works
+
+[ x ] Main side menu works
+    [ x ] basic CSS styling for side menu is done
+    [ x ] finished fine details of side menu
+    [ x ] Used Pushy to push the pages content use it to create a sidebar
+    [ x ] site Darkens and becomes unscrollable when sidemenu is open.
+
+[ x ] Mobile sidemenu works
+    [ x ] Styling of menu is done
+    [ x ] when b-menu selected it works just like the main side menu
+
+[ x ] Cookie consent complete
+    [ x ] consent form created and is positioned correctly
+    [ x ] cookie stored locally.
+
+
+[ ] Issues
+    [ ] menu button dosent animate in both small and large views (ID issue, may have to remove one and then add it back in?)
+    [ ] Re add getting in hamburger menu.
+    [ ] sort out transpiling to JS5
+    [ x ] too much white space when trying to add in scrollbar for Pushy
+    [ ] Header sliding up animation not running
+
+Animating side menu
+https://www.jqueryscript.net/menu/Cool-Animated-Side-Menus-with-Sliding-Pushing-Effects.html
+
+B-menu
+https://jonsuh.com/hamburgers/
