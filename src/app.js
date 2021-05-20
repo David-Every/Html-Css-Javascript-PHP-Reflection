@@ -164,17 +164,29 @@ $('#pushy-cont ul li').addClass("pushy-link");
  * This code also changes the height of the placeholder Div that stands 
  * under the header.
  */
+ let bMenu = `
+ <button id ="hamburger" class=" hamburger hamburger--spin menu-btn hb-lg " type="button">
+     <span class="hamburger-box">
+     <span class="hamburger-inner"></span>
+     </span>
+     <span class ="H-Lab"><small>Menu</small></span>
+ </button>`;
 
 var $ph =$("#placeholder");
 var r = document.querySelector(':root');
 
-checkSet();
+let id = null
+checkSet(id);
 
 window.addEventListener("resize",() =>{
-    checkSet();
+  id = null;
+    checkSet(id);
+    console.log(id)
+    document.getElementById(id).innerHTML = bMenu;
+
 });
 
-function checkSet(){
+function checkSet(id){
     if(window.matchMedia('(max-width:1023px)').matches){
         // console.log('%c smaller ','color:green');
         getCSSRoot("275px","-250px");
@@ -191,14 +203,19 @@ function checkSet(){
         //Smaller Screen size
 
         // console.log("%c smaller then 766px","color:red");
-        $("#hammy-lg button").css("display","none");
-        $("#hammy-sm button").css("display","block");
+        // $("#hammy-lg button").css("display","none");
+        // $("#hammy-sm button").css("display","block");
+        id ="sm-menu"
+
     }
 
     if(window.matchMedia('(min-width:767px)').matches){
         // console.log("%c Larger then 766px","color:lightblue");
-        $("#hammy-sm button").css("display","none");
-        $("#hammy-lg button").css("display","block");
+        // $("#hammy-sm button").css("display","none");
+        // $("#hammy-lg button").css("display","block");
+        id ="lg-menu"
     }
 }
+
+
 //#endregion

@@ -3,8 +3,8 @@
 [ x ] Sticky header
     [ x ] Make sure it pops up when scrolling up
     [ x ] Adjust Margins for smaller screens above carousel
-[ ] Pop up notifying the user the website uses cookies.
-    [ ] This should store locally and prevent the pop up re-appearing on page reload
+[ x ] Pop up notifying the user the website uses cookies.
+    [ x ] This should store locally and prevent the pop up re-appearing on page reload
 [ x ] Use a Mix of Jquery and vanilla JS Use plugins for more complex features.
 
 [ x ] create JS Folder
@@ -15,14 +15,14 @@
 [ x ] See if i can get the Carousel to work with JSON
     [ x ] complete Carousel as normal first and then convert to JSON
 
-[ ] Carousel works as it should
+[ x ] Carousel works as it should
     [ x ] carousel slideshow works
-    [ ] Positioning of text is correct in all views
+    [ x ] Positioning of text is correct in all views
         [ x ] Adjustment of css needed.
-[ ] Navigation slider works fully.
+[ x ] Navigation slider works fully.
     [ x ] Adjusted carousels margin-top for whitespace in all views
     [ x ] Navigation animates its slide down
-    [ ] Navigation animates its slide up
+    [ x ] Navigation animates its slide up
     [ x ] navigations default position and reset works
 
 [ x ] Main side menu works
@@ -43,7 +43,7 @@
 [ ] Issues
     [ ] menu button dosent animate in both small and large views (ID issue, may have to remove one and then add it back in?)
     [ ] Re add getting in hamburger menu.
-    [ ] sort out transpiling to JS5
+    [ ] sort out transpiling to JS5 for IE
     [ x ] too much white space when trying to add in scrollbar for Pushy
     [ ] Header sliding up animation not running
 
