@@ -9,11 +9,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/8ac16a56cb.js" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="/hamburger/hamburgers.css" >
+        <link rel="stylesheet" href="hamburger/hamburgers.css" >
         <!-- <link rel = "stylesheet" href ="/pushy/css/mypushy.css"> -->
-        <link rel = "stylesheet" href ="/slick/slick.css">
-        <link rel = "stylesheet" href = "/slick/slick-theme.css">
-        <link href = "/scss/style.css" rel ="stylesheet" > 
+        <link rel = "stylesheet" href ="slick/slick.css">
+        <link rel = "stylesheet" href = "slick/slick-theme.css">
+        <link href = "dist/style.min.css" rel ="stylesheet" > 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     </head>
@@ -126,7 +126,7 @@
         <div id = "site-overlay-pop"></div> 
 
         <div id = "netmattersPopUp">
-            <h2> Cookie Policy (Work in progress)</h2>
+            <h2> Cookie Policy</h2>
             <p>
                 We use cookies to obtain aggregate data regarding site traffic and interaction,
                 in order to identify user trends and obtain insights in order to continually improve
@@ -159,15 +159,8 @@
             <div class ="phone "> 
                 <a href= "tel:00000000000"> <i class = "fas fa-phone-volume"></i> </a> 
             </div> 
+            <div id = "smHam"></div>
             <!--id ="hamburger "--> 
-            <!-- <div id ="hammy-sm"> 
-                <button id ="hamburger" class=" hamburger hamburger--spin menu-btn hb-sm" type="button">
-                    <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                    </span>
-                    <span class ="H-Lab"><small>Menu</small></span>
-                </button>
-            </div> -->
             
             <div class ="nav-buttons"> 
                 <div ><a href = "#" class = " btn btn-1">  <i class="fas fa-mouse"> </i>Support </a> </div> 
@@ -180,16 +173,14 @@
                     <a href ="#" ><i class = "fas fa-search"></i></a>
                     
                  </div>
-                 <div id ="lg-menu"></div>
-                <!-- id ="hamburger " -->
-                <!-- <div id ="hammy-lg">  -->
+                 <!-- <div id ="lgHam"> -->
                     <button id ="hamburger" class=" hamburger hamburger--spin menu-btn hb-lg " type="button">
                         <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                         </span>
                         <span class ="H-Lab"><small>Menu</small></span>
                     </button>
-                <!-- </div> -->
+                 <!-- </div> -->
             </form>         
 
         </div>
@@ -717,16 +708,24 @@
         </footer>
 </main>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src ="/slick/slick.min.js"></script>
+        <script src ="slick/slick.min.js"></script>
 
-        <!-- <script src ="/pushy/JS/pushy.js"></script> -->
-        <script src ="/pushy/JS/pushy.min.js"></script>
+        <script src ="pushy/JS/pushy.js"></script>
+        <!-- <script src ="pushy/JS/pushy.min.js"></script> -->
        
         <!-- Temp file for header -->
         <!-- <script src ="/src/stickyHead.js"></script> -->
         <!-- <script src ="/src/menu.js"></script> -->
-        <script src="/src/app.js"></script>
-        <Script src ="/src/json.js"></Script>
+        <!-- <script src="/dist/app.es6.min.js"></script> -->
+
+        <!--[if !IE]-->
+          <script src="src/app.js"></script>
+          <Script src ="src/json.js"></Script>
+        <!--[endif]-->
+
+        <!-- <script src="src/dev-saved/app.es5.js"></script>
+        <script src = "dist/json.es5.min.js" >  </script> -->
+    
         <script>
             $('#slides').slick({
                 arrows:false,

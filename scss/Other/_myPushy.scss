@@ -84,12 +84,12 @@
   
   /* Site Overlay */
   .site-overlay {
-    display: none;
+    display: block;
   }
   
   .pushy-open-left .site-overlay,
   .pushy-open-right .site-overlay {
-    display: block;
+    // display: none;
     position: fixed;
     top: 0;
     right: 0;

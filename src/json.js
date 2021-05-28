@@ -1,6 +1,6 @@
 var CarouselContent  = 
     [{
-        image : "/img/Carousel-images/web_design_slide_1-edited.png",
+        image : "img/Carousel-images/web_design_slide_1-edited.png",
         title: "Web Design",
         para: "For businesses looking to make a strong and effective first impression.",
         colour: "#926fb1",
@@ -9,7 +9,7 @@ var CarouselContent  =
         link: "#",
     },
     {
-        image: "/img/Carousel-images/it_support__slide_2.jpg",
+        image: "img/Carousel-images/it_support__slide_2.jpg",
         title:"IT Support" ,
         para:"Fast and cost effective IT Support services for your business.",
         colour: "#4183d7",
@@ -18,7 +18,7 @@ var CarouselContent  =
         link: "#",
     },
     {
-        image: "/img/Carousel-images/telecoms_slide _3.jpg",
+        image: "img/Carousel-images/telecoms_slide _3.jpg",
         title:"Telecoms services" ,
         para:" A new approach to connectivity, see how we can help your business.",
         colour: "#d64541",
@@ -27,7 +27,7 @@ var CarouselContent  =
         link: "#",
     },
     {
-        image: "/img/Carousel-images/Bespoke_slide_4.jpg",
+        image: "img/Carousel-images/Bespoke_slide_4.jpg",
         title:"Bespoke Software" ,
         para:"Bring your business together with solutions that grow with you.",
         colour: "#67809f",
@@ -36,7 +36,7 @@ var CarouselContent  =
         link: "#",
     },
     {
-        image: "/img/Carousel-images/marketing_slide_5.jpg",
+        image: "img/Carousel-images/marketing_slide_5.jpg",
         title:"Digital Marketing" ,
         para:"Generating your new business through  results-driven marketing activities.",
         colour: "#2ecc71",
@@ -45,7 +45,7 @@ var CarouselContent  =
         link: "#",
     },
     {
-        image: "/img/Carousel-images/cyber_slide_6.jpg",
+        image: "img/Carousel-images/cyber_slide_6.jpg",
         title:"Cyber Security" ,
         para:"Keeping businesses and their customers sensitive infomation protected.",
         colour: "#f62459",
@@ -53,6 +53,7 @@ var CarouselContent  =
         // button:"Find out more",
         link: "#",
     }]
+    
 let slideNum = 0;
     function slideTemplate(slide){
         // console.log(slideNum);

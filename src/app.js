@@ -75,18 +75,16 @@ function close(){
  $sticky.css("width", "100%");
  $head.css("position", "absolute");
  
- 
  var scrolled = 0;
  window.addEventListener("scroll", () =>{
    //checks to see if user is scrolling up
    oldPos = currentPos;
-   currentPos = scrollY;  
+   currentPos = pageYOffset;  
    /**
     * check is still scrolling
     */
    if(oldPos > currentPos & !scrollingUp){
      scrollingUp = true;
-     // console.log("%c sliding" ,'color:#218709');
      slideDown();
    }else if (oldPos < currentPos &scrollingUp){   
      scrollingUp = false;
@@ -103,11 +101,11 @@ function close(){
  function slideUp(){
    $head.animate({top: '0px'}, 0);
    $head.animate({top: '-220px'}, 500);
-   $sticky.css("position", "absolute");
+  //  $sticky.css("position", "absolute");
  }
  
  window.addEventListener("scroll", () =>{
-   if(scrollY < topCap){
+   if(pageYOffset < topCap){
      resetHeader();
    }
  });
@@ -129,14 +127,12 @@ $(`#hamburger`).on("click",activate);
 $('.site-overlay').on("click",deactivate);
 
 function getCSSRoot(pos,min){
-    // var rs = getComputedStyle(r);
-    // console.log("%c --pushyWidth is: " + rs.getPropertyValue('--pushywidth') 
-    //     +" "+ "-pushywidth is:" + rs.getPropertyValue("--minusPushyWidth"),"color:lightblue" );
     r.style.setProperty('--pushywidth',pos);
     r.style.setProperty('--minusPushyWidth',min);
 }
 
 function activate(){
+    // console.log("%c Activating","color:green");
     $("#hamburger").addClass("is-active");
     $("#body,#html").css({"overflow-x":"hidden","overflow-y":"scroll", "height":"100%", "-webkit-overflow-scrolling":"touch"});
     $("#container").css ("overflow-y","scroll");
@@ -147,6 +143,14 @@ function deactivate(){
     $("#body,#html").css({"overflow-x":"visible", "overflow-y":"visible", "height":"0"});
     $("#container").css ("overflow-y","visible");
 }
+//#endregion
+
+//#region slides
+// $('#slides').slick({
+//   arrows:false,
+//   autoplay:4000,
+//   dots: true,
+// });
 //#endregion
 
 //#region Pushy
@@ -164,56 +168,46 @@ $('#pushy-cont ul li').addClass("pushy-link");
  * This code also changes the height of the placeholder Div that stands 
  * under the header.
  */
- let bMenu = `
+ var $bMenu =$( `
  <button id ="hamburger" class=" hamburger hamburger--spin menu-btn hb-lg " type="button">
      <span class="hamburger-box">
      <span class="hamburger-inner"></span>
      </span>
      <span class ="H-Lab"><small>Menu</small></span>
- </button>`;
+ </button>`);
 
-var $ph =$("#placeholder");
+
+var $ph =$("#placeholder"); //Top of site keeps sites from jumping around when scrolling / running nav anim
+var $smHam =$("#smHam");
+var $lgHam =$("#lgHam");
 var r = document.querySelector(':root');
 
 let id = null
 checkSet(id);
 
 window.addEventListener("resize",() =>{
-  id = null;
-    checkSet(id);
-    console.log(id)
-    document.getElementById(id).innerHTML = bMenu;
-
+    checkSet();
 });
 
-function checkSet(id){
+function checkSet(){
     if(window.matchMedia('(max-width:1023px)').matches){
-        // console.log('%c smaller ','color:green');
         getCSSRoot("275px","-250px");
         $("#small-additions").css("display","block");
         $ph.css({"width":"100%", "height":"120.06px"});    
     }
     if(window.matchMedia('(min-width:1024px)').matches){
-        // console.log('%c large','color:red');
         getCSSRoot("400px","-385px");
         $("#small-additions").css("display","none");
         $ph.css({"width":"100%", "height":"210px"});
     }
     if(window.matchMedia('(max-width:766px)').matches){
         //Smaller Screen size
-
-        // console.log("%c smaller then 766px","color:red");
-        // $("#hammy-lg button").css("display","none");
-        // $("#hammy-sm button").css("display","block");
-        id ="sm-menu"
+        $("#hamburger").css({"position":"absolute", "top":"30px","right":"5px"});
 
     }
 
     if(window.matchMedia('(min-width:767px)').matches){
-        // console.log("%c Larger then 766px","color:lightblue");
-        // $("#hammy-sm button").css("display","none");
-        // $("#hammy-lg button").css("display","block");
-        id ="lg-menu"
+        $("#hamburger").css("position","initial");
     }
 }
 

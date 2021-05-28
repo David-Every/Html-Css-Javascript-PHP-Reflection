@@ -41,14 +41,11 @@
 
 
 [ ] Issues
-    [ ] menu button dosent animate in both small and large views (ID issue, may have to remove one and then add it back in?)
-    [ ] Re add getting in hamburger menu.
-    [ ] sort out transpiling to JS5 for IE
+    [  ] Pushy Side menu not working 
+    [ x ] menu button dosent animate in both small and large views (ID issue, may have to remove one and then add it back in?)
+    [ x ] Find scrollY replacement
+    [ x ] Re add getting in hamburger menu.
+    [ x ] Set up npms
+    [ x ] sort out transpiling to JS5 for IE
     [ x ] too much white space when trying to add in scrollbar for Pushy
-    [ ] Header sliding up animation not running
-
-Animating side menu
-https://www.jqueryscript.net/menu/Cool-Animated-Side-Menus-with-Sliding-Pushing-Effects.html
-
-B-menu
-https://jonsuh.com/hamburgers/
+    [ x ] Header sliding up animation not running
