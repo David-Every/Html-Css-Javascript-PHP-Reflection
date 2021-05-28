@@ -1,4 +1,4 @@
-
+console.log("ES6 boii");
 //#region Cookie
 /**
  * This Code is for the cookie popup it manages how the cookie will popup 
@@ -127,8 +127,8 @@ $(`#hamburger`).on("click",activate);
 $('.site-overlay').on("click",deactivate);
 
 function getCSSRoot(pos,min){
-    r.style.setProperty('--pushywidth',pos);
-    r.style.setProperty('--minusPushyWidth',min);
+    root.style.setProperty('--pushywidth',pos);
+    root.style.setProperty('--minusPushyWidth',min);
 }
 
 function activate(){
@@ -180,7 +180,7 @@ $('#pushy-cont ul li').addClass("pushy-link");
 var $ph =$("#placeholder"); //Top of site keeps sites from jumping around when scrolling / running nav anim
 var $smHam =$("#smHam");
 var $lgHam =$("#lgHam");
-var r = document.querySelector(':root');
+var root= document.querySelector(':root');
 
 let id = null
 checkSet(id);
@@ -191,12 +191,16 @@ window.addEventListener("resize",() =>{
 
 function checkSet(){
     if(window.matchMedia('(max-width:1023px)').matches){
+
         getCSSRoot("275px","-250px");
+        
         $("#small-additions").css("display","block");
         $ph.css({"width":"100%", "height":"120.06px"});    
     }
     if(window.matchMedia('(min-width:1024px)').matches){
+
         getCSSRoot("400px","-385px");
+        
         $("#small-additions").css("display","none");
         $ph.css({"width":"100%", "height":"210px"});
     }

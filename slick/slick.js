@@ -2616,7 +2616,7 @@
 
         xDist = _.touchObject.startX - _.touchObject.curX;
         yDist = _.touchObject.startY - _.touchObject.curY;
-        r = Math.atan2(yDist, xDist);
+       root= Math.atan2(yDist, xDist);
 
         swipeAngle = Math.round(r * 180 / Math.PI);
         if (swipeAngle < 0) {

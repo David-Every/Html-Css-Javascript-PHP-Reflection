@@ -1,5 +1,5 @@
 "use strict";
-
+console.log("es5");
 //#region Cookie
 
 /**
@@ -59,7 +59,46 @@ function close() {
   window.removeEventListener('scroll', noScroll);
   overlay.style.display = "none";
   document.cookie = "cookiesAllowed = True";
-} //#endregion
+} 
+//#endregion
+
+     //#region Move to es5 when working
+     var IEMenu = false;
+     let $ppr = $(".pushy.pushy-right");
+     $ppr.css("display","none");
+     
+     $("#hamburger").on("click",ieSwitch);
+     $(".site-overlay").on("click",ieSwitch);
+
+      function ieSwitch(){
+         if(IEMenu == false){
+             IEMenu = true;
+             $ppr.css("display","block");
+             activate();
+             return;
+         }else{
+             IEMenu = false;
+             $ppr.css("display","none");
+             deactivate();
+             // document.body.
+         }
+     }
+     /**
+      * Things ES5 needs to adjust >.<
+      * 
+      * if(max-width: 1023px)
+      * max = 275px
+      * min = 250px
+      * 
+      * 
+      * if(min-width:1024px)
+      * max = 400px
+      * min = -385px
+      */
+     //#endregion
+      // return;
+
+
 //#region header scroll
 
 /**
@@ -145,12 +184,12 @@ $("#hamburger").on("click", activate);
 $('.site-overlay').on("click", deactivate);
 
 function getCSSRoot(pos, min) {
-  r.style.setProperty('--pushywidth', pos);
-  r.style.setProperty('--minusPushyWidth', min);
+  root.style.setProperty('--pushywidth', pos);
+  root.style.setProperty('--minusPushyWidth', min);
 }
 
 function activate() {
-  console.log("%c Activating", "color:green");
+  // console.log("%c Activating","color:green");
   $("#hamburger").addClass("is-active");
   $("#body,#html").css({
     "overflow-x": "hidden",
@@ -197,7 +236,7 @@ var $ph = $("#placeholder"); //Top of site keeps sites from jumping around when 
 
 var $smHam = $("#smHam");
 var $lgHam = $("#lgHam");
-var r = document.querySelector(':root');
+var root = document.querySelector(':root');
 var id = null;
 checkSet(id);
 window.addEventListener("resize", function () {
