@@ -40,8 +40,8 @@
     [ x ] cookie stored locally.
 
 
-[ ] Issues
-    [  ] Pushy Side menu not working 
+[ x ] Issues
+    [ x ] Pushy Side menu not working 
     [ x ] menu button dosent animate in both small and large views (ID issue, may have to remove one and then add it back in?)
     [ x ] Find scrollY replacement
     [ x ] Re add getting in hamburger menu.

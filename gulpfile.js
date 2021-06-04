@@ -4,19 +4,6 @@ var uglifycss = require('gulp-uglifycss');
 var rename = require ("gulp-rename");
 var babel = require ("gulp-babel");
 var uglify = require("gulp-uglify");
-// const postcss    = require('gulp-postcss');
-// const sourcemaps = require('gulp-sourcemaps');
-// const htmlmin = require('gulp-html-minifier-terser');
-
-// HTML tracker
-// gulp.task('html', done => {
-//     gulp.src('index.html')
-//         .pipe(rename({
-//             suffix:'.min'
-//         }))
-//         .pipe(gulp.dest('dist'));
-//     done();
-// })
 
 // sass compiler
 gulp.task('sass',done =>{
@@ -27,13 +14,6 @@ gulp.task('sass',done =>{
     done()
 });
 
-// gulp.task('postcss', () => {
-//     return gulp.src('src/dev-saved/**/*.css')
-//       .pipe( sourcemaps.init() )
-//       .pipe( postcss([ require('precss'), require('autoprefixer') ]) )
-//       .pipe( sourcemaps.write('.') )
-//       .pipe( gulp.dest('src/dev-saved') )
-// })
 
 //css Minifier
 gulp.task('css', done => {
@@ -100,4 +80,4 @@ gulp.task('watch',() =>{
     gulp.watch('src/app.js',gulp.series('js6-min'))
 })
 
-// To stawt watching type ' gulp watch ' 
+// To start watching type ' gulp watch ' 

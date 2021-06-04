@@ -1,5 +1,4 @@
 "use strict";
-console.log("es5");
 //#region Cookie
 
 /**
@@ -80,7 +79,6 @@ function close() {
              IEMenu = false;
              $ppr.css("display","none");
              deactivate();
-             // document.body.
          }
      }
      /**

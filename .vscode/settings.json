@@ -2,5 +2,6 @@
     "cSpell.ignoreWords": [
         "jquery",
         "netmatters"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

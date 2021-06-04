@@ -1,4 +1,4 @@
-console.log("ES6 boii");
+
 //#region Cookie
 /**
  * This Code is for the cookie popup it manages how the cookie will popup 
@@ -119,17 +119,13 @@ function close(){
 //#endregion
 
 //#region Hamburger
-// var id = null;
 /**
  * Hamburger button Animation
 */
 $(`#hamburger`).on("click",activate);
 $('.site-overlay').on("click",deactivate);
 
-function getCSSRoot(pos,min){
-    root.style.setProperty('--pushywidth',pos);
-    root.style.setProperty('--minusPushyWidth',min);
-}
+
 
 function activate(){
     // console.log("%c Activating","color:green");
@@ -144,17 +140,6 @@ function deactivate(){
     $("#container").css ("overflow-y","visible");
 }
 //#endregion
-
-//#region slides
-// $('#slides').slick({
-//   arrows:false,
-//   autoplay:4000,
-//   dots: true,
-// });
-//#endregion
-
-//#region Pushy
-//||### Pushy Additions||\\
 
 //Add the class "Pushy-link to all list elements in side menu"
 $('#pushy-cont ul li').addClass("pushy-link");
@@ -191,15 +176,13 @@ window.addEventListener("resize",() =>{
 
 function checkSet(){
     if(window.matchMedia('(max-width:1023px)').matches){
-
-        getCSSRoot("275px","-250px");
-        
+  
         $("#small-additions").css("display","block");
         $ph.css({"width":"100%", "height":"120.06px"});    
     }
     if(window.matchMedia('(min-width:1024px)').matches){
 
-        getCSSRoot("400px","-385px");
+        // getCSSRoot("400px","-385px");
         
         $("#small-additions").css("display","none");
         $ph.css({"width":"100%", "height":"210px"});

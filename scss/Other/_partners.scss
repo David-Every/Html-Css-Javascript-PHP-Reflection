@@ -1,6 +1,5 @@
 
 .f-img {
-    // background-color: black;
     .colourimg, .colour-Img{
         display: none;
     }
@@ -11,36 +10,30 @@
         .colourimg, .colour-Img{
             display: block;
         }
-        
     }
-    // img{
-    //     height:70px; 
-    // }
 }
 
 .footer-web-design, .site,
 .bottom-imgs .f-img{
     display: inline-flex;
 }
-
-// .bottom-imgs .f-img{
-//     &:first-of-type{
-//         // 
-//         // filter: none;
-//     //     width:150px;
-//     //     height: 75px;
-//     }
-// }
 .google{
-        // width:200px;
         box-shadow: 8px 7px 10px -7px rgba(0,0,0,0.2);
-    
 }
 
 .top-imgs, .bottom-imgs{
     margin-left: auto;
     margin-right: auto;
 }
+
+.footer-icons{
+    margin-bottom: 50px;
+}
+/*||#################################################################
+############ || Media Queries for the footer positioning || #########
+###################################################################*/
+
+
 
 @media (max-width:$break-sm){//max
     .footer-icons, .footer-web-design,
@@ -49,16 +42,6 @@
     }
 }
 @media(min-width:$break-sm) and (max-width:$break-m){
-    // .footer-icons, .footer-web-design,
-    // .top-imgs, .bottom-imgs{
-    //     display:none;
-    // }
-
-    /*
-        Shrink logos
-        add whitespace
-    */
-
     .top-imgs{
         width:650px;
         margin-bottom: 50px;

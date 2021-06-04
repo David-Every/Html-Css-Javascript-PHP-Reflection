@@ -556,13 +556,9 @@ input[type="text"] {
     .social i {
       padding-left: 0; } }
 
-:root {
-  --pushywidth: 400px;
-  --minusPushyWidth:-400px; }
-
 .pushy {
   position: fixed;
-  width: var(--pushywidth);
+  width: 400px;
   height: 100%;
   top: 0;
   z-index: 9999;
@@ -590,15 +586,15 @@ input[type="text"] {
   visibility: hidden; }
 
 .pushy-right {
-  -webkit-transform: translate3d(var(--pushywidth), 0, 0);
-  -ms-transform: translate3d(var(--pushywidth), 0, 0);
-  transform: translate3d(var(--pushywidth), 0, 0); }
+  -webkit-transform: translate3d(400px, 0, 0);
+  -ms-transform: translate3d(400px, 0, 0);
+  transform: translate3d(400px, 0, 0); }
 
 .pushy-open-right #container,
 .pushy-open-right .push {
-  -webkit-transform: translate3d(var(--minusPushyWidth), 0, 0);
-  -ms-transform: translate3d(var(--minusPushyWidth), 0, 0);
-  transform: translate3d(var(--minusPushyWidth), 0, 0); }
+  -webkit-transform: translate3d(-385px, 0, 0);
+  -ms-transform: translate3d(-385px, 0, 0);
+  transform: translate3d(-385px, 0, 0); }
 
 .pushy-open-left .pushy,
 .pushy-open-right .pushy {
@@ -724,16 +720,18 @@ input[type="text"] {
   margin-left: auto;
   margin-right: auto; }
 
+.footer-icons {
+  margin-bottom: 50px; }
+
+/*||#################################################################
+############ || Media Queries for the footer positioning || #########
+###################################################################*/
 @media (max-width: 766px) {
   .footer-icons, .footer-web-design,
   .top-imgs, .bottom-imgs {
     display: none; } }
 
 @media (min-width: 766px) and (max-width: 900px) {
-  /*
-        Shrink logos
-        add whitespace
-    */
   .top-imgs {
     width: 650px;
     margin-bottom: 50px;

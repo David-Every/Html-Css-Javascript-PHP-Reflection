@@ -1,14 +1,14 @@
 
 //||Copied Code||\\
 
-:root{
-  --pushywidth: 400px;
-  --minusPushyWidth:-400px;
-}
+// :root{
+//   --pushywidth: 400px;
+//   --minusPushyWidth:-385px;
+// }
 // $pushywidth : 400px;
 .pushy {
     position: fixed;
-    width: var(--pushywidth);
+    width: 400px;
     height: 100%;
     top: 0;
     z-index: 9999;
@@ -48,16 +48,16 @@
   }
 
   .pushy-right {
-    -webkit-transform: translate3d(var(--pushywidth), 0, 0);
-    -ms-transform: translate3d(var(--pushywidth), 0, 0);
-    transform: translate3d(var(--pushywidth), 0, 0);
+    -webkit-transform: translate3d(400px, 0, 0);
+    -ms-transform: translate3d(400px, 0, 0);
+    transform: translate3d(400px, 0, 0);
   }
   
   .pushy-open-right #container,
   .pushy-open-right .push {
-    -webkit-transform: translate3d(var(--minusPushyWidth), 0, 0);
-    -ms-transform: translate3d(var(--minusPushyWidth), 0, 0);
-    transform: translate3d(var(--minusPushyWidth), 0, 0);
+    -webkit-transform: translate3d(-385px, 0, 0);
+    -ms-transform: translate3d(-385px, 0, 0);
+    transform: translate3d(-385px, 0, 0);
   }
   
   .pushy-open-left .pushy,
