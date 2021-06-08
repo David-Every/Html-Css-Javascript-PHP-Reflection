@@ -5,7 +5,8 @@ var CarouselContent  =
         para: "For businesses looking to make a strong and effective first impression.",
         colour: "#926fb1",
         hover :"#7e57a0",
-        // button:"Find out more",
+        button:"Find out more",
+        width: "220px",
         link: "#",
     },
     {
@@ -14,7 +15,8 @@ var CarouselContent  =
         para:"Fast and cost effective IT Support services for your business.",
         colour: "#4183d7",
         hover :"#286abd",
-        // button:"Find out more",
+        button:"Find out more",
+        width: "220px",
         link: "#",
     },
     {
@@ -23,7 +25,8 @@ var CarouselContent  =
         para:" A new approach to connectivity, see how we can help your business.",
         colour: "#d64541",
         hover :"#bc2c28",
-        // button:"Find out more",
+        button:"Find out more",
+        width: "220px",
         link: "#",
     },
     {
@@ -32,7 +35,8 @@ var CarouselContent  =
         para:"Bring your business together with solutions that grow with you.",
         colour: "#67809f",
         hover :"#526781",
-        // button:"Find out more",
+        button:"Find out more",
+        width: "220px",
         link: "#",
     },
     {
@@ -41,7 +45,8 @@ var CarouselContent  =
         para:"Generating your new business through  results-driven marketing activities.",
         colour: "#2ecc71",
         hover :"#25a25a",
-        // button:"See how we can help you",
+        button:"See how we can help you",
+        width: "370px",
         link: "#",
     },
     {
@@ -50,31 +55,15 @@ var CarouselContent  =
         para:"Keeping businesses and their customers sensitive infomation protected.",
         colour: "#f62459",
         hover :"#de093f",
-        // button:"Find out more",
+        button:"Find out more",
+        width: "220px",
         link: "#",
     }]
     
 let slideNum = 0;
     function slideTemplate(slide){
         // console.log(slideNum);
-        slideNum++;
-        if (slideNum === 5){
-            return `
-            <div id = "carousel-container">
-            <img id = "carousel" class = "carousel opacity" src = "${slide.image}">
-            <div class = "carousel-wrapper">
-                <div class = "carousel-overlay" style ="z-index: 5000">
-                    <h1>${slide.title}</h1>
-                    <p>${slide.para}</p>
-                    <a href = "${slide.link}" style ="background-color:${slide.colour}">
-                        <p style ="width:300px"> see how we can help you </p>
-                        <i class = "fas fa-arrow-right"> </i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        `;
-        }else{
+        // slideNum++;
         return `
         <div id = "carousel-container">
             <img id = "carousel" class = "carousel opacity" src = "${slide.image}">
@@ -82,15 +71,14 @@ let slideNum = 0;
                 <div class = "carousel-overlay" style ="z-index: 5000">
                     <h1>${slide.title}</h1>
                     <p>${slide.para}</p>
-                    <a href = "${slide.link}" style ="background-color:${slide.colour}">
-                        <p>Find out More</p>
+                    <a href = "${slide.link}" style ="background-color:${slide.colour}; width:${slide.width}">
+                        <p>${slide.button}</p>
                         <i class = "fas fa-arrow-right"> </i>
                     </a>
                 </div>
             </div>
         </div>
         `;
-        }
     }
 
 document.getElementById("slides").innerHTML = `

@@ -1,4 +1,5 @@
 "use strict";
+
 //#region Cookie
 
 /**
@@ -58,45 +59,7 @@ function close() {
   window.removeEventListener('scroll', noScroll);
   overlay.style.display = "none";
   document.cookie = "cookiesAllowed = True";
-} 
-//#endregion
-
-     //#region Move to es5 when working
-     var IEMenu = false;
-     let $ppr = $(".pushy.pushy-right");
-     $ppr.css("display","none");
-     
-     $("#hamburger").on("click",ieSwitch);
-     $(".site-overlay").on("click",ieSwitch);
-
-      function ieSwitch(){
-         if(IEMenu == false){
-             IEMenu = true;
-             $ppr.css("display","block");
-             activate();
-             return;
-         }else{
-             IEMenu = false;
-             $ppr.css("display","none");
-             deactivate();
-         }
-     }
-     /**
-      * Things ES5 needs to adjust >.<
-      * 
-      * if(max-width: 1023px)
-      * max = 275px
-      * min = 250px
-      * 
-      * 
-      * if(min-width:1024px)
-      * max = 400px
-      * min = -385px
-      */
-     //#endregion
-      // return;
-
-
+} //#endregion
 //#region header scroll
 
 /**
@@ -171,7 +134,6 @@ function resetHeader() {
   $sticky.css("position", "absolute");
 } //#endregion
 //#region Hamburger
-// var id = null;
 
 /**
  * Hamburger button Animation
@@ -180,11 +142,6 @@ function resetHeader() {
 
 $("#hamburger").on("click", activate);
 $('.site-overlay').on("click", deactivate);
-
-function getCSSRoot(pos, min) {
-  root.style.setProperty('--pushywidth', pos);
-  root.style.setProperty('--minusPushyWidth', min);
-}
 
 function activate() {
   // console.log("%c Activating","color:green");
@@ -207,15 +164,6 @@ function deactivate() {
   });
   $("#container").css("overflow-y", "visible");
 } //#endregion
-//#region slides
-// $('#slides').slick({
-//   arrows:false,
-//   autoplay:4000,
-//   dots: true,
-// });
-//#endregion
-//#region Pushy
-//||### Pushy Additions||\\
 //Add the class "Pushy-link to all list elements in side menu"
 
 
@@ -243,7 +191,6 @@ window.addEventListener("resize", function () {
 
 function checkSet() {
   if (window.matchMedia('(max-width:1023px)').matches) {
-    getCSSRoot("275px", "-250px");
     $("#small-additions").css("display", "block");
     $ph.css({
       "width": "100%",
@@ -252,7 +199,7 @@ function checkSet() {
   }
 
   if (window.matchMedia('(min-width:1024px)').matches) {
-    getCSSRoot("400px", "-385px");
+    // getCSSRoot("400px","-385px");
     $("#small-additions").css("display", "none");
     $ph.css({
       "width": "100%",
