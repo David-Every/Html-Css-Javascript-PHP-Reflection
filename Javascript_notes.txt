@@ -6,7 +6,6 @@
 [ x ] Pop up notifying the user the website uses cookies.
     [ x ] This should store locally and prevent the pop up re-appearing on page reload
 [ x ] Use a Mix of Jquery and vanilla JS Use plugins for more complex features.
-
 [ x ] create JS Folder
 [ x ] Create app.js file
 [ x ] link up to HTML
@@ -14,7 +13,6 @@
 [ x ] Test jquery is working.
 [ x ] See if i can get the Carousel to work with JSON
     [ x ] complete Carousel as normal first and then convert to JSON
-
 [ x ] Carousel works as it should
     [ x ] carousel slideshow works
     [ x ] Positioning of text is correct in all views
@@ -24,22 +22,17 @@
     [ x ] Navigation animates its slide down
     [ x ] Navigation animates its slide up
     [ x ] navigations default position and reset works
-
 [ x ] Main side menu works
     [ x ] basic CSS styling for side menu is done
     [ x ] finished fine details of side menu
     [ x ] Used Pushy to push the pages content use it to create a sidebar
     [ x ] site Darkens and becomes unscrollable when sidemenu is open.
-
 [ x ] Mobile sidemenu works
     [ x ] Styling of menu is done
     [ x ] when b-menu selected it works just like the main side menu
-
 [ x ] Cookie consent complete
     [ x ] consent form created and is positioned correctly
     [ x ] cookie stored locally.
-
-
 [ x ] Issues
     [ x ] Pushy Side menu not working 
     [ x ] menu button dosent animate in both small and large views (ID issue, may have to remove one and then add it back in?)
@@ -49,3 +42,21 @@
     [ x ] sort out transpiling to JS5 for IE
     [ x ] too much white space when trying to add in scrollbar for Pushy
     [ x ] Header sliding up animation not running
+
+[ ] NM feedback
+    [ x ] Missing Gradient overlay for each carousel image making it hard to read at times
+    [ x ] Sticky header can be seen at the top of the browser thwn scrolling down on larger screens
+    [ x ] The header should remain sticky until it reaches the top of the page to keep it smooth.
+    [ x ]use stronger reges for email validation (Test@test is not a valid email address)
+    [ x ] Once Images are linked they loose their alt attributes making them invalid HTML.
+    [ x ] Nav Buttons on the carousel are not styled correctly  - The active should not have any Opacity(?)
+    [  ] Images are squished on smaller screens Banner is not fully responsive.
+
+    [ x ] Cookies Responsive styling has a large white space on tablet view
+    [ x ] Accept button is cut off on Mobile view.
+
+    [ x ] Occasionally the page can be scrolled when the banner changes prevent scrolling 
+        until the button is clicked then enable it again.
+
+    
+

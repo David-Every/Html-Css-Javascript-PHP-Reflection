@@ -69,7 +69,7 @@ function close(){
  let $head = $('#header');
  
  var scrollPos = 0, currentPos = 0, oldPos, scrollingUp = false;
- var atTop = true, time = 350, topCap = 250;
+ var atTop = true, time = 350, topCap = 5;
  
  
  $sticky.css("width", "100%");
@@ -100,7 +100,7 @@ function close(){
  
  function slideUp(){
    $head.animate({top: '0px'}, 0);
-   $head.animate({top: '-220px'}, 500);
+   $head.animate({top: '-250px'}, 500);
   //  $sticky.css("position", "absolute");
  }
  

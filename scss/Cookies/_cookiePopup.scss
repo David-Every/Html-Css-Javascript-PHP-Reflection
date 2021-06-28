@@ -1,10 +1,10 @@
 #netmattersPopUp{
     position: fixed;
     align-self: center;
-    top:20%;
+    top:5%;
     left:5%;
     width:90%;
-    height:90%;
+    // height:90;
     padding:15px;
     border: 3px solid $nm-secondary;
     background-color: $nm-primary;
@@ -12,13 +12,14 @@
     // -webkit-animation: fade 500ms;
     // animation: fade 500ms;
 
-    overflow:scroll;
+    overflow-y:auto;
+    overflow-x: hidden;
     h2{
         padding-bottom: 25px;
         border-bottom: 0.5px solid $nm-tertiary;
     }
     p{
-        font-size: 20px;
+        font-size: 16px;
         line-height:25px;
     }
     margin: 0 auto;
@@ -65,7 +66,7 @@
         top:20%;
         left:30%;
         width: 650px;
-        height: 500px;
+        // height: 100px;
         overflow: hidden;
         #cookieButtons{
             display: flex;

@@ -4,6 +4,42 @@
   padding: 0;
   box-sizing: border-box; }
 
+.web {
+  background-color: #926fb1;
+  width: 220px; }
+  .web:hover {
+    background-color: #7e57a0; }
+
+.it {
+  background-color: #4183d7;
+  width: 220px; }
+  .it:hover {
+    background-color: #286abd; }
+
+.tele {
+  background-color: #d64541;
+  width: 220px; }
+  .tele:hover {
+    background-color: #bc2c28; }
+
+.bespoke {
+  background-color: #67809f;
+  width: 220px; }
+  .bespoke:hover {
+    background-color: #526781; }
+
+.marketing {
+  background-color: #2ecc71;
+  width: 370px; }
+  .marketing:hover {
+    background-color: #25a25a; }
+
+.cyber {
+  background-color: #f62459;
+  width: 220px; }
+  .cyber:hover {
+    background-color: #de093f; }
+
 * {
   font-family: 'Poppins', sans-serif; }
 
@@ -1741,7 +1777,8 @@ input[type="text"] {
     margin-left: 86.25px; } }
 
 .carousel, .opacity {
-  width: 100%; }
+  width: auto;
+  overflow-x: hidden; }
 
 .carousel-wrapper {
   width: 8%;
@@ -1763,8 +1800,6 @@ input[type="text"] {
     font-weight: 400; }
   .carousel-wrapper a {
     display: flex;
-    width: 220px;
-    background-color: #926fb1;
     padding: 20px 5px 20px 20px;
     text-decoration: none;
     color: #fff;
@@ -1781,8 +1816,7 @@ input[type="text"] {
       margin-right: 10px; }
     .carousel-wrapper a:hover {
       text-decoration: none;
-      color: #fff;
-      background-color: #7e57a0; }
+      color: #fff; }
 
 .slick-dots {
   bottom: 50px; }
@@ -1802,9 +1836,13 @@ input[type="text"] {
     border-radius: 50%; }
 
 @media (max-width: 766px) {
+  .marketing {
+    width: 320px;
+    text-align: center; }
   .carousel {
     width: auto;
-    height: 731px; }
+    height: 731px;
+    padding-right: 80%; }
   .carousel-wrapper {
     position: absolute;
     top: 30%;
@@ -1875,21 +1913,21 @@ input[type="text"] {
 #netmattersPopUp {
   position: fixed;
   align-self: center;
-  top: 20%;
+  top: 5%;
   left: 5%;
   width: 90%;
-  height: 90%;
   padding: 15px;
   border: 3px solid #333645;
   background-color: #fff;
   z-index: 9999;
-  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
   margin: 0 auto; }
   #netmattersPopUp h2 {
     padding-bottom: 25px;
     border-bottom: 0.5px solid #666666; }
   #netmattersPopUp p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px; }
   #netmattersPopUp #cookieButtons {
     width: 90%;
@@ -1921,7 +1959,6 @@ input[type="text"] {
     top: 20%;
     left: 30%;
     width: 650px;
-    height: 500px;
     overflow: hidden; }
     #netmattersPopUp #cookieButtons {
       display: flex;

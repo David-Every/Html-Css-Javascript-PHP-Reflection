@@ -1,7 +1,8 @@
 
 .carousel, .opacity{
     // margin-top:210px;
-    width:100%;
+    width:auto;
+    overflow-x: hidden
     // padding-bottom:3.5%;
 }
 
@@ -33,8 +34,8 @@
     }
     a{
         display: flex;
-        width:220px;
-        background-color: $nm-web;
+        // width:220px;
+        // background-color: $nm-web;
         // padding:20px;
         padding:20px 5px 20px 20px;
         text-decoration: none;
@@ -61,7 +62,7 @@
         &:hover{
             text-decoration: none;
             color: $nm-primary;
-            background-color:$nm-web-hover;
+            // background-color:$nm-web-hover;
         }
     }
 }
@@ -96,9 +97,16 @@
 //Moves the position of the text overlay depending on screen size.
 
 @media(max-width:$break-sm){
+    .marketing{
+        width:320px;
+        text-align: center;
+    }
     .carousel{
+        // position:absolute;
+        // // right:200px;
         width:auto;
         height:731px;
+        padding-right: 80%;
     }
     .carousel-wrapper{
         position: absolute;

@@ -33,3 +33,45 @@ $facebook-hover: #3b5998;
 $twitter-hover: #00ACEE;
 $linkedin-hover: #0077B5;
 
+.web{
+    background-color: $nm-web;
+    width:220px;
+    &:hover{
+        background-color: $nm-web-hover;
+    }
+}
+.it{
+    background-color: $nm-it;
+    width:220px;
+    &:hover{
+        background-color: $nm-it-hover;
+    }
+}
+.tele{
+    background-color: $nm-tc;
+    width:220px;
+    &:hover{
+        background-color: $nm-tc-hover;
+    }
+}
+.bespoke{
+    background-color: $nm-bs;
+    width:220px;
+    &:hover{
+        background-color: $nm-bs-hover;
+    }
+}
+.marketing{
+    background-color: $nm-marketing;
+    width:370px;
+    &:hover{
+        background-color: $nm-marketing-hover;
+    }
+}
+.cyber{
+    background-color: $nm-security;
+    width:220px;
+    &:hover{
+        background-color: $nm-security-hover;
+    }
+}

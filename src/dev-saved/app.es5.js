@@ -77,7 +77,7 @@ var scrollPos = 0,
     scrollingUp = false;
 var atTop = true,
     time = 350,
-    topCap = 250;
+    topCap = 5;
 $sticky.css("width", "100%");
 $head.css("position", "absolute");
 var scrolled = 0;
@@ -113,7 +113,7 @@ function slideUp() {
     top: '0px'
   }, 0);
   $head.animate({
-    top: '-220px'
+    top: '-250px'
   }, 500); //  $sticky.css("position", "absolute");
 }
 

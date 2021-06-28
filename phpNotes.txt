@@ -1,0 +1,11 @@
+Expand on the Netmatters landing page you have built to include PHP
+Your reflection should include, but is not limited to:
+ - Moving the header and footer into reusable files
+ - Moving the news posts into a database table and looping over these to display
+ - Creating a new page, inline with the current landing page for a contact form
+
+Contact form should include the following
+- Error messages - missing fields/incorrect value for email address etc.
+- Success message on submission
+- Storing successful enquiries into the database
+On completion, notify Kayleigh with the GitHub link and close the task
