@@ -106,6 +106,84 @@
   .about-us {
     background-size: 55%; } }
 
+.conForm {
+  background-color: #e6e7e9;
+  width: 90%;
+  margin: 0 auto; }
+
+form .inp {
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 15px; }
+  form .inp input {
+    width: 90%;
+    height: 47px;
+    margin: 0 auto; }
+  form .inp label small {
+    color: red; }
+  form .inp textarea {
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 160px; }
+
+.off_Add {
+  max-width: 80%;
+  margin: 15px auto;
+  height: 450px; }
+  .off_Add a {
+    font-size: 26px;
+    color: #926fb1;
+    font-weight: 700;
+    margin-bottom: 30px; }
+    .off_Add a:hover {
+      color: #926fb1; }
+    .off_Add a:first-of-type {
+      color: #333645; }
+      .off_Add a:first-of-type h2 {
+        font-size: 18px;
+        font-weight: 400; }
+      .off_Add a:first-of-type:hover {
+        color: #333645; }
+    .off_Add a:last-of-type {
+      background-color: #926fb1;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 14.4px;
+      font-weight: 400;
+      border-radius: 5px; }
+      .off_Add a:last-of-type:hover {
+        background-color: #7e57a0;
+        text-decoration: none; }
+  .off_Add .theAdd {
+    margin-left: 15px; }
+  .off_Add p {
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: .22px;
+    color: #666666;
+    text-transform: capitalize; }
+  .off_Add p:last-of-type {
+    text-transform: uppercase; }
+  .off_Add .addImg {
+    max-width: 100%; }
+
+#map {
+  height: 400px;
+  width: 100%; }
+
+@media (min-width: 1023px) {
+  #addWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1190px;
+    margin: 0 auto; }
+    #addWrapper .off_Add {
+      width: 27%; }
+  .top, .bottom {
+    display: flex; }
+    .top input, .bottom input {
+      width: 500px; } }
+
 .newsletter {
   background-color: #dddddd; }
 
