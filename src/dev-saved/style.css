@@ -111,6 +111,13 @@
   width: 90%;
   margin: 0 auto; }
 
+.foo {
+  margin-left: 35px; }
+  .foo a {
+    color: #333645; }
+    .foo ahover {
+      color: #333645; }
+
 form .inp {
   width: 90vw;
   margin: 0 auto;
@@ -179,10 +186,15 @@ form .inp {
     margin: 0 auto; }
     #addWrapper .off_Add {
       width: 27%; }
-  .top, .bottom {
-    display: flex; }
-    .top input, .bottom input {
-      width: 500px; } }
+  #contact {
+    width: 90%;
+    margin: 0 auto; }
+  .top,
+  .bottom {
+    display: inline-flex;
+    width: 100%; }
+  textarea {
+    width: 100%; } }
 
 .newsletter {
   background-color: #dddddd; }
