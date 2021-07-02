@@ -26,77 +26,84 @@ include "inc/header.php";
     }
     echo '</div>';
 ?>
-
-    <div>
-        <p>
-            <strong>Email us on:</strong>
-            <a href = "mailto:sales@netmatters.com"></a>
-        </p>
-        <div>
-            <strong>Business hours:</strong>
-
-            <strong>Monday - Friday 07:00 - 18:00</strong>
-
-        </div>
-
-        <div>
-            <p class = "q-text">Out of hours IT Support</p>
-
+    <div id = "mainCont">
+        <div class = "bisHours">
             <p>
-                Netmatters IT are offering an Out of Hours 
-                service for Emergency and Critical tasks.
+                <strong>Email us on:</strong><br>
+                <a href = "mailto:sales@netmatters.com"> sales@netmatters.com</a>
             </p>
-            <p>
-                <strong>Monday - Friday 18:00 - 22:00</strong>
-                <strong>Saturday 08:00 - 16:00</strong>
-                <strong>Sunday 10:00 - 18:00</strong>
-            </p>
-            <p>
-                To log a critical task, you will need to call our
-                main line number and select Option 2 to leave an 
-                Out of Hours voicemail. A technician will contact
-                you on the number provided within 45 minutes of 
-                your call.
-            </p>
-        </div>
-    </div>
+            <div>
+                <strong>Business hours:</strong><br>
 
-    <div class = "conForm">
-        <form id ="contact">
-            <span class = "top">
-                <div class ="inp">
-                    <label for ="name">Your Name<small>*</small></label>
-                    <input type="text" name ="name"/>
-                </div>
-                <div class ="inp">
-                    <label for ="email">Your Email<small>*</small></label>
-                    <input type="email" name ="email"/>
-                </div>
-            </span>
-            <span class =  "bottom">
-                <div class ="inp">
-                    <label for ="tel">Your Telephone Number<small>*</small></label>
-                    <input type="tel" name ="tel"/>
-                </div>
-                <div class ="inp">
-                    <label for ="sub">Subject<small>*</small></label>
-                    <input type="text" name ="sub"/>
-                </div>
-            </span>
+                <strong>Monday - Friday 07:00 - 18:00</strong>
 
-            <div id = "msg" class ="inp">
-                <label for ="msg">Message<small>*</small></label>
-                <textarea name ="msg">
-                </textarea>
             </div>
-            <input type="checkbox" name="check">
-            <label for ="check"> 	
-                Please tick this box if you wish to receive 
-                marketing information from us. Please see our Privacy Policy for more 
-                information on how we use your data
-            </label>
-            <input type ="button" value ="SEND ENQUIRY">
-        </form>
+
+            
+            <strong id = "moreInfo">Out of hours IT Support</strong>
+                
+            <div class = "q-text">
+                <p>
+                    Netmatters IT are offering an Out of Hours 
+                    service for Emergency and Critical tasks.
+                </p>
+                <p>
+                    <strong>Monday - Friday 18:00 - 22:00</strong><br>
+                    <strong>Saturday 08:00 - 16:00</strong><br>
+                    <strong>Sunday 10:00 - 18:00</strong>
+                </p>
+                <p>
+                    To log a critical task, you will need to call our
+                    main line number and select Option 2 to leave an 
+                    Out of Hours voicemail. A technician will contact
+                    you on the number provided within 45 minutes of 
+                    your call.
+                </p>
+            </div>
+        </div>
+    
+
+        <div class = "conForm">
+            <div class ="conwrap">
+                <form id ="contact">
+                    <span class = "top">
+                        <div class ="inp">
+                            <label for ="name">Your Name<small>*</small></label>
+                            <input type="text" name ="name"/>
+                        </div>
+                        <div class ="inp">
+                            <label for ="email">Your Email<small>*</small></label>
+                            <input type="email" name ="email"/>
+                        </div>
+                    </span>
+                    <span class =  "bottom">
+                        <div class ="inp">
+                            <label for ="tel">Your Telephone Number<small>*</small></label>
+                            <input type="tel" name ="tel"/>
+                        </div>
+                        <div class ="inp">
+                            <label for ="sub">Subject<small>*</small></label>
+                            <input type="text" name ="sub"/>
+                        </div>
+                    </span>
+
+                    <div class ="msg">
+                        <label for ="msg">Message<small>*</small></label>
+                        <textarea name ="msg">
+                        </textarea>
+                    </div>
+                    <div class ="check" >
+                        <input type="checkbox" name="check">
+                        <label class="checkLab" for ="check"> 	
+                            Please tick this box if you wish to receive 
+                            marketing information from us. Please see our <a href ="#">Privacy Policy</a> for more 
+                            information on how we use your data
+                        </label>
+                    </div>
+                    <input class ="contButton" type ="button" value ="SEND ENQUIRY">
+                </form>
+            </div>
+        </div>
     </div>
 
 

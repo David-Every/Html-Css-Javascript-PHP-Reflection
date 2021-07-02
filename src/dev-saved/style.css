@@ -109,7 +109,8 @@
 .conForm {
   background-color: #e6e7e9;
   width: 90%;
-  margin: 0 auto; }
+  margin: 35px auto;
+  border-radius: 25px; }
 
 .foo {
   margin-left: 35px; }
@@ -119,8 +120,7 @@
       color: #333645; }
 
 form .inp {
-  width: 90vw;
-  margin: 0 auto;
+  width: 100vw;
   margin-bottom: 15px; }
   form .inp input {
     width: 90%;
@@ -128,10 +128,39 @@ form .inp {
     margin: 0 auto; }
   form .inp label small {
     color: red; }
-  form .inp textarea {
-    min-width: 90%;
-    max-width: 90%;
-    min-height: 160px; }
+
+.check input[type="checkbox"] {
+  margin-right: 20px;
+  appearance: none;
+  border: 3px solid #333645;
+  border-radius: 3px;
+  width: 35px;
+  height: 35px; }
+  .check input[type="checkbox"]:checked {
+    background-color: #333645; }
+    .check input[type="checkbox"]:checked::after {
+      font-family: 'Font Awesome 5 Free';
+      content: '\f00c';
+      font-weight: 900;
+      font-size: 20px;
+      color: #fff;
+      position: relative;
+      top: 15%;
+      left: 15%; }
+
+.checkLab {
+  margin-left: 2%;
+  font-size: 16px;
+  color: #333645;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: .4px;
+  width: 90%; }
+  .checkLab a {
+    color: #333645;
+    text-decoration: underline; }
+    .checkLab a:hover {
+      color: #333645; }
 
 .off_Add {
   max-width: 80%;
@@ -174,6 +203,17 @@ form .inp {
   .off_Add .addImg {
     max-width: 100%; }
 
+.q-text strong {
+  font-size: 16px;
+  font-weight: 600; }
+
+#moreInfo {
+  font-size: 16px;
+  font-weight: 600; }
+  #moreInfo::after {
+    font-family: 'Font Awesome 5 Free';
+    content: " \f078"; }
+
 #map {
   height: 400px;
   width: 100%; }
@@ -186,15 +226,44 @@ form .inp {
     margin: 0 auto; }
     #addWrapper .off_Add {
       width: 27%; }
+  .conForm {
+    width: 50%; }
+  form .imp {
+    width: 100%; }
   #contact {
     width: 90%;
-    margin: 0 auto; }
-  .top,
-  .bottom {
+    margin: 0 auto;
+    padding: 30px; }
+    #contact .contButton {
+      appearance: none;
+      padding: 10px 15px;
+      background-color: #926fb1;
+      color: #fff;
+      font-size: 17.008px;
+      border-radius: 5px;
+      text-transform: uppercase; }
+      #contact .contButton:hover {
+        background-color: #7e57a0; }
+  .top, .bottom {
     display: inline-flex;
     width: 100%; }
+  .top {
+    padding-top: 25px; }
   textarea {
-    width: 100%; } }
+    max-width: 95%;
+    min-width: 95%;
+    min-height: 160px; } }
+
+@media (min-width: 1260px) {
+  .conForm {
+    margin: 35px; }
+  #mainCont {
+    display: flex;
+    flex-direction: row-reverse; }
+    #mainCont .bisHours {
+      margin-top: 35px;
+      margin-right: auto;
+      width: 30%; } }
 
 .newsletter {
   background-color: #dddddd; }
@@ -224,38 +293,6 @@ form .inp {
 
 #news-letter .checkbox {
   padding-left: 2%; }
-
-#news-letter #checkbox {
-  appearance: none;
-  border: 3px solid #333645;
-  border-radius: 3px;
-  width: 35px;
-  height: 35px; }
-  #news-letter #checkbox:checked {
-    background-color: #333645; }
-    #news-letter #checkbox:checked::after {
-      font-family: 'Font Awesome 5 Free';
-      content: '\f00c';
-      font-weight: 900;
-      font-size: 20px;
-      color: #fff;
-      position: relative;
-      top: 15%;
-      left: 15%; }
-
-#lc {
-  margin-left: 2%;
-  font-size: 16px;
-  color: #333645;
-  font-weight: 500;
-  line-height: 32px;
-  letter-spacing: .4px;
-  width: 90%; }
-  #lc a {
-    color: #333645;
-    text-decoration: underline; }
-    #lc a:hover {
-      color: #333645; }
 
 .name-group {
   margin-bottom: 25px; }

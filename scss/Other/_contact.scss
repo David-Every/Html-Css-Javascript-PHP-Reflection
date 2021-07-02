@@ -1,7 +1,12 @@
 .conForm{
     background-color: $nm-contacts;
     width: 90%;
-    margin:0 auto;
+    margin:35px auto;
+    border-radius: 25px;
+
+    // .conWrap{
+        // margin: 0 auto;
+    // }
 }
 .foo{
     margin-left: 35px;
@@ -14,10 +19,9 @@
 }
 
 form .inp{
-    width:90vw;
-    margin:0 auto;
+    width:100vw;
     margin-bottom:15px;
-    // border: 2px solid red;
+
     input{
         width:90%;
         height:47px;
@@ -26,12 +30,53 @@ form .inp{
     label small{
         color:red;
     }
-    textarea{
-        min-width: 90%;
-        max-width: 90%;
-        min-height:160px;
+    // textarea{
+    //     min-width: 90%;
+    //     max-width: 90%;
+    //     min-height:160px;
+    // }
+}
+.check input[type="checkbox"]{
+    margin-right:20px;
+    appearance: none;
+    border: 3px solid $nm-secondary;
+    border-radius: 3px;
+    width: 35px;
+    height: 35px;
+    // padding:15px;
+    &:checked{
+        background-color: $nm-secondary;
+        &::after{
+            //This makes sure that the Unicode for the checkmark works
+            font-family:'Font Awesome 5 Free';
+            content:'\f00c';
+            font-weight: 900;
+            font-size: 20px;
+            color:$nm-primary;
+            position: relative;
+            top:15%;
+            left:15%;
+        }
     }
 }
+.checkLab{
+   // margin-left:10px;
+   margin-left:2%;
+   font-size:16px;
+   color:$nm-secondary;
+   font-weight:500;
+   line-height: 32px;
+   letter-spacing:.4px;
+   width:90%;
+   a{
+       color:$nm-secondary;
+       text-decoration: underline;
+       &:hover{
+           color:$nm-secondary;
+       }
+   }
+
+}    
 
 .off_Add{
     max-width:80%;
@@ -89,6 +134,20 @@ form .inp{
     }
 }
 
+.q-text{
+    strong{
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+#moreInfo{
+    font-size: 16px;
+    font-weight: 600;
+    &::after{
+        font-family:'Font Awesome 5 Free';
+        content: " \f078";
+    }
+}
 
 #map{
     height:400px;
@@ -97,6 +156,7 @@ form .inp{
 }
 
 @media (min-width: $break-lg){
+    //Address adjustments
     #addWrapper{
         display:flex;
         flex-wrap: wrap;
@@ -106,18 +166,68 @@ form .inp{
             width:27%;
         }
     }
+
+    .conForm{
+        width:50%;
+    }
+    form .imp{
+        width:100%;
+    }
+
+    //Contact form changes
     #contact{
         width:90%;
         margin:0 auto;
+        padding:30px;
+        .contButton{
+            appearance: none; 
+            padding: 10px 15px;
+            background-color: $nm-web;
+            color:$nm-primary;
+            font-size: 17.008px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            &:hover{
+                background-color: $nm-web-hover;
+            }
+        }
     }
-    .top, 
-    .bottom{
+    .top, .bottom{
         display:inline-flex;
         width:100%;
         // height:100px;
     }
+    .top{
+        padding-top:25px;
+    }
 
     textarea{
-        width:100%;
+        max-width:95%;
+        min-width: 95%;
+        min-height:160px;
+    }
+}
+
+@media (min-width: $break-xl){
+    .conForm{
+        // background-color: $nm-contacts;
+        // width: 90%;
+        margin:35px;
+        // border-radius: 25px;
+    
+        // .conWrap{
+            // margin: 0 auto;
+        // }
+    }
+
+    #mainCont{
+        display: flex;
+        flex-direction: row-reverse;
+        .bisHours{
+            margin-top:35px;
+            margin-right:auto;
+            width:30%;
+
+        }
     }
 }

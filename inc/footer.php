@@ -1,6 +1,5 @@
 <footer>
     <!-- Find a way to turn this on and off, with @media in scss -->
-    <!-- <div class = footer-container> -->
         
         <div class ="newsletter">
             <form id ="news-letter">
@@ -19,13 +18,23 @@
                 </div>
 
             </div>
-            <div class ="checkbox">
+            <div class ="check" >
+                <input type="checkbox" name="check">
+                <label class="checkLab" for ="check"> 	
+                    Please tick this box if you wish to receive 
+                    marketing information from us. Please see our <a href ="#">Privacy Policy</a> for more 
+                    information on how we use your data
+                </label>
+            </div>
+
+            <!-- <div class ="checkbox">
                 <input type="checkbox" id = "checkbox" name = "checkbox">
-                <label id ="lc" for="checkbox">
+                <label class ="lc" for="checkbox">
                     Please tick this box if you wish to receive marketing information from us. 
                     Please see our <a href ="#"> Privacy Policy</a> for more information on how we use your data.
                 </label>
-            </div>
+            </div> -->
+
             <input type ="submit" id="subscribe" name="subscribe" value="Subscribe">
             </form>
         </div>
