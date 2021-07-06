@@ -1,9 +1,9 @@
 <!doctype html>
 <?php
-    $url=$_SERVER['REQUEST_URI'];
-    header("Refresh: 5; URL=$url");
-    header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
-    header("Expires: 0");
+    // $url=$_SERVER['REQUEST_URI'];
+    // header("Refresh: 5; URL=$url");
+    // header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
+    // header("Expires: 0");
 ?>
 <html lang="en" id = "html">
     <head>

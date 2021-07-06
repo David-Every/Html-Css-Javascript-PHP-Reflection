@@ -200,16 +200,32 @@ function checkSet(){
 //#endregion
 
 var shown = false;
-$(".q-text").css("display","none");
+$(".q-text").css({"display":"none"});
 
 $("#moreInfo").on("click", () => {
+
   if(!shown){
-    shown = true;
     $("#moreInfo").css("text-decoration","underline");
+
+    shown = true;
     $(".q-text").css("display","block");
   } else{
+    $("#moreInfo").css("text-decoration","none");
     shown = false;
     $(".q-text").css("display","none");
 
   }
 });
+
+//#region warnings / approvals
+
+
+
+$(".cross").on("click",()=>{
+  // console.log(this.parent())
+  // $(".cross").parent().remove();
+  $(".cross").parent().remove();
+  
+})
+
+//#endregion

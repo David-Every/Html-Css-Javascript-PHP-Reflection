@@ -112,6 +112,24 @@
   margin: 35px auto;
   border-radius: 25px; }
 
+.bisHours a {
+  font-size: 24px;
+  font-weight: 600;
+  color: #926fb1; }
+  .bisHours a:hover {
+    color: #7e57a0;
+    text-decoration: underline; }
+
+.bisHours p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 22px;
+  letter-spacing: .22px; }
+
+.bisHours strong {
+  color: #333645;
+  padding-bottom: 25px; }
+
 .foo {
   margin-left: 35px; }
   .foo a {
@@ -191,21 +209,42 @@ form .inp {
         background-color: #7e57a0;
         text-decoration: none; }
   .off_Add .theAdd {
-    margin-left: 15px; }
-  .off_Add p {
-    font-size: 13px;
-    line-height: 22px;
-    letter-spacing: .22px;
-    color: #666666;
-    text-transform: capitalize; }
+    margin-left: 15px;
+    height: 275px; }
+    .off_Add .theAdd a {
+      margin-bottom: 20px; }
+    .off_Add .theAdd p {
+      font-size: 13px;
+      line-height: 22px;
+      letter-spacing: .22px;
+      color: #666666;
+      text-transform: capitalize; }
   .off_Add p:last-of-type {
     text-transform: uppercase; }
   .off_Add .addImg {
     max-width: 100%; }
 
-.q-text strong {
+.failedSub {
+  color: #A94442;
+  background-color: #F2DEDE;
+  border: 1px solid #ebccd1; }
+
+.completedSub {
+  color: #fff;
+  background-color: #2ecc71; }
+
+.completedSub, .failedSub {
+  padding: 15px;
   font-size: 16px;
-  font-weight: 600; }
+  width: 70%;
+  margin: 15px auto; }
+  .completedSub i, .failedSub i {
+    margin-left: auto;
+    color: #000;
+    opacity: .4; }
+    .completedSub i:hover, .failedSub i:hover {
+      opacity: .7;
+      cursor: pointer; }
 
 #moreInfo {
   font-size: 16px;
@@ -215,7 +254,7 @@ form .inp {
     content: " \f078"; }
 
 #map {
-  height: 400px;
+  height: 600px;
   width: 100%; }
 
 @media (min-width: 1023px) {
@@ -223,15 +262,16 @@ form .inp {
     display: flex;
     flex-wrap: wrap;
     width: 1190px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 650px; }
     #addWrapper .off_Add {
-      width: 27%; }
+      width: 29%; }
   .conForm {
-    width: 50%; }
+    width: 60%; }
   form .imp {
     width: 100%; }
   #contact {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 30px; }
     #contact .contButton {
@@ -241,7 +281,9 @@ form .inp {
       color: #fff;
       font-size: 17.008px;
       border-radius: 5px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      box-shadow: none;
+      outline: none; }
       #contact .contButton:hover {
         background-color: #7e57a0; }
   .top, .bottom {
@@ -258,8 +300,10 @@ form .inp {
   .conForm {
     margin: 35px; }
   #mainCont {
+    width: 1190px;
     display: flex;
-    flex-direction: row-reverse; }
+    flex-direction: row-reverse;
+    margin: 0 auto; }
     #mainCont .bisHours {
       margin-top: 35px;
       margin-right: auto;
@@ -313,10 +357,14 @@ form .inp {
   border-radius: 3px 3px; }
 
 input[type="email"],
-input[type="text"] {
+input[type="text"],
+input[type="tel"],
+textarea {
   outline: none; }
   input[type="email"]:focus,
-  input[type="text"]:focus {
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
     outline: none;
     transition: .15s ease-in-out;
     border: 1px solid #5bc0de;

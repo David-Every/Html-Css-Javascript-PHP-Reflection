@@ -31,5 +31,37 @@
 
             }
         ]
+    },
+    "Footer":{
+        "footInfo":[
+            {
+                "Title": "News",
+                "Link" : " "
+            },
+            {
+                "Title": "Our careers",
+                "Link" : " "
+            },
+            {
+                "Title": "our teams",
+                "Link" : " "
+            },
+            {
+                "Link" : "our office tour"
+            },
+            {
+                "Title": "privacy policy",
+                "Link" : " "
+            },
+            {
+                "Title": "Cookie policy",
+                "Link" : " "
+            },
+            {
+                "Title": "terms &amp; condidions",
+                "Link" : " "
+            }
+
+        ]
     }
 }

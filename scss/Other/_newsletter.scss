@@ -65,7 +65,9 @@
 }
 
 input[type ="email"],
-input[type="text"]{ // this is also working for the searchbar as it uses the same type
+input[type="text"],
+input[type ="tel"],
+textarea{ // this is also working for the searchbar as it uses the same type
     outline: none;
 
     &:focus{

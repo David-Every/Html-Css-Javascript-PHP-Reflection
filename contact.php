@@ -21,8 +21,8 @@ include "inc/header.php";
                 echo '<a href = tel:' . $add->Tel . '>' .$add->Tel. '</a><br>';
                 echo '<a href = "#">View More</a>';
             echo '</div>';
+            echo '<iframe id ="Map" src=' . $add->Map . '></iframe>';
         echo '</div>';
-        // echo '<iframe src=' . $add->Map . '></iframe>';
     }
     echo '</div>';
 ?>
@@ -64,7 +64,8 @@ include "inc/header.php";
     
 
         <div class = "conForm">
-            <div class ="conwrap">
+            <div class = "conwrap">
+            
                 <form id ="contact">
                     <span class = "top">
                         <div class ="inp">

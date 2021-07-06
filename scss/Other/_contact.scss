@@ -8,8 +8,39 @@
         // margin: 0 auto;
     // }
 }
+.bisHours{
+
+    a{
+        font-size:24px;
+        font-weight: 600;
+        color:$nm-web;
+        &:hover{
+            color:$nm-web-hover;
+            text-decoration:underline;
+        }
+    }
+    p{
+       font-size:16px;
+       color:#666666;
+    //    width:100%;
+    line-height:22px;
+    letter-spacing:.22px;
+    // line-spacing: 22px;
+    }
+    strong{
+        // font-size: 16px;
+        color:$nm-secondary;
+        padding-bottom:25px;
+        // &:first-of-type{
+
+        // }
+
+    }
+}
 .foo{
     margin-left: 35px;
+    // box-shadow:rgba(0, 0, 0, 0.1) 0px 5px 35px 0px;
+
     a{
         color:$nm-secondary;
         &hover{
@@ -117,29 +148,63 @@ form .inp{
         } 
     }
     .theAdd{
-        margin-left: 15px;   
-    }
-    p{
+        margin-left: 15px;
+        height:275px;   
+        a{
+            margin-bottom:20px;
+        }
+        p{
         font-size: 13px;
-        line-height:22px;
-        letter-spacing: .22px;
-        color: #666666;
-        text-transform: capitalize;
+            line-height:22px;
+            letter-spacing: .22px;
+            color:#666666;
+            text-transform: capitalize;
+        }
     }
     p:last-of-type{
         text-transform: uppercase;
     }
     .addImg{
         max-width:100%;
+    } 
+}
+
+.failedSub{
+    color: #A94442;
+    background-color:#F2DEDE;
+    border: 1px solid #ebccd1;
+    
+}
+.completedSub{
+    color: $nm-primary;
+    background-color:$nm-marketing;
+    // border: 1px solid #ebccd1;
+}
+
+.completedSub, .failedSub{
+    padding:15px;
+    font-size:16px;
+    width:70%;
+    margin:15px auto;
+    i{
+        margin-left: auto; 
+        color:#000;
+        opacity: .4;
+        &:hover{
+            opacity: .7;
+            cursor: pointer;
+        }
     }
 }
 
-.q-text{
-    strong{
-        font-size: 16px;
-        font-weight: 600;
-    }
-}
+
+// .q-text{
+//     // height:0px;
+//     strong{
+//         font-size: 16px;
+//         font-weight: 600;
+//     }
+// }
 #moreInfo{
     font-size: 16px;
     font-weight: 600;
@@ -150,7 +215,7 @@ form .inp{
 }
 
 #map{
-    height:400px;
+    height:600px;
     width:100%;
     // background-color: purple;
 }
@@ -162,13 +227,14 @@ form .inp{
         flex-wrap: wrap;
         width:1190px;
         margin:0 auto;
+        height:650px;
         .off_Add{
-            width:27%;
+            width:29%;
         }
     }
 
     .conForm{
-        width:50%;
+        width:60%;
     }
     form .imp{
         width:100%;
@@ -176,7 +242,7 @@ form .inp{
 
     //Contact form changes
     #contact{
-        width:90%;
+        width:100%;
         margin:0 auto;
         padding:30px;
         .contButton{
@@ -187,6 +253,8 @@ form .inp{
             font-size: 17.008px;
             border-radius: 5px;
             text-transform: uppercase;
+            box-shadow:none;
+            outline:none;
             &:hover{
                 background-color: $nm-web-hover;
             }
@@ -221,8 +289,10 @@ form .inp{
     }
 
     #mainCont{
+        width:1190px;
         display: flex;
         flex-direction: row-reverse;
+        margin:0 auto;
         .bisHours{
             margin-top:35px;
             margin-right:auto;

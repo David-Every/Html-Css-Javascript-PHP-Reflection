@@ -223,16 +223,23 @@ function checkSet() {
 
 
 var shown = false;
-$(".q-text").css("display", "none");
+$(".q-text").css({
+  "display": "none"
+});
 $("#moreInfo").on("click", function () {
   if (!shown) {
+    $("#moreInfo").css("text-decoration", "underline");
     shown = true;
-    $(".q-text").css({
-      "display": "block",
-      "text-decoration": "underline"
-    });
+    $(".q-text").css("display", "block");
   } else {
+    $("#moreInfo").css("text-decoration", "none");
     shown = false;
     $(".q-text").css("display", "none");
   }
-});
+}); //#region warnings / approvals
+
+$(".cross").on("click", function () {
+  // console.log(this.parent())
+  // $(".cross").parent().remove();
+  $(".cross").parent().remove();
+}); //#endregion
