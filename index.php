@@ -8,14 +8,14 @@
     <div class = "row-1" >
 
         <a href ="#" class =  "card service card-nav-bs " >
-                <i class ="glyphicon glyphicon-th card-icon "></i>
-                <h3 class = "c-title" >Bespoke Software</h3>
-                <p>
-                    Tailored software solutions to improve
-                    business productivity and online profits.
-                    Our expert team will ensure a software 
-                    solution.
-                </p>
+            <i class ="glyphicon glyphicon-th card-icon "></i>
+            <h3 class = "c-title" >Bespoke Software</h3>
+            <p>
+                Tailored software solutions to improve
+                business productivity and online profits.
+                Our expert team will ensure a software 
+                solution.
+            </p>
             <div class = "rm rm-bs" >read more</div>
         </a>
             

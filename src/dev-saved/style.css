@@ -14,6 +14,8 @@
     background-color: #3b5998; }
   .social.social-tw:hover {
     background-color: #00ACEE; }
+  .social.social-in:hover {
+    background-color: #d93175; }
   .social.social-li:hover {
     background-color: #0077B5; }
   .social i {
@@ -573,163 +575,62 @@ textarea {
     left: 20%; } }
 
 .footer-background {
-  background-color: #333645; }
-
-.buisness-info {
-  line-height: 1.5;
-  font-style: normal;
-  text-decoration: none;
-  flex-wrap: wrap;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 400;
-  letter-spacing: 1px; }
-  .buisness-info h4 {
+  width: 100%;
+  background-color: #333645;
+  text-transform: capitalize; }
+  .footer-background .footerServices h4, .footer-background .footerServices p, .footer-background .footerServices a, .footer-background .office h4, .footer-background .office p, .footer-background .office a {
+    color: #fff; }
+  .footer-background .footerServices h4, .footer-background .office h4 {
     font-size: 16px;
-    font-weight: 300; }
-  .buisness-info li {
-    list-style: none; }
-  .buisness-info address {
-    font-style: normal; }
-  .buisness-info .f-title {
-    text-transform: uppercase;
-    padding-bottom: 1em; }
-  .buisness-info a {
-    color: #fff;
-    text-decoration: none;
-    text-align: center; }
-  .buisness-info a:hover {
-    color: #fff;
-    text-decoration: underline; }
+    margin-bottom: 26px; }
+  .footer-background .footerServices p, .footer-background .footerServices a, .footer-background .office p, .footer-background .office a {
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: .22px; }
 
-.social-buttons {
-  display: flex;
-  flex-wrap: wrap; }
+.office p:first-of-type {
+  margin-bottom: 0; }
 
-.social-media a {
-  margin-right: 30px; }
-  .social-media a:last-of-type {
-    margin-top: 30px; }
+.office p:last-of-type {
+  margin-bottom: 26px; }
 
-.social {
-  width: 125px;
-  height: 55px; }
+.office .postCode {
+  text-transform: uppercase; }
 
-@media (max-width: 766px) {
-  .buisness-info {
-    padding: 15px; }
-  .social-media {
-    width: 100%; }
-    .social-media a {
-      margin: 0;
-      margin-top: 30px;
-      width: 46%;
-      height: 55px; }
-      .social-media a:first-of-type {
-        margin-left: 0;
-        margin-right: 20px; }
-      .social-media a:last-of-type {
-        margin-left: 0; } }
+#licence {
+  color: #fff; }
+  #licence a {
+    color: #fff; }
+    #licence a:hover {
+      color: #fff;
+      text-decoration: underline; }
+  #licence::before {
+    content: '';
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+    border: #888 solid .25px;
+    background-color: #888; }
 
-@media (min-width: 766px) and (max-width: 900px) {
-  .buisness-info {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px; }
-  .contact-info,
-  .website {
-    width: 45%; }
-  .about {
-    width: 50%; }
-  .social-media {
-    width: 50%; }
-    .social-media a {
-      width: 45%;
-      margin-right: 0; }
-      .social-media a:first-of-type {
-        margin-right: 30px; } }
-
-@media (min-width: 900px) and (max-width: 1023px) {
-  .buisness-info {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 47px;
-    padding-bottom: 43px; }
-  .contact-info, .about, .website {
-    width: 50%; }
-  .social-media {
-    width: 45%; }
-    .social-media a {
-      width: 45%;
-      margin-right: 0; }
-      .social-media a:first-of-type {
-        margin-right: 30px; }
-  .website, .social-media {
-    margin-top: 30px; } }
-
-@media (min-width: 1023px) and (max-width: 1260px) {
-  .buisness-info {
-    display: flex;
-    flex-wrap: wrap;
-    width: 930px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 47px;
-    padding-bottom: 43px; }
-  .contact-info, .about, .website, .social-media {
-    width: 50%; }
-  .website, .social-media {
-    margin-top: 30px; }
-  .social-buttons {
-    width: 500px; }
-  .social {
-    width: 212.5px;
-    height: 55px; } }
-
-@media (min-width: 1260px) and (max-width: 2560px) {
-  .buisness-info {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1175px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 47px;
-    padding-bottom: 43px; }
-  .contact-info, .about {
-    width: 24%; }
-  .website {
-    width: 24%; }
-  .social-media {
-    width: 27%; }
-  .social {
-    width: 125px;
-    height: 55px; }
-    .social i {
-      padding: 0; } }
-
-@media (min-width: 2560px) {
-  .buisness-info {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1175px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 47px;
-    padding-bottom: 43px; }
-  .contact-info, .about {
-    width: 24%; }
-  .website {
-    width: 24%; }
-  .social-media {
-    width: 27%; }
-  .social {
-    width: 125px;
-    height: 55px; }
-    .social i {
-      padding-left: 0; } }
+@media (min-width: 1260px) {
+  .allFooter {
+    width: 1100px;
+    margin: 0 auto; }
+  .footer-background {
+    display: inline-flex; }
+    .footer-background .footWrap, .footer-background .allOffices {
+      display: inline-flex; }
+    .footer-background .footWrap {
+      width: 35%;
+      margin-right: 50px; }
+      .footer-background .footWrap .footerServices {
+        margin-right: 50px; }
+    .footer-background .allOffices {
+      width: 60%; }
+      .footer-background .allOffices .office {
+        margin-right: 35px; }
+        .footer-background .allOffices .office p:first-of-type {
+          margin-bottom: 0; } }
 
 .pushy {
   position: fixed;

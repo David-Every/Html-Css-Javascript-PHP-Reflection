@@ -1,9 +1,10 @@
 <!doctype html>
-<?php
-    // $url=$_SERVER['REQUEST_URI'];
-    // header("Refresh: 5; URL=$url");
-    // header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
-    // header("Expires: 0");
+<?
+
+    $url=$_SERVER['REQUEST_URI'];
+    header("Refresh: 5; URL=$url");
+    header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
+    header("Expires: 0");
 ?>
 <html lang="en" id = "html">
     <head>
@@ -60,97 +61,103 @@
                         <li class ="side-nav-main"><a href = "contact.php">Contact Us</a></li>
                     </ul>
                     <div id ="main-info-pushy-small">
-                        <ul>
-                            <li class ="side-nav-main"><a><i class = "fa fa-code icon" style="color:#926fb1;"> </i><br><small>web</small><br>design</a></li>
-                            <li><a>Stylish Websites</a></li>
-                            <li><a>Ecommerce stores</a></li>
-                            <li><a>Branding</a></li>
-                            <li><a>apps</a></li>
-                            <li><a>Web Hosting</a></li>
-                            <li><a>Pay Monthly websites</a></li>
-                        </ul>
-                        <ul>
-                            <li class ="side-nav-main"><a><i class = "fa fa-desktop icon" style="color:#4183d7;"></i><br><small>it</small><br>support</a></li>
-                            <li><a>Managed it</a></li>
-                            <li><a>Business it</a></li>
-                            <li><a>Office 365</a></li>
-                            <li><a>consultancy</a></li>
-                            <li><a>cloud provider</a></li>
-                            <li><a>data backup</a></li>
-                        </ul>
-                        <ul>
-                            <li class ="side-nav-main"><a><i class ="fa fa-volume-control-phone icon" style="color:#d64541;"></i><br><small>Telecoms</small><br>services</a></li>
-                            <li><a>gigabit voucher</a></li>
-                            <li><a>hosted VOIP</a></li>
-                            <li><a>Business VOIP</a></li>
-                            <li><a>Business broadband</a></li>
-                            <li><a>leased line</a></li>
-                            <li><a>3cx system</a></li>
-                        </ul>
-                        <ul>
-                            <li class ="side-nav-main"><a><i class ="glyphicon glyphicon-th icon" style="color:#67809f;"></i><br><small>bespoke</small><br>support</a></li>
-                            <li><a>Workflow</a></li>
-                            <li><a>Automation</a></li>
-                            <li><a>intergration</a></li>
-                            <li><a>database</a></li>
-                            <li><a>sharepoint</a></li>
-                            <li><a>business management</a></li>
-                        </ul>
-                        <ul>
-                            <li class ="side-nav-main"><a><i class = "glyphicon glyphicon-signal icon" style="color:#2ecc71;" ></i><br><small>Digital</small><br>marketing</a></li>
-                            <li><a>search (SEO)</a></li>
-                            <li><a>Paid (ppc)</a></li>
-                            <li><a>conversion (cro)</a></li>
-                            <li><a>Email</a></li>
-                            <li><a>social media</a></li>
-                            <li><a>content</a></li>
-                        </ul>
-                        <ul>
-                            <li class ="side-nav-main"><a><i class = "fa fa-shield icon" style="color:#f62459;"> </i><br><small>cyber</small><br>Security</a></li>
-                            <li><a>Assessment</a></li>
-                            <li><a>management</a></li>
-                            <li><a>penetration testing</a></li>
-                            <li><a>cyber essentials</a></li>
-                            <li><a>pci/dss</a></li>
-                            <li><a>Hacker prevention</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id ="main-info-all"> 
-                    <ul>
-                        <li><a>training</a></li>
-                        <li><a>web developer course</a></li>
-                        <li><a>SCS Frequently asked Questions</a></li>
-                        <li><a>scion collaborators</a></li>
-                    </ul>
-                    <ul>
-                        <li><a> events</a></li>
-                        <li><a>Buisness Automation seminar</a></li>
-                    </ul>
-                    <ul>
-                        <li><a>Our company</a></li>
-                        <li><a>our culture</a></li>
-                        <li><a>our team</a></li>
-                        <li><a>our careers</a></li>
-                        <li><a>our benefits</a></li>
-                        <li><a>our great yarmouth office</a></li>
-                    </ul>
-                    <ul>
-                        <li><a>Our work</a></li>
-                        <li><a>Case Studies</a></li>
-                    </ul>
-                    <ul>
-                        <li><a>Our Knowledge</a></li>
-                        <li><a>Guides</a></li>
-                        <li><a>news</a></li>
-                        <li><a>insights</a></li>
-                    </ul>
-                    <ul>
-                        <li><a>Covid Risk Assessment</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href = "contact.php">Contact Us</a></li>
-                    </ul>
+                        <?php
+                        // foreach(){
+                            echo '<li class = "side-nav-main"><a href = "#"><i class = "" style = ...> </i><br><small>1st</small><br>2nd</a></li>';
+                            echo '<li><a href = "#"> title</a></li>';
+                        // }
+                //         <ul>
+                //             <li class ="side-nav-main"><a><i class = "fa fa-code icon" style="color:#926fb1;"> </i><br><small>web</small><br>design</a></li>
+                //             <li><a>Stylish Websites</a></li>
+                //             <li><a>Ecommerce stores</a></li>
+                //             <li><a>Branding</a></li>
+                //             <li><a>apps</a></li>
+                //             <li><a>Web Hosting</a></li>
+                //             <li><a>Pay Monthly websites</a></li>
+                //         </ul>
+                //         <ul>
+                //             <li class ="side-nav-main"><a><i class = "fa fa-desktop icon" style="color:#4183d7;"></i><br><small>it</small><br>support</a></li>
+                //             <li><a>Managed it</a></li>
+                //             <li><a>Business it</a></li>
+                //             <li><a>Office 365</a></li>
+                //             <li><a>consultancy</a></li>
+                //             <li><a>cloud provider</a></li>
+                //             <li><a>data backup</a></li>
+                //         </ul>
+                //         <ul>
+                //             <li class ="side-nav-main"><a><i class ="fa fa-volume-control-phone icon" style="color:#d64541;"></i><br><small>Telecoms</small><br>services</a></li>
+                //             <li><a>gigabit voucher</a></li>
+                //             <li><a>hosted VOIP</a></li>
+                //             <li><a>Business VOIP</a></li>
+                //             <li><a>Business broadband</a></li>
+                //             <li><a>leased line</a></li>
+                //             <li><a>3cx system</a></li>
+                //         </ul>
+                //         <ul>
+                //             <li class ="side-nav-main"><a><i class ="glyphicon glyphicon-th icon" style="color:#67809f;"></i><br><small>bespoke</small><br>support</a></li>
+                //             <li><a>Workflow</a></li>
+                //             <li><a>Automation</a></li>
+                //             <li><a>intergration</a></li>
+                //             <li><a>database</a></li>
+                //             <li><a>sharepoint</a></li>
+                //             <li><a>business management</a></li>
+                //         </ul>
+                //         <ul>
+                //             <li class ="side-nav-main"><a><i class = "glyphicon glyphicon-signal icon" style="color:#2ecc71;" ></i><br><small>Digital</small><br>marketing</a></li>
+                //             <li><a>search (SEO)</a></li>
+                //             <li><a>Paid (ppc)</a></li>
+                //             <li><a>conversion (cro)</a></li>
+                //             <li><a>Email</a></li>
+                //             <li><a>social media</a></li>
+                //             <li><a>content</a></li>
+                //         </ul>
+                //         <ul>
+                //             <li class ="side-nav-main"><a><i class = "fa fa-shield icon" style="color:#f62459;"> </i><br><small>cyber</small><br>Security</a></li>
+                //             <li><a>Assessment</a></li>
+                //             <li><a>management</a></li>
+                //             <li><a>penetration testing</a></li>
+                //             <li><a>cyber essentials</a></li>
+                //             <li><a>pci/dss</a></li>
+                //             <li><a>Hacker prevention</a></li>
+                //         </ul>
+                //     </div> -->
+                // </div>
+                // <div id ="main-info-all"> 
+                //     <!-- <ul>
+                //         <li><a>training</a></li>
+                //         <li><a>web developer course</a></li>
+                //         <li><a>SCS Frequently asked Questions</a></li>
+                //         <li><a>scion collaborators</a></li>
+                //     </ul>
+                //     <ul>
+                //         <li><a> events</a></li>
+                //         <li><a>Buisness Automation seminar</a></li>
+                //     </ul>
+                //     <ul>
+                //         <li><a>Our company</a></li>
+                //         <li><a>our culture</a></li>
+                //         <li><a>our team</a></li>
+                //         <li><a>our careers</a></li>
+                //         <li><a>our benefits</a></li>
+                //         <li><a>our great yarmouth office</a></li>
+                //     </ul>
+                //     <ul>
+                //         <li><a>Our work</a></li>
+                //         <li><a>Case Studies</a></li>
+                //     </ul>
+                //     <ul>
+                //         <li><a>Our Knowledge</a></li>
+                //         <li><a>Guides</a></li>
+                //         <li><a>news</a></li>
+                //         <li><a>insights</a></li>
+                //     </ul>
+                //     <ul>
+                //         <li><a>Covid Risk Assessment</a></li>
+                //     </ul>
+                //     <ul>
+                //         <li><a href = "contact.php">Contact Us</a></li>
+                //     </ul> 
+                    ?>
                 </div>
             </div>
         </nav>

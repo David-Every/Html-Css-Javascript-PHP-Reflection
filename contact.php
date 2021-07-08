@@ -9,9 +9,10 @@ include "inc/header.php";
 
     <!-- <img src = "img/offices/cambridge.jpg"> -->
 <?php
-    $address = json_decode(file_get_contents("addresses.json"));
+    $main = json_decode(file_get_contents("main.json"));
+
     echo '<div id ="addWrapper">';
-    foreach($address->collection->addresses as $add){
+    foreach($main->collection->addresses as $add){
         echo '<div class ="off_Add">';
             echo '<img class = "addImg" src="' . $add->Image . '">';
             echo '<div class = "theAdd">';

@@ -1,244 +1,288 @@
 
 .footer-background{
+    width: 100%;
     background-color: $nm-secondary;
+    text-transform: capitalize;
+    .footerServices,.office{
+        h4, p, a{
+           color:$nm-primary; 
+        }
+        h4{
+            font-size: 16px;
+            margin-bottom: 26px;
+        }
+        p, a{
+            font-size: 13px;
+            line-height: 22px;
+            letter-spacing: .22px;
+        }
+    }
 
 }
-.buisness-info{        
-    @include text-display;
-    flex-wrap:wrap;
-    color: $nm-primary;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    h4{
-        font-size:16px;
-        font-weight:300;
+.office {
+    p:first-of-type{
+        margin-bottom: 0;
+    }
+    p:last-of-type{
+        margin-bottom:26px;
+    }
+    .postCode{
+        text-transform: uppercase;
+    }
+}
+#licence{
+    color:$nm-primary;
+    a{
+       color: $nm-primary;
+        &:hover{
+            color: $nm-primary;
+            text-decoration: underline;
+        }
+    }
+    &::before{
+        content: '';
+        display:block;
+        // position: absolute;
+        width: 100%;
+        margin:15px auto;
+        border:#888 solid .25px;
+        background-color: #888;
     }
     
-    li{
-        list-style:none;
-    }
-    address{
-        font-style: normal;
-    }
-    .f-title{
-        text-transform:uppercase;
-        padding-bottom: 1em;
-    }
-    a{
-        color:$nm-primary;
-        text-decoration: none;
-        text-align: center;
-    }
-    a:hover{
-        color:$nm-primary;
-        text-decoration: underline;
-    }
 }
 
 
-//Switches Images
+@media (min-width:$break-xl){
+    .allFooter{
+        width:1100px;
+        margin:0 auto;
+    }
+    .footer-background{
+        display: inline-flex;
+        .footWrap,.allOffices{
+            display: inline-flex;
 
-
-// This Keeps the social Media Buttons in the correct placement under social media
-
-.social-buttons{ 
-    display:flex;
-//     justify-content: flex-start;
-    flex-wrap:wrap;
-    // height:50%;
-}
-
-.social-media{
-    a{
-        margin-right:30px;
-        &:last-of-type{
-            margin-top:30px; 
         }
-    }
-}
-
-.social{
-    width:125px;
-    height: 55px;
-}
-
-// //Small
-@media (max-width:$break-sm){//max
-    .buisness-info{
-        padding:15px;
-    }
-    .social-media{
-        width:100%;
-        a{  
-            margin:0;
-            margin-top:30px;
-            width:46%;
-            // margin-right: 15px;
-            // margin-left:15px;
-            &:first-of-type{
-                margin-left: 0;
-                margin-right:20px;
-
-            }
-            &:last-of-type{
-                margin-left: 0;
-            }
-            height:55px;
-        }
-    }
-}
-
-// Medium
-@media (min-width:$break-sm) and (max-width:$break-m){
-    .buisness-info{
-        display:flex;
-        flex-wrap: wrap;
-        padding:20px;
-    }
-    .contact-info,
-    .website{
-        width: 45%;
-    }
-    .about{
-        width:50%;
-    }
-    .social-media{
-        // width:30%;
-        width:50%;
-        a{
-            width:45%;
-            margin-right:0;
-            &:first-of-type{
-                margin-right: 30px;
+        .footWrap{
+            width:35%;
+            margin-right: 50px;
+            .footerServices{
+                margin-right: 50px;
             }
         }
+        .allOffices{
+            width:60%;
+            .office{
+                margin-right: 35px;
+                p:first-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+}
+
+
+// // This Keeps the social Media Buttons in the correct placement under social media
+
+// .social-buttons{ 
+//     display:flex;
+// //     justify-content: flex-start;
+//     flex-wrap:wrap;
+//     // height:50%;
+// }
+
+// .social-media{
+//     a{
+//         margin-right:30px;
+//         &:last-of-type{
+//             margin-top:30px; 
+//         }
+//     }
+// }
+
+// .social{
+//     width:125px;
+//     height: 55px;
+// }
+
+// // //Small
+// @media (max-width:$break-sm){//max
+//     .buisness-info{
+//         padding:15px;
+//     }
+//     .social-media{
+//         width:100%;
+//         a{  
+//             margin:0;
+//             margin-top:30px;
+//             width:46%;
+//             // margin-right: 15px;
+//             // margin-left:15px;
+//             &:first-of-type{
+//                 margin-left: 0;
+//                 margin-right:20px;
+
+//             }
+//             &:last-of-type{
+//                 margin-left: 0;
+//             }
+//             height:55px;
+//         }
+//     }
+// }
+
+// // Medium
+// @media (min-width:$break-sm) and (max-width:$break-m){
+//     .buisness-info{
+//         display:flex;
+//         flex-wrap: wrap;
+//         padding:20px;
+//     }
+//     .contact-info,
+//     .website{
+//         width: 45%;
+//     }
+//     .about{
+//         width:50%;
+//     }
+//     .social-media{
+//         // width:30%;
+//         width:50%;
+//         a{
+//             width:45%;
+//             margin-right:0;
+//             &:first-of-type{
+//                 margin-right: 30px;
+//             }
+//         }
         
-    }
-}
-@media (min-width:$break-m) and (max-width:$break-lg){
-    .buisness-info{
-        display: flex;
-        flex-wrap: wrap;
-        // width:930px;
-        width:80%;
+//     }
+// }
+// @media (min-width:$break-m) and (max-width:$break-lg){
+//     .buisness-info{
+//         display: flex;
+//         flex-wrap: wrap;
+//         // width:930px;
+//         width:80%;
 
-        margin-left:auto;
-        margin-right: auto;
-        padding-top:47px;
-        padding-bottom:43px;
+//         margin-left:auto;
+//         margin-right: auto;
+//         padding-top:47px;
+//         padding-bottom:43px;
 
-    }
-    .contact-info,.about,.website{//,.social-media{
-        width:50%;
-        // margin-right:30px;
-    }
-    .social-media{
-        width:45%;
-        a{
-            width:45%;
-            margin-right:0;
-            &:first-of-type{
-                margin-right: 30px;
-            }
-        }
-    }
+//     }
+//     .contact-info,.about,.website{//,.social-media{
+//         width:50%;
+//         // margin-right:30px;
+//     }
+//     .social-media{
+//         width:45%;
+//         a{
+//             width:45%;
+//             margin-right:0;
+//             &:first-of-type{
+//                 margin-right: 30px;
+//             }
+//         }
+//     }
 
-    .website,.social-media{
-        margin-top:30px;
-    }
-}
+//     .website,.social-media{
+//         margin-top:30px;
+//     }
+// }
 
-// //Large
-@media (min-width:$break-lg) and (max-width:$break-xl){ 
+// // //Large
+// @media (min-width:$break-lg) and (max-width:$break-xl){ 
     
-    .buisness-info{
-        display: flex;
-        flex-wrap: wrap;
-        width:930px;
-        margin-left:auto;
-        margin-right: auto;
-        padding-top:47px;
-        padding-bottom:43px;
+//     .buisness-info{
+//         display: flex;
+//         flex-wrap: wrap;
+//         width:930px;
+//         margin-left:auto;
+//         margin-right: auto;
+//         padding-top:47px;
+//         padding-bottom:43px;
 
-    }
+//     }
 
-    .contact-info,.about,.website,.social-media{
-        width:50%;
-        // margin-right:30px;
-    }
-    .website,.social-media{
-        margin-top:30px;
-    }
-    .social-buttons{
-        width:500px;
-    }
-    .social{
-        width:212.5px;
-        height:55px;
-        // i{
-        //     padding-left:44px;
-        // }
-    }
+//     .contact-info,.about,.website,.social-media{
+//         width:50%;
+//         // margin-right:30px;
+//     }
+//     .website,.social-media{
+//         margin-top:30px;
+//     }
+//     .social-buttons{
+//         width:500px;
+//     }
+//     .social{
+//         width:212.5px;
+//         height:55px;
+//         // i{
+//         //     padding-left:44px;
+//         // }
+//     }
 
-}
+// }
 
-@media(min-width:$break-xl)and (max-width:$break-4k){
-    .buisness-info{
-        display: flex;
-        flex-wrap: wrap;
-        width:1175px;
-        margin-left:auto;
-        margin-right: auto;
-        padding-top:47px;
-        padding-bottom:43px;
+// @media(min-width:$break-xl)and (max-width:$break-4k){
+//     .buisness-info{
+//         display: flex;
+//         flex-wrap: wrap;
+//         width:1175px;
+//         margin-left:auto;
+//         margin-right: auto;
+//         padding-top:47px;
+//         padding-bottom:43px;
 
-    }
-    .contact-info,.about{
-        width: 24%;
-    }
-    .website{
-        width:24%;
-    }
-    .social-media{
-        width: 27%;
-    }
-    .social{
-        width:125px;
-        height: 55px;
-        i{
-            padding: 0;
-        }
-    }
-}
+//     }
+//     .contact-info,.about{
+//         width: 24%;
+//     }
+//     .website{
+//         width:24%;
+//     }
+//     .social-media{
+//         width: 27%;
+//     }
+//     .social{
+//         width:125px;
+//         height: 55px;
+//         i{
+//             padding: 0;
+//         }
+//     }
+// }
 
 
-@media(min-width:$break-4k){
+// @media(min-width:$break-4k){
 
-   .buisness-info{
-        display: flex;
-        flex-wrap: wrap;
-        width:1175px;
-        margin-left:auto;
-        margin-right: auto;
-        padding-top:47px;
-        padding-bottom:43px;
+//    .buisness-info{
+//         display: flex;
+//         flex-wrap: wrap;
+//         width:1175px;
+//         margin-left:auto;
+//         margin-right: auto;
+//         padding-top:47px;
+//         padding-bottom:43px;
 
-    }
-    .contact-info,.about{
-        width: 24%;
-    }
-    .website{
-        width:24%;
-    }
-    .social-media{
-        width: 27%;
-    }
-    .social{
-        width:125px;
-        height: 55px;
-        i{
-            padding-left: 0;
-        }
-    }
-}
+//     }
+//     .contact-info,.about{
+//         width: 24%;
+//     }
+//     .website{
+//         width:24%;
+//     }
+//     .social-media{
+//         width: 27%;
+//     }
+//     .social{
+//         width:125px;
+//         height: 55px;
+//         i{
+//             padding-left: 0;
+//         }
+//     }
+// }
