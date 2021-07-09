@@ -4,7 +4,7 @@
     <div class ="newsletter">
         <div class ="alerts">
             <?php
-                include "inc/functions.php";
+                // include "inc/functions.php";
                 checkCompleted();  
             ?>
         </div>
@@ -95,7 +95,7 @@
         echo '</div>';
         
 
-    // <div class ="bottom-imgs">
+    // echo '<div class ="bottom-imgs">
     //     <div class = " footer-icons">
     //         <div class = "f-img">
     //             <img class ="google" src = "img/Footer-imgs/google_partner.png" alt = "Google partner"> 
@@ -116,7 +116,7 @@
     //             <img class = "colourimg"  src = "img/Footer-imgs/norfolk_charter_hover.jpg" alt ="Norfolk Carbon Charter Silver 2017"> 
     //         </div>
     //     </div>
-    // </div>
+    // </div>';
     ?>
     
 </footer>
