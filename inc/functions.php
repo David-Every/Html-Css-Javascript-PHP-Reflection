@@ -54,16 +54,47 @@ function getServiceCards($result){
     return $result;
 }
 
-function getMenu($result){
+function getMenu($result,$limit, $offset){
+
     include "inc/connection.php";
-    $sql ="SELECT * FROM side_menu";
+    $sql ="SELECT * FROM side_menu LIMIT ? OFFSET ?";
+
+    try{
+        $temp = $db->prepare($sql);
+        $temp->bindParam(1,$limit,PDO::PARAM_INT);
+        $temp->bindParam(2,$offset,PDO::PARAM_INT);
+        $temp->execute();
+    }catch(Exception $e){
+        throw $e;
+        
+    }
+    $result = $temp->fetchAll();
+    return $result;
+}
+
+function getMenuFirst($result){
+    include "inc/connection.php";
+    $sql ="SELECT * FROM side_buttons";
 
     try{
         $temp = $db->prepare($sql);
         $temp->execute();
     }catch(Exception $e){
-        throw $e;
-        
+        throw $e;   
+    }
+    $result = $temp->fetchAll();
+    return $result;
+}
+
+function getMenuMain($result){
+    include "inc/connection.php";
+    $sql ="SELECT * FROM menu_additions";
+
+    try{
+        $temp = $db->prepare($sql);
+        $temp->execute();
+    }catch(Exception $e){
+        throw $e;   
     }
     $result = $temp->fetchAll();
     return $result;

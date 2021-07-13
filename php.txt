@@ -12,3 +12,23 @@ Your reflection should include, but is not limited to:
     Storing successful enquiries into the database
 
 [] On completion, notify Kayleigh with the GitHub link and close the task
+
+
+Find out how to insert sql at a certain ID position.
+ finish Side menu
+Start and finish main Navigation.
+finish SCSS for contact
+
+INSERT INTO `side_buttons`(`Link`, `Class`, `Icons`, `Colour`, `Small_first`, `Small_second`) 
+	VALUES ('#','nav-web','fa fa-code icon','#926fb1','Web','Design');
+INSERT INTO `side_buttons`(`Link`, `Class`, `Icons`, `Colour`, `Small_first`, `Small_second`) 
+	VALUES ('#','nav-it','fa fa-desktop icon','#4183d7','it','support');
+INSERT INTO `side_buttons`(`Link`, `Class`, `Icons`, `Colour`, `Small_first`, `Small_second`) 
+	VALUES ('#','nav-tc','fa fa-volume-control-phone icon','#d64541','Telecoms','services');
+    
+INSERT INTO `side_buttons`(`Link`, `Class`, `Icons`, `Colour`, `Small_first`, `Small_second`) 
+	VALUES ('#','nav-bs','glyphicon glyphicon-th icon','#67809f','bespoke','support');
+INSERT INTO `side_buttons`(`Link`, `Class`, `Icons`, `Colour`, `Small_first`, `Small_second`) 
+	VALUES ('#','nav-mk','glyphicon glyphicon-signal icon','#2ecc71','digital','marketing');
+INSERT INTO `side_buttons`(`Link`, `Class`, `Icons`, `Colour`, `Small_first`, `Small_second`) 
+	VALUES ('#','nav-cs','fa fa-shield icon','#f62459','cyber','security');

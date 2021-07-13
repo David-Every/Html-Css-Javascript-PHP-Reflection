@@ -56,114 +56,57 @@
         <nav class = "pushy pushy-right">
             <div class ="pushy-content" id ="pushy-cont">
                 <div id ="small-additions">
-                    <ul>
-                        <li class ="side-nav-main"><a href = "contact.php">Contact Us</a></li>
-                    </ul>
                     <div id ="main-info-pushy-small">
                         <?php
                         include "inc/functions.php";
+                        // $listItemsPerUL = 6;
+                        $listItems = 0;
 
-                        $fullmenu = getMenu($result = null);
-                        echo'<ul>';
-                        foreach($fullmenu as $menu){
-                            // echo '<li class = "side-nav-main"><a href = "#"><i class = "" style = ...> </i><br><small>1st</small><br>2nd</a></li>';
-                            echo '<li><a href ='. $menu['Link'].'>' . $menu['Title'] . '</a></li>';
+                        $firstmenu = getMenuFirst($result = null);
+
+                            foreach($firstmenu as $fMenu){
+                            echo'<ul>';
+                                echo '<li class = "side-nav-main"><a href =' 
+                                    .$fMenu['Link'] . '><i class = "'. $fMenu['Icons'] 
+                                    .'" style = color:'.$fMenu['Colour'] .'> </i><br><small>'.$fMenu['Small_first'] 
+                                    .'</small><br>'.$fMenu['Small_second'].'</a></li>'
+                                ;
+                                $limit = 6;
+                                $offset = $listItems;
+
+                                foreach( getMenu($result = null,$limit, $offset) as $menu){
+                                    echo '<li><a href ='. $menu['Link'].'>' . $menu['Title'] . '</a></li>';
+                                    $listItems++;
+                                }
+                            echo'</ul>';
                         }
-                        echo'</ul>';
+                    echo '</div>';
+                echo '</div>';
 
-                //         <ul>
-                //             <li class ="side-nav-main"><a><i class = "fa fa-code icon" style="color:#926fb1;"> </i><br><small>web</small><br>design</a></li>
-                //             <li><a>Stylish Websites</a></li>
-                //             <li><a>Ecommerce stores</a></li>
-                //             <li><a>Branding</a></li>
-                //             <li><a>apps</a></li>
-                //             <li><a>Web Hosting</a></li>
-                //             <li><a>Pay Monthly websites</a></li>
-                //         </ul>
-                //         <ul>
-                //             <li class ="side-nav-main"><a><i class = "fa fa-desktop icon" style="color:#4183d7;"></i><br><small>it</small><br>support</a></li>
-                //             <li><a>Managed it</a></li>
-                //             <li><a>Business it</a></li>
-                //             <li><a>Office 365</a></li>
-                //             <li><a>consultancy</a></li>
-                //             <li><a>cloud provider</a></li>
-                //             <li><a>data backup</a></li>
-                //         </ul>
-                //         <ul>
-                //             <li class ="side-nav-main"><a><i class ="fa fa-volume-control-phone icon" style="color:#d64541;"></i><br><small>Telecoms</small><br>services</a></li>
-                //             <li><a>gigabit voucher</a></li>
-                //             <li><a>hosted VOIP</a></li>
-                //             <li><a>Business VOIP</a></li>
-                //             <li><a>Business broadband</a></li>
-                //             <li><a>leased line</a></li>
-                //             <li><a>3cx system</a></li>
-                //         </ul>
-                //         <ul>
-                //             <li class ="side-nav-main"><a><i class ="glyphicon glyphicon-th icon" style="color:#67809f;"></i><br><small>bespoke</small><br>support</a></li>
-                //             <li><a>Workflow</a></li>
-                //             <li><a>Automation</a></li>
-                //             <li><a>intergration</a></li>
-                //             <li><a>database</a></li>
-                //             <li><a>sharepoint</a></li>
-                //             <li><a>business management</a></li>
-                //         </ul>
-                //         <ul>
-                //             <li class ="side-nav-main"><a><i class = "glyphicon glyphicon-signal icon" style="color:#2ecc71;" ></i><br><small>Digital</small><br>marketing</a></li>
-                //             <li><a>search (SEO)</a></li>
-                //             <li><a>Paid (ppc)</a></li>
-                //             <li><a>conversion (cro)</a></li>
-                //             <li><a>Email</a></li>
-                //             <li><a>social media</a></li>
-                //             <li><a>content</a></li>
-                //         </ul>
-                //         <ul>
-                //             <li class ="side-nav-main"><a><i class = "fa fa-shield icon" style="color:#f62459;"> </i><br><small>cyber</small><br>Security</a></li>
-                //             <li><a>Assessment</a></li>
-                //             <li><a>management</a></li>
-                //             <li><a>penetration testing</a></li>
-                //             <li><a>cyber essentials</a></li>
-                //             <li><a>pci/dss</a></li>
-                //             <li><a>Hacker prevention</a></li>
-                //         </ul>
-                //     </div> -->
-                // </div>
-                // <div id ="main-info-all"> 
-                //     <!-- <ul>
-                //         <li><a>training</a></li>
-                //         <li><a>web developer course</a></li>
-                //         <li><a>SCS Frequently asked Questions</a></li>
-                //         <li><a>scion collaborators</a></li>
-                //     </ul>
-                //     <ul>
-                //         <li><a> events</a></li>
-                //         <li><a>Buisness Automation seminar</a></li>
-                //     </ul>
-                //     <ul>
-                //         <li><a>Our company</a></li>
-                //         <li><a>our culture</a></li>
-                //         <li><a>our team</a></li>
-                //         <li><a>our careers</a></li>
-                //         <li><a>our benefits</a></li>
-                //         <li><a>our great yarmouth office</a></li>
-                //     </ul>
-                //     <ul>
-                //         <li><a>Our work</a></li>
-                //         <li><a>Case Studies</a></li>
-                //     </ul>
-                //     <ul>
-                //         <li><a>Our Knowledge</a></li>
-                //         <li><a>Guides</a></li>
-                //         <li><a>news</a></li>
-                //         <li><a>insights</a></li>
-                //     </ul>
-                //     <ul>
-                //         <li><a>Covid Risk Assessment</a></li>
-                //     </ul>
-                //     <ul>
-                //         <li><a href = "contact.php">Contact Us</a></li>
-                //     </ul> 
-                    ?>
-                </div>
+                echo '<div id = "main-info-all">';
+                $limit = 30;
+                $listAmount = $listTotal = 0;
+                $offset = 36;
+                    // echo '<ul>';
+                    foreach( getMenuMain($result) as $mainMenu){
+                        echo '<ul>';
+                        echo'<li> <a href = '.$mainMenu['Link'].'>'.$mainMenu['Title'].'</a></li>';
+                        $offset = $offset + $listAmount;
+                        $listAmount = 0;
+                        // var_dump($offset);
+                        foreach(getMenu($result = null,$limit, $offset) as $sMenu){
+                            $listAmount++;
+                            $listTotal++;
+                            echo '<li><a href ='.$sMenu['Link'].'>'.$sMenu['Title'].'</a></li>';
+                            if($listTotal === 3 || $listTotal === 4 || $listTotal === 9 || $listTotal === 10 || $listTotal === 13 || $listTotal === 14|| $listTotal === 16){
+                                
+                                break;
+                            }
+                        }
+                        echo '</ul>';
+                    }  
+                    echo '</div>';
+                ?>
             </div>
         </nav>
 
@@ -193,6 +136,7 @@
         
             </div>
         </div>
+
 <main id ="container"> 
     <header id ="header">
             <!-- Top of page Navigation  with buttons and search bar -->
@@ -203,8 +147,8 @@
             <div class ="phone "> 
                 <a href= "tel:00000000000"> <i class = "fas fa-phone-volume"></i> </a> 
             </div> 
+
             <div id = "smHam"></div>
-            <!--id ="hamburger "--> 
             
             <div class ="nav-buttons"> 
                 <div ><a href = "#" class = " btn btn-1">  <i class="fas fa-mouse"> </i>Support </a> </div> 
@@ -217,52 +161,67 @@
                     <a href ="#" ><i class = "fas fa-search"></i></a>
                     
                  </div>
-                 <!-- <div id ="lgHam"> -->
                     <button id ="hamburger" class=" hamburger hamburger--spin menu-btn hb-lg " type="button">
                         <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                         </span>
                         <span class ="H-Lab"><small>Menu</small></span>
                     </button>
-                 <!-- </div> -->
             </form>         
-
         </div>
         <!-- Main site Navigation -->
                 
         <div class ="nav-wrapper">
             <div class ="nav-bar">
-    
-                <!-- Empty for navigation placement placement -->
+            
+                 <!-- Empty for navigation placement placement -->
 
-                    <div id ="invis"> 
-                        <div class ="navis"></div>
-                    </div>
+                <div id ="invis"> 
+                    <div class ="navis"></div>
+                </div>
+                <?php
+                // $first = true;
+                // <!--/ Empty for navigation placement placement -->
+        //             foreach($firstmenu as $nav){
+        //                 echo '<div class = "'. 'dropdown-container service'.$nav['Class'].'">';
+        //                 if($first){
+        //                     echo '<div class ="nav first">';
+        //                     $first = false; 
+        //                 }else{
+        //                     echo '<div class ="nav">'; 
+        //                 }
+        //                    echo '<a href ='. $nav['Link'] .'>'; 
+        //                        echo '<i class = "'. $nav['Icons'].'"> </i><br>'; 
+        //                         echo '<p class = "nav-title" > <small>'.$nav['Small_first'].'</small><br>'.$nav['Small_second'].'</p>';
+        //                     echo '</a>';
+        //                 echo '</div>';
 
-                <!--/ Empty for navigation placement placement -->
-
-                <!-- <div class ="restraint">  -->
-                    <div class = "dropdown-container service nav-web"> <!--nav-web-->
+        //                 echo '<div class = "dropdown-content">';
+        //                 foreach(getMenu($result = null,$limit, $offset) as $menu){
+        //                     echo '<span><a href ="#">Stylish Websites</a></span>';
+        //                 }
+        //             }
+        //     echo '</div>';
+        // echo '</div>';
+        echo '    <div class = "dropdown-container service nav-web"> <!--nav-web-->
                         <div class ="nav first"> 
                             <a href ="#"> 
                                 <i class = "fa fa-code icon"> </i><br> 
                                 <p class = "nav-title" > <small>Web</small><br>Design </p>
                             </a>
                         </div>
-                        <!-- <div class ="dropper"> -->
-                            <div class ="dropdown-content">
-                                <span><a href ="#"> Stylish Websites  </a> </span>
-                                <span><a href ="#"> Ecommerce Stores  </a></span>
-                                <span><a href ="#"> Branding  </a></span>
-                                <span><a href ="#"> Apps  </a></span>
-                                <span><a href ="#"> Web Hosting  </a></span>
-                                <span><a href ="#"> Pay Monthly Websites  </a></span>
-                                <div class ="align"></div>
 
-                            </div>
-                        <!-- </div> -->
+                        <div class ="dropdown-content">
+                            <span><a href ="#"> Stylish Websites  </a> </span>
+                            <span><a href ="#"> Ecommerce Stores  </a></span>
+                            <span><a href ="#"> Branding  </a></span>
+                            <span><a href ="#"> Apps  </a></span>
+                            <span><a href ="#"> Web Hosting  </a></span>
+                            <span><a href ="#"> Pay Monthly Websites  </a></span>
+                            <div class ="align"></div>
+
+                        </div>
                     </div>
-                <!-- </div> -->
     
                 <div class ="restraint"> 
                     <div class = "dropdown-container service nav-it">
@@ -347,9 +306,6 @@
                             <div class ="align"></div>
                             <div class ="align"></div>
                             <div class ="align"></div>
-
-
-
                         </div>
                     </div>
                 </div>
@@ -373,7 +329,8 @@
 
                         </div>
                     </div>
-                </div>
+                </div>';
+            ?>
 
                 <!-- Empty for navigation placement placement -->
                     <div id = "invis-2">
