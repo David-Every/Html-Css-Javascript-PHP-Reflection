@@ -5,7 +5,7 @@
         <div class ="alerts">
             <?php
                 // include "inc/functions.php";
-                checkCompleted();  
+                // checkCompleted();  
             ?>
         </div>
 
@@ -25,7 +25,7 @@
             </div>
 
         </div>
-        <div class ="check" >
+        <div class ="check">
             <input type="checkbox" name="check">
             <label class="checkLab" for ="check"> 	
                 Please tick this box if you wish to receive 
@@ -68,55 +68,59 @@
                     echo '<li><a href =' .$info->Link  . '>' . $info->Title . '</a></li>';
                 }
             echo '</div>';
+ 
+            echo '</div>';
+            echo '<div class ="allOffices">';
+            
+            foreach($main->collection->addresses as $add){
+                    echo '<div class ="office">';
+                        // echo '<div>';
+                            echo '<h4>' . $add->Office .'</h4></a>';
+                            echo '<p>' . $add->Address .'</p>';
+                            echo '<p class = "postCode">' . $add->Post_code .'</p>';
+                            echo '<a href = tel:' . $add->Tel . '>' .$add->Tel. '</a><br>';
+                        // echo '</div>';
+                    echo '</div>';
+            }
+            echo '</div>';
 
-                // 
-                echo '</div>';
-                echo '<div class ="allOffices">';
+            echo '<div id = "licence">';
+                echo '<p> &copy; Copyright Netmatters Ltd. 2021. Allrights reserved - <a href = "">Sitemap</a></p> ';
                 
-                foreach($main->collection->addresses as $add){
-                        echo '<div class ="office">';
-                            // echo '<div>';
-                                echo '<h4>' . $add->Office .'</h4></a>';
-                                echo '<p>' . $add->Address .'</p>';
-                                echo '<p class = "postCode">' . $add->Post_code .'</p>';
-                                echo '<a href = tel:' . $add->Tel . '>' .$add->Tel. '</a><br>';
-                            // echo '</div>';
-                        echo '</div>';
-                }
-                echo '</div>';
-
-                echo '<div>';
-                    echo '<p id = "licence"> &copy; Copyright Netmatters Ltd. 2021. Allrights reserved - <a href = "">Sitemap</a></p> ';
+                echo '<div class = "socials">';
                     foreach($main->Footer->socialMedia as $sm){
-                        echo '<a class ="' .$sm->Class . '" href = '. $sm->Link .'target ="_blank"><i class='. $sm->Icon . '></i></a>';
+                        echo '<a class ="' .$sm->Class . '" href = '. $sm->Link .'target ="_blank"><i class="'. $sm->Icon . '"></i></a>';
                     }
                 echo '</div>';
-
+                
+            echo '</div>';
         echo '</div>';
-        
+    echo '</div>';
 
-    // echo '<div class ="bottom-imgs">
-    //     <div class = " footer-icons">
-    //         <div class = "f-img">
-    //             <img class ="google" src = "img/Footer-imgs/google_partner.png" alt = "Google partner"> 
-    //         </div>
-    //         <div class ="f-img">
-    //             <img src = "img/Footer-imgs/microsoft_partner.jpg" alt = "microsoft partner"> 
-    //         </div>
-    //         <div class ="f-img">
-    //             <img class = "greyimg" src = "img/Footer-imgs/Grayscale-img/future_50.jpg" alt = "Future 50">
-    //             <img class = "colourimg" src = "img/Footer-imgs/future-50.jpg" alt = "Future 50"> 
-    //         </div>
-    //         <div class ="f-img">
-    //             <img class = "greyimg" src = "img/Footer-imgs/Grayscale-img/qms-bw.jpg" alt = "QMS"> 
-    //             <img class = "colourimg" src = "img/Footer-imgs/qms_hover.jpg" alt = "QMS"> 
-    //         </div>
-    //         <div class ="f-img">
-    //             <img class = "greyimg" src = "img/Footer-imgs/Grayscale-img/norfolk_carbon_charter.jpg" alt ="Norfolk Carbon Charter Silver 2017"> 
-    //             <img class = "colourimg"  src = "img/Footer-imgs/norfolk_charter_hover.jpg" alt ="Norfolk Carbon Charter Silver 2017"> 
-    //         </div>
-    //     </div>
-    // </div>';
+
+
+    echo '<div class ="bottom-imgs">
+        <div class = " footer-icons">
+            <div class = "f-img">
+                <img class ="google" src = "img/Footer-imgs/google_partner.png" alt = "Google partner"> 
+            </div>
+            <div class ="f-img">
+                <img src = "img/Footer-imgs/microsoft_partner.jpg" alt = "microsoft partner"> 
+            </div>
+            <div class ="f-img">
+                <img class = "greyimg" src = "img/Footer-imgs/Grayscale-img/future_50.jpg" alt = "Future 50">
+                <img class = "colourimg" src = "img/Footer-imgs/future-50.jpg" alt = "Future 50"> 
+            </div>
+            <div class ="f-img">
+                <img class = "greyimg" src = "img/Footer-imgs/Grayscale-img/qms-bw.jpg" alt = "QMS"> 
+                <img class = "colourimg" src = "img/Footer-imgs/qms_hover.jpg" alt = "QMS"> 
+            </div>
+            <div class ="f-img">
+                <img class = "greyimg" src = "img/Footer-imgs/Grayscale-img/norfolk_carbon_charter.jpg" alt ="Norfolk Carbon Charter Silver 2017"> 
+                <img class = "colourimg"  src = "img/Footer-imgs/norfolk_charter_hover.jpg" alt ="Norfolk Carbon Charter Silver 2017"> 
+            </div>
+        </div>
+    </div>';
     ?>
     
 </footer>

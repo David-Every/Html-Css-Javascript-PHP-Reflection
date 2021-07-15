@@ -8,8 +8,9 @@
   font-family: 'Poppins', sans-serif; }
 
 .social {
-  padding: 20px 50px;
-  background-color: #282b36; }
+  padding: 5px 10px;
+  border-radius: 50%;
+  margin-right: 5px; }
   .social.social-fb:hover {
     background-color: #3b5998; }
   .social.social-tw:hover {
@@ -19,9 +20,11 @@
   .social.social-li:hover {
     background-color: #0077B5; }
   .social i {
-    font-size: 2em;
+    font-size: 12px;
     position: relative;
     top: -25%; }
+  .social:first-of-type {
+    margin-left: auto; }
 
 .about-us {
   background-image: url(../img/Icons/branded.png);
@@ -108,106 +111,53 @@
   .about-us {
     background-size: 55%; } }
 
-.conForm {
-  background-color: #e6e7e9;
-  width: 90%;
-  margin: 35px auto;
-  border-radius: 25px; }
+.newTitle {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #333645;
+  color: #fff;
+  margin-top: 9%;
+  height: 100px; }
+  .newTitle h1 {
+    padding: 30px 0;
+    width: 80%;
+    margin: 0 auto;
+    text-transform: uppercase; }
 
-.bisHours a {
-  font-size: 24px;
-  font-weight: 600;
-  color: #926fb1; }
-  .bisHours a:hover {
-    color: #7e57a0;
-    text-decoration: underline; }
-
-.bisHours p {
-  font-size: 16px;
-  color: #666666;
-  line-height: 22px;
-  letter-spacing: .22px; }
-
-.bisHours strong {
-  color: #333645;
-  padding-bottom: 25px; }
-
-.foo {
-  margin-left: 35px; }
-  .foo a {
-    color: #333645; }
-    .foo ahover {
-      color: #333645; }
-
-form .inp {
-  width: 100vw;
-  margin-bottom: 15px; }
-  form .inp input {
-    width: 90%;
-    height: 47px;
-    margin: 0 auto; }
-  form .inp label small {
-    color: red; }
-
-.check input[type="checkbox"] {
-  margin-right: 20px;
-  appearance: none;
-  border: 3px solid #333645;
-  border-radius: 3px;
-  width: 35px;
-  height: 35px; }
-  .check input[type="checkbox"]:checked {
-    background-color: #333645; }
-    .check input[type="checkbox"]:checked::after {
-      font-family: 'Font Awesome 5 Free';
-      content: '\f00c';
-      font-weight: 900;
-      font-size: 20px;
-      color: #fff;
-      position: relative;
-      top: 15%;
-      left: 15%; }
-
-.checkLab {
-  margin-left: 2%;
-  font-size: 16px;
-  color: #333645;
-  font-weight: 500;
-  line-height: 32px;
-  letter-spacing: .4px;
-  width: 90%; }
-  .checkLab a {
+.ourOffices {
+  width: 80%;
+  margin: 0 auto; }
+  .ourOffices a {
     color: #333645;
-    text-decoration: underline; }
-    .checkLab a:hover {
-      color: #333645; }
+    font-weight: 700; }
 
 .off_Add {
   max-width: 80%;
   margin: 15px auto;
-  height: 450px; }
-  .off_Add a {
-    font-size: 26px;
-    color: #926fb1;
-    font-weight: 700;
-    margin-bottom: 30px; }
-    .off_Add a:hover {
-      color: #926fb1; }
-    .off_Add a:first-of-type {
-      color: #333645; }
-      .off_Add a:first-of-type h2 {
-        font-size: 18px;
-        font-weight: 400; }
-      .off_Add a:first-of-type:hover {
-        color: #333645; }
-    .off_Add a:last-of-type {
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 35px 0px; }
+  .off_Add a:first-of-type {
+    color: #333645; }
+    .off_Add a:first-of-type h2 {
+      font-size: 18px;
+      font-weight: 400; }
+  .off_Add .conLinks {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; }
+    .off_Add .conLinks .number {
+      font-size: 26px;
+      color: #926fb1;
+      font-weight: 700;
+      width: 100%; }
+    .off_Add .conLinks .vm {
       background-color: #926fb1;
       color: #fff;
       padding: 15px 30px;
       font-size: 14.4px;
       font-weight: 400;
       border-radius: 5px; }
-      .off_Add a:last-of-type:hover {
+      .off_Add .conLinks .vm:hover {
         background-color: #7e57a0;
         text-decoration: none; }
   .off_Add .theAdd {
@@ -225,28 +175,14 @@ form .inp {
     text-transform: uppercase; }
   .off_Add .addImg {
     max-width: 100%; }
+  .off_Add iframe {
+    width: 100%;
+    height: 330px;
+    margin-left: 0; }
 
-.failedSub {
-  color: #A94442;
-  background-color: #F2DEDE;
-  border: 1px solid #ebccd1; }
-
-.completedSub {
-  color: #fff;
-  background-color: #2ecc71; }
-
-.completedSub, .failedSub {
-  padding: 15px;
-  font-size: 16px;
-  width: 70%;
-  margin: 15px auto; }
-  .completedSub i, .failedSub i {
-    margin-left: auto;
-    color: #000;
-    opacity: .4; }
-    .completedSub i:hover, .failedSub i:hover {
-      opacity: .7;
-      cursor: pointer; }
+#addWrapper {
+  margin: 0 auto;
+  height: Auto; }
 
 #moreInfo {
   font-size: 16px;
@@ -255,28 +191,68 @@ form .inp {
     font-family: 'Font Awesome 5 Free';
     content: " \f078"; }
 
-#map {
-  height: 600px;
-  width: 100%; }
+@media (min-width: 900px) {
+  #addWrapper {
+    width: 800px; }
+  .newTitle {
+    margin-top: 0%;
+    height: 100px; }
+    .newTitle h1 {
+      padding: 30px;
+      width: 820px; }
+  .ourOffices {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2%; }
+  .off_Add {
+    width: 100%; } }
 
 @media (min-width: 1023px) {
   #addWrapper {
     display: flex;
     flex-wrap: wrap;
-    width: 1190px;
-    margin: 0 auto;
-    height: 650px; }
+    width: 930px; }
     #addWrapper .off_Add {
       width: 29%; }
-  .conForm {
-    width: 60%; }
-  form .imp {
-    width: 100%; }
-  #contact {
+  .newTitle {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #333645;
+    height: 100px; }
+    .newTitle h1 {
+      padding: 30px 0;
+      width: 80%;
+      margin: 0 auto;
+      width: 900px;
+      text-transform: uppercase; }
+  .ourOffices {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 2%; } }
+
+@media (min-width: 1260px) {
+  #addWrapper {
+    width: 1190px; }
+    #addWrapper .off_Add {
+      width: 29%; }
+  .newTitle h1 {
+    width: 1175px; }
+  .ourOffices {
+    width: 1175px;
+    margin: 0 auto;
+    margin-top: 2%; } }
+
+.conForm {
+  background-color: #e6e7e9;
+  width: 90%;
+  margin: 35px auto;
+  border-radius: 25px; }
+  .conForm #contact {
     width: 100%;
     margin: 0 auto;
     padding: 30px; }
-    #contact .contButton {
+    .conForm #contact .contButton {
       appearance: none;
       padding: 10px 15px;
       background-color: #926fb1;
@@ -286,30 +262,86 @@ form .inp {
       text-transform: uppercase;
       box-shadow: none;
       outline: none; }
-      #contact .contButton:hover {
+      .conForm #contact .contButton:hover {
         background-color: #7e57a0; }
-  .top, .bottom {
-    display: inline-flex;
-    width: 100%; }
-  .top {
-    padding-top: 25px; }
-  textarea {
-    max-width: 95%;
-    min-width: 95%;
-    min-height: 160px; } }
+  .conForm #mainCont {
+    margin: 0 auto; }
+  .conForm form .inp {
+    width: 100%;
+    margin-bottom: 15px; }
+    .conForm form .inp input {
+      width: 100%;
+      height: 47px; }
+    .conForm form .inp label small {
+      color: red; }
+  .conForm textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 160px; }
+  @media (min-width: 900px) {
+    .conForm #contact {
+      width: 90%; } }
+  @media (min-width: 1023px) {
+    .conForm .conForm {
+      margin: 35px; }
+    .conForm #contact {
+      width: 95%;
+      margin: 0 auto;
+      padding: 30px; }
+      .conForm #contact .contButton {
+        appearance: none;
+        padding: 10px 15px;
+        background-color: #926fb1;
+        color: #fff;
+        font-size: 17.008px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        box-shadow: none;
+        outline: none; }
+        .conForm #contact .contButton:hover {
+          background-color: #7e57a0; }
+    .conForm .conForm {
+      width: 60%; }
+    .conForm .top, .conForm .bottom {
+      display: inline-flex;
+      width: 100%; }
+    .conForm .top {
+      padding-top: 25px; } }
+
+#mainCont .bisHours p {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px; }
+  #mainCont .bisHours p strong {
+    width: 100%;
+    margin-bottom: 15px; }
+
+#mainCont .bisHours a {
+  font-size: 26px;
+  color: #926fb1;
+  font-weight: 600; }
+  #mainCont .bisHours a:hover {
+    color: #7e57a0;
+    text-decoration: underline; }
+
+#mainCont .bisHours .LowStrong {
+  display: flex;
+  flex-wrap: wrap; }
+  #mainCont .bisHours .LowStrong strong {
+    width: 100%;
+    margin-bottom: 35px; }
 
 @media (min-width: 1260px) {
-  .conForm {
-    margin: 35px; }
   #mainCont {
-    width: 1190px;
     display: flex;
     flex-direction: row-reverse;
+    width: 1160px;
     margin: 0 auto; }
-    #mainCont .bisHours {
-      margin-top: 35px;
-      margin-right: auto;
-      width: 30%; } }
+  .conForm {
+    width: 62%; }
+  .bisHours {
+    margin-top: 50px;
+    width: 35%; } }
 
 .newsletter {
   background-color: #dddddd; }
@@ -373,6 +405,39 @@ textarea {
     transition: .15s ease-in-out;
     box-shadow: 0px 0px 8px rgba(91, 192, 222, 0.6); }
 
+.checkLab {
+  margin-left: 2%;
+  font-size: 16px;
+  color: #333645;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: .4px;
+  width: 90%; }
+  .checkLab a {
+    color: #333645;
+    text-decoration: underline; }
+    .checkLab a:hover {
+      color: #333645; }
+
+.check input[type="checkbox"] {
+  margin-right: 20px;
+  appearance: none;
+  border: 3px solid #333645;
+  border-radius: 3px;
+  width: 35px;
+  height: 35px; }
+  .check input[type="checkbox"]:checked {
+    background-color: #333645; }
+    .check input[type="checkbox"]:checked::after {
+      font-family: 'Font Awesome 5 Free';
+      content: '\f00c';
+      font-weight: 900;
+      font-size: 20px;
+      color: #fff;
+      position: relative;
+      top: 15%;
+      left: 15%; }
+
 @media (max-width: 766px) {
   .newsletter {
     padding-left: 15%;
@@ -401,6 +466,8 @@ textarea {
     padding-right: 15%;
     padding-top: 50px;
     padding-bottom: 50px; }
+  .completedSub, .failedSub {
+    width: 70%; }
   #checkbox {
     margin-left: -2%; } }
 
@@ -577,7 +644,8 @@ textarea {
 .footer-background {
   width: 100%;
   background-color: #333645;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  padding-top: 15px; }
   .footer-background .footerServices h4, .footer-background .footerServices p, .footer-background .footerServices a, .footer-background .office h4, .footer-background .office p, .footer-background .office a {
     color: #fff; }
   .footer-background .footerServices h4, .footer-background .office h4 {
@@ -598,7 +666,14 @@ textarea {
   text-transform: uppercase; }
 
 #licence {
-  color: #fff; }
+  color: #fff;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-wrap: wrap; }
+  #licence p {
+    width: 40%;
+    margin: 0; }
   #licence a {
     color: #fff; }
     #licence a:hover {
@@ -608,9 +683,13 @@ textarea {
     content: '';
     display: block;
     width: 100%;
-    margin: 15px auto;
+    height: .5px;
+    margin: 0 auto;
     border: #888 solid .25px;
     background-color: #888; }
+  #licence .socials {
+    margin-left: auto;
+    width: 15%; }
 
 @media (min-width: 1260px) {
   .allFooter {

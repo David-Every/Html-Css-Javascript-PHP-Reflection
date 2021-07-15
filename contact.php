@@ -1,43 +1,41 @@
 <?php
 include "inc/header.php";
-?>
-<div>
-<div class = "foo">
-   <?php echo '<a href = "index.php"><strong> Home </strong></a> / How can we help you?' ; ?>
-</div>
 
+echo'<p class="ourOffices"><a>Home</a> / Our offices</p>';
+    echo '<div class = "newTitle">
+    <h1> our offices </h1>
+    </div>';
 
-    <!-- <img src = "img/offices/cambridge.jpg"> -->
-<?php
     $main = json_decode(file_get_contents("main.json"));
 
     echo '<div id ="addWrapper">';
-    foreach($main->collection->addresses as $add){
+        foreach($main->collection->addresses as $add){
         echo '<div class ="off_Add">';
-            echo '<img class = "addImg" src="' . $add->Image . '">';
+            echo '<img class = "addImg" src="' . $add->Image . '"/>';
             echo '<div class = "theAdd">';
-                echo '<a href =' . $add->Link . '><h2>' . $add->Office .'</h2></a>';
+                echo '<a class ="titleLink" href =' . $add->Link . '><h2>' . $add->Office .'</h2></a>';
                 echo '<p>' . $add->Address .'</p>';
                 echo '<p>' . $add->Post_code .'</p>';
-                echo '<a href = tel:' . $add->Tel . '>' .$add->Tel. '</a><br>';
-                echo '<a href = "#">View More</a>';
+                echo '<div class = "conLinks">';
+                    echo '<a class = "number" href = tel:' . $add->Tel . '>' .$add->Tel. '</a>';
+                    echo '<a class ="vm" href = "#">View More</a>';
+                echo '</div>';
             echo '</div>';
-            echo '<iframe id ="Map" src=' . $add->Map . '></iframe>';
+            echo '<iframe src=' . $add->Map . '></iframe>';
+
         echo '</div>';
-    }
+        }
     echo '</div>';
 ?>
     <div id = "mainCont">
         <div class = "bisHours">
             <p>
-                <strong>Email us on:</strong><br>
+                <strong>Email us on:</strong>
                 <a href = "mailto:sales@netmatters.com"> sales@netmatters.com</a>
             </p>
-            <div>
-                <strong>Business hours:</strong><br>
-
+            <div class ="LowStrong">
+                <strong>Business hours:</strong>
                 <strong>Monday - Friday 07:00 - 18:00</strong>
-
             </div>
 
             

@@ -3,6 +3,7 @@
     width: 100%;
     background-color: $nm-secondary;
     text-transform: capitalize;
+    padding-top:15px;
     .footerServices,.office{
         h4, p, a{
            color:$nm-primary; 
@@ -32,6 +33,14 @@
 }
 #licence{
     color:$nm-primary;
+    width:100%;
+    height:75px;
+    display: flex;
+    flex-wrap: wrap;
+    p{
+        width:40%;
+        margin: 0; 
+    }
     a{
        color: $nm-primary;
         &:hover{
@@ -44,11 +53,15 @@
         display:block;
         // position: absolute;
         width: 100%;
-        margin:15px auto;
+        height:.5px;
+        margin:0 auto;
         border:#888 solid .25px;
         background-color: #888;
     }
-    
+    .socials{
+        margin-left: auto;
+        width:15%;
+    }   
 }
 
 

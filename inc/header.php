@@ -93,7 +93,6 @@
                         echo'<li> <a href = '.$mainMenu['Link'].'>'.$mainMenu['Title'].'</a></li>';
                         $offset = $offset + $listAmount;
                         $listAmount = 0;
-                        // var_dump($offset);
                         foreach(getMenu($result = null,$limit, $offset) as $sMenu){
                             $listAmount++;
                             $listTotal++;
@@ -141,7 +140,7 @@
     <header id ="header">
             <!-- Top of page Navigation  with buttons and search bar -->
         <div class = "top-nav" >
-            <a class ="logo" href ="#">  
+            <a class ="logo" href ="">  
                 <img class ="f-logo"  src = "img/Icons/f-logo.png" alt ="Netmatters Logo" >
             </a>
             <div class ="phone "> 

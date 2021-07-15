@@ -79,6 +79,74 @@ textarea{ // this is also working for the searchbar as it uses the same type
     }
 }
 
+.checkLab{
+    margin-left:2%;
+    font-size:16px;
+    color:$nm-secondary;
+    font-weight:500;
+    line-height: 32px;
+    letter-spacing:.4px;
+    width:90%;
+    a{
+        color:$nm-secondary;
+        text-decoration: underline;
+        &:hover{
+            color:$nm-secondary;
+        }
+    }
+}
+
+.check input[type="checkbox"]{
+    margin-right:20px;
+    appearance: none;
+    border: 3px solid $nm-secondary;
+    border-radius: 3px;
+    width: 35px;
+    height: 35px;
+    &:checked{
+        background-color: $nm-secondary;
+        &::after{
+            //This makes sure that the Unicode for the checkmark works
+            font-family:'Font Awesome 5 Free';
+            content:'\f00c';
+            font-weight: 900;
+            font-size: 20px;
+            color:$nm-primary;
+            position: relative;
+            top:15%;
+            left:15%;
+        }
+    }
+}
+
+// .failedSub{
+//     color: #A94442;
+//     background-color:#F2DEDE;
+//     border: 1px solid #ebccd1;
+    
+// }
+// .completedSub{
+//     color: $nm-primary;
+//     background-color:$nm-marketing;
+//     // border: 1px solid #ebccd1;
+// }
+
+// .completedSub, .failedSub{
+//     padding:15px;
+//     font-size:16px;
+//     width:100%;
+//     margin:15px auto;
+//     i{
+//         margin-left: auto; 
+//         color:#000;
+//         opacity: .4;
+//         &:hover{
+//             opacity: .7;
+//             cursor: pointer;
+//         }
+//     }
+// }
+
 @media(max-width:$break-sm){
     .newsletter{
         padding-left: 15%;
@@ -118,6 +186,10 @@ textarea{ // this is also working for the searchbar as it uses the same type
         padding-top: 50px;
         padding-bottom:50px;
     }
+    .completedSub, .failedSub{
+        width:70%;
+    }
+
     
     #checkbox{
         margin-left:-2%;
