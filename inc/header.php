@@ -44,10 +44,11 @@
     
                 console.log("This is IE");
             }else{
+                // Default Script
                 var script = document.createElement('script');
                 script.src = "dist/app.es6.min.js";
                 document.getElementsByTagName('head')[0].appendChild(script);
-                // // Default Script
+                
             }
         </script>
     </head>

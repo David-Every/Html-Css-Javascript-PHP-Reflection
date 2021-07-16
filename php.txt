@@ -19,6 +19,6 @@ Your reflection should include, but is not limited to:
 [ x ]Start and finish main Navigation.
 [ ] realign office cards
 [ ] Space out bisHours on all views.
-Change Footers position and flex correctly.
+    Change Footers position and flex correctly.
 [ ] Post info to database and make sure its validated.
 finish SCSS for contact

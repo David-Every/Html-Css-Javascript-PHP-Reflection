@@ -96,29 +96,31 @@ textarea{ // this is also working for the searchbar as it uses the same type
     }
 }
 
-.check input[type="checkbox"]{
-    margin-right:20px;
-    appearance: none;
-    border: 3px solid $nm-secondary;
-    border-radius: 3px;
-    width: 35px;
-    height: 35px;
-    &:checked{
-        background-color: $nm-secondary;
-        &::after{
-            //This makes sure that the Unicode for the checkmark works
-            font-family:'Font Awesome 5 Free';
-            content:'\f00c';
-            font-weight: 900;
-            font-size: 20px;
-            color:$nm-primary;
-            position: relative;
-            top:15%;
-            left:15%;
+.check{
+    display: flex;
+    input[type="checkbox"]{
+        margin-right:20px;
+        appearance: none;
+        border: 3px solid $nm-secondary;
+        border-radius: 3px;
+        width: 35px;
+        height: 35px;
+        &:checked{
+            background-color: $nm-secondary;
+            &::after{
+                //This makes sure that the Unicode for the checkmark works
+                font-family:'Font Awesome 5 Free';
+                content:'\f00c';
+                font-weight: 900;
+                font-size: 20px;
+                color:$nm-primary;
+                position: relative;
+                top:15%;
+                left:15%;
+            }
         }
     }
 }
-
 // .failedSub{
 //     color: #A94442;
 //     background-color:#F2DEDE;

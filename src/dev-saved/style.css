@@ -24,7 +24,8 @@
     position: relative;
     top: -25%; }
   .social:first-of-type {
-    margin-left: auto; }
+    margin-left: auto;
+    padding: 5px 12px; }
 
 .about-us {
   background-image: url(../img/Icons/branded.png);
@@ -248,11 +249,53 @@
   width: 90%;
   margin: 35px auto;
   border-radius: 25px; }
-  .conForm #contact {
+
+#contact {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px; }
+  #contact .contButton {
+    appearance: none;
+    padding: 10px 15px;
+    background-color: #926fb1;
+    color: #fff;
+    font-size: 17.008px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: none;
+    outline: none; }
+    #contact .contButton:hover {
+      background-color: #7e57a0; }
+
+#mainCont {
+  margin: 0 auto; }
+
+form .inp {
+  width: 100%;
+  margin-bottom: 15px; }
+  form .inp input {
     width: 100%;
+    height: 47px; }
+  form .inp label small {
+    color: red; }
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 160px; }
+
+@media (min-width: 900px) {
+  #contact {
+    width: 90%; } }
+
+@media (min-width: 1023px) {
+  .conForm {
+    margin: 35px; }
+  #contact {
+    width: 95%;
     margin: 0 auto;
     padding: 30px; }
-    .conForm #contact .contButton {
+    #contact .contButton {
       appearance: none;
       padding: 10px 15px;
       background-color: #926fb1;
@@ -262,51 +305,18 @@
       text-transform: uppercase;
       box-shadow: none;
       outline: none; }
-      .conForm #contact .contButton:hover {
+      #contact .contButton:hover {
         background-color: #7e57a0; }
-  .conForm #mainCont {
-    margin: 0 auto; }
-  .conForm form .inp {
-    width: 100%;
-    margin-bottom: 15px; }
-    .conForm form .inp input {
-      width: 100%;
-      height: 47px; }
-    .conForm form .inp label small {
-      color: red; }
-  .conForm textarea {
-    max-width: 100%;
-    min-width: 100%;
-    min-height: 160px; }
-  @media (min-width: 900px) {
-    .conForm #contact {
-      width: 90%; } }
-  @media (min-width: 1023px) {
-    .conForm .conForm {
-      margin: 35px; }
-    .conForm #contact {
-      width: 95%;
-      margin: 0 auto;
-      padding: 30px; }
-      .conForm #contact .contButton {
-        appearance: none;
-        padding: 10px 15px;
-        background-color: #926fb1;
-        color: #fff;
-        font-size: 17.008px;
-        border-radius: 5px;
-        text-transform: uppercase;
-        box-shadow: none;
-        outline: none; }
-        .conForm #contact .contButton:hover {
-          background-color: #7e57a0; }
-    .conForm .conForm {
-      width: 60%; }
-    .conForm .top, .conForm .bottom {
-      display: inline-flex;
-      width: 100%; }
-    .conForm .top {
-      padding-top: 25px; } }
+  .conForm {
+    width: 60%; }
+  .top, .bottom {
+    display: flex; }
+    .top .inp, .bottom .inp {
+      width: 50%; }
+      .top .inp:first-of-type, .bottom .inp:first-of-type {
+        margin-right: 25px; }
+  .top {
+    padding-top: 25px; } }
 
 #mainCont .bisHours p {
   display: flex;
@@ -419,24 +429,26 @@ textarea {
     .checkLab a:hover {
       color: #333645; }
 
-.check input[type="checkbox"] {
-  margin-right: 20px;
-  appearance: none;
-  border: 3px solid #333645;
-  border-radius: 3px;
-  width: 35px;
-  height: 35px; }
-  .check input[type="checkbox"]:checked {
-    background-color: #333645; }
-    .check input[type="checkbox"]:checked::after {
-      font-family: 'Font Awesome 5 Free';
-      content: '\f00c';
-      font-weight: 900;
-      font-size: 20px;
-      color: #fff;
-      position: relative;
-      top: 15%;
-      left: 15%; }
+.check {
+  display: flex; }
+  .check input[type="checkbox"] {
+    margin-right: 20px;
+    appearance: none;
+    border: 3px solid #333645;
+    border-radius: 3px;
+    width: 35px;
+    height: 35px; }
+    .check input[type="checkbox"]:checked {
+      background-color: #333645; }
+      .check input[type="checkbox"]:checked::after {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f00c';
+        font-weight: 900;
+        font-size: 20px;
+        color: #fff;
+        position: relative;
+        top: 15%;
+        left: 15%; }
 
 @media (max-width: 766px) {
   .newsletter {
@@ -645,7 +657,8 @@ textarea {
   width: 100%;
   background-color: #333645;
   text-transform: capitalize;
-  padding-top: 15px; }
+  padding-top: 15px;
+  height: auto; }
   .footer-background .footerServices h4, .footer-background .footerServices p, .footer-background .footerServices a, .footer-background .office h4, .footer-background .office p, .footer-background .office a {
     color: #fff; }
   .footer-background .footerServices h4, .footer-background .office h4 {
@@ -668,12 +681,12 @@ textarea {
 #licence {
   color: #fff;
   width: 100%;
-  height: 75px;
   display: flex;
   flex-wrap: wrap; }
   #licence p {
-    width: 40%;
-    margin: 0; }
+    width: 30%;
+    margin: 0;
+    height: 100px; }
   #licence a {
     color: #fff; }
     #licence a:hover {
@@ -684,12 +697,64 @@ textarea {
     display: block;
     width: 100%;
     height: .5px;
-    margin: 0 auto;
+    margin: 15px auto;
     border: #888 solid .25px;
     background-color: #888; }
-  #licence .socials {
-    margin-left: auto;
-    width: 15%; }
+
+.allFooter {
+  width: 90%;
+  margin: 0 auto;
+  height: auto; }
+
+.socials {
+  width: 55%; }
+
+@media (min-width: 900px) {
+  #licence p {
+    width: 80%;
+    height: 75px; }
+  .socials {
+    margin-top: 0;
+    width: 20%;
+    height: 10px; }
+  .allFooter {
+    width: 775px;
+    margin: 0 auto;
+    height: auto; }
+    .allFooter .footWrap {
+      display: inline-flex;
+      width: 90%; }
+    .allFooter .footerServices {
+      width: 40%; }
+      .allFooter .footerServices:first-of-type {
+        margin-left: 20%; }
+    .allFooter .allOffices {
+      width: 100%;
+      display: inline-flex;
+      margin: 0 auto; }
+      .allFooter .allOffices .office {
+        width: 25%;
+        margin-left: 7%; } }
+
+@media (min-width: 1023px) {
+  .allFooter {
+    height: auto;
+    width: 900px;
+    margin: 0 auto; }
+    .allFooter .footWrap {
+      display: inline-flex;
+      width: 90%; }
+    .allFooter .footerServices {
+      width: 40%; }
+      .allFooter .footerServices:first-of-type {
+        margin-left: 20%; }
+    .allFooter .allOffices {
+      width: 100%;
+      display: inline-flex;
+      margin: 0 auto; }
+      .allFooter .allOffices .office {
+        width: 25%;
+        margin-left: 7%; } }
 
 @media (min-width: 1260px) {
   .allFooter {
@@ -700,16 +765,16 @@ textarea {
     .footer-background .footWrap, .footer-background .allOffices {
       display: inline-flex; }
     .footer-background .footWrap {
-      width: 35%;
-      margin-right: 50px; }
-      .footer-background .footWrap .footerServices {
-        margin-right: 50px; }
+      width: 35%; }
+      .footer-background .footWrap .footerServices:first-of-type {
+        margin-right: 25px;
+        margin-left: 0; }
     .footer-background .allOffices {
       width: 60%; }
-      .footer-background .allOffices .office {
-        margin-right: 35px; }
-        .footer-background .allOffices .office p:first-of-type {
-          margin-bottom: 0; } }
+      .footer-background .allOffices .office p:first-of-type {
+        margin-bottom: 0; }
+      .footer-background .allOffices .office:last-of-type {
+        width: 27%; } }
 
 .pushy {
   position: fixed;

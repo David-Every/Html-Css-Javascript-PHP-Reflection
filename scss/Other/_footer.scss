@@ -4,6 +4,7 @@
     background-color: $nm-secondary;
     text-transform: capitalize;
     padding-top:15px;
+    height:auto;
     .footerServices,.office{
         h4, p, a{
            color:$nm-primary; 
@@ -34,12 +35,15 @@
 #licence{
     color:$nm-primary;
     width:100%;
-    height:75px;
+    // height:75px;
     display: flex;
     flex-wrap: wrap;
     p{
-        width:40%;
+        width:30%;
         margin: 0; 
+        height:100px;
+        // display: none;
+
     }
     a{
        color: $nm-primary;
@@ -54,14 +58,92 @@
         // position: absolute;
         width: 100%;
         height:.5px;
-        margin:0 auto;
+        margin:15px auto;
         border:#888 solid .25px;
         background-color: #888;
+    }  
+}
+
+.allFooter{
+    width:90%;
+    margin:0 auto;
+    height:auto;
+}
+.socials{
+    width:55%;
+    // margin-top: 7%;
+    // margin-left:auto;
+}
+
+@media (min-width:$break-m){
+    #licence p{
+        width:80%;
+        height:75px;
     }
     .socials{
-        margin-left: auto;
-        width:15%;
-    }   
+        margin-top: 0;
+        width: 20%;
+        height:10px;
+    }
+    .allFooter{
+        width: 775px;
+        margin:0 auto;
+        height:auto;
+        .footWrap{
+            display: inline-flex;
+            width:90%;
+            // margin:0 auto;
+
+        }
+        .footerServices{
+            width:40%;
+            // margin-left:7%;
+            &:first-of-type{
+                margin-left: 20%;
+            }
+        }
+
+        .allOffices{
+            width:100%;
+            display: inline-flex;
+            margin:0 auto;
+            .office{
+                width:25%;
+                margin-left:7%;
+            }
+        }
+    }
+}
+
+@media (min-width:$break-lg){
+    .allFooter{
+        height:auto;
+        width:900px;
+        margin:0 auto;
+        .footWrap{
+            display: inline-flex;
+            width:90%;
+            // margin:0 auto;
+
+        }
+        .footerServices{
+            width:40%;
+            // margin-left:7%;
+            &:first-of-type{
+                margin-left: 20%;
+            }
+        }
+
+        .allOffices{
+            width:100%;
+            display: inline-flex;
+            margin:0 auto;
+            .office{
+                width:25%;
+                margin-left:7%;
+            }
+        }
+    }
 }
 
 
@@ -78,224 +160,25 @@
         }
         .footWrap{
             width:35%;
-            margin-right: 50px;
-            .footerServices{
-                margin-right: 50px;
+            // margin-right: 50px;
+            .footerServices:first-of-type{
+                margin-right: 25px;
+                margin-left: 0;
             }
         }
         .allOffices{
             width:60%;
             .office{
-                margin-right: 35px;
+                // margin-right: 35px;
                 p:first-of-type{
                     margin-bottom: 0;
+                }
+                &:last-of-type{
+                    width:27%;
                 }
             }
         }
     }
-
-}
-
-
-// // This Keeps the social Media Buttons in the correct placement under social media
-
-// .social-buttons{ 
-//     display:flex;
-// //     justify-content: flex-start;
-//     flex-wrap:wrap;
-//     // height:50%;
-// }
-
-// .social-media{
-//     a{
-//         margin-right:30px;
-//         &:last-of-type{
-//             margin-top:30px; 
-//         }
-//     }
-// }
-
-// .social{
-//     width:125px;
-//     height: 55px;
-// }
-
-// // //Small
-// @media (max-width:$break-sm){//max
-//     .buisness-info{
-//         padding:15px;
-//     }
-//     .social-media{
-//         width:100%;
-//         a{  
-//             margin:0;
-//             margin-top:30px;
-//             width:46%;
-//             // margin-right: 15px;
-//             // margin-left:15px;
-//             &:first-of-type{
-//                 margin-left: 0;
-//                 margin-right:20px;
-
-//             }
-//             &:last-of-type{
-//                 margin-left: 0;
-//             }
-//             height:55px;
-//         }
-//     }
-// }
-
-// // Medium
-// @media (min-width:$break-sm) and (max-width:$break-m){
-//     .buisness-info{
-//         display:flex;
-//         flex-wrap: wrap;
-//         padding:20px;
-//     }
-//     .contact-info,
-//     .website{
-//         width: 45%;
-//     }
-//     .about{
-//         width:50%;
-//     }
-//     .social-media{
-//         // width:30%;
-//         width:50%;
-//         a{
-//             width:45%;
-//             margin-right:0;
-//             &:first-of-type{
-//                 margin-right: 30px;
-//             }
-//         }
-        
-//     }
-// }
-// @media (min-width:$break-m) and (max-width:$break-lg){
-//     .buisness-info{
-//         display: flex;
-//         flex-wrap: wrap;
-//         // width:930px;
-//         width:80%;
-
-//         margin-left:auto;
-//         margin-right: auto;
-//         padding-top:47px;
-//         padding-bottom:43px;
-
-//     }
-//     .contact-info,.about,.website{//,.social-media{
-//         width:50%;
-//         // margin-right:30px;
-//     }
-//     .social-media{
-//         width:45%;
-//         a{
-//             width:45%;
-//             margin-right:0;
-//             &:first-of-type{
-//                 margin-right: 30px;
-//             }
-//         }
-//     }
-
-//     .website,.social-media{
-//         margin-top:30px;
-//     }
-// }
-
-// // //Large
-// @media (min-width:$break-lg) and (max-width:$break-xl){ 
     
-//     .buisness-info{
-//         display: flex;
-//         flex-wrap: wrap;
-//         width:930px;
-//         margin-left:auto;
-//         margin-right: auto;
-//         padding-top:47px;
-//         padding-bottom:43px;
-
-//     }
-
-//     .contact-info,.about,.website,.social-media{
-//         width:50%;
-//         // margin-right:30px;
-//     }
-//     .website,.social-media{
-//         margin-top:30px;
-//     }
-//     .social-buttons{
-//         width:500px;
-//     }
-//     .social{
-//         width:212.5px;
-//         height:55px;
-//         // i{
-//         //     padding-left:44px;
-//         // }
-//     }
-
-// }
-
-// @media(min-width:$break-xl)and (max-width:$break-4k){
-//     .buisness-info{
-//         display: flex;
-//         flex-wrap: wrap;
-//         width:1175px;
-//         margin-left:auto;
-//         margin-right: auto;
-//         padding-top:47px;
-//         padding-bottom:43px;
-
-//     }
-//     .contact-info,.about{
-//         width: 24%;
-//     }
-//     .website{
-//         width:24%;
-//     }
-//     .social-media{
-//         width: 27%;
-//     }
-//     .social{
-//         width:125px;
-//         height: 55px;
-//         i{
-//             padding: 0;
-//         }
-//     }
-// }
-
-
-// @media(min-width:$break-4k){
-
-//    .buisness-info{
-//         display: flex;
-//         flex-wrap: wrap;
-//         width:1175px;
-//         margin-left:auto;
-//         margin-right: auto;
-//         padding-top:47px;
-//         padding-bottom:43px;
-
-//     }
-//     .contact-info,.about{
-//         width: 24%;
-//     }
-//     .website{
-//         width:24%;
-//     }
-//     .social-media{
-//         width: 27%;
-//     }
-//     .social{
-//         width:125px;
-//         height: 55px;
-//         i{
-//             padding-left: 0;
-//         }
-//     }
-// }
+    
+}
