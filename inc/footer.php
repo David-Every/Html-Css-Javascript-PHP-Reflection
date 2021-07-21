@@ -1,41 +1,54 @@
 <footer>
     <!-- Find a way to turn this on and off, with @media in scss -->
+
+    <?php include "JS.php" ?>
         
     <div class ="newsletter">
-        <div class ="alerts">
+        <div id ="alerts">
+            <!-- <div class = "alert failedSub"> The name field is required. <i class="cross fas fa-times"></i></div> -->
             <?php
                 // include "inc/functions.php";
                 // checkCompleted();  
+                $nameNotEntered =  true;
+                $emailNotEntered =  true;
             ?>
+            
         </div>
 
-        <form id ="news-letter" method="post">
+        <form id ="news-letter" method = "POST">
         <h2> Email newsletter sign-up</h2>
+        <!-- <fieldset> -->
+            <div class = "form-wrapper">
 
-        <div class = "form-wrapper">
+                <div class="name-group"> 
+                    <label for="name"> Your Name <small>*</small></label>
+                    <input type="text" id="name" name="name">
+                </div>
 
-            <div class="name-group"> 
-                <label for="name"> Your Name <small>*</small></label>
-                <input type="text" id="name" name="name">
+                <div class ="email-group"> 
+                    <label for="email">Your Email <small>*</small></label>
+                    <input type="email" id="email" name="email">
+                </div>
+
             </div>
-
-            <div class ="email-group"> 
-                <label for="email">Your Email <small>*</small></label>
-                <input type="email" id="email" name="email">
+            <div class ="check">
+                <input type="checkbox" name="check">
+                <label class="checkLab" for ="check"> 	
+                    Please tick this box if you wish to receive 
+                    marketing information from us. Please see our <a href ="#">Privacy Policy</a> for more 
+                    information on how we use your data
+                </label>
             </div>
+            <input type = "hidden" name = "action" value = "newsletter"/>
+            <!-- <input type = "hidden" name = "action" value = "newsletter"/> -->
 
-        </div>
-        <div class ="check">
-            <input type="checkbox" name="check">
-            <label class="checkLab" for ="check"> 	
-                Please tick this box if you wish to receive 
-                marketing information from us. Please see our <a href ="#">Privacy Policy</a> for more 
-                information on how we use your data
-            </label>
-        </div>
+        <!-- </fieldset> -->
+
         <input type ="submit" id="subscribe" name="subscribe" value="Subscribe">
         </form>
     </div>
+
+    <?php include "newsletterSubmission.php"?>
         
     <?php
     $main = json_decode(file_get_contents("main.json"));
@@ -131,6 +144,10 @@
     <script src ="pushy/JS/pushy.min.js"></script>
     
     <script src ="dist/json.es6.min.js"></script>
+
+    
+
+    
 
     <script>
         $('#slides').slick({

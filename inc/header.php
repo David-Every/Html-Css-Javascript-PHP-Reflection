@@ -136,8 +136,9 @@
         
             </div>
         </div>
-
-<main id ="container"> 
+<?php
+/*
+'<main id ="container"> 
     <header id ="header">
             <!-- Top of page Navigation  with buttons and search bar -->
         <div class = "top-nav" >
@@ -178,8 +179,9 @@
 
                 <div id ="invis"> 
                     <div class ="navis"></div>
-                </div>
-                <?php
+                </div>';
+
+                // <?php
                 // $first = true;
                 // <!--/ Empty for navigation placement placement -->
         //             foreach($firstmenu as $nav){
@@ -203,6 +205,8 @@
         //             }
         //     echo '</div>';
         // echo '</div>';
+
+        
         echo '    <div class = "dropdown-container service nav-web"> <!--nav-web-->
                         <div class ="nav first"> 
                             <a href ="#"> 
@@ -330,10 +334,10 @@
                         </div>
                     </div>
                 </div>';
-            ?>
+            
 
-                <!-- Empty for navigation placement placement -->
-                    <div id = "invis-2">
+                // <!-- Empty for navigation placement placement -->
+               echo     '<div id = "invis-2">
                         <div class ="navis "></div>
                     </div>
                 <!--/ Empty for navigation placement placement -->
@@ -343,6 +347,7 @@
         <!-- /Navigation -->   
     
     </header>
-?
-    <div id ="placeholder"></div>
-<!-- 387 -->
+    */
+    echo '<div id ="placeholder"></div>';
+    
+// <!-- 387 -->

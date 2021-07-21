@@ -1,5 +1,6 @@
 <?php
 include "inc/header.php";
+// include "inc/contactJS.php";
 
 echo'<p class="ourOffices"><a>Home</a> / Our offices</p>';
     echo '<div class = "newTitle">
@@ -65,15 +66,15 @@ echo'<p class="ourOffices"><a>Home</a> / Our offices</p>';
         <div class = "conForm">
             <div class = "conwrap">
             
-                <form id ="contact">
+                <form id ="contact" method = "POST">
                     <span class = "top">
                         <div class ="inp">
                             <label for ="name">Your Name<small>*</small></label>
-                            <input type="text" name ="name"/>
+                            <input class = "inputError" type="text" name ="contact_name"/>
                         </div>
                         <div class ="inp">
                             <label for ="email">Your Email<small>*</small></label>
-                            <input type="email" name ="email"/>
+                            <input type="email" name ="contact_email"/>
                         </div>
                     </span>
                     <span class =  "bottom">
@@ -100,15 +101,14 @@ echo'<p class="ourOffices"><a>Home</a> / Our offices</p>';
                             information on how we use your data
                         </label>
                     </div>
-                    <input class ="contButton" type ="button" value ="SEND ENQUIRY">
+                    <input class ="contButton" type ="submit" value ="SEND ENQUIRY" name = "sendMsg">
                 </form>
             </div>
         </div>
     </div>
 
-
-
 <?php
+include "inc/contactSubmission.php";
 include "inc/footer.php";
 ?>
 

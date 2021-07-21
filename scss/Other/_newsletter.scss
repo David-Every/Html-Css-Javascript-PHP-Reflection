@@ -121,33 +121,33 @@ textarea{ // this is also working for the searchbar as it uses the same type
         }
     }
 }
-// .failedSub{
-//     color: #A94442;
-//     background-color:#F2DEDE;
-//     border: 1px solid #ebccd1;
+.failedSub{
+    color: #A94442;
+    background-color:#F2DEDE;
+    border: 1px solid #ebccd1;
     
-// }
-// .completedSub{
-//     color: $nm-primary;
-//     background-color:$nm-marketing;
-//     // border: 1px solid #ebccd1;
-// }
+}
+.completedSub{
+    color: $nm-primary;
+    background-color:$nm-marketing;
+    // border: 1px solid #ebccd1;
+}
 
-// .completedSub, .failedSub{
-//     padding:15px;
-//     font-size:16px;
-//     width:100%;
-//     margin:15px auto;
-//     i{
-//         margin-left: auto; 
-//         color:#000;
-//         opacity: .4;
-//         &:hover{
-//             opacity: .7;
-//             cursor: pointer;
-//         }
-//     }
-// }
+.completedSub, .failedSub{
+    padding:15px;
+    font-size:16px;
+    width:100%;
+    margin:15px auto;
+    i{
+        margin-left: auto; 
+        color:#000;
+        opacity: .4;
+        &:hover{
+            opacity: .7;
+            cursor: pointer;
+        }
+    }
+}
 
 @media(max-width:$break-sm){
     .newsletter{
