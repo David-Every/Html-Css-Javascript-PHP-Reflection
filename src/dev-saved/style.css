@@ -272,6 +272,9 @@
 #mainCont {
   margin: 0 auto; }
 
+#moreInfo {
+  margin-bottom: 25px; }
+
 form .inp {
   width: 100%;
   margin-bottom: 15px; }
@@ -286,13 +289,31 @@ textarea {
   min-width: 100%;
   min-height: 160px; }
 
+.bisHours {
+  width: 80%;
+  margin: 0 auto; }
+  .bisHours p {
+    font-size: 16px;
+    line-height: 30px; }
+
 @media (min-width: 900px) {
   #contact {
     width: 90%; } }
 
 @media (min-width: 1023px) {
   .conForm {
+    width: 55%;
     margin: 35px; }
+  #mainCont {
+    display: none;
+    display: flex;
+    width: 1000px;
+    flex-direction: row-reverse;
+    margin: 0 auto; }
+  .bisHours {
+    margin-top: 35px;
+    width: 20%;
+    margin-left: 0; }
   #contact {
     width: 95%;
     margin: 0 auto;
@@ -309,8 +330,6 @@ textarea {
       outline: none; }
       #contact .contButton:hover {
         background-color: #7e57a0; }
-  .conForm {
-    width: 60%; }
   #top, #bottom {
     display: flex; }
     #top .inp, #bottom .inp {
