@@ -2,7 +2,7 @@
 include "inc/header.php";
 // include "inc/contactJS.php";
 
-echo'<p class="ourOffices"><a>Home</a> / Our offices</p>';
+echo'<p class="ourOffices"><a href = "index.php">Home</a> / Our offices</p>';
     echo '<div class = "newTitle">
     <h1> our offices </h1>
     </div>';
@@ -67,17 +67,17 @@ echo'<p class="ourOffices"><a>Home</a> / Our offices</p>';
             <div class = "conwrap">
             
                 <form id ="contact" method = "POST">
-                    <span class = "top">
+                    <span id = "top">
                         <div class ="inp">
                             <label for ="name">Your Name<small>*</small></label>
-                            <input class = "inputError" type="text" name ="contact_name"/>
+                            <input type="text" name ="contact_name" value ="<?php $name ?>" />
                         </div>
                         <div class ="inp">
                             <label for ="email">Your Email<small>*</small></label>
                             <input type="email" name ="contact_email"/>
                         </div>
                     </span>
-                    <span class =  "bottom">
+                    <span id =  "bottom">
                         <div class ="inp">
                             <label for ="tel">Your Telephone Number<small>*</small></label>
                             <input type="tel" name ="tel"/>
@@ -90,8 +90,7 @@ echo'<p class="ourOffices"><a>Home</a> / Our offices</p>';
 
                     <div class ="msg">
                         <label for ="msg">Message<small>*</small></label>
-                        <textarea name ="msg">
-                        </textarea>
+                        <textarea id = "messageToSend" name ="msg"></textarea>
                     </div>
                     <div class ="check" >
                         <input type="checkbox" name="check">
@@ -108,8 +107,8 @@ echo'<p class="ourOffices"><a>Home</a> / Our offices</p>';
     </div>
 
 <?php
-include "inc/contactSubmission.php";
 include "inc/footer.php";
+include "inc/contactSubmission.php";
 ?>
 
 </body>

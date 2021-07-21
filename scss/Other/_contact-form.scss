@@ -96,7 +96,7 @@ textarea{
     // }
 
     //Contact form changes
-    .top, .bottom{
+    #top, #bottom{
         // display:inline-flex;
         display:flex;
         .inp{
@@ -108,7 +108,7 @@ textarea{
         // width:100%;
         // height:100px;
     }
-    .top{
+    #top{
         padding-top:25px;
     } 
 }

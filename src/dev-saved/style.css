@@ -131,6 +131,8 @@
   .ourOffices a {
     color: #333645;
     font-weight: 700; }
+    .ourOffices a:hover {
+      color: #333645; }
 
 .off_Add {
   max-width: 80%;
@@ -309,13 +311,13 @@ textarea {
         background-color: #7e57a0; }
   .conForm {
     width: 60%; }
-  .top, .bottom {
+  #top, #bottom {
     display: flex; }
-    .top .inp, .bottom .inp {
+    #top .inp, #bottom .inp {
       width: 50%; }
-      .top .inp:first-of-type, .bottom .inp:first-of-type {
+      #top .inp:first-of-type, #bottom .inp:first-of-type {
         margin-right: 25px; }
-  .top {
+  #top {
     padding-top: 25px; } }
 
 .inputError {
