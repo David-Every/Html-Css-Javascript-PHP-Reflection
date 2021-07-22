@@ -14,6 +14,8 @@
 
 // Other //
 '../scss/Other/about-us',
+'../scss/Other/contact-addresses',
+'../scss/Other/contact-form',
 '../scss/Other/newsletter',
 '../scss/Other/tooltips',
 '../scss/Other/footer',
@@ -45,9 +47,6 @@
 body{
     user-select: none;
 }
-
-
-
 //Removes default focus styles from browsers.
 // input:focus,
 // select:focus{

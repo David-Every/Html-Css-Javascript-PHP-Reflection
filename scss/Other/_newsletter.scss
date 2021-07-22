@@ -40,49 +40,7 @@
         padding-left: 2%;
         // top:0%;
     }
-
-    #checkbox{
-        // margin-right:20px;
-        appearance: none;
-        border: 3px solid $nm-secondary;
-        border-radius: 3px;
-        width: 35px;
-        height: 35px;
-        // padding:15px;
-        &:checked{
-            background-color: $nm-secondary;
-            &::after{
-                //This makes sure that the Unicode for the checkmark works
-                font-family:'Font Awesome 5 Free';
-                content:'\f00c';
-                font-weight: 900;
-                font-size: 20px;
-                color:$nm-primary;
-                position: relative;
-                top:15%;
-                left:15%;
-            }
-        }
-    }
 }
-#lc{
-    // margin-left:10px;
-    margin-left:2%;
-    font-size:16px;
-    color:$nm-secondary;
-    font-weight:500;
-    line-height: 32px;
-    letter-spacing:.4px;
-    width:90%;
-    a{
-        color:$nm-secondary;
-        text-decoration: underline;
-        &:hover{
-            color:$nm-secondary;
-        }
-    }
-}
-
 // input bars
 .name-group{
     margin-bottom:25px;
@@ -107,7 +65,9 @@
 }
 
 input[type ="email"],
-input[type="text"]{ // this is also working for the searchbar as it uses the same type
+input[type="text"],
+input[type ="tel"],
+textarea{ // this is also working for the searchbar as it uses the same type
     outline: none;
 
     &:focus{
@@ -116,6 +76,76 @@ input[type="text"]{ // this is also working for the searchbar as it uses the sam
         border: 1px solid rgb(91,192,222);
         transition: .15s ease-in-out;
         box-shadow: 0px 0px 8px rgba(91,192,222,.6);
+    }
+}
+
+.checkLab{
+    margin-left:2%;
+    font-size:16px;
+    color:$nm-secondary;
+    font-weight:500;
+    line-height: 32px;
+    letter-spacing:.4px;
+    width:90%;
+    a{
+        color:$nm-secondary;
+        text-decoration: underline;
+        &:hover{
+            color:$nm-secondary;
+        }
+    }
+}
+
+.check{
+    display: flex;
+    input[type="checkbox"]{
+        margin-right:20px;
+        appearance: none;
+        border: 3px solid $nm-secondary;
+        border-radius: 3px;
+        width: 35px;
+        height: 35px;
+        &:checked{
+            background-color: $nm-secondary;
+            &::after{
+                //This makes sure that the Unicode for the checkmark works
+                font-family:'Font Awesome 5 Free';
+                content:'\f00c';
+                font-weight: 900;
+                font-size: 20px;
+                color:$nm-primary;
+                position: relative;
+                top:15%;
+                left:15%;
+            }
+        }
+    }
+}
+.failedSub{
+    color: #A94442;
+    background-color:#F2DEDE;
+    border: 1px solid #ebccd1;
+    
+}
+.completedSub{
+    color: $nm-primary;
+    background-color:$nm-marketing;
+    // border: 1px solid #ebccd1;
+}
+
+.completedSub, .failedSub{
+    padding:15px;
+    font-size:16px;
+    width:100%;
+    margin:15px auto;
+    i{
+        margin-left: auto; 
+        color:#000;
+        opacity: .4;
+        &:hover{
+            opacity: .7;
+            cursor: pointer;
+        }
     }
 }
 
@@ -158,6 +188,10 @@ input[type="text"]{ // this is also working for the searchbar as it uses the sam
         padding-top: 50px;
         padding-bottom:50px;
     }
+    .completedSub, .failedSub{
+        width:70%;
+    }
+
     
     #checkbox{
         margin-left:-2%;
