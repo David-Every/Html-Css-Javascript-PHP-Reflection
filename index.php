@@ -7,7 +7,6 @@
 <!-- Cards -->
 <div class = "card-nav">
     <?php
-    echo $SQL_HOST;
         /**
          * Instansiates service cards from Database
          */
