@@ -125,13 +125,17 @@ function close(){
 $(`#hamburger`).on("click",activate);
 $('.site-overlay').on("click",deactivate);
 
+// $("#body,#html").css({"-ms-overflow-style":"none", "scrollbar-width": "none"});
+
+// console.log("changed 2");
+
 
 
 function activate(){
     // console.log("%c Activating","color:green");
     $("#hamburger").addClass("is-active");
-    $("#body,#html").css({"overflow-x":"hidden","overflow-y":"scroll", "height":"100%", "-webkit-overflow-scrolling":"touch"});
-    $("#container").css ("overflow-y","scroll");
+    $("#body,#html").css({"overflow":"hidden",/*"overflow-y":"scroll",*/ "height":"100%", "-webkit-overflow-scrolling":"touch"});
+    $("#container").css ("overflow","scroll");
 
 }
 function deactivate(){
@@ -219,13 +223,17 @@ $("#moreInfo").on("click", () => {
 
 //#region warnings / approvals
 
-
-
 $(".cross").on("click",()=>{
   // console.log(this.parent())
   // $(".cross").parent().remove();
   $(".cross").parent().remove();
   
 })
+
+$("#slides").css("cursor", "grab");
+
+// $(".bisHours").click(),animate({
+//   height:"600px"
+// })
 
 //#endregion

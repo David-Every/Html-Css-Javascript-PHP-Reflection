@@ -42,14 +42,10 @@ var CarouselContent = [{
   "class": "cyber",
   button: "Find out more",
   link: "#"
-}];
-var slideNum = 0;
+}]; // let slideNum = 0;
 
 function slideTemplate(slide) {
-  // console.log(slideNum);
-  // slideNum++;
-  return "\n        <div id = \"carousel-container\">\n            <img id = \"carousel\" class = \"carousel opacity\" src = \"".concat(slide.image, "\" alt =\"").concat(slide.title, "\">\n            <div class = \"carousel-wrapper\">\n                <div class = \"carousel-overlay\" style =\"z-index: 5000\">\n                    <h1>").concat(slide.title, "</h1>\n                    <p>").concat(slide.para, "</p>\n                    <a href = \"").concat(slide.link, "\" class =\"").concat(slide["class"], "\">\n                        <p>").concat(slide.button, "</p>\n                        <i class = \"fas fa-arrow-right\"> </i>\n                    </a>\n                    <style>\n                        .linkCol{\n                            background-color: ").concat(slide.colour, ";\n                            width:").concat(slide.width, ";\n                        } \n                    </style>\n                </div>\n            </div>\n        </div>\n        ");
+  return "\n        <div id = \"carousel-container\">\n        <img id = \"carousel\" class = \"carousel opacity\" src = \"".concat(slide.image, "\" alt =\"").concat(slide.title, "\">\n            <div class = \"carousel-wrapper\">\n                <div class = \"carousel-overlay\" style =\"z-index: 5000\">\n                    <h1>").concat(slide.title, "</h1>\n                    <p>").concat(slide.para, "</p>\n                    <a href = \"").concat(slide.link, "\" class =\"").concat(slide["class"], "\">\n                        <p>").concat(slide.button, "</p>\n                        <i class = \"fas fa-arrow-right\"> </i>\n                    </a>\n                    <style>\n                        .linkCol{\n                            background-color: ").concat(slide.colour, ";\n                            width:").concat(slide.width, ";\n                        } \n                    </style>\n                </div>\n            </div>\n        </div>\n        ");
 }
 
 document.getElementById("slides").innerHTML = "\n    ".concat(CarouselContent.map(slideTemplate).join(""), "\n");
-$("#slides").css("cursor", "grab");

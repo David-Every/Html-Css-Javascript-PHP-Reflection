@@ -2,7 +2,7 @@
 
 <div id = "site-overlay-pop"></div> 
 
-<div id = "netmattersPopUp">
+<div id = "netmattersPopUp"> 
     <h2> Cookie Policy</h2>
     <p>
         We use cookies to obtain aggregate data regarding site traffic and interaction,

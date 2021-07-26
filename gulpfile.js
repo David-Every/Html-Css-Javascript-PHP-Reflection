@@ -5,6 +5,7 @@ var rename = require ("gulp-rename");
 var babel = require ("gulp-babel");
 var uglify = require("gulp-uglify");
 
+
 // sass compiler
 gulp.task('sass',done =>{
     gulp.src('scss/style.scss')
@@ -30,7 +31,7 @@ gulp.task('css', done => {
 
 //javascript Transpiler > es5
 gulp.task('js', done => {
-    gulp.src('src/app.js')
+    gulp.src('src/json.js')
         .pipe(babel({
             presets: ['@babel/env']
         }))
@@ -44,7 +45,7 @@ gulp.task('js', done => {
 //JS Uglify es5
 
 gulp.task('js-min', done => {
-    gulp.src('src/dev-saved/app.es5.js')
+    gulp.src('src/dev-saved/json.es5.js')
         .pipe(uglify())
         .pipe(rename({
             suffix:'.min'
@@ -55,7 +56,7 @@ gulp.task('js-min', done => {
 
 // JS Uglify es6
 gulp.task('js6-min', done => {
-    gulp.src('src/app.js')
+    gulp.src('src/json.js')
         .pipe(uglify())
         .pipe(rename({
             suffix:'.es6.min'
@@ -71,13 +72,12 @@ gulp.task('js6-min', done => {
  */
 
 gulp.task('watch',() =>{
-    // gulp.watch('index.html', gulp.series('html'));
+
     gulp.watch(`scss/**/*.scss`, gulp.series('sass'))
-    // gulp.watch('src/dev-saved/**/*.css', gulp.series('postcss'))
     gulp.watch('src/**/*.css', gulp.series('css'))
-    gulp.watch('src/app.js',gulp.series('js'))
-    gulp.watch('src/dev-saved/app.es5.js',gulp.series('js-min'))
-    gulp.watch('src/app.js',gulp.series('js6-min'))
+    gulp.watch('src/json.js',gulp.series('js'))
+    gulp.watch('src/dev-saved/json.es5.js',gulp.series('js-min'))
+    gulp.watch('src/json.js',gulp.series('js6-min'))
 })
 
 // To start watching type ' gulp watch ' 

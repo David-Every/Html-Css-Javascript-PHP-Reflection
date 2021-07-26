@@ -1,23 +1,18 @@
 
-.carousel, .opacity{
-    // margin-top:210px;
-    width:auto;
-    overflow-x: hidden
-    // padding-bottom:3.5%;
-}
+// .carousel, .opacity{
+//     width:auto;
+//     overflow-x: hidden
+// }
 
 .carousel-wrapper{
     width:8%;
     color: $nm-primary;
     position:absolute;
     top:25%;
-    // z-index: 1000;
 
     .carousel-overlay{
-        // position: relative;
         margin-left: auto;
         margin-right:auto;
-        // z-index: 1000;
     }
     
     h1{
@@ -27,16 +22,13 @@
     }
     p{
         width:40%;
-        font-size:20px;
         font-weight:700;
         margin-bottom: 35px;
         font-weight: 400;
+        font-size: 20px;
     }
     a{
         display: flex;
-        // width:220px;
-        // background-color: $nm-web;
-        // padding:20px;
         padding:20px 5px 20px 20px;
         text-decoration: none;
         color:$nm-primary;
@@ -54,15 +46,9 @@
             margin:0;
             margin-right:10px;
         }
-        // i{
-        //     padding-top:5px;
-        //     padding:0;
-        //     margin:0;
-        // }
         &:hover{
             text-decoration: none;
             color: $nm-primary;
-            // background-color:$nm-web-hover;
         }
     }
 }
@@ -82,9 +68,6 @@
 
     li.slick-active button::before{
         color:$nm-primary;
-        // position: absolute;
-        // padding:5px 10px;
-        // padding-right: 5px;
         border: 3px solid $nm-primary;
         width: 27px;
         height:25px;
@@ -98,8 +81,12 @@
 
 @media(max-width:$break-sm){
     .marketing{
-        width:320px;
+        width:300px;
         text-align: center;
+        white-space: nowrap;
+        p{
+            font-size: 16px;
+        }
     }
     .carousel{
         // position:absolute;
@@ -114,7 +101,9 @@
         margin:0 auto;
     }
     #carousel-container{
-        overflow: hidden;
+        // img
+        // overflow: hidden;
+        margin-right:200px;
     }
     .carousel-overlay{
         // top:40%;
@@ -168,6 +157,7 @@
         }
         p{
             width:40%;
+            font-size: 20px;
         }
     }
 }
@@ -210,7 +200,5 @@
     }
     .carousel-overlay{
         width:1175px;
-        
-       
     }
 }

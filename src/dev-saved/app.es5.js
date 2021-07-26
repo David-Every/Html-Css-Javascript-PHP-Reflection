@@ -141,18 +141,20 @@ function resetHeader() {
 
 
 $("#hamburger").on("click", activate);
-$('.site-overlay').on("click", deactivate);
+$('.site-overlay').on("click", deactivate); // $("#body,#html").css({"-ms-overflow-style":"none", "scrollbar-width": "none"});
+// console.log("changed 2");
 
 function activate() {
   // console.log("%c Activating","color:green");
   $("#hamburger").addClass("is-active");
   $("#body,#html").css({
-    "overflow-x": "hidden",
-    "overflow-y": "scroll",
+    "overflow": "hidden",
+
+    /*"overflow-y":"scroll",*/
     "height": "100%",
     "-webkit-overflow-scrolling": "touch"
   });
-  $("#container").css("overflow-y", "scroll");
+  $("#container").css("overflow", "scroll");
 }
 
 function deactivate() {
@@ -242,4 +244,8 @@ $(".cross").on("click", function () {
   // console.log(this.parent())
   // $(".cross").parent().remove();
   $(".cross").parent().remove();
-}); //#endregion
+});
+$("#slides").css("cursor", "grab"); // $(".bisHours").click(),animate({
+//   height:"600px"
+// })
+//#endregion

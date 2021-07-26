@@ -222,6 +222,9 @@ textarea{ // this is also working for the searchbar as it uses the same type
     .name-group{
         margin-right:30px;
     }
+    .completedSub, .failedSub{
+        width:70%;
+    }
 }
 
 @media(min-width:$break-xl) and (max-width:$break-4k){
@@ -243,6 +246,9 @@ textarea{ // this is also working for the searchbar as it uses the same type
     }
     .name-group{
         margin-right:30px;
+    }
+    .completedSub, .failedSub{
+        width:70%;
     }
 }
 
@@ -267,5 +273,8 @@ textarea{ // this is also working for the searchbar as it uses the same type
     }
     .name-group{
         margin-right:30px;
+    }
+    .completedSub, .failedSub{
+        width:70%;
     }
 }

@@ -4,6 +4,35 @@
 ?>
 <div id = "slides"></div>
 
+<!-- <?php
+    // $carousel = json_decode(file_get_contents("main.json"));
+
+    //  // <style>
+    // //     .linkCol{
+    // //         background-color: '.$slide->colour.';
+    // //         width:'.$slide->width.';
+    // //     } 
+    // // </style>
+
+    // foreach($carousel->carousel as $slide){
+    // echo '<div id = "carousel-container">
+    //         <img id = "carousel" class = "carousel opacity" src = "' . $slide->image .'" alt ="' . $slide->title .'">
+    //             <div class = "carousel-wrapper">
+    //                 <div class = "carousel-overlay" style ="z-index: 5000">
+    //                     <h1>' . $slide->title  .'</h1>
+    //                     <p>'. $slide->para. '</p>
+    //                     <a href =" '.$slide->link. '" class ="'.$slide->class.'">
+    //                         <p>'.$slide->button.'</p>
+    //                         <i class = "fas fa-arrow-right"> </i>
+    //                     </a>
+    //                 </div>
+    //             </div>
+    //         </div>';
+    // }
+
+?>
+</div> -->
+
 <!-- Cards -->
 <div class = "card-nav">
     <?php

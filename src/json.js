@@ -48,13 +48,11 @@ var CarouselContent  =
         link: "#",
     }]
     
-let slideNum = 0;
+// let slideNum = 0;
     function slideTemplate(slide){
-        // console.log(slideNum);
-        // slideNum++;
         return `
         <div id = "carousel-container">
-            <img id = "carousel" class = "carousel opacity" src = "${slide.image}" alt ="${slide.title}">
+        <img id = "carousel" class = "carousel opacity" src = "${slide.image}" alt ="${slide.title}">
             <div class = "carousel-wrapper">
                 <div class = "carousel-overlay" style ="z-index: 5000">
                     <h1>${slide.title}</h1>
@@ -79,4 +77,3 @@ document.getElementById("slides").innerHTML = `
     ${CarouselContent.map(slideTemplate).join("")}
 `;
 
-$("#slides").css("cursor", "grab");

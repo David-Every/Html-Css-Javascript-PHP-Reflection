@@ -37,6 +37,7 @@ form .inp{
     input{
         width:100%;
         height:47px;
+        padding-left: 10px;
         // margin: 0 auto;
     }
     label small{
@@ -47,6 +48,8 @@ textarea{
     max-width:100%;
     min-width: 100%;
     min-height:160px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .bisHours{

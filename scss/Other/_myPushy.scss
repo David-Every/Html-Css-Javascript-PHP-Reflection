@@ -42,6 +42,9 @@
     right: 0;
     // display:none;
   }
+  nav{
+    padding: 0px;
+  }
   
   .pushy-content {
     visibility: hidden;
@@ -55,9 +58,9 @@
   
   .pushy-open-right #container,
   .pushy-open-right .push {
-    -webkit-transform: translate3d(-385px, 0, 0);
-    -ms-transform: translate3d(-385px, 0, 0);
-    transform: translate3d(-385px, 0, 0);
+    -webkit-transform: translate3d(-400px, 0, 0);
+    -ms-transform: translate3d(-400px, 0, 0);
+    transform: translate3d(-400px, 0, 0);
   }
   
   .pushy-open-left .pushy,
@@ -86,6 +89,7 @@
   /* Site Overlay */
   .site-overlay {
     display: block;
+    // overflow-x: hidden;
   }
   
   .pushy-open-left .site-overlay,

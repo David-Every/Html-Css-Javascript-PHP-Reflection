@@ -46,7 +46,13 @@
 /* Stops items from being selected / copied*/
 body{
     user-select: none;
+    // overflow-y: hidden;
+    // overflow-x: hidden;
+    // overflow: hidden;
 }
+
+
+
 //Removes default focus styles from browsers.
 // input:focus,
 // select:focus{
