@@ -1,5 +1,4 @@
 
-
 .carousel-wrapper{
     width:8%;
     color: $nm-primary;
@@ -85,10 +84,12 @@
         }
     }
     .carousel{
-
+        // position:absolute;
+        // // right:200px;
         width:auto;
         height:731px;
         padding-right: 80%;
+        text-align: center;
     }
     .carousel-wrapper{
         position: absolute;
@@ -96,9 +97,12 @@
         margin:0 auto;
     }
     #carousel-container{
+        // img
+        // overflow: hidden;
         margin-right:200px;
     }
     .carousel-overlay{
+        // top:40%;
         h1, p, a {
             text-align: center;
             margin-left:auto;
