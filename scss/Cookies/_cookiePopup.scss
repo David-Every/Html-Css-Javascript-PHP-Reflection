@@ -1,10 +1,12 @@
 #netmattersPopUp{
-    position: fixed;
-    align-self: center;
+    position:absolute;
+    // align-self: center;
     top:5%;
     left:5%;
     width:90%;
     // height:90;
+    // width:80%;
+    // margin:auto;
     padding:15px;
     border: 3px solid $nm-secondary;
     background-color: $nm-primary;
@@ -48,6 +50,10 @@
     }
 }
 
+/**
+* Controls the darkerned effect so users cannot interact while cookies
+* have not been accepted
+*/
 #site-overlay-pop{
     display: block;
     position: fixed;
@@ -61,21 +67,13 @@
     // animation: fade 500ms;
 }
 
-@media (min-width:$break-m){
+
+@media(min-width:$break-m){
     #netmattersPopUp{
+        width:50%;
+        left:25%;
+        // right:25%;
+
         top:20%;
-        left:30%;
-        width: 650px;
-        // height: 100px;
-        overflow: hidden;
-        #cookieButtons{
-            display: flex;
-            width:90%;
-            &:first-of-type h3{
-                width:264px;
-                height:64px;
-                margin-right: 30px;
-            }
-        }
-    }  
+    }
 }
