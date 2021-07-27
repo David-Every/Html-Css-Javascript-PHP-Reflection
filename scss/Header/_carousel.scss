@@ -1,8 +1,4 @@
 
-// .carousel, .opacity{
-//     width:auto;
-//     overflow-x: hidden
-// }
 
 .carousel-wrapper{
     width:8%;
@@ -89,8 +85,7 @@
         }
     }
     .carousel{
-        // position:absolute;
-        // // right:200px;
+
         width:auto;
         height:731px;
         padding-right: 80%;
@@ -101,12 +96,9 @@
         margin:0 auto;
     }
     #carousel-container{
-        // img
-        // overflow: hidden;
         margin-right:200px;
     }
     .carousel-overlay{
-        // top:40%;
         h1, p, a {
             text-align: center;
             margin-left:auto;

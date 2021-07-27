@@ -70,10 +70,42 @@
 
 @media(min-width:$break-m){
     #netmattersPopUp{
-        width:50%;
-        left:25%;
+        width:600px;
+        left:17%;
         // right:25%;
 
         top:20%;
+    }
+
+    #cookieButtons{
+        // width:500px;
+        display: inline-flex;
+        margin: 0 auto;
+        a{
+            width:50%;
+            padding:0;
+        }
+        a:first-of-type{
+            margin-right: 25px;
+            margin-left: 10%;
+        }
+    }
+}
+
+@media(min-width:$break-lg){
+    #netmattersPopUp{
+        left:22%;
+    }
+}
+
+@media(min-width:$break-xl){
+    #netmattersPopUp{
+        left:32%;
+    }
+}
+
+@media(min-width:$break-4k){
+    #netmattersPopUp{
+        left:38%;
     }
 }
